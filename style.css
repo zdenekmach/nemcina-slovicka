@@ -134,3 +134,10 @@ button{font:inherit;border-radius:10px;cursor:pointer}
 .setting input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--accent);flex:none}
 .setting b{display:block;font-weight:600}
 .setting small{display:block;color:var(--muted);font-size:13px;margin-top:4px;line-height:1.45}
+
+/* Po odpovědi: co bylo správně a čeho se chytil vedle. Bez toho nese
+   vybrané tlačítko jen barvu rodu a špatná volba vypadá stejně dobře. */
+.art.right{border-color:var(--ok);border-width:2px}
+.art.right::after{content:' ✓';color:var(--ok);font-size:15px}
+.art.wrong{border-color:var(--bad);border-width:2px;opacity:.75}
+.art.wrong::after{content:' ✕';color:var(--bad);font-size:15px}

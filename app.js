@@ -321,6 +321,7 @@ function renderCard() {
   session.picked = null;
 
   for (const el of ['answer-text', 'answer-choice', 'answer-article']) $(el).classList.add('hidden');
+  for (const b of document.querySelectorAll('.art')) b.classList.remove('sel', 'right', 'wrong');
 
   if (it.mode === 'recall') {
     $('prompt').textContent = c.cs;
@@ -329,7 +330,9 @@ function renderCard() {
       : (c.pos === 'verb' ? 'sloveso' : (c.pos === 'phrase' ? 'celá věta' : ''));
     kind === 'text' ? openText('německy') : openChoice(it);
   } else if (it.mode === 'recognize') {
-    $('prompt').innerHTML = (c.article ? `<span class="art-hint">${esc(c.article)} </span>` : '') + esc(c.de);
+    // Člen se v zadání neukazuje nikde. Ptáme se na něj zvlášť a o pár karet
+    // dřív by ho tahle otázka prozradila.
+    $('prompt').textContent = c.de;
     $('hint').textContent = '';
     openChoice(it);
   } else if (it.mode === 'article') {
@@ -347,7 +350,7 @@ function renderCard() {
       };
     }
   } else if (it.mode === 'plural') {
-    $('prompt').innerHTML = `<span class="art-hint">${esc(c.article || '')} </span>${esc(c.de)}`;
+    $('prompt').textContent = c.de;
     $('hint').textContent = kind === 'text' ? 'napiš tvar pro množné číslo' : 'vyber tvar pro množné číslo';
     kind === 'text' ? openText('množné číslo') : openChoice(it);
   }
@@ -469,6 +472,16 @@ function finish(it, given, verdict, correct) {
   // "Těsně vedle" u psaní bývá překlep, ne neznalost — ať si to může uznat.
   const canOverride = !correct && verdict === 'near';
   $('btn-override').classList.toggle('hidden', !canOverride);
+
+  // Barva rodu na vybraném tlačítku je mnemotechnika, ne odpověď na to,
+  // jestli se trefil. Bez tohohle vypadá špatná volba stejně hezky jako dobrá.
+  if (it.mode === 'article') {
+    const right = String(c.article).split('/').map(s => s.trim());
+    for (const b of document.querySelectorAll('.art')) {
+      if (right.includes(b.dataset.a)) b.classList.add('right');
+      else if (b.classList.contains('sel')) b.classList.add('wrong');
+    }
+  }
 
   $('btn-check').classList.add('hidden');
   $('verdict').classList.remove('hidden');
