@@ -175,3 +175,27 @@ button{font:inherit;border-radius:10px;cursor:pointer}
 .browse-nav #b-count{flex:1;text-align:center;font-variant-numeric:tabular-nums}
 .browse-nav .primary{flex:none;margin-top:0;padding:12px 20px}
 .browse-nav .ghost[disabled]{opacity:.35}
+
+/* ---------- seznam učících sad ---------- */
+#sets-head{margin-bottom:14px}
+#sets-topic{font-size:19px;font-weight:600;margin-bottom:3px}
+
+.setrow{display:flex;align-items:center;gap:12px;
+        background:var(--panel);border:1px solid var(--line);
+        border-radius:var(--r);padding:14px;margin-bottom:9px;cursor:pointer}
+.setrow:active{border-color:var(--ok)}
+.setrow-main{flex:1;min-width:0}
+.set-name{font-weight:600}
+.set-sub{color:var(--muted);font-size:13px;margin-top:2px;
+         white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.setbar{height:3px;background:var(--panel-2);border-radius:999px;
+        overflow:hidden;margin-top:9px}
+.setbar-fill{height:100%;background:var(--ok);border-radius:999px;transition:width .2s}
+
+.set-mark{flex:none;font-weight:650;font-size:14px;
+          border-radius:999px;padding:6px 13px;min-width:64px;text-align:center}
+.setrow.fresh .set-mark{color:var(--ok);border:1px solid var(--ok)}
+.setrow.part  .set-mark{color:var(--warn);border:1px solid var(--warn);
+                        font-variant-numeric:tabular-nums}
+.setrow.done  .set-mark{background:var(--ok);color:#0d1017}
+.setrow.done .set-name{color:var(--muted)}

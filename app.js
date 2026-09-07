@@ -10,6 +10,7 @@
 
 const STORE_KEY = 'nem-slovicka-v1';
 const INTERVALS = [0, 1, 3, 7, 16];   // dny do dalšího opakování pro box 1..5
+const SET_TARGET = 15;                // kolik slov zhruba do jedné učící sady
 const SESSION_MAX = 24;               // kolik položek nejvýš v jednom sezení
 const NEW_PER_SESSION = 8;            // kolik z toho smí být úplně nových
 
@@ -41,10 +42,11 @@ function load() {
     if (raw) {
       const s = Object.assign({ progress: {}, streak: { last: null, days: 0 } }, JSON.parse(raw));
       s.settings = Object.assign({ typing: false }, s.settings);
+      s.seen = s.seen || {};
       return s;
     }
   } catch (e) { /* privátní okno nebo vyčištěná data */ }
-  return { progress: {}, streak: { last: null, days: 0 }, settings: { typing: false } };
+  return { progress: {}, streak: { last: null, days: 0 }, settings: { typing: false }, seen: {} };
 }
 
 function save() {
@@ -87,6 +89,47 @@ function modesFor(card, modes = QUIZ_MODES) {
 }
 
 const key = (deckId, cardId, mode) => `${deckId}:${cardId}:${mode}`;
+
+/* ---------- učící sady ---------- */
+
+// Balíček po čtyřiceti osmi slovech se nedá projít najednou. Krájí se proto
+// na sady kolem patnácti slov — rovnoměrně, ať poslední sada nezbude na tři
+// slova. Dělení jde po pořadí v balíčku, takže sada drží slova z jedné části
+// učebnice pohromadě.
+function setsFor(deck) {
+  const n = deck.cards.length;
+  const count = Math.max(1, Math.round(n / SET_TARGET));
+  const sets = [];
+  let from = 0;
+  for (let i = 0; i < count; i++) {
+    const to = Math.round(n * (i + 1) / count);
+    sets.push({ index: i, from, to, cards: deck.cards.slice(from, to) });
+    from = to;
+  }
+  return sets;
+}
+
+// „Prošel jsem si to" není totéž co „umím to", proto vlastní záznam vedle
+// krabiček. Krabičky patří zkoušení, tohle učení.
+const seenKey = (deckId, cardId) => `${deckId}:${cardId}`;
+const hasSeen = (deckId, cardId) => !!state.seen[seenKey(deckId, cardId)];
+
+function markSeen(deckId, cardId) {
+  const k = seenKey(deckId, cardId);
+  if (state.seen[k]) return;
+  state.seen[k] = true;
+  save();
+}
+
+function setStatus(deckId, set) {
+  const seen = set.cards.filter(c => hasSeen(deckId, c.id)).length;
+  return { seen, total: set.cards.length, done: seen === set.cards.length };
+}
+
+function deckLearned(deck) {
+  const sets = setsFor(deck);
+  return { done: sets.filter(s => setStatus(deck.id, s).done).length, total: sets.length };
+}
 
 function itemState(k) {
   return state.progress[k] || { box: 0, due: today() };
@@ -255,11 +298,12 @@ function renderHome() {
     const n = dueItems([d.id]);
     const waiting = n.fresh.length + n.review.length;
     const b = Math.min(SESSION_MAX, waiting);
+    const learned = deckLearned(d);
     return `<div class="deck">
       <div class="deck-main">
         <div class="deck-name">${esc(d.name)}</div>
         <div class="deck-sub">${esc(d.topic || (d.cards.length + ' slov'))}${
-          waiting ? '' : ' · umíš'}</div>
+          learned.done ? ` · prošel ${learned.done}/${learned.total}` : ''}</div>
       </div>
       <div class="deck-actions">
         <button class="learnbtn" data-browse="${esc(d.id)}" title="Projít si slovíčka">Projít</button>
@@ -273,7 +317,7 @@ function renderHome() {
     b.onclick = () => startSession([b.dataset.deck]);
   }
   for (const b of $('deck-list').querySelectorAll('.learnbtn[data-browse]')) {
-    b.onclick = () => startBrowse(b.dataset.browse);
+    b.onclick = () => startSets(b.dataset.browse);
   }
 
   renderStats();
@@ -433,21 +477,70 @@ function openChoice(it) {
 // Tady se nic nehodnotí a nic se nezapisuje do krabiček. Je to listování
 // slovíčky, ne zkoušení — proto vlastní obrazovka a zelená místo modré.
 let browse = null;
+let sets = null;
 
-function startBrowse(deckId) {
+// Krok 1: seznam sad. Odsud je vidět, co má za sebou a kde skončil.
+function startSets(deckId) {
   const deck = decks.find(d => d.id === deckId);
   if (!deck || !deck.cards.length) return;
-  browse = { deck, pos: 0 };
+  browse = null;
+  sets = { deck };
+  show('sets');
+  renderSets();
+}
+
+function renderSets() {
+  const deck = sets.deck;
+  const list = setsFor(deck);
+  const learned = deckLearned(deck);
+
+  $('bar-title').textContent = deck.name;
+  $('sets-topic').textContent = deck.topic || deck.name;
+  $('sets-summary').textContent = learned.done === learned.total
+    ? `Prošel jsi všechny sady — ${deck.cards.length} slov.`
+    : `${learned.done} z ${learned.total} sad hotových · ${deck.cards.length} slov celkem`;
+
+  $('set-list').innerHTML = list.map(s => {
+    const st = setStatus(deck.id, s);
+    const state = st.done ? 'done' : (st.seen ? 'part' : 'fresh');
+    const label = st.done ? '✓' : (st.seen ? `${st.seen}/${st.total}` : 'projít');
+    return `<div class="setrow ${state}" data-set="${s.index}">
+      <div class="setrow-main">
+        <div class="set-name">Slova ${s.from + 1}–${s.to}</div>
+        <div class="set-sub">${esc(s.cards[0].de)} … ${esc(s.cards[s.cards.length - 1].de)}</div>
+        <div class="setbar"><div class="setbar-fill" style="width:${st.seen / st.total * 100}%"></div></div>
+      </div>
+      <span class="set-mark">${label}</span>
+    </div>`;
+  }).join('');
+
+  for (const row of $('set-list').querySelectorAll('.setrow[data-set]')) {
+    row.onclick = () => startBrowse(deck.id, +row.dataset.set);
+  }
+}
+
+// Krok 2: samotné listování slovy v jedné sadě.
+function startBrowse(deckId, setIndex) {
+  const deck = decks.find(d => d.id === deckId);
+  if (!deck) return;
+  const set = setsFor(deck)[setIndex];
+  if (!set) return;
+
+  // Vrátit ho tam, kde skončil — ne na začátek sady, kterou má z půlky za sebou.
+  const firstNew = set.cards.findIndex(c => !hasSeen(deck.id, c.id));
+  browse = { deck, set, pos: firstNew < 0 ? 0 : firstNew };
   show('browse');
   renderBrowse();
 }
 
 function renderBrowse() {
-  const c = browse.deck.cards[browse.pos];
-  const total = browse.deck.cards.length;
+  const c = browse.set.cards[browse.pos];
+  const total = browse.set.cards.length;
+
+  markSeen(browse.deck.id, c.id);
 
   $('browse-fill').style.width = ((browse.pos + 1) / total * 100) + '%';
-  $('bar-title').textContent = browse.deck.topic || browse.deck.name;
+  $('bar-title').textContent = `Slova ${browse.set.from + 1}–${browse.set.to}`;
   $('b-count').textContent = `${browse.pos + 1} / ${total}`;
 
   // V učícím režimu se člen ukazuje — o to tady jde.
@@ -474,13 +567,21 @@ function browseMove(step) {
   if (!browse) return;
   const next = browse.pos + step;
   if (next < 0) return;
-  if (next >= browse.deck.cards.length) { leaveBrowse(); return; }
+  if (next >= browse.set.cards.length) { leaveBrowse(); return; }
   browse.pos = next;
   renderBrowse();
 }
 
+// Z procházení zpátky na seznam sad, ne rovnou domů — ať je vidět, že sada
+// přibyla k hotovým, a ať jde hned pokračovat další.
 function leaveBrowse() {
+  const deckId = browse.deck.id;
   browse = null;
+  startSets(deckId);
+}
+
+function leaveSets() {
+  sets = null;
   $('bar-title').textContent = 'Slovíčka';
   renderHome();
   show('home');
@@ -626,7 +727,8 @@ $('browse-card').addEventListener('touchend', e => {
   if (Math.abs(dx) > 60) browseMove(dx < 0 ? 1 : -1);
 }, { passive: true });
 $('btn-home').onclick    = () => {
-  if (browse) { leaveBrowse(); return; }        // v učení není co ztratit
+  if (browse) { leaveBrowse(); return; }        // zpátky na sady
+  if (sets) { leaveSets(); return; }            // ze sad domů
   if (session && session.pos < session.queue.length && !confirm('Opustit procvičování? Co jsi stihl, se uloží.')) return;
   $('bar-title').textContent = 'Slovíčka';
   renderHome(); show('home');
@@ -643,8 +745,8 @@ $('opt-typing').onchange = e => {
 };
 
 $('btn-reset').onclick = () => {
-  if (!confirm('Opravdu smazat celý postup? Slovíčka zůstanou, začne se od nuly.')) return;
-  state = { progress: {}, streak: { last: null, days: 0 }, settings: state.settings };
+  if (!confirm('Opravdu smazat celý postup? Smaže se i to, co máš projité. Slovíčka zůstanou.')) return;
+  state = { progress: {}, streak: { last: null, days: 0 }, settings: state.settings, seen: {} };
   save(); renderHome();
 };
 
