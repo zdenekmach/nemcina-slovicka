@@ -1,0 +1,271 @@
+{
+ "id": "l1-16-17",
+ "name": "Lekce 1 · str. 16–17 — o sobě a čísla 0–12",
+ "lesson": "1",
+ "source": "Mein Wortschatz, lekce 1 — fotky v inputs/, přepis 2026-09-07",
+ "cards": [
+  {
+   "id": "p16-01",
+   "pos": "conj",
+   "page": 16,
+   "cs": "ale",
+   "de": "aber"
+  },
+  {
+   "id": "p16-02",
+   "pos": "adj",
+   "page": 16,
+   "cs": "starý",
+   "de": "alt"
+  },
+  {
+   "id": "p16-03",
+   "pos": "prep",
+   "page": 16,
+   "cs": "u",
+   "de": "bei"
+  },
+  {
+   "id": "p16-04",
+   "pos": "noun",
+   "page": 16,
+   "cs": "Brazílie",
+   "de": "Brasilien"
+  },
+  {
+   "id": "p16-05",
+   "pos": "pron",
+   "page": 16,
+   "cs": "tvůj, tvá, tvé",
+   "de": "dein, deine, dein"
+  },
+  {
+   "id": "p16-06",
+   "pos": "pron",
+   "page": 16,
+   "cs": "ty",
+   "de": "du"
+  },
+  {
+   "id": "p16-07",
+   "pos": "phrase",
+   "page": 16,
+   "cs": "Promiň(te).",
+   "de": "Entschuldigung."
+  },
+  {
+   "id": "p16-08",
+   "pos": "verb",
+   "page": 16,
+   "cs": "jmenovat se",
+   "de": "heißen",
+   "form3": "er heißt",
+   "example_de": "Wie heißt du?",
+   "example_cs": "Jak se jmenuješ?"
+  },
+  {
+   "id": "p16-09",
+   "pos": "phrase",
+   "page": 16,
+   "cs": "Jak se jmenuješ?",
+   "de": "Wie heißt du?"
+  },
+  {
+   "id": "p16-10",
+   "pos": "pron",
+   "page": 16,
+   "cs": "já",
+   "de": "ich"
+  },
+  {
+   "id": "p16-11",
+   "pos": "prep",
+   "page": 16,
+   "cs": "v, ve",
+   "de": "in",
+   "example_de": "Ich wohne in Frankfurt.",
+   "example_cs": "Bydlím ve Frankfurtu."
+  },
+  {
+   "id": "p16-12",
+   "pos": "other",
+   "page": 16,
+   "cs": "ano",
+   "de": "ja"
+  },
+  {
+   "id": "p16-13",
+   "pos": "noun",
+   "page": 16,
+   "cs": "rok",
+   "de": "Jahr",
+   "article": "das",
+   "plural": "Jahre"
+  },
+  {
+   "id": "p16-14",
+   "pos": "adv",
+   "page": 16,
+   "cs": "nyní, teď",
+   "de": "jetzt"
+  },
+  {
+   "id": "p16-15",
+   "pos": "noun",
+   "page": 16,
+   "cs": "máma",
+   "de": "Mama",
+   "article": "die",
+   "plural": "Mamas"
+  },
+  {
+   "id": "p16-16",
+   "pos": "pron",
+   "page": 16,
+   "cs": "můj, moje, moje",
+   "de": "mein, meine, mein"
+  },
+  {
+   "id": "p16-17",
+   "pos": "noun",
+   "page": 16,
+   "cs": "příjmení",
+   "de": "Nachname",
+   "article": "der",
+   "plural": "Nachnamen"
+  },
+  {
+   "id": "p16-18",
+   "pos": "conj",
+   "page": 16,
+   "cs": "nebo",
+   "de": "oder",
+   "example_de": "Jan oder Ludwig?",
+   "example_cs": "Jan nebo Ludwig?"
+  },
+  {
+   "id": "p16-19",
+   "pos": "noun",
+   "page": 16,
+   "cs": "táta",
+   "de": "Papa",
+   "article": "der",
+   "plural": "Papas"
+  },
+  {
+   "id": "p16-20",
+   "pos": "adv",
+   "page": 16,
+   "cs": "kde",
+   "de": "wo",
+   "example_de": "Wo wohnst du?",
+   "example_cs": "Kde bydlíš?"
+  },
+  {
+   "id": "p16-21",
+   "pos": "phrase",
+   "page": 16,
+   "cs": "Kde bydlíš?",
+   "de": "Wo wohnst du?"
+  },
+  {
+   "id": "p16-22",
+   "pos": "verb",
+   "page": 16,
+   "cs": "bydlet",
+   "de": "wohnen",
+   "form3": "er wohnt"
+  },
+  {
+   "id": "p17-01",
+   "pos": "number",
+   "page": 17,
+   "cs": "0",
+   "de": "null"
+  },
+  {
+   "id": "p17-02",
+   "pos": "number",
+   "page": 17,
+   "cs": "1",
+   "de": "eins"
+  },
+  {
+   "id": "p17-03",
+   "pos": "number",
+   "page": 17,
+   "cs": "2",
+   "de": "zwei"
+  },
+  {
+   "id": "p17-04",
+   "pos": "number",
+   "page": 17,
+   "cs": "3",
+   "de": "drei"
+  },
+  {
+   "id": "p17-05",
+   "pos": "number",
+   "page": 17,
+   "cs": "4",
+   "de": "vier"
+  },
+  {
+   "id": "p17-06",
+   "pos": "number",
+   "page": 17,
+   "cs": "5",
+   "de": "fünf"
+  },
+  {
+   "id": "p17-07",
+   "pos": "number",
+   "page": 17,
+   "cs": "6",
+   "de": "sechs"
+  },
+  {
+   "id": "p17-08",
+   "pos": "number",
+   "page": 17,
+   "cs": "7",
+   "de": "sieben"
+  },
+  {
+   "id": "p17-09",
+   "pos": "number",
+   "page": 17,
+   "cs": "8",
+   "de": "acht"
+  },
+  {
+   "id": "p17-10",
+   "pos": "number",
+   "page": 17,
+   "cs": "9",
+   "de": "neun"
+  },
+  {
+   "id": "p17-11",
+   "pos": "number",
+   "page": 17,
+   "cs": "10",
+   "de": "zehn"
+  },
+  {
+   "id": "p17-12",
+   "pos": "number",
+   "page": 17,
+   "cs": "11",
+   "de": "elf"
+  },
+  {
+   "id": "p17-13",
+   "pos": "number",
+   "page": 17,
+   "cs": "12",
+   "de": "zwölf"
+  }
+ ]
+}

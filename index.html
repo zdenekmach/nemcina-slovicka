@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12151c">
+<meta name="robots" content="noindex, nofollow">
+<title>Slovíčka — němčina</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="bar">
+  <button id="btn-home" class="icon" title="Zpět na přehled">‹</button>
+  <div id="bar-title">Slovíčka</div>
+  <div id="bar-streak" title="Kolik dní po sobě"></div>
+</header>
+
+<main>
+
+  <!-- PŘEHLED -->
+  <section id="view-home" class="view">
+    <div id="today-card" class="panel">
+      <div class="big" id="today-count">—</div>
+      <div class="muted" id="today-label">na dnešek</div>
+      <button id="btn-start" class="primary wide">Začít opakovat</button>
+    </div>
+
+    <h2>Balíčky</h2>
+    <div id="deck-list"></div>
+
+    <h2>Jak na tom jsi</h2>
+    <div id="stats" class="panel"></div>
+
+    <h2>Nastavení</h2>
+    <div class="panel">
+      <label class="setting">
+        <input type="checkbox" id="opt-typing">
+        <span>
+          <b>Odpovídat psaním</b>
+          <small>Zatím vypnuté — vybírá se z možností. Psaní je těžší,
+          ale slova si tak sedají do hlavy líp. Zapni, až ti výběr přijde snadný.</small>
+        </span>
+      </label>
+    </div>
+
+    <div class="footer-actions">
+      <button id="btn-reset" class="ghost small">Vymazat postup</button>
+    </div>
+  </section>
+
+  <!-- PROCVIČOVÁNÍ -->
+  <section id="view-drill" class="view hidden">
+    <div id="progress"><div id="progress-fill"></div></div>
+
+    <div id="card" class="panel card">
+      <div id="mode-label" class="tag"></div>
+      <div id="prompt" class="prompt"></div>
+      <div id="hint" class="hint"></div>
+
+      <div id="answer-text" class="answer-area">
+        <input id="input" type="text" autocomplete="off" autocorrect="off"
+               autocapitalize="off" spellcheck="false" enterkeyhint="done"
+               placeholder="odpověď">
+      </div>
+
+      <div id="answer-choice" class="answer-area hidden"></div>
+
+      <div id="answer-article" class="answer-area hidden">
+        <button class="art" data-a="der">der</button>
+        <button class="art" data-a="die">die</button>
+        <button class="art" data-a="das">das</button>
+      </div>
+
+      <button id="btn-check" class="primary wide">Zkontrolovat</button>
+
+      <div id="verdict" class="verdict hidden">
+        <div id="verdict-head"></div>
+        <div id="verdict-correct" class="correct-answer"></div>
+        <div id="verdict-example" class="example"></div>
+        <div class="verdict-actions">
+          <button id="btn-speak" class="ghost">🔊 Poslechnout</button>
+          <button id="btn-override" class="ghost hidden">Měl jsem to dobře</button>
+        </div>
+        <button id="btn-next" class="primary wide">Další</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOTOVO -->
+  <section id="view-done" class="view hidden">
+    <div class="panel center">
+      <div class="big" id="done-score">—</div>
+      <div class="muted">správně z <span id="done-total">—</span></div>
+      <div id="done-note" class="note"></div>
+      <div id="done-mistakes"></div>
+      <button id="btn-again" class="primary wide">Zpátky na přehled</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

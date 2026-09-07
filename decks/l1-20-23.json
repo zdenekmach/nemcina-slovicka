@@ -1,0 +1,136 @@
+{
+ "id": "l1-20-23",
+ "name": "Lekce 1 · str. 20–23 — země, abeceda, kontakt",
+ "lesson": "1",
+ "source": "Mein Wortschatz, lekce 1 — fotky v inputs/, přepis 2026-09-07",
+ "cards": [
+  {
+   "id": "p20-01",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Velká Británie",
+   "de": "Großbritannien"
+  },
+  {
+   "id": "p20-02",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Rakousko",
+   "de": "Österreich"
+  },
+  {
+   "id": "p20-03",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Polsko",
+   "de": "Polen"
+  },
+  {
+   "id": "p20-04",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Slovensko",
+   "de": "Slowakei",
+   "article": "die"
+  },
+  {
+   "id": "p20-05",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Španělsko",
+   "de": "Spanien"
+  },
+  {
+   "id": "p20-06",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Česko",
+   "de": "Tschechien"
+  },
+  {
+   "id": "p21-01",
+   "pos": "noun",
+   "page": 21,
+   "cs": "abeceda",
+   "de": "ABC (Alphabet)",
+   "article": "das",
+   "plural": "ABCs"
+  },
+  {
+   "id": "p21-02",
+   "pos": "noun",
+   "page": 21,
+   "cs": "Sibiř",
+   "de": "Sibirien"
+  },
+  {
+   "id": "p22-01",
+   "pos": "verb",
+   "page": 22,
+   "cs": "hláskovat",
+   "de": "buchstabieren",
+   "form3": "er buchstabiert"
+  },
+  {
+   "id": "p22-02",
+   "pos": "noun",
+   "page": 22,
+   "cs": "křestní jméno",
+   "de": "Vorname",
+   "article": "der",
+   "plural": "Vornamen"
+  },
+  {
+   "id": "p22-03",
+   "pos": "pron",
+   "page": 22,
+   "cs": "co",
+   "de": "was"
+  },
+  {
+   "id": "p22-04",
+   "pos": "noun",
+   "page": 22,
+   "cs": "slovo",
+   "de": "Wort",
+   "article": "das",
+   "plural": "Wörter"
+  },
+  {
+   "id": "p23-01",
+   "pos": "noun",
+   "page": 23,
+   "cs": "adresa",
+   "de": "Adresse",
+   "article": "die",
+   "plural": "Adressen"
+  },
+  {
+   "id": "p23-02",
+   "pos": "noun",
+   "page": 23,
+   "cs": "rodiče",
+   "de": "Eltern",
+   "article": "die",
+   "plural": "Eltern"
+  },
+  {
+   "id": "p23-03",
+   "pos": "noun",
+   "page": 23,
+   "cs": "e-mailová adresa",
+   "de": "E-Mail-Adresse",
+   "article": "die",
+   "plural": "E-Mail-Adressen"
+  },
+  {
+   "id": "p23-04",
+   "pos": "noun",
+   "page": 23,
+   "cs": "přítelkyně, kamarádka",
+   "de": "Freundin",
+   "article": "die",
+   "plural": "Freundinnen"
+  }
+ ]
+}

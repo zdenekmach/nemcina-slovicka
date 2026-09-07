@@ -1,0 +1,392 @@
+{
+ "id": "l1-13-15",
+ "name": "Lekce 1 · str. 13–15 — koníčky a pozdravy",
+ "lesson": "1",
+ "source": "Mein Wortschatz, lekce 1 — fotky v inputs/, přepis 2026-09-07",
+ "cards": [
+  {
+   "id": "p13-01",
+   "pos": "noun",
+   "page": 13,
+   "cs": "balet",
+   "de": "Ballett",
+   "article": "das",
+   "plural": "Ballette"
+  },
+  {
+   "id": "p13-02",
+   "pos": "noun",
+   "page": 13,
+   "cs": "komiks",
+   "de": "Comic",
+   "article": "der/das",
+   "plural": "Comics"
+  },
+  {
+   "id": "p13-03",
+   "pos": "noun",
+   "page": 13,
+   "cs": "fotbal",
+   "de": "Fußball",
+   "article": "der",
+   "plural": "Fußbälle"
+  },
+  {
+   "id": "p13-04",
+   "pos": "noun",
+   "page": 13,
+   "cs": "kytara",
+   "de": "Gitarre",
+   "article": "die",
+   "plural": "Gitarren"
+  },
+  {
+   "id": "p13-05",
+   "pos": "noun",
+   "page": 13,
+   "cs": "kino",
+   "de": "Kino",
+   "article": "das",
+   "plural": "Kinos"
+  },
+  {
+   "id": "p13-06",
+   "pos": "noun",
+   "page": 13,
+   "cs": "klavír",
+   "de": "Klavier",
+   "article": "das",
+   "plural": "Klaviere"
+  },
+  {
+   "id": "p13-07",
+   "pos": "verb",
+   "page": 13,
+   "cs": "vařit",
+   "de": "kochen",
+   "form3": "er kocht"
+  },
+  {
+   "id": "p13-08",
+   "pos": "noun",
+   "page": 13,
+   "cs": "autoportrét, selfie",
+   "de": "Selfie",
+   "article": "das",
+   "plural": "Selfies"
+  },
+  {
+   "id": "p13-09",
+   "pos": "noun",
+   "page": 13,
+   "cs": "videohra",
+   "de": "Videospiel",
+   "article": "das",
+   "plural": "Videospiele"
+  },
+  {
+   "id": "p14-01",
+   "pos": "prep",
+   "page": 14,
+   "cs": "na",
+   "de": "auf"
+  },
+  {
+   "id": "p14-02",
+   "pos": "adv",
+   "page": 14,
+   "cs": "brzy",
+   "de": "bald",
+   "example_de": "Bis bald!",
+   "example_cs": "Brzy na shledanou! / Tak zatím!"
+  },
+  {
+   "id": "p14-03",
+   "pos": "phrase",
+   "page": 14,
+   "cs": "Brzy na shledanou! / Tak zatím!",
+   "de": "Bis bald!"
+  },
+  {
+   "id": "p14-04",
+   "pos": "other",
+   "page": 14,
+   "cs": "děkuji",
+   "de": "danke"
+  },
+  {
+   "id": "p14-05",
+   "pos": "pron",
+   "page": 14,
+   "cs": "to",
+   "de": "das"
+  },
+  {
+   "id": "p14-06",
+   "pos": "noun",
+   "page": 14,
+   "cs": "paní",
+   "de": "Frau",
+   "article": "die",
+   "plural": "Frauen"
+  },
+  {
+   "id": "p14-07",
+   "pos": "verb",
+   "page": 14,
+   "cs": "zdravit",
+   "de": "grüßen",
+   "form3": "er grüßt",
+   "example_de": "Grüß dich!",
+   "example_cs": "Ahoj!"
+  },
+  {
+   "id": "p14-08",
+   "pos": "phrase",
+   "page": 14,
+   "cs": "Ahoj! (pozdrav při setkání)",
+   "de": "Grüß dich!"
+  },
+  {
+   "id": "p14-09",
+   "pos": "adj",
+   "page": 14,
+   "cs": "dobrý",
+   "de": "gut"
+  },
+  {
+   "id": "p14-10",
+   "pos": "phrase",
+   "page": 14,
+   "cs": "Dobrý večer!",
+   "de": "Guten Abend!"
+  },
+  {
+   "id": "p14-11",
+   "pos": "phrase",
+   "page": 14,
+   "cs": "Dobré ráno!",
+   "de": "Guten Morgen!"
+  },
+  {
+   "id": "p14-12",
+   "pos": "phrase",
+   "page": 14,
+   "cs": "Dobrý den!",
+   "de": "Guten Tag!"
+  },
+  {
+   "id": "p14-13",
+   "pos": "phrase",
+   "page": 14,
+   "cs": "Ahoj!",
+   "de": "Hallo!"
+  },
+  {
+   "id": "p14-14",
+   "pos": "noun",
+   "page": 14,
+   "cs": "pan",
+   "de": "Herr",
+   "article": "der",
+   "plural": "Herren"
+  },
+  {
+   "id": "p14-15",
+   "pos": "phrase",
+   "page": 14,
+   "cs": "Ahoj! (neformálně)",
+   "de": "Hi!"
+  },
+  {
+   "id": "p14-16",
+   "pos": "adj",
+   "page": 14,
+   "cs": "milý",
+   "de": "nett"
+  },
+  {
+   "id": "p14-17",
+   "pos": "noun",
+   "page": 14,
+   "cs": "babička",
+   "de": "Oma",
+   "article": "die",
+   "plural": "Omas"
+  },
+  {
+   "id": "p14-18",
+   "pos": "verb",
+   "page": 14,
+   "cs": "být",
+   "de": "sein",
+   "form3": "er ist"
+  },
+  {
+   "id": "p14-19",
+   "pos": "adj",
+   "page": 14,
+   "cs": "super, bezva",
+   "de": "super"
+  },
+  {
+   "id": "p14-20",
+   "pos": "noun",
+   "page": 14,
+   "cs": "den",
+   "de": "Tag",
+   "article": "der",
+   "plural": "Tage"
+  },
+  {
+   "id": "p14-21",
+   "pos": "phrase",
+   "page": 14,
+   "cs": "Ahoj! (při loučení)",
+   "de": "Tschüss!"
+  },
+  {
+   "id": "p14-22",
+   "pos": "adv",
+   "page": 14,
+   "cs": "jak",
+   "de": "wie",
+   "example_de": "Wie geht's?",
+   "example_cs": "Jak se daří? / Jak se máš?"
+  },
+  {
+   "id": "p14-23",
+   "pos": "phrase",
+   "page": 14,
+   "cs": "Jak se daří? / Jak se máš?",
+   "de": "Wie geht's?"
+  },
+  {
+   "id": "p14-24",
+   "pos": "noun",
+   "page": 14,
+   "cs": "shledání",
+   "de": "Wiedersehen",
+   "article": "das",
+   "example_de": "Auf Wiedersehen!",
+   "example_cs": "Na shledanou!"
+  },
+  {
+   "id": "p14-25",
+   "pos": "phrase",
+   "page": 14,
+   "cs": "Na shledanou!",
+   "de": "Auf Wiedersehen!"
+  },
+  {
+   "id": "p15-01",
+   "pos": "noun",
+   "page": 15,
+   "cs": "večer",
+   "de": "Abend",
+   "article": "der",
+   "plural": "Abende"
+  },
+  {
+   "id": "p15-02",
+   "pos": "pron",
+   "page": 15,
+   "cs": "ono",
+   "de": "es",
+   "example_de": "Es geht.",
+   "example_cs": "Jde to."
+  },
+  {
+   "id": "p15-03",
+   "pos": "phrase",
+   "page": 15,
+   "cs": "Jde to.",
+   "de": "Es geht."
+  },
+  {
+   "id": "p15-04",
+   "pos": "adv",
+   "page": 15,
+   "cs": "celý; celkem, docela",
+   "de": "ganz",
+   "example_de": "Ganz gut.",
+   "example_cs": "Celkem dobře."
+  },
+  {
+   "id": "p15-05",
+   "pos": "phrase",
+   "page": 15,
+   "cs": "Celkem dobře.",
+   "de": "Ganz gut."
+  },
+  {
+   "id": "p15-06",
+   "pos": "adv",
+   "page": 15,
+   "cs": "ne- (zápor)",
+   "de": "nicht",
+   "example_de": "Nicht so gut!",
+   "example_cs": "Ne moc dobře!"
+  },
+  {
+   "id": "p15-07",
+   "pos": "phrase",
+   "page": 15,
+   "cs": "Ne moc dobře!",
+   "de": "Nicht so gut!"
+  },
+  {
+   "id": "p15-08",
+   "pos": "other",
+   "page": 15,
+   "cs": "OK, o. k.",
+   "de": "okay"
+  },
+  {
+   "id": "p15-09",
+   "pos": "adj",
+   "page": 15,
+   "cs": "prima",
+   "de": "prima"
+  },
+  {
+   "id": "p15-10",
+   "pos": "adj",
+   "page": 15,
+   "cs": "špatný; špatně",
+   "de": "schlecht"
+  },
+  {
+   "id": "p15-11",
+   "pos": "adv",
+   "page": 15,
+   "cs": "velmi",
+   "de": "sehr",
+   "example_de": "Sehr gut!",
+   "example_cs": "Velmi dobře!"
+  },
+  {
+   "id": "p15-12",
+   "pos": "adv",
+   "page": 15,
+   "cs": "tak",
+   "de": "so",
+   "example_de": "So lala.",
+   "example_cs": "Jakž takž."
+  },
+  {
+   "id": "p15-13",
+   "pos": "phrase",
+   "page": 15,
+   "cs": "Jakž takž.",
+   "de": "So lala."
+  },
+  {
+   "id": "p15-14",
+   "pos": "conj",
+   "page": 15,
+   "cs": "a",
+   "de": "und"
+  }
+ ]
+}

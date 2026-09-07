@@ -1,0 +1,243 @@
+{
+ "id": "l1-18-19",
+ "name": "Lekce 1 · str. 18–19 — čísla 13–20 a odkud jsem",
+ "lesson": "1",
+ "source": "Mein Wortschatz, lekce 1 — fotky v inputs/, přepis 2026-09-07",
+ "cards": [
+  {
+   "id": "p18-01",
+   "pos": "number",
+   "page": 18,
+   "cs": "13",
+   "de": "dreizehn"
+  },
+  {
+   "id": "p18-02",
+   "pos": "number",
+   "page": 18,
+   "cs": "14",
+   "de": "vierzehn"
+  },
+  {
+   "id": "p18-03",
+   "pos": "number",
+   "page": 18,
+   "cs": "15",
+   "de": "fünfzehn"
+  },
+  {
+   "id": "p18-04",
+   "pos": "number",
+   "page": 18,
+   "cs": "16",
+   "de": "sechzehn"
+  },
+  {
+   "id": "p18-05",
+   "pos": "number",
+   "page": 18,
+   "cs": "17",
+   "de": "siebzehn"
+  },
+  {
+   "id": "p18-06",
+   "pos": "number",
+   "page": 18,
+   "cs": "18",
+   "de": "achtzehn"
+  },
+  {
+   "id": "p18-07",
+   "pos": "number",
+   "page": 18,
+   "cs": "19",
+   "de": "neunzehn"
+  },
+  {
+   "id": "p18-08",
+   "pos": "number",
+   "page": 18,
+   "cs": "20",
+   "de": "zwanzig"
+  },
+  {
+   "id": "p18-09",
+   "pos": "verb",
+   "page": 18,
+   "cs": "poslouchat",
+   "de": "zuhören",
+   "form3": "er hört zu"
+  },
+  {
+   "id": "p19-01",
+   "pos": "noun",
+   "page": 19,
+   "cs": "věk",
+   "de": "Alter",
+   "article": "das"
+  },
+  {
+   "id": "p19-02",
+   "pos": "prep",
+   "page": 19,
+   "cs": "z",
+   "de": "aus"
+  },
+  {
+   "id": "p19-03",
+   "pos": "noun",
+   "page": 19,
+   "cs": "sestřenice",
+   "de": "Cousine",
+   "article": "die",
+   "plural": "Cousinen"
+  },
+  {
+   "id": "p19-04",
+   "pos": "noun",
+   "page": 19,
+   "cs": "Německo",
+   "de": "Deutschland"
+  },
+  {
+   "id": "p19-05",
+   "pos": "pron",
+   "page": 19,
+   "cs": "on",
+   "de": "er"
+  },
+  {
+   "id": "p19-06",
+   "pos": "noun",
+   "page": 19,
+   "cs": "Francie",
+   "de": "Frankreich"
+  },
+  {
+   "id": "p19-07",
+   "pos": "noun",
+   "page": 19,
+   "cs": "přítel, kamarád",
+   "de": "Freund",
+   "article": "der",
+   "plural": "Freunde"
+  },
+  {
+   "id": "p19-08",
+   "pos": "noun",
+   "page": 19,
+   "cs": "Itálie",
+   "de": "Italien"
+  },
+  {
+   "id": "p19-09",
+   "pos": "verb",
+   "page": 19,
+   "cs": "pocházet",
+   "de": "kommen",
+   "form3": "er kommt",
+   "example_de": "Jan kommt aus Deutschland.",
+   "example_cs": "Jan pochází z Německa."
+  },
+  {
+   "id": "p19-10",
+   "pos": "noun",
+   "page": 19,
+   "cs": "země",
+   "de": "Land",
+   "article": "das",
+   "plural": "Länder"
+  },
+  {
+   "id": "p19-11",
+   "pos": "noun",
+   "page": 19,
+   "cs": "jméno",
+   "de": "Name",
+   "article": "der",
+   "plural": "Namen"
+  },
+  {
+   "id": "p19-12",
+   "pos": "noun",
+   "page": 19,
+   "cs": "číslo",
+   "de": "Nummer",
+   "article": "die",
+   "plural": "Nummern"
+  },
+  {
+   "id": "p19-13",
+   "pos": "noun",
+   "page": 19,
+   "cs": "místo",
+   "de": "Ort",
+   "article": "der",
+   "plural": "Orte"
+  },
+  {
+   "id": "p19-14",
+   "pos": "noun",
+   "page": 19,
+   "cs": "Švýcarsko",
+   "de": "Schweiz",
+   "article": "die"
+  },
+  {
+   "id": "p19-15",
+   "pos": "pron",
+   "page": 19,
+   "cs": "ona",
+   "de": "sie"
+  },
+  {
+   "id": "p19-16",
+   "pos": "noun",
+   "page": 19,
+   "cs": "město",
+   "de": "Stadt",
+   "article": "die",
+   "plural": "Städte"
+  },
+  {
+   "id": "p19-17",
+   "pos": "noun",
+   "page": 19,
+   "cs": "Turecko",
+   "de": "Türkei",
+   "article": "die"
+  },
+  {
+   "id": "p19-18",
+   "pos": "pron",
+   "page": 19,
+   "cs": "kdo",
+   "de": "wer",
+   "example_de": "Wer ist das?",
+   "example_cs": "Kdo je to?"
+  },
+  {
+   "id": "p19-19",
+   "pos": "phrase",
+   "page": 19,
+   "cs": "Kdo je to?",
+   "de": "Wer ist das?"
+  },
+  {
+   "id": "p19-20",
+   "pos": "adv",
+   "page": 19,
+   "cs": "odkud",
+   "de": "woher",
+   "example_de": "Woher kommt er?",
+   "example_cs": "Odkud pochází?"
+  },
+  {
+   "id": "p19-21",
+   "pos": "phrase",
+   "page": 19,
+   "cs": "Odkud pochází?",
+   "de": "Woher kommt er?"
+  }
+ ]
+}

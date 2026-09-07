@@ -1,0 +1,3 @@
+# Osobní pomůcka pro jedno dítě, ne veřejný obsah k indexaci.
+User-agent: *
+Disallow: /
