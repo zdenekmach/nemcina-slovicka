@@ -6,7 +6,8 @@
 // cache. Tahle aplikace je malá, takže se ta rychlost stejně neprojeví,
 // a "opravil jsem to, ale synovi to pořád padá" je horší problém.
 const CACHE = 'slovicka-v2';
-const FILES = ['./', './index.html', './style.css', './app.js', './manifest.webmanifest'];
+const FILES = ['./', './index.html', './kontrola.html', './style.css', './app.js',
+               './manifest.webmanifest'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));

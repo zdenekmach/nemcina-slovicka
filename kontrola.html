@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12151c">
+<meta name="robots" content="noindex, nofollow">
+<title>Slovíčka — kontrola zařízení</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .chk{display:flex;gap:10px;align-items:flex-start;
+       border-top:1px solid var(--line);padding:11px 0}
+  .chk:first-child{border-top:none}
+  .mark{flex:none;width:22px;font-size:17px;line-height:1.4}
+  .ok .mark{color:var(--ok)} .bad .mark{color:var(--bad)} .warn .mark{color:var(--warn)}
+  .chk b{display:block;font-weight:600}
+  .chk small{display:block;color:var(--muted);font-size:13px;margin-top:2px;line-height:1.45}
+  #verdict-box{margin-bottom:18px}
+</style>
+</head>
+<body>
+
+<header id="bar">
+  <div id="bar-title">Kontrola zařízení</div>
+</header>
+
+<main>
+  <div class="panel" id="verdict-box">
+    <div class="big" id="verdict-mark">…</div>
+    <div class="muted" id="verdict-text">zkouším</div>
+  </div>
+
+  <h2>Co se zkoušelo</h2>
+  <div class="panel" id="list"></div>
+
+  <h2>Prohlížeč</h2>
+  <div class="panel"><small class="muted" id="ua" style="word-break:break-word"></small></div>
+
+  <div class="footer-actions">
+    <a href="./" style="color:var(--accent)">← zpátky do slovíček</a>
+  </div>
+</main>
+
+<script>
+// Stránka pro jedinou otázku: pojede aplikace na tomhle konkrétním telefonu?
+// Otevřít přímo na tom zařízení. Nic neukládá natrvalo — co si na zkoušku
+// zapíše, hned zase smaže.
+const checks = [];
+const add = (level, name, note) => checks.push({ level, name, note });
+
+// 1) Postup se ukládá jen sem. Bez toho by se každé sezení začínalo od nuly.
+try {
+  const k = '__zkouska__';
+  localStorage.setItem(k, 'x');
+  const ok = localStorage.getItem(k) === 'x';
+  localStorage.removeItem(k);
+  add(ok ? 'ok' : 'bad', 'Ukládání postupu',
+      ok ? 'Karty si budou pamatovat, co už umíš.'
+         : 'Prohlížeč nic neuloží. V anonymním okně to tak je vždycky — zkus normální okno.');
+} catch (e) {
+  add('bad', 'Ukládání postupu',
+      'Prohlížeč to blokuje (' + e.name + '). V anonymním okně je to normální.');
+}
+
+// 2) Bez service workeru appka nepojede bez signálu. Jinak funguje dál.
+if ('serviceWorker' in navigator) {
+  add('ok', 'Běh bez internetu', 'Po prvním otevření pojede i bez signálu.');
+} else {
+  add('warn', 'Běh bez internetu',
+      'Nepodporováno. Aplikace pojede, ale jen s připojením.');
+}
+
+// 3) Výslovnost. Na iOS se hlasy načtou až po chvíli, proto se ptáme dvakrát.
+function voiceCheck(voices) {
+  if (!('speechSynthesis' in window)) {
+    add('warn', 'Výslovnost', 'Prohlížeč neumí číst nahlas. Zbytek funguje.');
+    return;
+  }
+  const de = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('de'));
+  if (de.length) {
+    add('ok', 'Výslovnost', 'Německý hlas je k dispozici: ' + de[0].name + '.');
+  } else if (voices.length) {
+    add('warn', 'Výslovnost',
+        'Německý hlas chybí, slova se přečtou špatnou výslovností. '
+        + 'Na Androidu se dá doinstalovat v Nastavení → Usnadnění → Převod textu na řeč, '
+        + 'na iPhonu v Nastavení → Univerzální přístup → Mluvený obsah → Hlasy.');
+  } else {
+    add('warn', 'Výslovnost', 'Žádné hlasy se nenačetly. Zkus stránku otevřít znovu.');
+  }
+}
+
+// 4) Slovíčka se tahají ze souborů. Otevření přes file:// tohle shodí.
+async function deckCheck() {
+  try {
+    const r = await fetch('decks/index.json', { cache: 'no-store' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    let words = 0;
+    for (const e of d.decks) {
+      const deck = await (await fetch('decks/' + e.file)).json();
+      words += deck.cards.length;
+    }
+    add('ok', 'Slovíčka', d.decks.length + ' balíčky, dohromady ' + words + ' slov.');
+  } catch (e) {
+    add('bad', 'Slovíčka',
+        'Nenačetla se (' + e.message + '). Stránka musí běžet z adresy, '
+        + 'ne být otevřená jako soubor z disku.');
+  }
+}
+
+// 5) Vzhled. Bez těchhle dvou to není rozbité, jen to jinak vypadá.
+function cssCheck() {
+  const supports = (p, v) => window.CSS && CSS.supports && CSS.supports(p, v);
+  const safe = supports('padding-top', 'env(safe-area-inset-top)');
+  const accent = supports('accent-color', 'red');
+  if (safe && accent) add('ok', 'Vzhled', 'Vykreslí se tak, jak má.');
+  else add('warn', 'Vzhled',
+      'Starší prohlížeč. Bude to fungovat, jen ' +
+      (!safe ? 'horní lišta může zasahovat pod výřez displeje. ' : '') +
+      (!accent ? 'přepínač bude vypadat jinak.' : ''));
+}
+
+// 6) Jestli běží přidané na ploše, nebo pořád v prohlížeči.
+function standaloneCheck() {
+  const standalone = window.navigator.standalone === true ||
+    (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
+  const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (standalone) {
+    add('ok', 'Na ploše', 'Běží jako aplikace, ne v prohlížeči. Přesně tak to má být.');
+  } else if (ios) {
+    add('warn', 'Na ploše',
+        'Zatím běží v prohlížeči. Na iPhonu přidej na plochu ze Safari: '
+        + 'tlačítko Sdílet → Přidat na plochu. Z jiného prohlížeče to na iOS nejde. '
+        + 'Pozor: postup nasbíraný v prohlížeči se do aplikace na ploše nepřenese, '
+        + 'takže je lepší ji přidat hned na začátku.');
+  } else {
+    add('warn', 'Na ploše',
+        'Zatím běží v prohlížeči. V Chrome: menu (tři tečky) → Přidat na plochu.');
+  }
+}
+
+function render() {
+  const worst = checks.some(c => c.level === 'bad') ? 'bad'
+              : checks.some(c => c.level === 'warn') ? 'warn' : 'ok';
+  const box = document.getElementById('verdict-box');
+  box.className = 'panel center ' + worst;
+  document.getElementById('verdict-mark').textContent = worst === 'bad' ? '✕' : (worst === 'warn' ? '!' : '✓');
+  document.getElementById('verdict-mark').style.color =
+    worst === 'bad' ? 'var(--bad)' : (worst === 'warn' ? 'var(--warn)' : 'var(--ok)');
+  document.getElementById('verdict-text').textContent =
+    worst === 'bad' ? 'Něco podstatného tady nefunguje — čti níž.'
+    : worst === 'warn' ? 'Pojede to, ale něco stojí za dořešení.'
+    : 'Všechno v pořádku, aplikace tu pojede.';
+
+  document.getElementById('list').innerHTML = checks.map(c =>
+    `<div class="chk ${c.level}"><span class="mark">${
+      c.level === 'ok' ? '✓' : (c.level === 'bad' ? '✕' : '!')
+    }</span><span><b>${c.name}</b><small>${c.note}</small></span></div>`).join('');
+
+  document.getElementById('ua').textContent = navigator.userAgent;
+}
+
+(async () => {
+  cssCheck();
+  standaloneCheck();
+  await deckCheck();
+
+  let voices = ('speechSynthesis' in window) ? speechSynthesis.getVoices() : [];
+  if (!voices.length && 'speechSynthesis' in window) {
+    await new Promise(r => {
+      const done = () => r();
+      speechSynthesis.onvoiceschanged = done;
+      setTimeout(done, 1200);          // iOS onvoiceschanged občas nepřijde
+    });
+    voices = speechSynthesis.getVoices();
+  }
+  voiceCheck(voices);
+  render();
+})();
+</script>
+</body>
+</html>

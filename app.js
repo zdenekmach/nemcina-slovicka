@@ -52,12 +52,20 @@ function save() {
   catch (e) { /* postup se neuloží, procvičovat ale jde dál */ }
 }
 
-const today = () => new Date().toISOString().slice(0, 10);
+// Den se počítá v místním čase, ne v UTC. toISOString() vrací UTC, takže
+// mezi půlnocí a druhou ranní by systém tvrdil, že je pořád včera, a karty
+// splatné na dnešek by naskočily podruhé.
+function dayStamp(d) {
+  const pad = n => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+
+const today = () => dayStamp(new Date());
 
 function addDays(days) {
   const d = new Date();
   d.setDate(d.getDate() + days);
-  return d.toISOString().slice(0, 10);
+  return dayStamp(d);
 }
 
 /* ---------- model ---------- */
