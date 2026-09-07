@@ -1,90 +1,81 @@
 # Slovíčka — němčina
 
-Kartičky na německá slovíčka pro jedno konkrétní dítě. Statická stránka,
-běží offline, postup se ukládá jen v prohlížeči na telefonu.
+Kartičky na německá slovíčka pro jedno konkrétní dítě, které se němčinu začíná
+učit jako druhý cizí jazyk.
 
-Vývoj, nástroje na přepis z fotek a testy žijí jinde — tady je jen to, co
-běží v prohlížeči.
+**Běží na https://zdenekmach.github.io/nemcina-slovicka/**
 
-Statická stránka. Žádný server, žádná registrace, žádná data odcházející ven.
-Postup se ukládá do paměti prohlížeče na telefonu.
+Statická stránka. Žádný server, žádná registrace, žádný účet. Postup se ukládá
+jen v prohlížeči na tom telefonu a nikam neodchází.
 
-## Spuštění na počítači
+## Na telefon
 
-```bash
-python3 -m http.server 8777
-```
+- **Android:** otevřít v Chrome, menu (tři tečky) → **Přidat na plochu**.
+- **iPhone a iPad:** otevřít **v Safari**, tlačítko Sdílet → **Přidat na plochu**.
+  Z jiného prohlížeče to na iOS nejde a postup nasbíraný v prohlížeči se do
+  aplikace na ploše nepřenese, takže ji přidat hned na začátku.
 
-Pak otevřít `http://localhost:8777`. Otevřít soubor přímo přes `file://`
-nestačí — prohlížeč v tom režimu odmítne načíst balíčky slovíček.
+Od té chvíle má vlastní ikonu, běží na celou obrazovku a funguje i bez signálu.
 
-## Nasazení na telefon
+Jestli si nejste jistí, že to na daném telefonu poběží, otevřete na něm
+[kontrola.html](https://zdenekmach.github.io/nemcina-slovicka/kontrola.html) —
+stránka si sama vyzkouší, co prohlížeč umí, a řekne, co s tím.
 
-1. Obsah `app/` nahrát do repozitáře a zapnout GitHub Pages.
-2. Na Androidu otevřít adresu v Chrome.
-3. Menu → **Přidat na plochu**. Od té chvíle to vypadá i funguje jako
-   aplikace a běží i bez internetu.
+## Co to umí
 
-Aktualizace se propíše sama při dalším otevření s připojením. Service worker
-bere všechno nejdřív ze sítě a cache drží jen jako zálohu pro offline.
+Dva režimy, odlišené barvou. **Zelená je učení, modrá zkoušení.**
 
-## Přidání nové lekce
+**Učení** je listování slovíčky, kde se nic nehodnotí. Balíček se krájí na sady
+kolem patnácti slov a u každé sady je vidět, jestli je nedotčená, rozdělaná
+(`7/16`), nebo hotová. Návrat do rozdělané sady pokračuje u prvního slova,
+které ještě nikdo neviděl. Na kartě je slovo, člen obarvený podle rodu, český
+překlad, množné číslo, tvar pro třetí osobu u sloves a příkladová věta.
 
-Slovíčka nejsou v aplikaci, ale v `decks/*.json`. Přidat balíček znamená
-napsat jeden JSON a zapsat ho do `decks/index.json`.
+**Zkoušení** se ptá, co německé slovo znamená, a nabízí čtyři možnosti.
+Distraktory nejsou náhodné — berou se přednostně ze stejného slovního druhu
+v témže balíčku, aby se nedaly uhodnout od pohledu.
 
-Karta:
+Opakování jede na Leitnerových krabičkách, pět přihrádek s odstupy 0, 1, 3, 7
+a 16 dní. Správná odpověď posune slovo o přihrádku dál, chyba ho vrátí na
+začátek. Jedno sezení má nejvýš 24 otázek a celkový počet zbývajících se
+schválně neukazuje — na začátku lekce je to číslo přes tři sta a jediné, co
+udělá, je, že se do toho nikomu nechce.
+
+Aplikace **nečte nahlas**. Hlasy na telefonech mají u němčiny často špatnou
+výslovnost a špatná výslovnost naučí špatně.
+
+## Obsah
+
+Slovíčka jsou v `decks/*.json` — přepis slovníčku z učebnice, kterou to dítě
+ve škole používá. Formát jedné karty:
 
 ```json
 {
-  "id": "p13-01",
+  "id": "p13-04",
   "pos": "noun",
   "page": 13,
   "cs": "kytara",
   "de": "Gitarre",
   "article": "die",
   "plural": "Gitarren",
-  "form3": "",
-  "en": "guitar",
   "example_de": "Ich spiele Gitarre.",
   "example_cs": "Hraju na kytaru."
 }
 ```
 
-Povinné je `id`, `cs`, `de` a `pos`. Zbytek se vyplňuje, jen když ho učebnice
-uvádí. Podle vyplněných polí se pak samo pozná, co se dá u slova trénovat:
-člen se ptá jen tam, kde je `article`, množné číslo jen tam, kde se `plural`
-liší od `de`, a `form3` je tvar pro třetí osobu u sloves (`er kocht`).
+Povinné je `id`, `pos`, `cs` a `de`. Podle vyplněných polí se pozná, co se dá
+u slova ukázat.
 
-Hodnoty pro `pos`: `noun`, `verb`, `adj`, `adv`, `pron`, `prep`, `conj`,
-`number`, `phrase`, `other`.
+## Odkud se to nasazuje
 
-Lekce 1 vznikla přepisem dvou fotek z učebnice, viz `tools/build-lekce1.py`.
-Další lekce se dá napsat stejným způsobem, nebo rovnou jako JSON.
+Tenhle repozitář je jen projekce. Zdroj, nástroje na přepis slovíček z fotek
+učebnice a testy žijí jinde a nahrávají se sem skriptem — proto tu nejsou.
 
-## Výběr, nebo psaní
+## Spuštění lokálně
 
-Výchozí je **výběr ze čtyř možností** a klávesnice není potřeba nikde. Psaní
-se zapíná na úvodní obrazovce v Nastavení a přepne otázky „jak je německy"
-a „množné číslo" na psané odpovědi. Význam slova se vybírá vždycky a člen je
-vždycky tlačítko.
+```bash
+python3 -m http.server 8777
+```
 
-Distraktory se nelosují náhodně z celého korpusu. Berou se v pořadí od
-nejpodobnějších: nejdřív stejný slovní druh ve stejném balíčku, pak zbytek
-balíčku, teprve nakonec celý korpus. Mezi „Videospiel" a „und" by si vybral
-i ten, kdo se nic nenaučil.
-
-Při psaní se uzná i odpověď se členem navíc („das Videospiel"), zápis bez
-přehlásky („Tuer", „gross") a překlep o jedno až dvě písmena. Překlep se
-označí jako těsně vedle a dá se ručně uznat.
-
-## Jak funguje opakování
-
-Leitnerovy krabičky, pět přihrádek. Správná odpověď posune slovo o přihrádku
-dál, chyba ho vrátí na začátek. Odstupy jsou 0, 1, 3, 7 a 16 dní.
-
-Každá kombinace slova a typu otázky má vlastní přihrádku. Slovo se tak dá umět
-poznat, ale pořád si plést jeho člen — a aplikace bude ptát právě na ten člen.
-
-Jedno sezení má nejvýš 24 otázek a nejvýš čtyři nová slova. Celkový počet
-zbývajících otázek se dítěti schválně neukazuje.
+Otevřít soubor přímo přes `file://` nestačí, prohlížeč v tom režimu odmítne
+načíst balíčky slovíček.
