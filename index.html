@@ -88,10 +88,32 @@
         <div id="verdict-correct" class="correct-answer"></div>
         <div id="verdict-example" class="example"></div>
         <div class="verdict-actions">
-          <button id="btn-speak" class="ghost">🔊 Poslechnout</button>
           <button id="btn-override" class="ghost hidden">Měl jsem to dobře</button>
         </div>
         <button id="btn-next" class="primary wide">Další</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- UČENÍ: procházení balíčku, nic se nehodnotí -->
+  <section id="view-browse" class="view hidden learn">
+    <div id="browse-bar"><div id="browse-fill"></div></div>
+
+    <div id="browse-card" class="panel card">
+      <div class="tag">Učíme se</div>
+
+      <div id="b-word" class="prompt"></div>
+      <div id="b-extra" class="hint"></div>
+
+      <div id="b-mid">
+        <div id="b-cs" class="translate"></div>
+        <div id="b-example" class="example"></div>
+      </div>
+
+      <div class="browse-nav">
+        <button id="b-prev" class="ghost">‹ zpět</button>
+        <span id="b-count" class="muted"></span>
+        <button id="b-next" class="primary">další ›</button>
       </div>
     </div>
   </section>

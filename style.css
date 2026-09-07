@@ -2,7 +2,10 @@
   --bg:#12151c; --panel:#1b202b; --panel-2:#232936; --line:#2e3646;
   --fg:#e8ecf4; --muted:#8e99ae;
   --accent:#5b8cff; --ok:#3ddc97; --bad:#ff6b6b; --warn:#ffcc57;
-  --der:#5b8cff; --die:#ff7ab6; --das:#3ddc97;
+  /* Rody musí mít vlastní barvy, které nic jiného neznamenají. Zelená patří
+     učení a správné odpovědi, modrá zkoušení, červená chybě — kdyby si je rod
+     půjčil, čte se barva jako stav, ne jako rod. */
+  --der:#8ab4ff; --die:#ff7ab6; --das:#ffb454;
   --r:14px;
 }
 *{box-sizing:border-box}
@@ -62,7 +65,8 @@ button{font:inherit;border-radius:10px;cursor:pointer}
       border-radius:var(--r);padding:14px;margin-bottom:9px}
 .deck-main{flex:1;min-width:0}
 .deck-name{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.deck-sub{color:var(--muted);font-size:13px;margin-top:3px}
+.deck-sub{color:var(--muted);font-size:13px;margin-top:3px;
+          white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .deck .due{background:var(--accent);color:#0d1017;border:none;
            border-radius:999px;padding:6px 13px;font-weight:650;font-size:14px}
 .deck .due.zero{background:var(--panel-2);color:var(--muted)}
@@ -72,6 +76,7 @@ button{font:inherit;border-radius:10px;cursor:pointer}
           overflow:hidden;margin-bottom:16px}
 #progress-fill{height:100%;width:0;background:var(--accent);transition:width .25s}
 .card{min-height:60vh;display:flex;flex-direction:column}
+.learn .card{min-height:46vh}
 .tag{align-self:flex-start;font-size:12px;letter-spacing:.05em;
      text-transform:uppercase;color:var(--muted);
      background:var(--panel-2);padding:4px 10px;border-radius:999px}
@@ -100,9 +105,9 @@ button{font:inherit;border-radius:10px;cursor:pointer}
 #verdict-head.bad{color:var(--bad)}
 #verdict-head.near{color:var(--warn)}
 .correct-answer{font-size:26px;font-weight:650;margin:8px 0 4px;word-break:break-word}
-.correct-answer .der{color:var(--der)}
-.correct-answer .die{color:var(--die)}
-.correct-answer .das{color:var(--das)}
+.der{color:var(--der)}
+.die{color:var(--die)}
+.das{color:var(--das)}
 .correct-answer .plural{color:var(--muted);font-size:18px;font-weight:400}
 .example{color:var(--muted);font-size:15px;font-style:italic}
 .verdict-actions{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
@@ -141,3 +146,32 @@ button{font:inherit;border-radius:10px;cursor:pointer}
 .art.right::after{content:' ✓';color:var(--ok);font-size:15px}
 .art.wrong{border-color:var(--bad);border-width:2px;opacity:.75}
 .art.wrong::after{content:' ✕';color:var(--bad);font-size:15px}
+
+/* ---------- učení versus zkoušení ----------
+   Zelená znamená "tady se učíš, nic se nepočítá", modrá "tady tě to zkouší".
+   Rozdíl musí být vidět dřív, než si člověk přečte štítek. */
+
+.deck-actions{display:flex;gap:7px;flex:none}
+.learnbtn{background:transparent;color:var(--ok);border:1px solid var(--ok);
+          border-radius:999px;padding:6px 13px;font-weight:650;font-size:14px}
+.learnbtn:active{background:var(--ok);color:#0d1017}
+.deck .due{padding:6px 13px}
+
+#browse-bar{height:4px;background:var(--panel-2);border-radius:999px;
+            overflow:hidden;margin-bottom:16px}
+#browse-fill{height:100%;width:0;background:var(--ok);transition:width .2s}
+
+.learn .card{border-color:var(--ok);border-width:2px}
+.learn .tag{background:rgba(61,220,151,.16);color:var(--ok)}
+.learn .prompt{margin-bottom:2px}
+.learn .primary{background:var(--ok)}
+
+#b-mid{padding-top:14px}
+.translate{font-size:26px;font-weight:600;color:var(--fg);word-break:break-word}
+.learn .example{margin-top:10px}
+
+.browse-nav{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:22px}
+.browse-nav .ghost{flex:none}
+.browse-nav #b-count{flex:1;text-align:center;font-variant-numeric:tabular-nums}
+.browse-nav .primary{flex:none;margin-top:0;padding:12px 20px}
+.browse-nav .ghost[disabled]{opacity:.35}

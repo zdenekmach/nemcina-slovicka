@@ -70,11 +70,19 @@ function addDays(days) {
 
 /* ---------- model ---------- */
 
-// Které režimy dávají u téhle karty smysl.
-function modesFor(card) {
-  const m = ['recall', 'recognize'];
-  if (card.article) m.push('article');
-  if (card.plural && card.plural !== card.de) m.push('plural');
+// Co se zkouší. Zbylé režimy jsou hotové a otestované, jen se zatím
+// nenasazují — člen a množné číslo si zatím prohlíží v učícím režimu.
+// Vrátit je zpátky znamená dopsat je do tohohle seznamu.
+const QUIZ_MODES = ['recognize'];
+
+// Které otázky dávají u téhle karty smysl. `modes` je tu proto, aby šlo
+// ověřit i chování režimů, které zrovna nejsou zapnuté.
+function modesFor(card, modes = QUIZ_MODES) {
+  const m = [];
+  if (modes.includes('recall')) m.push('recall');
+  if (modes.includes('recognize')) m.push('recognize');
+  if (modes.includes('article') && card.article) m.push('article');
+  if (modes.includes('plural') && card.plural && card.plural !== card.de) m.push('plural');
   return m;
 }
 
@@ -188,38 +196,24 @@ const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.r
 
 function buildQueue(deckIds) {
   const { fresh, review } = dueItems(deckIds);
-  // Nová slova po celých kartách, ať se člen a slovo potkají v jednom sezení.
+
+  // Nová slova se berou po celých kartách, ať se otázky k jednomu slovu
+  // potkají v jednom sezení. Počítá se ale strop v OTÁZKÁCH, ne v kartách —
+  // kolik otázek karta zrovna nese, závisí na tom, co je zapnuté v QUIZ_MODES.
   const byCard = {};
   for (const it of fresh) (byCard[it.deckId + ':' + it.card.id] ||= []).push(it);
-  const freshPicked = shuffle(Object.values(byCard)).slice(0, Math.ceil(NEW_PER_SESSION / 2)).flat();
-  return shuffle(review).slice(0, SESSION_MAX - freshPicked.length).concat(shuffle(freshPicked)).slice(0, SESSION_MAX);
+
+  const freshPicked = [];
+  for (const group of shuffle(Object.values(byCard))) {
+    if (freshPicked.length >= NEW_PER_SESSION) break;
+    freshPicked.push(...group);
+  }
+
+  return shuffle(review).slice(0, SESSION_MAX - freshPicked.length)
+    .concat(shuffle(freshPicked))
+    .slice(0, SESSION_MAX);
 }
 
-/* ---------- výslovnost ---------- */
-
-let voiceDE = null;
-function pickVoice() {
-  const vs = speechSynthesis.getVoices() || [];
-  voiceDE = vs.find(v => v.lang && v.lang.toLowerCase().startsWith('de')) || null;
-}
-if ('speechSynthesis' in window) {
-  pickVoice();
-  speechSynthesis.onvoiceschanged = pickVoice;
-}
-
-function speak(text) {
-  if (!('speechSynthesis' in window) || !text) return;
-  try {
-    speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'de-DE';
-    if (voiceDE) u.voice = voiceDE;
-    u.rate = 0.9;
-    speechSynthesis.speak(u);
-  } catch (e) { /* na některých Androidech hlas chybí */ }
-}
-
-const fullDE = c => (c.article ? c.article + ' ' : '') + c.de;
 
 /* ---------- UI ---------- */
 
@@ -264,15 +258,22 @@ function renderHome() {
     return `<div class="deck">
       <div class="deck-main">
         <div class="deck-name">${esc(d.name)}</div>
-        <div class="deck-sub">${d.cards.length} slov${waiting ? ` · ${waiting} k procvičení` : ' · umíš'}</div>
+        <div class="deck-sub">${esc(d.topic || (d.cards.length + ' slov'))}${
+          waiting ? '' : ' · umíš'}</div>
       </div>
-      <button class="due ${b ? '' : 'zero'}" data-deck="${esc(d.id)}" ${b ? '' : 'disabled'}
-              title="${b ? 'Spustit dávku z tohohle balíčku' : 'Hotovo'}">${b ? '▶' : '✓'}</button>
+      <div class="deck-actions">
+        <button class="learnbtn" data-browse="${esc(d.id)}" title="Projít si slovíčka">Projít</button>
+        <button class="due ${b ? '' : 'zero'}" data-deck="${esc(d.id)}" ${b ? '' : 'disabled'}
+                title="${b ? 'Nechat se vyzkoušet' : 'Na dnešek hotovo'}">${b ? 'Zkoušet' : '✓'}</button>
+      </div>
     </div>`;
   }).join('');
 
   for (const b of $('deck-list').querySelectorAll('.due[data-deck]')) {
     b.onclick = () => startSession([b.dataset.deck]);
+  }
+  for (const b of $('deck-list').querySelectorAll('.learnbtn[data-browse]')) {
+    b.onclick = () => startBrowse(b.dataset.browse);
   }
 
   renderStats();
@@ -427,6 +428,64 @@ function openChoice(it) {
   }
 }
 
+/* ---------- učení: procházení balíčku ---------- */
+
+// Tady se nic nehodnotí a nic se nezapisuje do krabiček. Je to listování
+// slovíčky, ne zkoušení — proto vlastní obrazovka a zelená místo modré.
+let browse = null;
+
+function startBrowse(deckId) {
+  const deck = decks.find(d => d.id === deckId);
+  if (!deck || !deck.cards.length) return;
+  browse = { deck, pos: 0 };
+  show('browse');
+  renderBrowse();
+}
+
+function renderBrowse() {
+  const c = browse.deck.cards[browse.pos];
+  const total = browse.deck.cards.length;
+
+  $('browse-fill').style.width = ((browse.pos + 1) / total * 100) + '%';
+  $('bar-title').textContent = browse.deck.topic || browse.deck.name;
+  $('b-count').textContent = `${browse.pos + 1} / ${total}`;
+
+  // V učícím režimu se člen ukazuje — o to tady jde.
+  const art = c.article
+    ? c.article.split('/').map(a => `<span class="${esc(a.trim())}">${esc(a.trim())}</span>`).join('/') + ' '
+    : '';
+  $('b-word').innerHTML = art + esc(c.de);
+
+  const extra = [];
+  if (c.plural && c.plural !== c.de) extra.push(`množné číslo: ${c.plural}`);
+  if (c.form3) extra.push(`on: ${c.form3}`);
+  if (c.en) extra.push(`anglicky: ${c.en}`);
+  $('b-extra').textContent = extra.join(' · ');
+
+  $('b-cs').textContent = c.cs;
+  $('b-example').innerHTML = c.example_de
+    ? `${esc(c.example_de)}<br>${esc(c.example_cs || '')}` : '';
+
+  $('b-prev').disabled = browse.pos === 0;
+  $('b-next').textContent = browse.pos === total - 1 ? 'hotovo' : 'další ›';
+}
+
+function browseMove(step) {
+  if (!browse) return;
+  const next = browse.pos + step;
+  if (next < 0) return;
+  if (next >= browse.deck.cards.length) { leaveBrowse(); return; }
+  browse.pos = next;
+  renderBrowse();
+}
+
+function leaveBrowse() {
+  browse = null;
+  $('bar-title').textContent = 'Slovíčka';
+  renderHome();
+  show('home');
+}
+
 /* ---------- vyhodnocení ---------- */
 
 function onCheck() {
@@ -493,7 +552,6 @@ function finish(it, given, verdict, correct) {
 
   $('btn-check').classList.add('hidden');
   $('verdict').classList.remove('hidden');
-  if (it.mode !== 'recognize') speak(fullDE(c));
   setTimeout(() => $('btn-next').focus(), 60);
 }
 
@@ -548,13 +606,36 @@ $('btn-start').onclick   = () => startSession(null);
 $('btn-check').onclick   = onCheck;
 $('btn-next').onclick    = onNext;
 $('btn-override').onclick = onOverride;
-$('btn-speak').onclick   = () => speak(fullDE(session.queue[session.pos].card));
 $('btn-again').onclick   = () => { $('bar-title').textContent = 'Slovíčka'; renderHome(); show('home'); };
+$('b-prev').onclick      = () => browseMove(-1);
+$('b-next').onclick      = () => browseMove(1);
+
+document.addEventListener('keydown', e => {
+  if (!browse) return;
+  if (e.key === 'ArrowRight') browseMove(1);
+  if (e.key === 'ArrowLeft') browseMove(-1);
+});
+
+// Na telefonu se slovíčky listuje prstem, ne mířením na tlačítka.
+let swipeX = null;
+$('browse-card').addEventListener('touchstart', e => { swipeX = e.changedTouches[0].clientX; }, { passive: true });
+$('browse-card').addEventListener('touchend', e => {
+  if (swipeX === null) return;
+  const dx = e.changedTouches[0].clientX - swipeX;
+  swipeX = null;
+  if (Math.abs(dx) > 60) browseMove(dx < 0 ? 1 : -1);
+}, { passive: true });
 $('btn-home').onclick    = () => {
+  if (browse) { leaveBrowse(); return; }        // v učení není co ztratit
   if (session && session.pos < session.queue.length && !confirm('Opustit procvičování? Co jsi stihl, se uloží.')) return;
   $('bar-title').textContent = 'Slovíčka';
   renderHome(); show('home');
 };
+// Dokud se zkouší jen němčina → čeština, je psaní bezpředmětné — ta otázka
+// je výběr z možností vždycky. Přepínač, který nic nedělá, jen mate.
+const typingUseful = QUIZ_MODES.some(m => m === 'recall' || m === 'plural');
+$('opt-typing').closest('.panel').previousElementSibling.hidden = !typingUseful;
+$('opt-typing').closest('.panel').hidden = !typingUseful;
 $('opt-typing').checked = state.settings.typing;
 $('opt-typing').onchange = e => {
   state.settings.typing = e.target.checked;

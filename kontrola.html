@@ -70,26 +70,7 @@ if ('serviceWorker' in navigator) {
       'Nepodporováno. Aplikace pojede, ale jen s připojením.');
 }
 
-// 3) Výslovnost. Na iOS se hlasy načtou až po chvíli, proto se ptáme dvakrát.
-function voiceCheck(voices) {
-  if (!('speechSynthesis' in window)) {
-    add('warn', 'Výslovnost', 'Prohlížeč neumí číst nahlas. Zbytek funguje.');
-    return;
-  }
-  const de = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('de'));
-  if (de.length) {
-    add('ok', 'Výslovnost', 'Německý hlas je k dispozici: ' + de[0].name + '.');
-  } else if (voices.length) {
-    add('warn', 'Výslovnost',
-        'Německý hlas chybí, slova se přečtou špatnou výslovností. '
-        + 'Na Androidu se dá doinstalovat v Nastavení → Usnadnění → Převod textu na řeč, '
-        + 'na iPhonu v Nastavení → Univerzální přístup → Mluvený obsah → Hlasy.');
-  } else {
-    add('warn', 'Výslovnost', 'Žádné hlasy se nenačetly. Zkus stránku otevřít znovu.');
-  }
-}
-
-// 4) Slovíčka se tahají ze souborů. Otevření přes file:// tohle shodí.
+// 3) Slovíčka se tahají ze souborů. Otevření přes file:// tohle shodí.
 async function deckCheck() {
   try {
     const r = await fetch('decks/index.json', { cache: 'no-store' });
@@ -108,7 +89,7 @@ async function deckCheck() {
   }
 }
 
-// 5) Vzhled. Bez těchhle dvou to není rozbité, jen to jinak vypadá.
+// 4) Vzhled. Bez těchhle dvou to není rozbité, jen to jinak vypadá.
 function cssCheck() {
   const supports = (p, v) => window.CSS && CSS.supports && CSS.supports(p, v);
   const safe = supports('padding-top', 'env(safe-area-inset-top)');
@@ -120,7 +101,7 @@ function cssCheck() {
       (!accent ? 'přepínač bude vypadat jinak.' : ''));
 }
 
-// 6) Jestli běží přidané na ploše, nebo pořád v prohlížeči.
+// 5) Jestli běží přidané na ploše, nebo pořád v prohlížeči.
 function standaloneCheck() {
   const standalone = window.navigator.standalone === true ||
     (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
@@ -165,17 +146,6 @@ function render() {
   cssCheck();
   standaloneCheck();
   await deckCheck();
-
-  let voices = ('speechSynthesis' in window) ? speechSynthesis.getVoices() : [];
-  if (!voices.length && 'speechSynthesis' in window) {
-    await new Promise(r => {
-      const done = () => r();
-      speechSynthesis.onvoiceschanged = done;
-      setTimeout(done, 1200);          // iOS onvoiceschanged občas nepřijde
-    });
-    voices = speechSynthesis.getVoices();
-  }
-  voiceCheck(voices);
   render();
 })();
 </script>

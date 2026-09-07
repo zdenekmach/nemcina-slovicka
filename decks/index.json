@@ -3,25 +3,29 @@
   {
    "file": "l1-13-15.json",
    "id": "l1-13-15",
-   "name": "Lekce 1 · str. 13–15 — koníčky a pozdravy",
+   "name": "Strany 13–15",
+   "topic": "koníčky a pozdravy",
    "lesson": "1"
   },
   {
    "file": "l1-16-17.json",
    "id": "l1-16-17",
-   "name": "Lekce 1 · str. 16–17 — o sobě a čísla 0–12",
+   "name": "Strany 16–17",
+   "topic": "o sobě a čísla 0–12",
    "lesson": "1"
   },
   {
    "file": "l1-18-19.json",
    "id": "l1-18-19",
-   "name": "Lekce 1 · str. 18–19 — čísla 13–20 a odkud jsem",
+   "name": "Strany 18–19",
+   "topic": "čísla 13–20 a odkud jsem",
    "lesson": "1"
   },
   {
    "file": "l1-20-23.json",
    "id": "l1-20-23",
-   "name": "Lekce 1 · str. 20–23 — země, abeceda, kontakt",
+   "name": "Strany 20–23",
+   "topic": "země, abeceda, kontakt",
    "lesson": "1"
   }
  ]
