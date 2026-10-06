@@ -21,8 +21,7 @@
      "answer": "Wer",
      "choices": [
       "Wen",
-      "Wo",
-      "Was"
+      "Woher"
      ],
      "full": "Wer unterrichtet Deutsch?",
      "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
@@ -44,8 +43,7 @@
      "answer": "Wen",
      "choices": [
       "Wer",
-      "Wo",
-      "Was"
+      "Woher"
      ],
      "full": "Wen habt ihr in Geografie?",
      "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
@@ -56,21 +54,20 @@
   {
    "id": "ww-03",
    "pos": "sentence",
-   "cs": "Kdo je to? — Das ist Alicia.",
-   "de": "Wer ist das?",
+   "cs": "Kdo učí matiku? — Frau Stegemann.",
+   "de": "Wer unterrichtet Mathe?",
    "drills": [
     {
      "id": "g",
      "label": "Doplň do věty",
-     "prompt": "___ ist das?",
-     "hint": "Kdo je to? — Das ist Alicia.",
+     "prompt": "___ unterrichtet Mathe?",
+     "hint": "Kdo učí matiku? — Frau Stegemann.",
      "answer": "Wer",
      "choices": [
       "Wen",
-      "Wo",
-      "Was"
+      "Woher"
      ],
-     "full": "Wer ist das?",
+     "full": "Wer unterrichtet Mathe?",
      "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
     }
    ],
@@ -90,8 +87,7 @@
      "answer": "Wen",
      "choices": [
       "Wer",
-      "Wo",
-      "Was"
+      "Woher"
      ],
      "full": "Wen findest du nett?",
      "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
@@ -113,8 +109,7 @@
      "answer": "Wer",
      "choices": [
       "Wen",
-      "Wo",
-      "Was"
+      "Woher"
      ],
      "full": "Wer spielt Gitarre?",
      "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
@@ -136,8 +131,7 @@
      "answer": "Wen",
      "choices": [
       "Wer",
-      "Wo",
-      "Was"
+      "Woher"
      ],
      "full": "Wen magst du?",
      "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."

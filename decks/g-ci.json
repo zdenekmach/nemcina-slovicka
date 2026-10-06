@@ -15,7 +15,7 @@
    "drills": [
     {
      "id": "g",
-     "label": "Doplň do věty",
+     "label": "Doplň podle překladu",
      "prompt": "Wie ist ___ Handynummer?",
      "hint": "Jaké je tvoje číslo na mobil?",
      "answer": "deine",
@@ -38,7 +38,7 @@
    "drills": [
     {
      "id": "g",
-     "label": "Doplň do věty",
+     "label": "Doplň podle překladu",
      "prompt": "___ Handynummer ist 030/28 47 912.",
      "hint": "Moje číslo na mobil je 030/28 47 912.",
      "answer": "Meine",
@@ -61,7 +61,7 @@
    "drills": [
     {
      "id": "g",
-     "label": "Doplň do věty",
+     "label": "Doplň podle překladu",
      "prompt": "Das ist ___ Papa.",
      "hint": "To je můj táta.",
      "answer": "mein",
@@ -84,7 +84,7 @@
    "drills": [
     {
      "id": "g",
-     "label": "Doplň do věty",
+     "label": "Doplň podle překladu",
      "prompt": "Das ist ___ Mama.",
      "hint": "To je moje máma.",
      "answer": "meine",
@@ -107,7 +107,7 @@
    "drills": [
     {
      "id": "g",
-     "label": "Doplň do věty",
+     "label": "Doplň podle překladu",
      "prompt": "Wie ist ___ Name?",
      "hint": "Jak je tvoje jméno?",
      "answer": "dein",
@@ -130,7 +130,7 @@
    "drills": [
     {
      "id": "g",
-     "label": "Doplň do věty",
+     "label": "Doplň podle překladu",
      "prompt": "Wo wohnt ___ Cousine?",
      "hint": "Kde bydlí tvoje sestřenice?",
      "answer": "deine",
@@ -153,7 +153,7 @@
    "drills": [
     {
      "id": "g",
-     "label": "Doplň do věty",
+     "label": "Doplň podle překladu",
      "prompt": "Das ist ___ Handy.",
      "hint": "To je můj mobil.",
      "answer": "mein",
@@ -176,7 +176,7 @@
    "drills": [
     {
      "id": "g",
-     "label": "Doplň do věty",
+     "label": "Doplň podle překladu",
      "prompt": "Das ist ___ Cousine.",
      "hint": "To je Janova sestřenice.",
      "answer": "Jans",
@@ -198,7 +198,7 @@
    "drills": [
     {
      "id": "g",
-     "label": "Doplň do věty",
+     "label": "Doplň podle překladu",
      "prompt": "Das ist ___ E-Mail-Adresse.",
      "hint": "To je Lenina e-mailová adresa.",
      "answer": "Lenas",
@@ -220,7 +220,7 @@
    "drills": [
     {
      "id": "g",
-     "label": "Doplň do věty",
+     "label": "Doplň podle překladu",
      "prompt": "Das ist ___ Online-Freund Erkan.",
      "hint": "To je Janův online kamarád Erkan.",
      "answer": "Jans",

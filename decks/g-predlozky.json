@@ -32,20 +32,20 @@
   {
    "id": "pr-02",
    "pos": "sentence",
-   "cs": "Pan Ludwig je v Brazílii.",
-   "de": "Herr Ludwig ist in Brasilien.",
+   "cs": "Pan Ludwig bydlí v Brazílii.",
+   "de": "Herr Ludwig wohnt in Brasilien.",
    "drills": [
     {
      "id": "g",
      "label": "Doplň do věty",
-     "prompt": "Herr Ludwig ist ___ Brasilien.",
-     "hint": "Pan Ludwig je v Brazílii.",
+     "prompt": "Herr Ludwig wohnt ___ Brasilien.",
+     "hint": "Pan Ludwig bydlí v Brazílii.",
      "answer": "in",
      "choices": [
       "aus",
       "für"
      ],
-     "full": "Herr Ludwig ist in Brasilien.",
+     "full": "Herr Ludwig wohnt in Brasilien.",
      "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
     }
    ],
@@ -76,20 +76,20 @@
   {
    "id": "pr-04",
    "pos": "sentence",
-   "cs": "Na matiku máme paní Stegemannovou.",
-   "de": "Wir haben Frau Stegemann in Mathe.",
+   "cs": "Lena bydlí v Ingelheimu.",
+   "de": "Lena wohnt in Ingelheim.",
    "drills": [
     {
      "id": "g",
      "label": "Doplň do věty",
-     "prompt": "Wir haben Frau Stegemann ___ Mathe.",
-     "hint": "Na matiku máme paní Stegemannovou.",
+     "prompt": "Lena wohnt ___ Ingelheim.",
+     "hint": "Lena bydlí v Ingelheimu.",
      "answer": "in",
      "choices": [
       "aus",
       "für"
      ],
-     "full": "Wir haben Frau Stegemann in Mathe.",
+     "full": "Lena wohnt in Ingelheim.",
      "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
     }
    ],
@@ -164,20 +164,20 @@
   {
    "id": "pr-08",
    "pos": "sentence",
-   "cs": "Ty knihy jsou na angličtinu.",
-   "de": "Die Bücher sind für Englisch.",
+   "cs": "Ta limonáda je pro Jana.",
+   "de": "Die Limo ist für Jan.",
    "drills": [
     {
      "id": "g",
      "label": "Doplň do věty",
-     "prompt": "Die Bücher sind ___ Englisch.",
-     "hint": "Ty knihy jsou na angličtinu.",
+     "prompt": "Die Limo ist ___ Jan.",
+     "hint": "Ta limonáda je pro Jana.",
      "answer": "für",
      "choices": [
       "in",
       "aus"
      ],
-     "full": "Die Bücher sind für Englisch.",
+     "full": "Die Limo ist für Jan.",
      "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
     }
    ],
@@ -186,20 +186,20 @@
   {
    "id": "pr-09",
    "pos": "sentence",
-   "cs": "Co se potřebuje na výtvarku?",
-   "de": "Was braucht man für Kunst?",
+   "cs": "Ten mobil je pro babičku.",
+   "de": "Das Handy ist für Oma.",
    "drills": [
     {
      "id": "g",
      "label": "Doplň do věty",
-     "prompt": "Was braucht man ___ Kunst?",
-     "hint": "Co se potřebuje na výtvarku?",
+     "prompt": "Das Handy ist ___ Oma.",
+     "hint": "Ten mobil je pro babičku.",
      "answer": "für",
      "choices": [
       "in",
       "aus"
      ],
-     "full": "Was braucht man für Kunst?",
+     "full": "Das Handy ist für Oma.",
      "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
     }
    ],

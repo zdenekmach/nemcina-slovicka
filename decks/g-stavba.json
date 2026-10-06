@@ -32,7 +32,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ ist das?",
      "hint": "odpověď: Das ist Jan.",
      "answer": "Wer",
@@ -70,7 +70,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ heißt du?",
      "hint": "odpověď: Ich heiße Peter.",
      "answer": "Wie",
@@ -120,7 +120,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ heißt er?",
      "hint": "odpověď: Er heißt Ludwig.",
      "answer": "Wie",
@@ -170,7 +170,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ wohnst du?",
      "hint": "odpověď: Ich wohne in Prag.",
      "answer": "Wo",
@@ -221,7 +221,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ wohnt ihr?",
      "hint": "odpověď: Wir wohnen in Brünn.",
      "answer": "Wo",
@@ -272,7 +272,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ kommst du?",
      "hint": "odpověď: Ich komme aus Tschechien.",
      "answer": "Woher",
@@ -323,7 +323,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ kommt Lena?",
      "hint": "odpověď: Lena kommt aus der Schweiz.",
      "answer": "Woher",
@@ -374,7 +374,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ kommt ihr?",
      "hint": "odpověď: Wir kommen aus Polen.",
      "answer": "Woher",
@@ -426,7 +426,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ alt bist du?",
      "hint": "odpověď: Ich bin zwölf Jahre alt.",
      "answer": "Wie",
@@ -479,7 +479,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ alt seid ihr?",
      "hint": "odpověď: Wir sind dreizehn Jahre alt.",
      "answer": "Wie",
@@ -532,7 +532,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ machst du gern?",
      "hint": "odpověď: Ich spiele gern Tennis.",
      "answer": "Was",
@@ -584,7 +584,7 @@
     },
     {
      "id": "word",
-     "label": "Doplň tázací slovo",
+     "label": "Doplň tázací slovo k odpovědi",
      "prompt": "___ findest du Manga?",
      "hint": "odpověď: Ich finde Manga cool.",
      "answer": "Wie",
