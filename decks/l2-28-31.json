@@ -1,0 +1,281 @@
+{
+ "id": "l2-28-31",
+ "name": "Strany 28–31",
+ "topic": "koníčky a sport",
+ "area": "vocab",
+ "lesson": "2",
+ "source": "Mein Wortschatz, lekce 2 — fotky slovníčku",
+ "cards": [
+  {
+   "id": "p28-01",
+   "pos": "noun",
+   "page": 28,
+   "cs": "anglicky, angličtina",
+   "de": "Englisch"
+  },
+  {
+   "id": "p28-02",
+   "pos": "verb",
+   "page": 28,
+   "cs": "fotografovat",
+   "de": "fotografieren",
+   "form3": "er fotografiert"
+  },
+  {
+   "id": "p28-03",
+   "pos": "verb",
+   "page": 28,
+   "cs": "poslouchat",
+   "de": "hören",
+   "form3": "er hört"
+  },
+  {
+   "id": "p28-04",
+   "pos": "noun",
+   "page": 28,
+   "cs": "judo",
+   "de": "Judo",
+   "article": "das",
+   "example_de": "Er macht Judo.",
+   "example_cs": "(On) dělá judo."
+  },
+  {
+   "id": "p28-05",
+   "pos": "noun",
+   "page": 28,
+   "cs": "klub mládeže",
+   "de": "Jugendklub",
+   "article": "der",
+   "plural": "Jugendklubs"
+  },
+  {
+   "id": "p28-06",
+   "pos": "verb",
+   "page": 28,
+   "cs": "učit se",
+   "de": "lernen",
+   "form3": "er lernt"
+  },
+  {
+   "id": "p28-07",
+   "pos": "verb",
+   "page": 28,
+   "cs": "dělat",
+   "de": "machen",
+   "form3": "er macht"
+  },
+  {
+   "id": "p28-08",
+   "pos": "verb",
+   "page": 28,
+   "cs": "zpívat",
+   "de": "singen",
+   "form3": "er singt"
+  },
+  {
+   "id": "p28-09",
+   "pos": "verb",
+   "page": 28,
+   "cs": "telefonovat",
+   "de": "telefonieren",
+   "form3": "er telefoniert"
+  },
+  {
+   "id": "p28-10",
+   "pos": "noun",
+   "page": 28,
+   "cs": "stolní tenis",
+   "de": "Tischtennis",
+   "article": "das",
+   "example_de": "Er spielt Tischtennis.",
+   "example_cs": "(On) hraje stolní tenis."
+  },
+  {
+   "id": "p28-11",
+   "pos": "pron",
+   "page": 28,
+   "cs": "náš, naše, naše",
+   "de": "unser, unsere, unser"
+  },
+  {
+   "id": "p29-01",
+   "pos": "noun",
+   "page": 29,
+   "cs": "počítač",
+   "de": "Computer",
+   "article": "der",
+   "plural": "Computer"
+  },
+  {
+   "id": "p29-02",
+   "pos": "adv",
+   "page": 29,
+   "cs": "rád/a",
+   "de": "gern"
+  },
+  {
+   "id": "p29-03",
+   "pos": "noun",
+   "page": 29,
+   "cs": "karaoke",
+   "de": "Karaoke",
+   "article": "das",
+   "example_de": "Er macht gern Karaoke.",
+   "example_cs": "Rád zpívá karaoke."
+  },
+  {
+   "id": "p30-01",
+   "pos": "noun",
+   "page": 30,
+   "cs": "basketbal",
+   "de": "Basketball",
+   "article": "der"
+  },
+  {
+   "id": "p30-02",
+   "pos": "noun",
+   "page": 30,
+   "cs": "koníček",
+   "de": "Hobby",
+   "article": "das",
+   "plural": "Hobbys"
+  },
+  {
+   "id": "p30-03",
+   "pos": "noun",
+   "page": 30,
+   "cs": "tenis",
+   "de": "Tennis",
+   "article": "das"
+  },
+  {
+   "id": "p31-01",
+   "pos": "noun",
+   "page": 31,
+   "cs": "aktivita, činnost",
+   "de": "Aktivität",
+   "article": "die",
+   "plural": "Aktivitäten"
+  },
+  {
+   "id": "p31-02",
+   "pos": "adv",
+   "page": 31,
+   "cs": "také",
+   "de": "auch"
+  },
+  {
+   "id": "p31-03",
+   "pos": "noun",
+   "page": 31,
+   "cs": "kulečník",
+   "de": "Billard",
+   "article": "das",
+   "plural": "Billarde"
+  },
+  {
+   "id": "p31-04",
+   "pos": "adv",
+   "page": 31,
+   "cs": "tu, tady",
+   "de": "da"
+  },
+  {
+   "id": "p31-05",
+   "pos": "noun",
+   "page": 31,
+   "cs": "pozdrav",
+   "de": "Gruß",
+   "article": "der",
+   "plural": "Grüße",
+   "example_de": "Viele Grüße …",
+   "example_cs": "Mnoho pozdravů …"
+  },
+  {
+   "id": "p31-06",
+   "pos": "verb",
+   "page": 31,
+   "cs": "(kondičně) běhat",
+   "de": "joggen",
+   "form3": "er joggt"
+  },
+  {
+   "id": "p31-07",
+   "pos": "noun",
+   "page": 31,
+   "cs": "limonáda",
+   "de": "Limo",
+   "article": "die",
+   "plural": "Limos"
+  },
+  {
+   "id": "p31-08",
+   "pos": "noun",
+   "page": 31,
+   "cs": "make-up",
+   "de": "Make-up",
+   "article": "das",
+   "plural": "Make-ups"
+  },
+  {
+   "id": "p31-09",
+   "pos": "noun",
+   "page": 31,
+   "cs": "šachy",
+   "de": "Schach",
+   "article": "das",
+   "plural": "Schachs"
+  },
+  {
+   "id": "p31-10",
+   "pos": "noun",
+   "page": 31,
+   "cs": "sport",
+   "de": "Sport",
+   "article": "der"
+  },
+  {
+   "id": "p31-11",
+   "pos": "noun",
+   "page": 31,
+   "cs": "teta",
+   "de": "Tante",
+   "article": "die",
+   "plural": "Tanten"
+  },
+  {
+   "id": "p31-12",
+   "pos": "noun",
+   "page": 31,
+   "cs": "divadlo",
+   "de": "Theater",
+   "article": "das",
+   "plural": "Theater"
+  },
+  {
+   "id": "p31-13",
+   "pos": "noun",
+   "page": 31,
+   "cs": "stolní fotbal",
+   "de": "Tischfußball",
+   "article": "der",
+   "plural": "Tischfußbälle"
+  },
+  {
+   "id": "p31-14",
+   "pos": "adj",
+   "page": 31,
+   "cs": "mnoho",
+   "de": "viel, viele"
+  },
+  {
+   "id": "p31-15",
+   "pos": "noun",
+   "page": 31,
+   "cs": "dílna, workshop",
+   "de": "Workshop",
+   "article": "der",
+   "plural": "Workshops"
+  }
+ ]
+}

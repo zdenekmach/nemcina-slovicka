@@ -1,0 +1,177 @@
+{
+ "id": "cisla",
+ "name": "Čísla 0–20",
+ "area": "other",
+ "topic": "null … zwanzig",
+ "source": "Lekce 1, strany 17–18",
+ "cards": [
+  {
+   "id": "p17-01",
+   "pos": "number",
+   "page": 17,
+   "cs": "0",
+   "de": "null",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-02",
+   "pos": "number",
+   "page": 17,
+   "cs": "1",
+   "de": "eins",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-03",
+   "pos": "number",
+   "page": 17,
+   "cs": "2",
+   "de": "zwei",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-04",
+   "pos": "number",
+   "page": 17,
+   "cs": "3",
+   "de": "drei",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-05",
+   "pos": "number",
+   "page": 17,
+   "cs": "4",
+   "de": "vier",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-06",
+   "pos": "number",
+   "page": 17,
+   "cs": "5",
+   "de": "fünf",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-07",
+   "pos": "number",
+   "page": 17,
+   "cs": "6",
+   "de": "sechs",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-08",
+   "pos": "number",
+   "page": 17,
+   "cs": "7",
+   "de": "sieben",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-09",
+   "pos": "number",
+   "page": 17,
+   "cs": "8",
+   "de": "acht",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-10",
+   "pos": "number",
+   "page": 17,
+   "cs": "9",
+   "de": "neun",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-11",
+   "pos": "number",
+   "page": 17,
+   "cs": "10",
+   "de": "zehn",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-12",
+   "pos": "number",
+   "page": 17,
+   "cs": "11",
+   "de": "elf",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p17-13",
+   "pos": "number",
+   "page": 17,
+   "cs": "12",
+   "de": "zwölf",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p18-01",
+   "pos": "number",
+   "page": 18,
+   "cs": "13",
+   "de": "dreizehn",
+   "from": "l1-18-19"
+  },
+  {
+   "id": "p18-02",
+   "pos": "number",
+   "page": 18,
+   "cs": "14",
+   "de": "vierzehn",
+   "from": "l1-18-19"
+  },
+  {
+   "id": "p18-03",
+   "pos": "number",
+   "page": 18,
+   "cs": "15",
+   "de": "fünfzehn",
+   "from": "l1-18-19"
+  },
+  {
+   "id": "p18-04",
+   "pos": "number",
+   "page": 18,
+   "cs": "16",
+   "de": "sechzehn",
+   "from": "l1-18-19"
+  },
+  {
+   "id": "p18-05",
+   "pos": "number",
+   "page": 18,
+   "cs": "17",
+   "de": "siebzehn",
+   "from": "l1-18-19"
+  },
+  {
+   "id": "p18-06",
+   "pos": "number",
+   "page": 18,
+   "cs": "18",
+   "de": "achtzehn",
+   "from": "l1-18-19"
+  },
+  {
+   "id": "p18-07",
+   "pos": "number",
+   "page": 18,
+   "cs": "19",
+   "de": "neunzehn",
+   "from": "l1-18-19"
+  },
+  {
+   "id": "p18-08",
+   "pos": "number",
+   "page": 18,
+   "cs": "20",
+   "de": "zwanzig",
+   "from": "l1-18-19"
+  }
+ ]
+}

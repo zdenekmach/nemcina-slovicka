@@ -1,32 +1,102 @@
 {
  "decks": [
   {
-   "file": "l1-13-15.json",
    "id": "l1-13-15",
    "name": "Strany 13–15",
    "topic": "koníčky a pozdravy",
-   "lesson": "1"
+   "area": "vocab",
+   "lesson": "1",
+   "file": "l1-13-15.json"
   },
   {
-   "file": "l1-16-17.json",
    "id": "l1-16-17",
    "name": "Strany 16–17",
-   "topic": "o sobě a čísla 0–12",
-   "lesson": "1"
+   "topic": "o sobě",
+   "area": "vocab",
+   "lesson": "1",
+   "file": "l1-16-17.json"
   },
   {
-   "file": "l1-18-19.json",
    "id": "l1-18-19",
    "name": "Strany 18–19",
-   "topic": "čísla 13–20 a odkud jsem",
-   "lesson": "1"
+   "topic": "odkud jsem",
+   "area": "vocab",
+   "lesson": "1",
+   "file": "l1-18-19.json"
   },
   {
-   "file": "l1-20-23.json",
    "id": "l1-20-23",
    "name": "Strany 20–23",
-   "topic": "země, abeceda, kontakt",
-   "lesson": "1"
+   "topic": "abeceda, kontakt",
+   "area": "vocab",
+   "lesson": "1",
+   "file": "l1-20-23.json"
+  },
+  {
+   "id": "l2-26-27",
+   "name": "Strany 26–27",
+   "topic": "hudba a co se mi líbí",
+   "area": "vocab",
+   "lesson": "2",
+   "file": "l2-26-27.json"
+  },
+  {
+   "id": "l2-28-31",
+   "name": "Strany 28–31",
+   "topic": "koníčky a sport",
+   "area": "vocab",
+   "lesson": "2",
+   "file": "l2-28-31.json"
+  },
+  {
+   "id": "l2-32-33",
+   "name": "Strany 32–33",
+   "topic": "volný čas a média",
+   "area": "vocab",
+   "lesson": "2",
+   "file": "l2-32-33.json"
+  },
+  {
+   "id": "g-slovesa-1",
+   "name": "Slovesa z tabulky",
+   "topic": "wohnen, kommen, heißen, sein",
+   "area": "grammar",
+   "file": "g-slovesa-1.json"
+  },
+  {
+   "id": "g-slovesa-2",
+   "name": "Další slovesa",
+   "topic": "spielen, machen, hören … z lekce 2",
+   "area": "grammar",
+   "file": "g-slovesa-2.json"
+  },
+  {
+   "id": "g-otazky",
+   "name": "Otázky a odpovědi",
+   "topic": "Wer? Wo? Woher? Wie alt?",
+   "area": "grammar",
+   "file": "g-otazky.json"
+  },
+  {
+   "id": "cisla",
+   "name": "Čísla 0–20",
+   "topic": "null … zwanzig",
+   "area": "other",
+   "file": "cisla.json"
+  },
+  {
+   "id": "dny",
+   "name": "Dny v týdnu",
+   "topic": "Montag … Sonntag",
+   "area": "other",
+   "file": "dny.json"
+  },
+  {
+   "id": "zeme",
+   "name": "Země",
+   "topic": "Deutschland, Österreich …",
+   "area": "other",
+   "file": "zeme.json"
   }
  ]
 }

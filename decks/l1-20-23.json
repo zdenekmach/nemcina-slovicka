@@ -1,53 +1,11 @@
 {
  "id": "l1-20-23",
  "name": "Strany 20–23",
- "topic": "země, abeceda, kontakt",
+ "topic": "abeceda, kontakt",
+ "area": "vocab",
  "lesson": "1",
- "source": "Mein Wortschatz, lekce 1 — fotky v inputs/, přepis 2026-09-07",
+ "source": "Mein Wortschatz, lekce 1 — fotky slovníčku",
  "cards": [
-  {
-   "id": "p20-01",
-   "pos": "noun",
-   "page": 20,
-   "cs": "Velká Británie",
-   "de": "Großbritannien"
-  },
-  {
-   "id": "p20-02",
-   "pos": "noun",
-   "page": 20,
-   "cs": "Rakousko",
-   "de": "Österreich"
-  },
-  {
-   "id": "p20-03",
-   "pos": "noun",
-   "page": 20,
-   "cs": "Polsko",
-   "de": "Polen"
-  },
-  {
-   "id": "p20-04",
-   "pos": "noun",
-   "page": 20,
-   "cs": "Slovensko",
-   "de": "Slowakei",
-   "article": "die"
-  },
-  {
-   "id": "p20-05",
-   "pos": "noun",
-   "page": 20,
-   "cs": "Španělsko",
-   "de": "Spanien"
-  },
-  {
-   "id": "p20-06",
-   "pos": "noun",
-   "page": 20,
-   "cs": "Česko",
-   "de": "Tschechien"
-  },
   {
    "id": "p21-01",
    "pos": "noun",

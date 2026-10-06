@@ -1,9 +1,10 @@
 {
  "id": "l1-16-17",
  "name": "Strany 16–17",
- "topic": "o sobě a čísla 0–12",
+ "topic": "o sobě",
+ "area": "vocab",
  "lesson": "1",
- "source": "Mein Wortschatz, lekce 1 — fotky v inputs/, přepis 2026-09-07",
+ "source": "Mein Wortschatz, lekce 1 — fotky slovníčku",
  "cards": [
   {
    "id": "p16-01",
@@ -25,13 +26,6 @@
    "page": 16,
    "cs": "u",
    "de": "bei"
-  },
-  {
-   "id": "p16-04",
-   "pos": "noun",
-   "page": 16,
-   "cs": "Brazílie",
-   "de": "Brasilien"
   },
   {
    "id": "p16-05",
@@ -176,97 +170,6 @@
    "cs": "bydlet",
    "de": "wohnen",
    "form3": "er wohnt"
-  },
-  {
-   "id": "p17-01",
-   "pos": "number",
-   "page": 17,
-   "cs": "0",
-   "de": "null"
-  },
-  {
-   "id": "p17-02",
-   "pos": "number",
-   "page": 17,
-   "cs": "1",
-   "de": "eins"
-  },
-  {
-   "id": "p17-03",
-   "pos": "number",
-   "page": 17,
-   "cs": "2",
-   "de": "zwei"
-  },
-  {
-   "id": "p17-04",
-   "pos": "number",
-   "page": 17,
-   "cs": "3",
-   "de": "drei"
-  },
-  {
-   "id": "p17-05",
-   "pos": "number",
-   "page": 17,
-   "cs": "4",
-   "de": "vier"
-  },
-  {
-   "id": "p17-06",
-   "pos": "number",
-   "page": 17,
-   "cs": "5",
-   "de": "fünf"
-  },
-  {
-   "id": "p17-07",
-   "pos": "number",
-   "page": 17,
-   "cs": "6",
-   "de": "sechs"
-  },
-  {
-   "id": "p17-08",
-   "pos": "number",
-   "page": 17,
-   "cs": "7",
-   "de": "sieben"
-  },
-  {
-   "id": "p17-09",
-   "pos": "number",
-   "page": 17,
-   "cs": "8",
-   "de": "acht"
-  },
-  {
-   "id": "p17-10",
-   "pos": "number",
-   "page": 17,
-   "cs": "9",
-   "de": "neun"
-  },
-  {
-   "id": "p17-11",
-   "pos": "number",
-   "page": 17,
-   "cs": "10",
-   "de": "zehn"
-  },
-  {
-   "id": "p17-12",
-   "pos": "number",
-   "page": 17,
-   "cs": "11",
-   "de": "elf"
-  },
-  {
-   "id": "p17-13",
-   "pos": "number",
-   "page": 17,
-   "cs": "12",
-   "de": "zwölf"
   }
  ]
 }

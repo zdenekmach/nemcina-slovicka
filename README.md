@@ -23,6 +23,10 @@ stránka si sama vyzkouší, co prohlížeč umí, a řekne, co s tím.
 
 ## Co to umí
 
+Obsah je rozdělený do tří oblastí: **slovní zásoba** po lekcích učebnice,
+**gramatika** (časování sloves a otázky s odpověďmi) a **ostatní** (čísla
+do dvaceti, dny v týdnu, země).
+
 Dva režimy, odlišené barvou. **Zelená je učení, modrá zkoušení.**
 
 **Učení** je listování slovíčky, kde se nic nehodnotí. Balíček se krájí na sady
@@ -34,6 +38,11 @@ překlad, množné číslo, tvar pro třetí osobu u sloves a příkladová vět
 **Zkoušení** se ptá, co německé slovo znamená, a nabízí čtyři možnosti.
 Distraktory nejsou náhodné — berou se přednostně ze stejného slovního druhu
 v témže balíčku, aby se nedaly uhodnout od pohledu.
+
+V gramatice se doplňuje tvar slovesa do věty (*Woher ___ du?*) a přiřazuje
+odpověď k otázce. Špatné možnosti tam nejsou náhodné slova, ale typické chyby:
+jiná osoba, jiná koncovka, chybějící člen u země. V učícím režimu má sloveso
+tabulku časování a pravidlo koncovek.
 
 Opakování jede na Leitnerových krabičkách, pět přihrádek s odstupy 0, 1, 3, 7
 a 16 dní. Správná odpověď posune slovo o přihrádku dál, chyba ho vrátí na

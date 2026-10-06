@@ -1,0 +1,372 @@
+{
+ "id": "g-otazky",
+ "name": "Otázky a odpovědi",
+ "area": "grammar",
+ "unit": "Otázky",
+ "topic": "Wer? Wo? Woher? Wie alt?",
+ "source": "Lekce 1, strana 19, cvičení 18",
+ "cards": [
+  {
+   "id": "qa-01",
+   "pos": "qa",
+   "cs": "Kdo je to?",
+   "de": "Wer ist das?",
+   "example_de": "Das ist Jan.",
+   "example_cs": "To je Jan.",
+   "drills": [
+    {
+     "id": "a",
+     "label": "Vyber odpověď",
+     "prompt": "Wer ist das?",
+     "hint": "Kdo je to?",
+     "answer": "Das ist Jan.",
+     "choices": [
+      "Das bin Jan.",
+      "Er wohnt in Prag.",
+      "Er kommt aus Polen."
+     ],
+     "explain": "To je Jan."
+    },
+    {
+     "id": "q",
+     "label": "Na co je to odpověď?",
+     "prompt": "Das ist Jan.",
+     "hint": "To je Jan.",
+     "answer": "Wer ist das?",
+     "choices": [
+      "Wie heißt du?",
+      "Wo wohnt er?",
+      "Wie alt ist er?"
+     ],
+     "explain": "Kdo je to?"
+    }
+   ]
+  },
+  {
+   "id": "qa-02",
+   "pos": "qa",
+   "cs": "Jak se jmenuješ?",
+   "de": "Wie heißt du?",
+   "example_de": "Ich heiße Peter.",
+   "example_cs": "Jmenuji se Petr.",
+   "drills": [
+    {
+     "id": "a",
+     "label": "Vyber odpověď",
+     "prompt": "Wie heißt du?",
+     "hint": "Jak se jmenuješ?",
+     "answer": "Ich heiße Peter.",
+     "choices": [
+      "Ich heißt Peter.",
+      "Du heißt Peter.",
+      "Ich wohne in Prag."
+     ],
+     "explain": "Jmenuji se Petr."
+    },
+    {
+     "id": "q",
+     "label": "Na co je to odpověď?",
+     "prompt": "Ich heiße Peter.",
+     "hint": "Jmenuji se Petr.",
+     "answer": "Wie heißt du?",
+     "choices": [
+      "Wie heißt er?",
+      "Wer ist das?",
+      "Wo wohnst du?"
+     ],
+     "explain": "Jak se jmenuješ?"
+    }
+   ]
+  },
+  {
+   "id": "qa-03",
+   "pos": "qa",
+   "cs": "Jak se jmenuje (ona)?",
+   "de": "Wie heißt sie?",
+   "example_de": "Sie heißt Lena.",
+   "example_cs": "Jmenuje se Lena.",
+   "drills": [
+    {
+     "id": "a",
+     "label": "Vyber odpověď",
+     "prompt": "Wie heißt sie?",
+     "hint": "Jak se jmenuje (ona)?",
+     "answer": "Sie heißt Lena.",
+     "choices": [
+      "Ich heiße Lena.",
+      "Sie heiße Lena.",
+      "Sie wohnt in Wien."
+     ],
+     "explain": "Jmenuje se Lena."
+    },
+    {
+     "id": "q",
+     "label": "Na co je to odpověď?",
+     "prompt": "Sie heißt Lena.",
+     "hint": "Jmenuje se Lena.",
+     "answer": "Wie heißt sie?",
+     "choices": [
+      "Wie heißt du?",
+      "Woher kommt sie?",
+      "Wie alt ist sie?"
+     ],
+     "explain": "Jak se jmenuje (ona)?"
+    }
+   ]
+  },
+  {
+   "id": "qa-04",
+   "pos": "qa",
+   "cs": "Kde bydlíš?",
+   "de": "Wo wohnst du?",
+   "example_de": "Ich wohne in Prag.",
+   "example_cs": "Bydlím v Praze.",
+   "drills": [
+    {
+     "id": "a",
+     "label": "Vyber odpověď",
+     "prompt": "Wo wohnst du?",
+     "hint": "Kde bydlíš?",
+     "answer": "Ich wohne in Prag.",
+     "choices": [
+      "Ich komme aus Prag.",
+      "Ich wohnst in Prag.",
+      "Er wohnt in Prag."
+     ],
+     "explain": "Bydlím v Praze."
+    },
+    {
+     "id": "q",
+     "label": "Na co je to odpověď?",
+     "prompt": "Ich wohne in Prag.",
+     "hint": "Bydlím v Praze.",
+     "answer": "Wo wohnst du?",
+     "choices": [
+      "Wo wohnt er?",
+      "Woher kommst du?",
+      "Wie heißt du?"
+     ],
+     "explain": "Kde bydlíš?"
+    }
+   ]
+  },
+  {
+   "id": "qa-05",
+   "pos": "qa",
+   "cs": "Kde bydlí (on)?",
+   "de": "Wo wohnt er?",
+   "example_de": "Er wohnt in Frankfurt.",
+   "example_cs": "Bydlí ve Frankfurtu.",
+   "drills": [
+    {
+     "id": "a",
+     "label": "Vyber odpověď",
+     "prompt": "Wo wohnt er?",
+     "hint": "Kde bydlí (on)?",
+     "answer": "Er wohnt in Frankfurt.",
+     "choices": [
+      "Ich wohne in Frankfurt.",
+      "Er kommt aus Frankfurt.",
+      "Er wohnst in Frankfurt."
+     ],
+     "explain": "Bydlí ve Frankfurtu."
+    },
+    {
+     "id": "q",
+     "label": "Na co je to odpověď?",
+     "prompt": "Er wohnt in Frankfurt.",
+     "hint": "Bydlí ve Frankfurtu.",
+     "answer": "Wo wohnt er?",
+     "choices": [
+      "Wo wohnst du?",
+      "Woher kommt er?",
+      "Wer ist das?"
+     ],
+     "explain": "Kde bydlí (on)?"
+    }
+   ]
+  },
+  {
+   "id": "qa-06",
+   "pos": "qa",
+   "cs": "Odkud pocházíš?",
+   "de": "Woher kommst du?",
+   "example_de": "Ich komme aus Tschechien.",
+   "example_cs": "Pocházím z Česka.",
+   "drills": [
+    {
+     "id": "a",
+     "label": "Vyber odpověď",
+     "prompt": "Woher kommst du?",
+     "hint": "Odkud pocházíš?",
+     "answer": "Ich komme aus Tschechien.",
+     "choices": [
+      "Ich wohne in Tschechien.",
+      "Ich kommst aus Tschechien.",
+      "Er kommt aus Tschechien."
+     ],
+     "explain": "Pocházím z Česka."
+    },
+    {
+     "id": "q",
+     "label": "Na co je to odpověď?",
+     "prompt": "Ich komme aus Tschechien.",
+     "hint": "Pocházím z Česka.",
+     "answer": "Woher kommst du?",
+     "choices": [
+      "Woher kommt er?",
+      "Wo wohnst du?",
+      "Wie alt bist du?"
+     ],
+     "explain": "Odkud pocházíš?"
+    }
+   ]
+  },
+  {
+   "id": "qa-07",
+   "pos": "qa",
+   "cs": "Odkud pochází (ona)?",
+   "de": "Woher kommt sie?",
+   "example_de": "Sie kommt aus der Schweiz.",
+   "example_cs": "Pochází ze Švýcarska.",
+   "drills": [
+    {
+     "id": "a",
+     "label": "Vyber odpověď",
+     "prompt": "Woher kommt sie?",
+     "hint": "Odkud pochází (ona)?",
+     "answer": "Sie kommt aus der Schweiz.",
+     "choices": [
+      "Sie kommt aus Schweiz.",
+      "Sie wohnt in der Schweiz.",
+      "Ich komme aus der Schweiz."
+     ],
+     "explain": "Pochází ze Švýcarska."
+    },
+    {
+     "id": "q",
+     "label": "Na co je to odpověď?",
+     "prompt": "Sie kommt aus der Schweiz.",
+     "hint": "Pochází ze Švýcarska.",
+     "answer": "Woher kommt sie?",
+     "choices": [
+      "Woher kommst du?",
+      "Wo wohnt sie?",
+      "Wie heißt sie?"
+     ],
+     "explain": "Odkud pochází (ona)?"
+    }
+   ],
+   "note": "Země s členem (die Schweiz, die Türkei, die Slowakei) ho drží i ve větě: aus der Schweiz."
+  },
+  {
+   "id": "qa-08",
+   "pos": "qa",
+   "cs": "Odkud pochází (on)?",
+   "de": "Woher kommt er?",
+   "example_de": "Er kommt aus Österreich.",
+   "example_cs": "Pochází z Rakouska.",
+   "drills": [
+    {
+     "id": "a",
+     "label": "Vyber odpověď",
+     "prompt": "Woher kommt er?",
+     "hint": "Odkud pochází (on)?",
+     "answer": "Er kommt aus Österreich.",
+     "choices": [
+      "Er kommt in Österreich.",
+      "Er kommst aus Österreich.",
+      "Du kommst aus Österreich."
+     ],
+     "explain": "Pochází z Rakouska."
+    },
+    {
+     "id": "q",
+     "label": "Na co je to odpověď?",
+     "prompt": "Er kommt aus Österreich.",
+     "hint": "Pochází z Rakouska.",
+     "answer": "Woher kommt er?",
+     "choices": [
+      "Wo wohnt er?",
+      "Woher kommst du?",
+      "Wer ist das?"
+     ],
+     "explain": "Odkud pochází (on)?"
+    }
+   ]
+  },
+  {
+   "id": "qa-09",
+   "pos": "qa",
+   "cs": "Kolik ti je let?",
+   "de": "Wie alt bist du?",
+   "example_de": "Ich bin zwölf Jahre alt.",
+   "example_cs": "Je mi dvanáct let.",
+   "drills": [
+    {
+     "id": "a",
+     "label": "Vyber odpověď",
+     "prompt": "Wie alt bist du?",
+     "hint": "Kolik ti je let?",
+     "answer": "Ich bin zwölf Jahre alt.",
+     "choices": [
+      "Ich habe zwölf Jahre.",
+      "Ich ist zwölf Jahre alt.",
+      "Du bist zwölf Jahre alt."
+     ],
+     "explain": "Je mi dvanáct let."
+    },
+    {
+     "id": "q",
+     "label": "Na co je to odpověď?",
+     "prompt": "Ich bin zwölf Jahre alt.",
+     "hint": "Je mi dvanáct let.",
+     "answer": "Wie alt bist du?",
+     "choices": [
+      "Wie alt ist er?",
+      "Wie heißt du?",
+      "Wo wohnst du?"
+     ],
+     "explain": "Kolik ti je let?"
+    }
+   ],
+   "note": "Česky „mám dvanáct let\", německy „bin zwölf Jahre alt\" — se slovesem sein, ne haben."
+  },
+  {
+   "id": "qa-10",
+   "pos": "qa",
+   "cs": "Kolik je mu let?",
+   "de": "Wie alt ist er?",
+   "example_de": "Er ist dreizehn Jahre alt.",
+   "example_cs": "Je mu třináct let.",
+   "drills": [
+    {
+     "id": "a",
+     "label": "Vyber odpověď",
+     "prompt": "Wie alt ist er?",
+     "hint": "Kolik je mu let?",
+     "answer": "Er ist dreizehn Jahre alt.",
+     "choices": [
+      "Er bist dreizehn Jahre alt.",
+      "Ich bin dreizehn Jahre alt.",
+      "Er bin dreizehn Jahre alt."
+     ],
+     "explain": "Je mu třináct let."
+    },
+    {
+     "id": "q",
+     "label": "Na co je to odpověď?",
+     "prompt": "Er ist dreizehn Jahre alt.",
+     "hint": "Je mu třináct let.",
+     "answer": "Wie alt ist er?",
+     "choices": [
+      "Wie alt bist du?",
+      "Wer ist das?",
+      "Woher kommt er?"
+     ],
+     "explain": "Kolik je mu let?"
+    }
+   ]
+  }
+ ]
+}

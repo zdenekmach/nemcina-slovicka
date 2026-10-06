@@ -1,0 +1,255 @@
+{
+ "id": "g-slovesa-1",
+ "name": "Slovesa z tabulky",
+ "area": "grammar",
+ "unit": "Slovesa",
+ "topic": "wohnen, kommen, heißen, sein",
+ "source": "Lekce 1, strana 19, tabulka MEMO",
+ "cards": [
+  {
+   "id": "gv1-01",
+   "pos": "verb",
+   "cs": "bydlet",
+   "de": "wohnen",
+   "table": [
+    [
+     "ich",
+     "wohne"
+    ],
+    [
+     "du",
+     "wohnst"
+    ],
+    [
+     "er/sie",
+     "wohnt"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ in Prag.",
+     "hint": "wohnen · bydlet",
+     "answer": "wohne",
+     "choices": [
+      "wohnst",
+      "wohnt",
+      "wohnen"
+     ],
+     "explain": "ich wohne · du wohnst · er/sie wohnt"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wo ___ du?",
+     "hint": "wohnen · bydlet",
+     "answer": "wohnst",
+     "choices": [
+      "wohne",
+      "wohnt",
+      "wohnen"
+     ],
+     "explain": "ich wohne · du wohnst · er/sie wohnt"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan ___ in Frankfurt.",
+     "hint": "wohnen · bydlet",
+     "answer": "wohnt",
+     "choices": [
+      "wohne",
+      "wohnst",
+      "wohnen"
+     ],
+     "explain": "ich wohne · du wohnst · er/sie wohnt"
+    }
+   ]
+  },
+  {
+   "id": "gv1-02",
+   "pos": "verb",
+   "cs": "pocházet",
+   "de": "kommen",
+   "table": [
+    [
+     "ich",
+     "komme"
+    ],
+    [
+     "du",
+     "kommst"
+    ],
+    [
+     "er/sie",
+     "kommt"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ aus Tschechien.",
+     "hint": "kommen · pocházet",
+     "answer": "komme",
+     "choices": [
+      "kommst",
+      "kommt",
+      "kommen"
+     ],
+     "explain": "ich komme · du kommst · er/sie kommt"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Woher ___ du?",
+     "hint": "kommen · pocházet",
+     "answer": "kommst",
+     "choices": [
+      "komme",
+      "kommt",
+      "kommen"
+     ],
+     "explain": "ich komme · du kommst · er/sie kommt"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena ___ aus Österreich.",
+     "hint": "kommen · pocházet",
+     "answer": "kommt",
+     "choices": [
+      "komme",
+      "kommst",
+      "kommen"
+     ],
+     "explain": "ich komme · du kommst · er/sie kommt"
+    }
+   ]
+  },
+  {
+   "id": "gv1-03",
+   "pos": "verb",
+   "cs": "jmenovat se",
+   "de": "heißen",
+   "table": [
+    [
+     "ich",
+     "heiße"
+    ],
+    [
+     "du",
+     "heißt"
+    ],
+    [
+     "er/sie",
+     "heißt"
+    ]
+   ],
+   "note": "Kmen končí na -ß, takže u du se přidává jen -t: du heißt.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ Peter.",
+     "hint": "heißen · jmenovat se",
+     "answer": "heiße",
+     "choices": [
+      "heißt",
+      "heißen"
+     ],
+     "explain": "ich heiße · du heißt · er/sie heißt"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie ___ du?",
+     "hint": "heißen · jmenovat se",
+     "answer": "heißt",
+     "choices": [
+      "heiße",
+      "heißen"
+     ],
+     "explain": "ich heiße · du heißt · er/sie heißt"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Er ___ Ludwig.",
+     "hint": "heißen · jmenovat se",
+     "answer": "heißt",
+     "choices": [
+      "heiße",
+      "heißen"
+     ],
+     "explain": "ich heiße · du heißt · er/sie heißt"
+    }
+   ]
+  },
+  {
+   "id": "gv1-04",
+   "pos": "verb",
+   "cs": "být",
+   "de": "sein",
+   "table": [
+    [
+     "ich",
+     "bin"
+    ],
+    [
+     "du",
+     "bist"
+    ],
+    [
+     "er/sie",
+     "ist"
+    ]
+   ],
+   "note": "Nepravidelné — tvary se nedají odvodit, jen naučit.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ zwölf Jahre alt.",
+     "hint": "sein · být",
+     "answer": "bin",
+     "choices": [
+      "bist",
+      "ist",
+      "sein"
+     ],
+     "explain": "ich bin · du bist · er/sie ist"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie alt ___ du?",
+     "hint": "sein · být",
+     "answer": "bist",
+     "choices": [
+      "bin",
+      "ist",
+      "sein"
+     ],
+     "explain": "ich bin · du bist · er/sie ist"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Das ___ Jan.",
+     "hint": "sein · být",
+     "answer": "ist",
+     "choices": [
+      "bin",
+      "bist",
+      "sein"
+     ],
+     "explain": "ich bin · du bist · er/sie ist"
+    }
+   ]
+  }
+ ]
+}

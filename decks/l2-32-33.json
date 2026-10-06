@@ -1,0 +1,269 @@
+{
+ "id": "l2-32-33",
+ "name": "Strany 32–33",
+ "topic": "volný čas a média",
+ "area": "vocab",
+ "lesson": "2",
+ "source": "Mein Wortschatz, lekce 2 — fotky slovníčku",
+ "cards": [
+  {
+   "id": "p32-01",
+   "pos": "prep",
+   "page": 32,
+   "cs": "na (zde: komu)",
+   "de": "an"
+  },
+  {
+   "id": "p32-02",
+   "pos": "verb",
+   "page": 32,
+   "cs": "listovat",
+   "de": "blättern",
+   "form3": "er blättert"
+  },
+  {
+   "id": "p32-03",
+   "pos": "verb",
+   "page": 32,
+   "cs": "uvolnit se, odpočívat",
+   "de": "chillen",
+   "form3": "er chillt"
+  },
+  {
+   "id": "p32-04",
+   "pos": "noun",
+   "page": 32,
+   "cs": "e-mail",
+   "de": "E-Mail",
+   "article": "die/das",
+   "plural": "E-Mails"
+  },
+  {
+   "id": "p32-05",
+   "pos": "noun",
+   "page": 32,
+   "cs": "prázdniny",
+   "de": "Ferien",
+   "article": "die"
+  },
+  {
+   "id": "p32-06",
+   "pos": "prep",
+   "page": 32,
+   "cs": "pro, za",
+   "de": "für",
+   "example_de": "Danke für die E-Mail.",
+   "example_cs": "Děkuji za e-mail."
+  },
+  {
+   "id": "p32-07",
+   "pos": "verb",
+   "page": 32,
+   "cs": "užívat si",
+   "de": "genießen",
+   "form3": "er genießt"
+  },
+  {
+   "id": "p32-08",
+   "pos": "adv",
+   "page": 32,
+   "cs": "právě, zrovna teď",
+   "de": "gerade"
+  },
+  {
+   "id": "p32-09",
+   "pos": "adv",
+   "page": 32,
+   "cs": "zde",
+   "de": "hier"
+  },
+  {
+   "id": "p32-10",
+   "pos": "verb",
+   "page": 32,
+   "cs": "surfovat na internetu",
+   "de": "im Internet surfen",
+   "form3": "er surft im Internet"
+  },
+  {
+   "id": "p32-11",
+   "pos": "prep",
+   "page": 32,
+   "cs": "s, se",
+   "de": "mit"
+  },
+  {
+   "id": "p32-12",
+   "pos": "noun",
+   "page": 32,
+   "cs": "model/ka",
+   "de": "Model",
+   "article": "das",
+   "plural": "Models"
+  },
+  {
+   "id": "p32-13",
+   "pos": "adv",
+   "page": 32,
+   "cs": "ještě",
+   "de": "noch"
+  },
+  {
+   "id": "p32-14",
+   "pos": "noun",
+   "page": 32,
+   "cs": "strýc",
+   "de": "Onkel",
+   "article": "der",
+   "plural": "Onkel"
+  },
+  {
+   "id": "p32-15",
+   "pos": "verb",
+   "page": 32,
+   "cs": "psát",
+   "de": "schreiben",
+   "form3": "er schreibt"
+  },
+  {
+   "id": "p32-16",
+   "pos": "noun",
+   "page": 32,
+   "cs": "legrace",
+   "de": "Spaß",
+   "article": "der",
+   "plural": "Späße",
+   "example_de": "Viel Spaß!",
+   "example_cs": "Dobře se bav! / Příjemnou zábavu!"
+  },
+  {
+   "id": "p32-17",
+   "pos": "noun",
+   "page": 32,
+   "cs": "sportovec",
+   "de": "Sportler",
+   "article": "der",
+   "plural": "Sportler"
+  },
+  {
+   "id": "p32-18",
+   "pos": "adv",
+   "page": 32,
+   "cs": "doma",
+   "de": "zu Hause"
+  },
+  {
+   "id": "p33-01",
+   "pos": "noun",
+   "page": 33,
+   "cs": "akce",
+   "de": "Action",
+   "article": "die"
+  },
+  {
+   "id": "p33-02",
+   "pos": "adj",
+   "page": 33,
+   "cs": "aktivní",
+   "de": "aktiv"
+  },
+  {
+   "id": "p33-03",
+   "pos": "noun",
+   "page": 33,
+   "cs": "castingová show",
+   "de": "Castingshow",
+   "article": "die",
+   "plural": "Castingshows"
+  },
+  {
+   "id": "p33-04",
+   "pos": "noun",
+   "page": 33,
+   "cs": "dokument (TV)",
+   "de": "Dokumentation",
+   "article": "die",
+   "plural": "Dokumentationen"
+  },
+  {
+   "id": "p33-05",
+   "pos": "adj",
+   "page": 33,
+   "cs": "inteligentní",
+   "de": "intelligent"
+  },
+  {
+   "id": "p33-06",
+   "pos": "adj",
+   "page": 33,
+   "cs": "zajímavý",
+   "de": "interessant"
+  },
+  {
+   "id": "p33-07",
+   "pos": "adj",
+   "page": 33,
+   "cs": "veselý",
+   "de": "lustig"
+  },
+  {
+   "id": "p33-08",
+   "pos": "noun",
+   "page": 33,
+   "cs": "manga, japonský komiks",
+   "de": "Manga",
+   "article": "das/der",
+   "plural": "Mangas"
+  },
+  {
+   "id": "p33-09",
+   "pos": "noun",
+   "page": 33,
+   "cs": "móda",
+   "de": "Mode",
+   "article": "die",
+   "plural": "Moden"
+  },
+  {
+   "id": "p33-10",
+   "pos": "noun",
+   "page": 33,
+   "cs": "párty, večírek",
+   "de": "Party",
+   "article": "die",
+   "plural": "Partys"
+  },
+  {
+   "id": "p33-11",
+   "pos": "verb",
+   "page": 33,
+   "cs": "nakupovat",
+   "de": "shoppen",
+   "form3": "er shoppt"
+  },
+  {
+   "id": "p33-12",
+   "pos": "adj",
+   "page": 33,
+   "cs": "speciální",
+   "de": "speziell"
+  },
+  {
+   "id": "p33-13",
+   "pos": "verb",
+   "page": 33,
+   "cs": "tancovat",
+   "de": "tanzen",
+   "form3": "er tanzt"
+  },
+  {
+   "id": "p33-14",
+   "pos": "noun",
+   "page": 33,
+   "cs": "časopis",
+   "de": "Zeitschrift",
+   "article": "die",
+   "plural": "Zeitschriften"
+  }
+ ]
+}

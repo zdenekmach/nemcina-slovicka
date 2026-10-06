@@ -1,0 +1,751 @@
+{
+ "id": "g-slovesa-2",
+ "name": "Další slovesa",
+ "area": "grammar",
+ "unit": "Slovesa",
+ "topic": "spielen, machen, hören … z lekce 2",
+ "source": "Pravidelná slovesa ze slovníčku lekce 2",
+ "cards": [
+  {
+   "id": "gv2-01",
+   "pos": "verb",
+   "cs": "hrát",
+   "de": "spielen",
+   "table": [
+    [
+     "ich",
+     "spiele"
+    ],
+    [
+     "du",
+     "spielst"
+    ],
+    [
+     "er/sie",
+     "spielt"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ Gitarre.",
+     "hint": "spielen · hrát",
+     "answer": "spiele",
+     "choices": [
+      "spielst",
+      "spielt",
+      "spielen"
+     ],
+     "explain": "ich spiele · du spielst · er/sie spielt"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du Tennis?",
+     "hint": "spielen · hrát",
+     "answer": "spielst",
+     "choices": [
+      "spiele",
+      "spielt",
+      "spielen"
+     ],
+     "explain": "ich spiele · du spielst · er/sie spielt"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Er ___ Fußball.",
+     "hint": "spielen · hrát",
+     "answer": "spielt",
+     "choices": [
+      "spiele",
+      "spielst",
+      "spielen"
+     ],
+     "explain": "ich spiele · du spielst · er/sie spielt"
+    }
+   ]
+  },
+  {
+   "id": "gv2-02",
+   "pos": "verb",
+   "cs": "dělat",
+   "de": "machen",
+   "table": [
+    [
+     "ich",
+     "mache"
+    ],
+    [
+     "du",
+     "machst"
+    ],
+    [
+     "er/sie",
+     "macht"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ gern Karaoke.",
+     "hint": "machen · dělat",
+     "answer": "mache",
+     "choices": [
+      "machst",
+      "macht",
+      "machen"
+     ],
+     "explain": "ich mache · du machst · er/sie macht"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ du?",
+     "hint": "machen · dělat",
+     "answer": "machst",
+     "choices": [
+      "mache",
+      "macht",
+      "machen"
+     ],
+     "explain": "ich mache · du machst · er/sie macht"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Sie ___ Judo.",
+     "hint": "machen · dělat",
+     "answer": "macht",
+     "choices": [
+      "mache",
+      "machst",
+      "machen"
+     ],
+     "explain": "ich mache · du machst · er/sie macht"
+    }
+   ]
+  },
+  {
+   "id": "gv2-03",
+   "pos": "verb",
+   "cs": "poslouchat",
+   "de": "hören",
+   "table": [
+    [
+     "ich",
+     "höre"
+    ],
+    [
+     "du",
+     "hörst"
+    ],
+    [
+     "er/sie",
+     "hört"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ Musik.",
+     "hint": "hören · poslouchat",
+     "answer": "höre",
+     "choices": [
+      "hörst",
+      "hört",
+      "hören"
+     ],
+     "explain": "ich höre · du hörst · er/sie hört"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du Rock?",
+     "hint": "hören · poslouchat",
+     "answer": "hörst",
+     "choices": [
+      "höre",
+      "hört",
+      "hören"
+     ],
+     "explain": "ich höre · du hörst · er/sie hört"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Sie ___ gern Rock.",
+     "hint": "hören · poslouchat",
+     "answer": "hört",
+     "choices": [
+      "höre",
+      "hörst",
+      "hören"
+     ],
+     "explain": "ich höre · du hörst · er/sie hört"
+    }
+   ]
+  },
+  {
+   "id": "gv2-04",
+   "pos": "verb",
+   "cs": "učit se",
+   "de": "lernen",
+   "table": [
+    [
+     "ich",
+     "lerne"
+    ],
+    [
+     "du",
+     "lernst"
+    ],
+    [
+     "er/sie",
+     "lernt"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ Deutsch.",
+     "hint": "lernen · učit se",
+     "answer": "lerne",
+     "choices": [
+      "lernst",
+      "lernt",
+      "lernen"
+     ],
+     "explain": "ich lerne · du lernst · er/sie lernt"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du Englisch?",
+     "hint": "lernen · učit se",
+     "answer": "lernst",
+     "choices": [
+      "lerne",
+      "lernt",
+      "lernen"
+     ],
+     "explain": "ich lerne · du lernst · er/sie lernt"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Er ___ Englisch.",
+     "hint": "lernen · učit se",
+     "answer": "lernt",
+     "choices": [
+      "lerne",
+      "lernst",
+      "lernen"
+     ],
+     "explain": "ich lerne · du lernst · er/sie lernt"
+    }
+   ]
+  },
+  {
+   "id": "gv2-05",
+   "pos": "verb",
+   "cs": "zpívat",
+   "de": "singen",
+   "table": [
+    [
+     "ich",
+     "singe"
+    ],
+    [
+     "du",
+     "singst"
+    ],
+    [
+     "er/sie",
+     "singt"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ gern.",
+     "hint": "singen · zpívat",
+     "answer": "singe",
+     "choices": [
+      "singst",
+      "singt",
+      "singen"
+     ],
+     "explain": "ich singe · du singst · er/sie singt"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du Karaoke?",
+     "hint": "singen · zpívat",
+     "answer": "singst",
+     "choices": [
+      "singe",
+      "singt",
+      "singen"
+     ],
+     "explain": "ich singe · du singst · er/sie singt"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena ___ super.",
+     "hint": "singen · zpívat",
+     "answer": "singt",
+     "choices": [
+      "singe",
+      "singst",
+      "singen"
+     ],
+     "explain": "ich singe · du singst · er/sie singt"
+    }
+   ]
+  },
+  {
+   "id": "gv2-06",
+   "pos": "verb",
+   "cs": "jít",
+   "de": "gehen",
+   "table": [
+    [
+     "ich",
+     "gehe"
+    ],
+    [
+     "du",
+     "gehst"
+    ],
+    [
+     "er/sie",
+     "geht"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ jetzt.",
+     "hint": "gehen · jít",
+     "answer": "gehe",
+     "choices": [
+      "gehst",
+      "geht",
+      "gehen"
+     ],
+     "explain": "ich gehe · du gehst · er/sie geht"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du auch?",
+     "hint": "gehen · jít",
+     "answer": "gehst",
+     "choices": [
+      "gehe",
+      "geht",
+      "gehen"
+     ],
+     "explain": "ich gehe · du gehst · er/sie geht"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan ___ heute ins Theater.",
+     "hint": "gehen · jít",
+     "answer": "geht",
+     "choices": [
+      "gehe",
+      "gehst",
+      "gehen"
+     ],
+     "explain": "ich gehe · du gehst · er/sie geht"
+    }
+   ]
+  },
+  {
+   "id": "gv2-07",
+   "pos": "verb",
+   "cs": "psát",
+   "de": "schreiben",
+   "table": [
+    [
+     "ich",
+     "schreibe"
+    ],
+    [
+     "du",
+     "schreibst"
+    ],
+    [
+     "er/sie",
+     "schreibt"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ eine E-Mail.",
+     "hint": "schreiben · psát",
+     "answer": "schreibe",
+     "choices": [
+      "schreibst",
+      "schreibt",
+      "schreiben"
+     ],
+     "explain": "ich schreibe · du schreibst · er/sie schreibt"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ du?",
+     "hint": "schreiben · psát",
+     "answer": "schreibst",
+     "choices": [
+      "schreibe",
+      "schreibt",
+      "schreiben"
+     ],
+     "explain": "ich schreibe · du schreibst · er/sie schreibt"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Er ___ viel.",
+     "hint": "schreiben · psát",
+     "answer": "schreibt",
+     "choices": [
+      "schreibe",
+      "schreibst",
+      "schreiben"
+     ],
+     "explain": "ich schreibe · du schreibst · er/sie schreibt"
+    }
+   ]
+  },
+  {
+   "id": "gv2-08",
+   "pos": "verb",
+   "cs": "telefonovat",
+   "de": "telefonieren",
+   "table": [
+    [
+     "ich",
+     "telefoniere"
+    ],
+    [
+     "du",
+     "telefonierst"
+    ],
+    [
+     "er/sie",
+     "telefoniert"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ mit Oma.",
+     "hint": "telefonieren · telefonovat",
+     "answer": "telefoniere",
+     "choices": [
+      "telefonierst",
+      "telefoniert",
+      "telefonieren"
+     ],
+     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du mit Papa?",
+     "hint": "telefonieren · telefonovat",
+     "answer": "telefonierst",
+     "choices": [
+      "telefoniere",
+      "telefoniert",
+      "telefonieren"
+     ],
+     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Sie ___ mit Tante Eva.",
+     "hint": "telefonieren · telefonovat",
+     "answer": "telefoniert",
+     "choices": [
+      "telefoniere",
+      "telefonierst",
+      "telefonieren"
+     ],
+     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert"
+    }
+   ]
+  },
+  {
+   "id": "gv2-09",
+   "pos": "verb",
+   "cs": "fotografovat",
+   "de": "fotografieren",
+   "table": [
+    [
+     "ich",
+     "fotografiere"
+    ],
+    [
+     "du",
+     "fotografierst"
+    ],
+    [
+     "er/sie",
+     "fotografiert"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ gern.",
+     "hint": "fotografieren · fotografovat",
+     "answer": "fotografiere",
+     "choices": [
+      "fotografierst",
+      "fotografiert",
+      "fotografieren"
+     ],
+     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ du?",
+     "hint": "fotografieren · fotografovat",
+     "answer": "fotografierst",
+     "choices": [
+      "fotografiere",
+      "fotografiert",
+      "fotografieren"
+     ],
+     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Er ___ viel.",
+     "hint": "fotografieren · fotografovat",
+     "answer": "fotografiert",
+     "choices": [
+      "fotografiere",
+      "fotografierst",
+      "fotografieren"
+     ],
+     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert"
+    }
+   ]
+  },
+  {
+   "id": "gv2-10",
+   "pos": "verb",
+   "cs": "(kondičně) běhat",
+   "de": "joggen",
+   "table": [
+    [
+     "ich",
+     "jogge"
+    ],
+    [
+     "du",
+     "joggst"
+    ],
+    [
+     "er/sie",
+     "joggt"
+    ]
+   ],
+   "note": "ich -e · du -st · er/sie -t",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ heute.",
+     "hint": "joggen · (kondičně) běhat",
+     "answer": "jogge",
+     "choices": [
+      "joggst",
+      "joggt",
+      "joggen"
+     ],
+     "explain": "ich jogge · du joggst · er/sie joggt"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du auch?",
+     "hint": "joggen · (kondičně) běhat",
+     "answer": "joggst",
+     "choices": [
+      "jogge",
+      "joggt",
+      "joggen"
+     ],
+     "explain": "ich jogge · du joggst · er/sie joggt"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Sie ___ gern.",
+     "hint": "joggen · (kondičně) běhat",
+     "answer": "joggt",
+     "choices": [
+      "jogge",
+      "joggst",
+      "joggen"
+     ],
+     "explain": "ich jogge · du joggst · er/sie joggt"
+    }
+   ]
+  },
+  {
+   "id": "gv2-11",
+   "pos": "verb",
+   "cs": "shledávat, myslet",
+   "de": "finden",
+   "table": [
+    [
+     "ich",
+     "finde"
+    ],
+    [
+     "du",
+     "findest"
+    ],
+    [
+     "er/sie",
+     "findet"
+    ]
+   ],
+   "note": "Kmen končí na -d, takže se před koncovku vkládá -e-: du findest, er findet.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ Rock cool.",
+     "hint": "finden · shledávat, myslet",
+     "answer": "finde",
+     "choices": [
+      "findest",
+      "findet",
+      "finden"
+     ],
+     "explain": "ich finde · du findest · er/sie findet"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie ___ du Manga?",
+     "hint": "finden · shledávat, myslet",
+     "answer": "findest",
+     "choices": [
+      "finde",
+      "findet",
+      "finden"
+     ],
+     "explain": "ich finde · du findest · er/sie findet"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Er ___ Tennis langweilig.",
+     "hint": "finden · shledávat, myslet",
+     "answer": "findet",
+     "choices": [
+      "finde",
+      "findest",
+      "finden"
+     ],
+     "explain": "ich finde · du findest · er/sie findet"
+    }
+   ]
+  },
+  {
+   "id": "gv2-12",
+   "pos": "verb",
+   "cs": "tancovat",
+   "de": "tanzen",
+   "table": [
+    [
+     "ich",
+     "tanze"
+    ],
+    [
+     "du",
+     "tanzt"
+    ],
+    [
+     "er/sie",
+     "tanzt"
+    ]
+   ],
+   "note": "Kmen končí na -z, takže u du se přidává jen -t: du tanzt.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ gern.",
+     "hint": "tanzen · tancovat",
+     "answer": "tanze",
+     "choices": [
+      "tanzt",
+      "tanzen"
+     ],
+     "explain": "ich tanze · du tanzt · er/sie tanzt"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du auch?",
+     "hint": "tanzen · tancovat",
+     "answer": "tanzt",
+     "choices": [
+      "tanze",
+      "tanzen"
+     ],
+     "explain": "ich tanze · du tanzt · er/sie tanzt"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena ___ super.",
+     "hint": "tanzen · tancovat",
+     "answer": "tanzt",
+     "choices": [
+      "tanze",
+      "tanzen"
+     ],
+     "explain": "ich tanze · du tanzt · er/sie tanzt"
+    }
+   ]
+  }
+ ]
+}

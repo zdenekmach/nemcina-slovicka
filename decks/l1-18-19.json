@@ -1,66 +1,11 @@
 {
  "id": "l1-18-19",
  "name": "Strany 18–19",
- "topic": "čísla 13–20 a odkud jsem",
+ "topic": "odkud jsem",
+ "area": "vocab",
  "lesson": "1",
- "source": "Mein Wortschatz, lekce 1 — fotky v inputs/, přepis 2026-09-07",
+ "source": "Mein Wortschatz, lekce 1 — fotky slovníčku",
  "cards": [
-  {
-   "id": "p18-01",
-   "pos": "number",
-   "page": 18,
-   "cs": "13",
-   "de": "dreizehn"
-  },
-  {
-   "id": "p18-02",
-   "pos": "number",
-   "page": 18,
-   "cs": "14",
-   "de": "vierzehn"
-  },
-  {
-   "id": "p18-03",
-   "pos": "number",
-   "page": 18,
-   "cs": "15",
-   "de": "fünfzehn"
-  },
-  {
-   "id": "p18-04",
-   "pos": "number",
-   "page": 18,
-   "cs": "16",
-   "de": "sechzehn"
-  },
-  {
-   "id": "p18-05",
-   "pos": "number",
-   "page": 18,
-   "cs": "17",
-   "de": "siebzehn"
-  },
-  {
-   "id": "p18-06",
-   "pos": "number",
-   "page": 18,
-   "cs": "18",
-   "de": "achtzehn"
-  },
-  {
-   "id": "p18-07",
-   "pos": "number",
-   "page": 18,
-   "cs": "19",
-   "de": "neunzehn"
-  },
-  {
-   "id": "p18-08",
-   "pos": "number",
-   "page": 18,
-   "cs": "20",
-   "de": "zwanzig"
-  },
   {
    "id": "p18-09",
    "pos": "verb",
@@ -94,25 +39,11 @@
    "plural": "Cousinen"
   },
   {
-   "id": "p19-04",
-   "pos": "noun",
-   "page": 19,
-   "cs": "Německo",
-   "de": "Deutschland"
-  },
-  {
    "id": "p19-05",
    "pos": "pron",
    "page": 19,
    "cs": "on",
    "de": "er"
-  },
-  {
-   "id": "p19-06",
-   "pos": "noun",
-   "page": 19,
-   "cs": "Francie",
-   "de": "Frankreich"
   },
   {
    "id": "p19-07",
@@ -122,13 +53,6 @@
    "de": "Freund",
    "article": "der",
    "plural": "Freunde"
-  },
-  {
-   "id": "p19-08",
-   "pos": "noun",
-   "page": 19,
-   "cs": "Itálie",
-   "de": "Italien"
   },
   {
    "id": "p19-09",
@@ -177,14 +101,6 @@
    "plural": "Orte"
   },
   {
-   "id": "p19-14",
-   "pos": "noun",
-   "page": 19,
-   "cs": "Švýcarsko",
-   "de": "Schweiz",
-   "article": "die"
-  },
-  {
    "id": "p19-15",
    "pos": "pron",
    "page": 19,
@@ -199,14 +115,6 @@
    "de": "Stadt",
    "article": "die",
    "plural": "Städte"
-  },
-  {
-   "id": "p19-17",
-   "pos": "noun",
-   "page": 19,
-   "cs": "Turecko",
-   "de": "Türkei",
-   "article": "die"
   },
   {
    "id": "p19-18",

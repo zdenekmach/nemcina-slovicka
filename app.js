@@ -24,6 +24,7 @@ const MODES = {
 // Psaní je na učení účinnější, ale na startu je to zeď. Výchozí je proto
 // výběr z možností a psaní se zapíná v nastavení na úvodní obrazovce.
 function inputKind(mode) {
+  if (isDrill(mode)) return 'choice';
   if (mode === 'article') return 'article';
   if (mode === 'recognize') return 'choice';
   return state.settings.typing ? 'text' : 'choice';
@@ -80,6 +81,8 @@ const QUIZ_MODES = ['recognize'];
 // Které otázky dávají u téhle karty smysl. `modes` je tu proto, aby šlo
 // ověřit i chování režimů, které zrovna nejsou zapnuté.
 function modesFor(card, modes = QUIZ_MODES) {
+  // Gramatická karta nese vlastní otázky a QUIZ_MODES se jí netýká.
+  if (card.drills) return card.drills.map(d => 'd:' + d.id);
   const m = [];
   if (modes.includes('recall')) m.push('recall');
   if (modes.includes('recognize')) m.push('recognize');
@@ -89,6 +92,48 @@ function modesFor(card, modes = QUIZ_MODES) {
 }
 
 const key = (deckId, cardId, mode) => `${deckId}:${cardId}:${mode}`;
+
+// Otázka z gramatiky: zadání, správná odpověď a špatné možnosti jsou
+// napsané v datech, nic se z nich neodvozuje.
+const isDrill = mode => String(mode).startsWith('d:');
+const drillOf = it => it.card.drills.find(d => 'd:' + d.id === it.mode);
+
+// Správné řešení celé, jak ho ukázat po odpovědi. Věta s mezerou se doplní
+// (a na začátku věty dostane velké písmeno), jinak zadání → odpověď.
+function drillFull(d) {
+  if (!d.prompt.includes('___')) return `${d.prompt} → ${d.answer}`;
+  const full = d.prompt.replace('___', d.answer);
+  return full.charAt(0).toUpperCase() + full.slice(1);
+}
+
+/* ---------- přesun karet mezi balíčky ---------- */
+
+// Karta přesunutá do jiného balíčku nese `from` — id balíčku, kde byla dřív.
+// Postup je uložený pod `balíček:karta:…`, takže bez převodu by se karta
+// tvářila jako nová a dítě by přišlo o to, co už umí. Převod je idempotentní:
+// co už na novém místě je, nepřepisuje.
+function migrateMoved() {
+  let changed = false;
+  for (const d of decks) for (const c of d.cards) {
+    if (!c.from || c.from === d.id) continue;
+    const oldPrefix = `${c.from}:${c.id}:`;
+    for (const k of Object.keys(state.progress)) {
+      if (!k.startsWith(oldPrefix)) continue;
+      const nk = `${d.id}:${c.id}:` + k.slice(oldPrefix.length);
+      if (!state.progress[nk]) state.progress[nk] = state.progress[k];
+      delete state.progress[k];
+      changed = true;
+    }
+    const oldSeen = seenKey(c.from, c.id);
+    if (state.seen[oldSeen]) {
+      state.seen[seenKey(d.id, c.id)] = true;
+      delete state.seen[oldSeen];
+      changed = true;
+    }
+  }
+  if (changed) save();
+  return changed;
+}
 
 /* ---------- učící sady ---------- */
 
@@ -150,6 +195,7 @@ function grade(k, correct) {
 // Na co se otázka ptá a co všechno se má uznat.
 function targetFor(it) {
   const c = it.card;
+  if (isDrill(it.mode))        return drillOf(it).answer;
   if (it.mode === 'recall')    return c.de;
   if (it.mode === 'recognize') return c.cs;
   if (it.mode === 'article')   return c.article;
@@ -211,6 +257,8 @@ async function loadDecks() {
   decks = await Promise.all(idx.decks.map(async d => {
     const deck = await fetch('decks/' + d.file).then(r => r.json());
     deck.id = deck.id || d.id;
+    deck.area = deck.area || d.area || 'vocab';
+    deck.lesson = deck.lesson || d.lesson;
     return deck;
   }));
   cardIndex = {};
@@ -258,6 +306,52 @@ function buildQueue(deckIds) {
 }
 
 
+// Z čeho se skládají nabídnuté možnosti. Bere se pole podle režimu
+// a distraktory v pořadí od nejpodobnějších: nejdřív stejný slovní druh
+// ve stejném balíčku, pak zbytek balíčku, teprve nakonec celý korpus.
+// Mezi "Videospiel" a "und" by si vybral i ten, kdo se nic nenaučil.
+function choicesFor(it) {
+  const c = it.card;
+  if (isDrill(it.mode)) {
+    const d = drillOf(it);
+    return shuffle([...new Set([d.answer, ...d.choices])]);
+  }
+  const field = it.mode === 'recognize' ? 'cs' : (it.mode === 'plural' ? 'plural' : 'de');
+  const correct = String(targetFor(it));
+
+  const deck = decks.find(d => d.id === it.deckId);
+  const others = deck ? deck.cards.filter(x => x.id !== c.id) : [];
+  const all = [];
+  for (const d of decks) for (const x of d.cards) if (!(d.id === it.deckId && x.id === c.id)) all.push(x);
+
+  // Dvě karty se stejným zadáním (sie = ona, sie = oni) mají obě pravdu.
+  // Nabídnout tu druhou jako „špatnou" by trestalo správnou odpověď.
+  const promptField = it.mode === 'recognize' ? 'de' : 'cs';
+  const values = list => list
+    .filter(x => x[field] && String(x[field]) !== correct)
+    .filter(x => it.mode === 'plural' || strip(x[promptField]) !== strip(c[promptField]))
+    .filter(x => field !== 'plural' || x[field] !== x.de)   // plurál shodný s jednotným není volba
+    .map(x => x[field]);
+
+  const tiers = [
+    values(others.filter(x => x.pos === c.pos)),
+    values(others),
+    values(all.filter(x => x.pos === c.pos)),
+    values(all),
+  ];
+
+  const picked = [];
+  for (const tier of tiers) {
+    for (const v of shuffle([...new Set(tier)])) {
+      if (picked.length >= 3) break;
+      if (!picked.includes(v)) picked.push(v);
+    }
+    if (picked.length >= 3) break;
+  }
+  return shuffle([correct, ...picked]);
+}
+
+
 /* ---------- UI ---------- */
 
 const $ = id => document.getElementById(id);
@@ -294,23 +388,18 @@ function renderHome() {
 
   $('bar-streak').textContent = state.streak.days > 1 ? `🔥 ${state.streak.days} dní` : '';
 
-  $('deck-list').innerHTML = decks.map(d => {
-    const n = dueItems([d.id]);
-    const waiting = n.fresh.length + n.review.length;
-    const b = Math.min(SESSION_MAX, waiting);
-    const learned = deckLearned(d);
-    return `<div class="deck">
-      <div class="deck-main">
-        <div class="deck-name">${esc(d.name)}</div>
-        <div class="deck-sub">${esc(d.topic || (d.cards.length + ' slov'))}${
-          learned.done ? ` · prošel ${learned.done}/${learned.total}` : ''}</div>
-      </div>
-      <div class="deck-actions">
-        <button class="learnbtn" data-browse="${esc(d.id)}" title="Projít si slovíčka">Projít</button>
-        <button class="due ${b ? '' : 'zero'}" data-deck="${esc(d.id)}" ${b ? '' : 'disabled'}
-                title="${b ? 'Nechat se vyzkoušet' : 'Na dnešek hotovo'}">${b ? 'Zkoušet' : '✓'}</button>
-      </div>
-    </div>`;
+  $('deck-list').innerHTML = AREAS.map(area => {
+    const inArea = decks.filter(d => d.area === area.id);
+    if (!inArea.length) return '';
+    let html = `<h2>${esc(area.title)}</h2>`;
+    if (area.id !== 'vocab') return html + inArea.map(deckRow).join('');
+    // Slovní zásoba po lekcích, nejnovější nahoře — tu se zrovna učí.
+    const lessons = [...new Set(inArea.map(d => d.lesson || ''))].sort((a, b) => b.localeCompare(a, 'cs', { numeric: true }));
+    for (const l of lessons) {
+      if (lessons.length > 1 && l) html += `<div class="lesson-head">Lekce ${esc(l)}</div>`;
+      html += inArea.filter(d => (d.lesson || '') === l).map(deckRow).join('');
+    }
+    return html;
   }).join('');
 
   for (const b of $('deck-list').querySelectorAll('.due[data-deck]')) {
@@ -321,6 +410,31 @@ function renderHome() {
   }
 
   renderStats();
+}
+
+const AREAS = [
+  { id: 'vocab',   title: 'Slovní zásoba' },
+  { id: 'grammar', title: 'Gramatika' },
+  { id: 'other',   title: 'Ostatní' },
+];
+
+function deckRow(d) {
+    const n = dueItems([d.id]);
+    const waiting = n.fresh.length + n.review.length;
+    const b = Math.min(SESSION_MAX, waiting);
+    const learned = deckLearned(d);
+    return `<div class="deck">
+      <div class="deck-main">
+        <div class="deck-name">${esc(d.name)}</div>
+        <div class="deck-sub">${esc(d.topic || (d.cards.length + ' karet'))}${
+          learned.done ? ` · prošel ${learned.done}/${learned.total}` : ''}</div>
+      </div>
+      <div class="deck-actions">
+        <button class="learnbtn" data-browse="${esc(d.id)}" title="Projít si slovíčka">Projít</button>
+        <button class="due ${b ? '' : 'zero'}" data-deck="${esc(d.id)}" ${b ? '' : 'disabled'}
+                title="${b ? 'Nechat se vyzkoušet' : 'Na dnešek hotovo'}">${b ? 'Zkoušet' : '✓'}</button>
+      </div>
+    </div>`;
 }
 
 function renderStats() {
@@ -366,7 +480,9 @@ function renderCard() {
 
   $('progress-fill').style.width = (session.pos / session.queue.length * 100) + '%';
   $('bar-title').textContent = `${session.pos + 1} / ${session.queue.length}`;
-  $('mode-label').textContent = MODES[it.mode].label[kind === 'text' ? 'text' : 'choice'];
+  $('mode-label').textContent = isDrill(it.mode)
+    ? drillOf(it).label
+    : MODES[it.mode].label[kind === 'text' ? 'text' : 'choice'];
   $('verdict').classList.add('hidden');
   $('btn-check').classList.toggle('hidden', kind !== 'text');
   $('btn-override').classList.add('hidden');
@@ -376,7 +492,12 @@ function renderCard() {
   for (const el of ['answer-text', 'answer-choice', 'answer-article']) $(el).classList.add('hidden');
   for (const b of document.querySelectorAll('.art')) b.classList.remove('sel', 'right', 'wrong');
 
-  if (it.mode === 'recall') {
+  if (isDrill(it.mode)) {
+    const d = drillOf(it);
+    $('prompt').textContent = d.prompt;
+    $('hint').textContent = d.hint || '';
+    openChoice(it);
+  } else if (it.mode === 'recall') {
     $('prompt').textContent = c.cs;
     // Nápovědu ukazuj jen u psaní. U výběru by zúžila možnosti na jednu.
     $('hint').textContent = kind === 'text' && c.en ? `anglicky: ${c.en}`
@@ -417,44 +538,6 @@ function openText(placeholder) {
   inp.onkeydown = e => { if (e.key === 'Enter') { e.preventDefault(); onCheck(); } };
   setTimeout(() => inp.focus(), 40);
 }
-
-// Z čeho se skládají nabídnuté možnosti. Bere se pole podle režimu
-// a distraktory v pořadí od nejpodobnějších: nejdřív stejný slovní druh
-// ve stejném balíčku, pak zbytek balíčku, teprve nakonec celý korpus.
-// Mezi "Videospiel" a "und" by si vybral i ten, kdo se nic nenaučil.
-function choicesFor(it) {
-  const c = it.card;
-  const field = it.mode === 'recognize' ? 'cs' : (it.mode === 'plural' ? 'plural' : 'de');
-  const correct = String(targetFor(it));
-
-  const deck = decks.find(d => d.id === it.deckId);
-  const others = deck ? deck.cards.filter(x => x.id !== c.id) : [];
-  const all = [];
-  for (const d of decks) for (const x of d.cards) if (!(d.id === it.deckId && x.id === c.id)) all.push(x);
-
-  const values = list => list
-    .filter(x => x[field] && String(x[field]) !== correct)
-    .filter(x => field !== 'plural' || x[field] !== x.de)   // plurál shodný s jednotným není volba
-    .map(x => x[field]);
-
-  const tiers = [
-    values(others.filter(x => x.pos === c.pos)),
-    values(others),
-    values(all.filter(x => x.pos === c.pos)),
-    values(all),
-  ];
-
-  const picked = [];
-  for (const tier of tiers) {
-    for (const v of shuffle([...new Set(tier)])) {
-      if (picked.length >= 3) break;
-      if (!picked.includes(v)) picked.push(v);
-    }
-    if (picked.length >= 3) break;
-  }
-  return shuffle([correct, ...picked]);
-}
-
 
 function openChoice(it) {
   const opts = choicesFor(it);
@@ -497,8 +580,8 @@ function renderSets() {
   $('bar-title').textContent = deck.name;
   $('sets-topic').textContent = deck.topic || deck.name;
   $('sets-summary').textContent = learned.done === learned.total
-    ? `Prošel jsi všechny sady — ${deck.cards.length} slov.`
-    : `${learned.done} z ${learned.total} sad hotových · ${deck.cards.length} slov celkem`;
+    ? `Prošel jsi všechny sady — ${deck.cards.length} karet.`
+    : `${learned.done} z ${learned.total} sad hotových · ${deck.cards.length} karet celkem`;
 
   $('set-list').innerHTML = list.map(s => {
     const st = setStatus(deck.id, s);
@@ -506,7 +589,7 @@ function renderSets() {
     const label = st.done ? '✓' : (st.seen ? `${st.seen}/${st.total}` : 'projít');
     return `<div class="setrow ${state}" data-set="${s.index}">
       <div class="setrow-main">
-        <div class="set-name">Slova ${s.from + 1}–${s.to}</div>
+        <div class="set-name">${esc(deck.unit || 'Slova')} ${s.from + 1}–${s.to}</div>
         <div class="set-sub">${esc(s.cards[0].de)} … ${esc(s.cards[s.cards.length - 1].de)}</div>
         <div class="setbar"><div class="setbar-fill" style="width:${st.seen / st.total * 100}%"></div></div>
       </div>
@@ -540,7 +623,7 @@ function renderBrowse() {
   markSeen(browse.deck.id, c.id);
 
   $('browse-fill').style.width = ((browse.pos + 1) / total * 100) + '%';
-  $('bar-title').textContent = `Slova ${browse.set.from + 1}–${browse.set.to}`;
+  $('bar-title').textContent = `${browse.deck.unit || 'Slova'} ${browse.set.from + 1}–${browse.set.to}`;
   $('b-count').textContent = `${browse.pos + 1} / ${total}`;
 
   // V učícím režimu se člen ukazuje — o to tady jde.
@@ -550,14 +633,17 @@ function renderBrowse() {
   $('b-word').innerHTML = art + esc(c.de);
 
   const extra = [];
+  if (c.note) extra.push(c.note);
   if (c.plural && c.plural !== c.de) extra.push(`množné číslo: ${c.plural}`);
   if (c.form3) extra.push(`on: ${c.form3}`);
   if (c.en) extra.push(`anglicky: ${c.en}`);
   $('b-extra').textContent = extra.join(' · ');
 
   $('b-cs').textContent = c.cs;
-  $('b-example').innerHTML = c.example_de
-    ? `${esc(c.example_de)}<br>${esc(c.example_cs || '')}` : '';
+  $('b-example').innerHTML = c.table
+    ? `<table class="conj">${c.table.map(([p, f]) =>
+        `<tr><td>${esc(p)}</td><td>${esc(f)}</td></tr>`).join('')}</table>`
+    : c.example_de ? `${esc(c.example_de)}<br>${esc(c.example_cs || '')}` : '';
 
   $('b-prev').disabled = browse.pos === 0;
   $('b-next').textContent = browse.pos === total - 1 ? 'hotovo' : 'další ›';
@@ -628,14 +714,18 @@ function finish(it, given, verdict, correct) {
   const art = c.article
     ? c.article.split('/').map(a => `<span class="${esc(a)}">${esc(a)}</span>`).join('/') + ' '
     : '';
+  const d = isDrill(it.mode) ? drillOf(it) : null;
   $('verdict-correct').innerHTML =
-    it.mode === 'recognize'
+    // Zadání je hned nad tím; u otázky bez mezery stačí ukázat odpověď.
+    d ? esc(d.prompt.includes('___') ? drillFull(d) : d.answer)
+    : it.mode === 'recognize'
       ? esc(c.cs)
       : art + esc(c.de) + (c.plural && c.plural !== c.de ? ` <span class="plural">/ ${esc(c.plural)}</span>` : '')
         + (c.form3 ? ` <span class="plural">· ${esc(c.form3)}</span>` : '');
 
-  $('verdict-example').innerHTML = c.example_de
-    ? `${esc(c.example_de)}<br>${esc(c.example_cs || '')}` : '';
+  $('verdict-example').innerHTML = d
+    ? esc(d.explain || '')
+    : c.example_de ? `${esc(c.example_de)}<br>${esc(c.example_cs || '')}` : '';
 
   // "Těsně vedle" u psaní bývá překlep, ne neznalost — ať si to může uznat.
   const canOverride = !correct && verdict === 'near';
@@ -692,6 +782,11 @@ function endSession() {
   $('done-mistakes').innerHTML = session.mistakes.length
     ? '<h2>Co se nepovedlo</h2>' + session.mistakes.map(m => {
         const c = m.card;
+        if (isDrill(m.mode)) {
+          const d = c.drills.find(x => 'd:' + x.id === m.mode);
+          return `<div class="m"><b>${esc(drillFull(d))}</b>
+                  <span>· vybral jsi „${esc(m.given)}"</span></div>`;
+        }
         return `<div class="m"><b>${esc(c.article ? c.article + ' ' : '')}${esc(c.de)}</b>
                 — ${esc(c.cs)} <span>· napsal jsi „${esc(m.given)}"</span></div>`;
       }).join('')
@@ -751,7 +846,7 @@ $('btn-reset').onclick = () => {
 };
 
 loadDecks()
-  .then(() => { renderHome(); show('home'); })
+  .then(() => { migrateMoved(); renderHome(); show('home'); })
   .catch(err => {
     $('view-home').innerHTML =
       `<div class="panel"><b>Slovíčka se nenačetla.</b>

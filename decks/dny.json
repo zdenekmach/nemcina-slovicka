@@ -1,0 +1,65 @@
+{
+ "id": "dny",
+ "name": "Dny v týdnu",
+ "area": "other",
+ "topic": "Montag … Sonntag",
+ "source": "Doplněno mimo učebnici",
+ "cards": [
+  {
+   "id": "den-01",
+   "pos": "noun",
+   "cs": "pondělí",
+   "de": "Montag",
+   "article": "der",
+   "plural": "Montage"
+  },
+  {
+   "id": "den-02",
+   "pos": "noun",
+   "cs": "úterý",
+   "de": "Dienstag",
+   "article": "der",
+   "plural": "Dienstage"
+  },
+  {
+   "id": "den-03",
+   "pos": "noun",
+   "cs": "středa",
+   "de": "Mittwoch",
+   "article": "der",
+   "plural": "Mittwoche"
+  },
+  {
+   "id": "den-04",
+   "pos": "noun",
+   "cs": "čtvrtek",
+   "de": "Donnerstag",
+   "article": "der",
+   "plural": "Donnerstage"
+  },
+  {
+   "id": "den-05",
+   "pos": "noun",
+   "cs": "pátek",
+   "de": "Freitag",
+   "article": "der",
+   "plural": "Freitage"
+  },
+  {
+   "id": "den-06",
+   "pos": "noun",
+   "cs": "sobota",
+   "de": "Samstag",
+   "article": "der",
+   "plural": "Samstage"
+  },
+  {
+   "id": "den-07",
+   "pos": "noun",
+   "cs": "neděle",
+   "de": "Sonntag",
+   "article": "der",
+   "plural": "Sonntage"
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "id": "zeme",
+ "name": "Země",
+ "area": "other",
+ "topic": "Deutschland, Österreich …",
+ "source": "Lekce 1, strany 16–20",
+ "cards": [
+  {
+   "id": "p16-04",
+   "pos": "noun",
+   "page": 16,
+   "cs": "Brazílie",
+   "de": "Brasilien",
+   "from": "l1-16-17"
+  },
+  {
+   "id": "p19-04",
+   "pos": "noun",
+   "page": 19,
+   "cs": "Německo",
+   "de": "Deutschland",
+   "from": "l1-18-19"
+  },
+  {
+   "id": "p20-03",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Polsko",
+   "de": "Polen",
+   "from": "l1-20-23"
+  },
+  {
+   "id": "p20-04",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Slovensko",
+   "de": "Slowakei",
+   "article": "die",
+   "from": "l1-20-23",
+   "example_de": "Ich komme aus der Slowakei.",
+   "example_cs": "Pocházím ze Slovenska."
+  },
+  {
+   "id": "p20-01",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Velká Británie",
+   "de": "Großbritannien",
+   "from": "l1-20-23"
+  },
+  {
+   "id": "p19-08",
+   "pos": "noun",
+   "page": 19,
+   "cs": "Itálie",
+   "de": "Italien",
+   "from": "l1-18-19"
+  },
+  {
+   "id": "p19-17",
+   "pos": "noun",
+   "page": 19,
+   "cs": "Turecko",
+   "de": "Türkei",
+   "article": "die",
+   "from": "l1-18-19",
+   "example_de": "Er kommt aus der Türkei.",
+   "example_cs": "Pochází z Turecka."
+  },
+  {
+   "id": "p19-06",
+   "pos": "noun",
+   "page": 19,
+   "cs": "Francie",
+   "de": "Frankreich",
+   "from": "l1-18-19"
+  },
+  {
+   "id": "p20-06",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Česko",
+   "de": "Tschechien",
+   "from": "l1-20-23"
+  },
+  {
+   "id": "p20-02",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Rakousko",
+   "de": "Österreich",
+   "from": "l1-20-23"
+  },
+  {
+   "id": "p19-14",
+   "pos": "noun",
+   "page": 19,
+   "cs": "Švýcarsko",
+   "de": "Schweiz",
+   "article": "die",
+   "from": "l1-18-19",
+   "example_de": "Sie wohnt in der Schweiz.",
+   "example_cs": "Bydlí ve Švýcarsku."
+  },
+  {
+   "id": "p20-05",
+   "pos": "noun",
+   "page": 20,
+   "cs": "Španělsko",
+   "de": "Spanien",
+   "from": "l1-20-23"
+  }
+ ]
+}

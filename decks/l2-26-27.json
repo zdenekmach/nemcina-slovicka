@@ -1,0 +1,215 @@
+{
+ "id": "l2-26-27",
+ "name": "Strany 26–27",
+ "topic": "hudba a co se mi líbí",
+ "area": "vocab",
+ "lesson": "2",
+ "source": "Mein Wortschatz, lekce 2 — fotky slovníčku",
+ "cards": [
+  {
+   "id": "p26-01",
+   "pos": "noun",
+   "page": 26,
+   "cs": "hudební skupina",
+   "de": "Band",
+   "article": "die",
+   "plural": "Bands"
+  },
+  {
+   "id": "p26-02",
+   "pos": "adj",
+   "page": 26,
+   "cs": "blbý, hloupý",
+   "de": "blöd"
+  },
+  {
+   "id": "p26-03",
+   "pos": "adj",
+   "page": 26,
+   "cs": "skvělý, úžasný",
+   "de": "cool"
+  },
+  {
+   "id": "p26-04",
+   "pos": "adj",
+   "page": 26,
+   "cs": "hloupý, pitomý",
+   "de": "doof"
+  },
+  {
+   "id": "p26-05",
+   "pos": "verb",
+   "page": 26,
+   "cs": "shledávat, myslet",
+   "de": "finden",
+   "form3": "er findet",
+   "example_de": "Wie findest du …?",
+   "example_cs": "Co si myslíš o …?"
+  },
+  {
+   "id": "p26-06",
+   "pos": "verb",
+   "page": 26,
+   "cs": "jít",
+   "de": "gehen",
+   "form3": "er geht"
+  },
+  {
+   "id": "p26-07",
+   "pos": "adj",
+   "page": 26,
+   "cs": "geniální",
+   "de": "genial"
+  },
+  {
+   "id": "p26-08",
+   "pos": "adv",
+   "page": 26,
+   "cs": "dnes",
+   "de": "heute"
+  },
+  {
+   "id": "p26-09",
+   "pos": "adj",
+   "page": 26,
+   "cs": "výtečný, super",
+   "de": "klasse"
+  },
+  {
+   "id": "p26-10",
+   "pos": "adj",
+   "page": 26,
+   "cs": "nudný",
+   "de": "langweilig"
+  },
+  {
+   "id": "p26-11",
+   "pos": "verb",
+   "page": 26,
+   "cs": "mít rád",
+   "de": "mögen",
+   "form3": "er mag"
+  },
+  {
+   "id": "p26-12",
+   "pos": "noun",
+   "page": 26,
+   "cs": "hudba, muzika",
+   "de": "Musik",
+   "article": "die"
+  },
+  {
+   "id": "p26-13",
+   "pos": "other",
+   "page": 26,
+   "cs": "ne",
+   "de": "nein"
+  },
+  {
+   "id": "p26-14",
+   "pos": "noun",
+   "page": 26,
+   "cs": "zkouška",
+   "de": "Probe",
+   "article": "die"
+  },
+  {
+   "id": "p26-15",
+   "pos": "noun",
+   "page": 26,
+   "cs": "rock (hudba)",
+   "de": "Rock",
+   "article": "der"
+  },
+  {
+   "id": "p26-16",
+   "pos": "adj",
+   "page": 26,
+   "cs": "strašný, hrozný",
+   "de": "schrecklich"
+  },
+  {
+   "id": "p26-17",
+   "pos": "pron",
+   "page": 26,
+   "cs": "oni",
+   "de": "sie"
+  },
+  {
+   "id": "p26-18",
+   "pos": "verb",
+   "page": 26,
+   "cs": "hrát",
+   "de": "spielen",
+   "form3": "er spielt"
+  },
+  {
+   "id": "p26-19",
+   "pos": "adj",
+   "page": 26,
+   "cs": "špičkový, skvělý",
+   "de": "spitze"
+  },
+  {
+   "id": "p26-20",
+   "pos": "adj",
+   "page": 26,
+   "cs": "skvělý, úžasný",
+   "de": "toll"
+  },
+  {
+   "id": "p27-01",
+   "pos": "noun",
+   "page": 27,
+   "cs": "basová kytara",
+   "de": "Bass",
+   "article": "der",
+   "plural": "Bässe"
+  },
+  {
+   "id": "p27-02",
+   "pos": "noun",
+   "page": 27,
+   "cs": "basová kytara",
+   "de": "Bassgitarre",
+   "article": "die",
+   "plural": "Bassgitarren"
+  },
+  {
+   "id": "p27-03",
+   "pos": "noun",
+   "page": 27,
+   "cs": "flétna",
+   "de": "Flöte",
+   "article": "die",
+   "plural": "Flöten"
+  },
+  {
+   "id": "p27-04",
+   "pos": "noun",
+   "page": 27,
+   "cs": "housle",
+   "de": "Geige",
+   "article": "die",
+   "plural": "Geigen"
+  },
+  {
+   "id": "p27-05",
+   "pos": "noun",
+   "page": 27,
+   "cs": "klávesy",
+   "de": "Keyboard",
+   "article": "das",
+   "plural": "Keyboards"
+  },
+  {
+   "id": "p27-06",
+   "pos": "noun",
+   "page": 27,
+   "cs": "bicí (souprava)",
+   "de": "Schlagzeug",
+   "article": "das",
+   "plural": "Schlagzeuge"
+  }
+ ]
+}
