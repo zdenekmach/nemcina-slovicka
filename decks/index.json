@@ -78,6 +78,13 @@
    "file": "g-otazky.json"
   },
   {
+   "id": "g-stavba",
+   "name": "Stavba otázky",
+   "topic": "slovosled, tázací slovo, tvar slovesa",
+   "area": "grammar",
+   "file": "g-stavba.json"
+  },
+  {
    "id": "cisla",
    "name": "Čísla 0–20",
    "topic": "null … zwanzig",

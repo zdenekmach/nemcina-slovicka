@@ -214,3 +214,11 @@ button{font:inherit;border-radius:10px;cursor:pointer}
 .plural-line{color:var(--fg);opacity:.82;font-size:18px;margin:2px 0 6px}
 .plural-line:empty{display:none}
 .hint.plural-line{min-height:0}
+
+/* skládání otázky ze slov */
+#order-built{display:flex;flex-wrap:wrap;gap:8px;min-height:52px;padding:10px;
+  border:1px dashed var(--line);border-radius:12px;align-items:center;margin-bottom:14px}
+#order-pool{display:flex;flex-wrap:wrap;gap:8px;min-height:44px}
+.tile{background:var(--panel-2);color:var(--fg);border:1px solid var(--line);
+  border-radius:10px;padding:10px 14px;font-size:18px;cursor:pointer}
+#order-built .tile{background:rgba(91,140,255,.16);border-color:var(--accent)}

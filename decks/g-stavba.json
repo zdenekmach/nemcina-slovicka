@@ -1,0 +1,730 @@
+{
+ "id": "g-stavba",
+ "name": "Stavba otázky",
+ "area": "grammar",
+ "unit": "Otázky",
+ "topic": "slovosled, tázací slovo, tvar slovesa",
+ "source": "Otázky z lekcí 1 a 2",
+ "cards": [
+  {
+   "id": "st-01",
+   "pos": "qa",
+   "cs": "Kdo je to?",
+   "de": "Wer ist das?",
+   "example_de": "Das ist Jan.",
+   "example_cs": "To je Jan.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kdo je to?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wer ist das?",
+     "tiles": [
+      "wer",
+      "ist",
+      "das"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ ist das?",
+     "hint": "odpověď: Das ist Jan.",
+     "answer": "Wer",
+     "choices": [
+      "Wo",
+      "Woher",
+      "Wie"
+     ],
+     "explain": "Wer ist das? — Kdo je to?"
+    }
+   ]
+  },
+  {
+   "id": "st-02",
+   "pos": "qa",
+   "cs": "Jak se jmenuješ?",
+   "de": "Wie heißt du?",
+   "example_de": "Ich heiße Peter.",
+   "example_cs": "Jmenuji se Petr.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Jak se jmenuješ?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wie heißt du?",
+     "tiles": [
+      "wie",
+      "heißt",
+      "du"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ heißt du?",
+     "hint": "odpověď: Ich heiße Peter.",
+     "answer": "Wie",
+     "choices": [
+      "Wo",
+      "Woher",
+      "Wer"
+     ],
+     "explain": "Wie heißt du? — Jak se jmenuješ?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie ___ du?",
+     "hint": "heißen · jmenovat se — odpověď: Ich heiße Peter.",
+     "answer": "heißt",
+     "choices": [
+      "heiße",
+      "heißen"
+     ],
+     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+    }
+   ]
+  },
+  {
+   "id": "st-03",
+   "pos": "qa",
+   "cs": "Jak se jmenuje?",
+   "de": "Wie heißt er?",
+   "example_de": "Er heißt Ludwig.",
+   "example_cs": "Jmenuje se Ludwig.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Jak se jmenuje?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wie heißt er?",
+     "tiles": [
+      "wie",
+      "heißt",
+      "er"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ heißt er?",
+     "hint": "odpověď: Er heißt Ludwig.",
+     "answer": "Wie",
+     "choices": [
+      "Wo",
+      "Woher",
+      "Wer"
+     ],
+     "explain": "Wie heißt er? — Jak se jmenuje?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie ___ er?",
+     "hint": "heißen · jmenovat se — odpověď: Er heißt Ludwig.",
+     "answer": "heißt",
+     "choices": [
+      "heiße",
+      "heißen"
+     ],
+     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+    }
+   ]
+  },
+  {
+   "id": "st-04",
+   "pos": "qa",
+   "cs": "Kde bydlíš?",
+   "de": "Wo wohnst du?",
+   "example_de": "Ich wohne in Prag.",
+   "example_cs": "Bydlím v Praze.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kde bydlíš?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wo wohnst du?",
+     "tiles": [
+      "wo",
+      "wohnst",
+      "du"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ wohnst du?",
+     "hint": "odpověď: Ich wohne in Prag.",
+     "answer": "Wo",
+     "choices": [
+      "Woher",
+      "Wer",
+      "Wie"
+     ],
+     "explain": "Wo wohnst du? — Kde bydlíš?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wo ___ du?",
+     "hint": "wohnen · bydlet — odpověď: Ich wohne in Prag.",
+     "answer": "wohnst",
+     "choices": [
+      "wohne",
+      "wohnt",
+      "wohnen"
+     ],
+     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+    }
+   ]
+  },
+  {
+   "id": "st-05",
+   "pos": "qa",
+   "cs": "Kde bydlíte?",
+   "de": "Wo wohnt ihr?",
+   "example_de": "Wir wohnen in Brünn.",
+   "example_cs": "Bydlíme v Brně.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kde bydlíte?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wo wohnt ihr?",
+     "tiles": [
+      "wo",
+      "wohnt",
+      "ihr"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ wohnt ihr?",
+     "hint": "odpověď: Wir wohnen in Brünn.",
+     "answer": "Wo",
+     "choices": [
+      "Woher",
+      "Wer",
+      "Wie"
+     ],
+     "explain": "Wo wohnt ihr? — Kde bydlíte?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wo ___ ihr?",
+     "hint": "wohnen · bydlet — odpověď: Wir wohnen in Brünn.",
+     "answer": "wohnt",
+     "choices": [
+      "wohne",
+      "wohnst",
+      "wohnen"
+     ],
+     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+    }
+   ]
+  },
+  {
+   "id": "st-06",
+   "pos": "qa",
+   "cs": "Odkud pocházíš?",
+   "de": "Woher kommst du?",
+   "example_de": "Ich komme aus Tschechien.",
+   "example_cs": "Pocházím z Česka.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Odkud pocházíš?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Woher kommst du?",
+     "tiles": [
+      "woher",
+      "kommst",
+      "du"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ kommst du?",
+     "hint": "odpověď: Ich komme aus Tschechien.",
+     "answer": "Woher",
+     "choices": [
+      "Wo",
+      "Wer",
+      "Wie"
+     ],
+     "explain": "Woher kommst du? — Odkud pocházíš?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Woher ___ du?",
+     "hint": "kommen · pocházet — odpověď: Ich komme aus Tschechien.",
+     "answer": "kommst",
+     "choices": [
+      "komme",
+      "kommt",
+      "kommen"
+     ],
+     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+    }
+   ]
+  },
+  {
+   "id": "st-07",
+   "pos": "qa",
+   "cs": "Odkud pochází Lena?",
+   "de": "Woher kommt Lena?",
+   "example_de": "Lena kommt aus der Schweiz.",
+   "example_cs": "Lena pochází ze Švýcarska.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Odkud pochází Lena?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Woher kommt Lena?",
+     "tiles": [
+      "woher",
+      "kommt",
+      "Lena"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ kommt Lena?",
+     "hint": "odpověď: Lena kommt aus der Schweiz.",
+     "answer": "Woher",
+     "choices": [
+      "Wo",
+      "Wer",
+      "Wie"
+     ],
+     "explain": "Woher kommt Lena? — Odkud pochází Lena?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Woher ___ Lena?",
+     "hint": "kommen · pocházet — odpověď: Lena kommt aus der Schweiz.",
+     "answer": "kommt",
+     "choices": [
+      "komme",
+      "kommst",
+      "kommen"
+     ],
+     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+    }
+   ]
+  },
+  {
+   "id": "st-08",
+   "pos": "qa",
+   "cs": "Odkud pocházíte?",
+   "de": "Woher kommt ihr?",
+   "example_de": "Wir kommen aus Polen.",
+   "example_cs": "Pocházíme z Polska.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Odkud pocházíte?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Woher kommt ihr?",
+     "tiles": [
+      "woher",
+      "kommt",
+      "ihr"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ kommt ihr?",
+     "hint": "odpověď: Wir kommen aus Polen.",
+     "answer": "Woher",
+     "choices": [
+      "Wo",
+      "Wer",
+      "Wie"
+     ],
+     "explain": "Woher kommt ihr? — Odkud pocházíte?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Woher ___ ihr?",
+     "hint": "kommen · pocházet — odpověď: Wir kommen aus Polen.",
+     "answer": "kommt",
+     "choices": [
+      "komme",
+      "kommst",
+      "kommen"
+     ],
+     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+    }
+   ]
+  },
+  {
+   "id": "st-09",
+   "pos": "qa",
+   "cs": "Kolik ti je let?",
+   "de": "Wie alt bist du?",
+   "example_de": "Ich bin zwölf Jahre alt.",
+   "example_cs": "Je mi dvanáct let.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kolik ti je let?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wie alt bist du?",
+     "tiles": [
+      "wie",
+      "alt",
+      "bist",
+      "du"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ alt bist du?",
+     "hint": "odpověď: Ich bin zwölf Jahre alt.",
+     "answer": "Wie",
+     "choices": [
+      "Wo",
+      "Woher",
+      "Wer"
+     ],
+     "explain": "Wie alt bist du? — Kolik ti je let?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie alt ___ du?",
+     "hint": "sein · být — odpověď: Ich bin zwölf Jahre alt.",
+     "answer": "bist",
+     "choices": [
+      "bin",
+      "ist",
+      "sind",
+      "seid"
+     ],
+     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+    }
+   ]
+  },
+  {
+   "id": "st-10",
+   "pos": "qa",
+   "cs": "Kolik je vám let?",
+   "de": "Wie alt seid ihr?",
+   "example_de": "Wir sind dreizehn Jahre alt.",
+   "example_cs": "Je nám třináct let.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kolik je vám let?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wie alt seid ihr?",
+     "tiles": [
+      "wie",
+      "alt",
+      "seid",
+      "ihr"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ alt seid ihr?",
+     "hint": "odpověď: Wir sind dreizehn Jahre alt.",
+     "answer": "Wie",
+     "choices": [
+      "Wo",
+      "Woher",
+      "Wer"
+     ],
+     "explain": "Wie alt seid ihr? — Kolik je vám let?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie alt ___ ihr?",
+     "hint": "sein · být — odpověď: Wir sind dreizehn Jahre alt.",
+     "answer": "seid",
+     "choices": [
+      "bin",
+      "bist",
+      "ist",
+      "sind"
+     ],
+     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+    }
+   ]
+  },
+  {
+   "id": "st-11",
+   "pos": "qa",
+   "cs": "Co rád děláš?",
+   "de": "Was machst du gern?",
+   "example_de": "Ich spiele gern Tennis.",
+   "example_cs": "Rád hraju tenis.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Co rád děláš?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Was machst du gern?",
+     "tiles": [
+      "was",
+      "machst",
+      "du",
+      "gern"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ machst du gern?",
+     "hint": "odpověď: Ich spiele gern Tennis.",
+     "answer": "Was",
+     "choices": [
+      "Wo",
+      "Woher",
+      "Wer"
+     ],
+     "explain": "Was machst du gern? — Co rád děláš?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ du gern?",
+     "hint": "machen · dělat — odpověď: Ich spiele gern Tennis.",
+     "answer": "machst",
+     "choices": [
+      "mache",
+      "macht",
+      "machen"
+     ],
+     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+    }
+   ]
+  },
+  {
+   "id": "st-12",
+   "pos": "qa",
+   "cs": "Co si myslíš o manze?",
+   "de": "Wie findest du Manga?",
+   "example_de": "Ich finde Manga cool.",
+   "example_cs": "Manga je podle mě super.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Co si myslíš o manze?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wie findest du Manga?",
+     "tiles": [
+      "wie",
+      "findest",
+      "du",
+      "Manga"
+     ],
+     "accept": [],
+     "explain": "Tázací slovo na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "word",
+     "label": "Doplň tázací slovo",
+     "prompt": "___ findest du Manga?",
+     "hint": "odpověď: Ich finde Manga cool.",
+     "answer": "Wie",
+     "choices": [
+      "Wo",
+      "Woher",
+      "Wer"
+     ],
+     "explain": "Wie findest du Manga? — Co si myslíš o manze?"
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie ___ du Manga?",
+     "hint": "finden · shledávat, myslet — odpověď: Ich finde Manga cool.",
+     "answer": "findest",
+     "choices": [
+      "finde",
+      "findet",
+      "finden"
+     ],
+     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+    }
+   ]
+  },
+  {
+   "id": "st-13",
+   "pos": "qa",
+   "cs": "Hraješ na kytaru?",
+   "de": "Spielst du Gitarre?",
+   "example_de": "Ja, ich spiele Gitarre.",
+   "example_cs": "Ano, hraju na kytaru.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Hraješ na kytaru?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Spielst du Gitarre?",
+     "tiles": [
+      "spielst",
+      "du",
+      "Gitarre"
+     ],
+     "accept": [],
+     "explain": "Otázka bez tázacího slova začíná slovesem, podmět je hned za ním."
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du Gitarre?",
+     "hint": "spielen · hrát — odpověď: Ja, ich spiele Gitarre.",
+     "answer": "spielst",
+     "choices": [
+      "spiele",
+      "spielt",
+      "spielen"
+     ],
+     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+    }
+   ]
+  },
+  {
+   "id": "st-14",
+   "pos": "qa",
+   "cs": "Posloucháš rád hudbu?",
+   "de": "Hörst du gern Musik?",
+   "example_de": "Ja, ich höre gern Musik.",
+   "example_cs": "Ano, rád poslouchám hudbu.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Posloucháš rád hudbu?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Hörst du gern Musik?",
+     "tiles": [
+      "hörst",
+      "du",
+      "gern",
+      "Musik"
+     ],
+     "accept": [
+      "Hörst du Musik gern?"
+     ],
+     "explain": "Otázka bez tázacího slova začíná slovesem, podmět je hned za ním."
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du gern Musik?",
+     "hint": "hören · poslouchat — odpověď: Ja, ich höre gern Musik.",
+     "answer": "hörst",
+     "choices": [
+      "höre",
+      "hört",
+      "hören"
+     ],
+     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+    }
+   ]
+  },
+  {
+   "id": "st-15",
+   "pos": "qa",
+   "cs": "Učíte se německy?",
+   "de": "Lernt ihr Deutsch?",
+   "example_de": "Ja, wir lernen Deutsch.",
+   "example_cs": "Ano, učíme se německy.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Učíte se německy?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Lernt ihr Deutsch?",
+     "tiles": [
+      "lernt",
+      "ihr",
+      "Deutsch"
+     ],
+     "accept": [],
+     "explain": "Otázka bez tázacího slova začíná slovesem, podmět je hned za ním."
+    },
+    {
+     "id": "verb",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr Deutsch?",
+     "hint": "lernen · učit se — odpověď: Ja, wir lernen Deutsch.",
+     "answer": "lernt",
+     "choices": [
+      "lerne",
+      "lernst",
+      "lernen"
+     ],
+     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+    }
+   ]
+  }
+ ]
+}

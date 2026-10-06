@@ -23,9 +23,21 @@
     [
      "er/sie",
      "spielt"
+    ],
+    [
+     "wir",
+     "spielen"
+    ],
+    [
+     "ihr",
+     "spielt"
+    ],
+    [
+     "sie (oni)",
+     "spielen"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -38,7 +50,7 @@
       "spielt",
       "spielen"
      ],
-     "explain": "ich spiele · du spielst · er/sie spielt"
+     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
     },
     {
      "id": "du",
@@ -51,7 +63,7 @@
       "spielt",
       "spielen"
      ],
-     "explain": "ich spiele · du spielst · er/sie spielt"
+     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
     },
     {
      "id": "er",
@@ -64,7 +76,46 @@
       "spielst",
       "spielen"
      ],
-     "explain": "ich spiele · du spielst · er/sie spielt"
+     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ Fußball.",
+     "hint": "spielen · hrát",
+     "answer": "spielen",
+     "choices": [
+      "spiele",
+      "spielst",
+      "spielt"
+     ],
+     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr Tennis?",
+     "hint": "spielen · hrát",
+     "answer": "spielt",
+     "choices": [
+      "spiele",
+      "spielst",
+      "spielen"
+     ],
+     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan und Tom ___ Schach.",
+     "hint": "spielen · hrát",
+     "answer": "spielen",
+     "choices": [
+      "spiele",
+      "spielst",
+      "spielt"
+     ],
+     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
     }
    ]
   },
@@ -85,9 +136,21 @@
     [
      "er/sie",
      "macht"
+    ],
+    [
+     "wir",
+     "machen"
+    ],
+    [
+     "ihr",
+     "macht"
+    ],
+    [
+     "sie (oni)",
+     "machen"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -100,7 +163,7 @@
       "macht",
       "machen"
      ],
-     "explain": "ich mache · du machst · er/sie macht"
+     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
     },
     {
      "id": "du",
@@ -113,12 +176,12 @@
       "macht",
       "machen"
      ],
-     "explain": "ich mache · du machst · er/sie macht"
+     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
     },
     {
      "id": "er",
      "label": "Doplň tvar slovesa",
-     "prompt": "Sie ___ Judo.",
+     "prompt": "Lena ___ Judo.",
      "hint": "machen · dělat",
      "answer": "macht",
      "choices": [
@@ -126,7 +189,46 @@
       "machst",
       "machen"
      ],
-     "explain": "ich mache · du machst · er/sie macht"
+     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ gern Karaoke.",
+     "hint": "machen · dělat",
+     "answer": "machen",
+     "choices": [
+      "mache",
+      "machst",
+      "macht"
+     ],
+     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ ihr heute?",
+     "hint": "machen · dělat",
+     "answer": "macht",
+     "choices": [
+      "mache",
+      "machst",
+      "machen"
+     ],
+     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena und Eva ___ Judo.",
+     "hint": "machen · dělat",
+     "answer": "machen",
+     "choices": [
+      "mache",
+      "machst",
+      "macht"
+     ],
+     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
     }
    ]
   },
@@ -147,9 +249,21 @@
     [
      "er/sie",
      "hört"
+    ],
+    [
+     "wir",
+     "hören"
+    ],
+    [
+     "ihr",
+     "hört"
+    ],
+    [
+     "sie (oni)",
+     "hören"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -162,7 +276,7 @@
       "hört",
       "hören"
      ],
-     "explain": "ich höre · du hörst · er/sie hört"
+     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
     },
     {
      "id": "du",
@@ -175,12 +289,12 @@
       "hört",
       "hören"
      ],
-     "explain": "ich höre · du hörst · er/sie hört"
+     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
     },
     {
      "id": "er",
      "label": "Doplň tvar slovesa",
-     "prompt": "Sie ___ gern Rock.",
+     "prompt": "Tom ___ gern Rock.",
      "hint": "hören · poslouchat",
      "answer": "hört",
      "choices": [
@@ -188,7 +302,46 @@
       "hörst",
       "hören"
      ],
-     "explain": "ich höre · du hörst · er/sie hört"
+     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ Musik.",
+     "hint": "hören · poslouchat",
+     "answer": "hören",
+     "choices": [
+      "höre",
+      "hörst",
+      "hört"
+     ],
+     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr gern Rock?",
+     "hint": "hören · poslouchat",
+     "answer": "hört",
+     "choices": [
+      "höre",
+      "hörst",
+      "hören"
+     ],
+     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Mama und Papa ___ gern Musik.",
+     "hint": "hören · poslouchat",
+     "answer": "hören",
+     "choices": [
+      "höre",
+      "hörst",
+      "hört"
+     ],
+     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
     }
    ]
   },
@@ -209,9 +362,21 @@
     [
      "er/sie",
      "lernt"
+    ],
+    [
+     "wir",
+     "lernen"
+    ],
+    [
+     "ihr",
+     "lernt"
+    ],
+    [
+     "sie (oni)",
+     "lernen"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -224,7 +389,7 @@
       "lernt",
       "lernen"
      ],
-     "explain": "ich lerne · du lernst · er/sie lernt"
+     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
     },
     {
      "id": "du",
@@ -237,7 +402,7 @@
       "lernt",
       "lernen"
      ],
-     "explain": "ich lerne · du lernst · er/sie lernt"
+     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
     },
     {
      "id": "er",
@@ -250,7 +415,46 @@
       "lernst",
       "lernen"
      ],
-     "explain": "ich lerne · du lernst · er/sie lernt"
+     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ Deutsch.",
+     "hint": "lernen · učit se",
+     "answer": "lernen",
+     "choices": [
+      "lerne",
+      "lernst",
+      "lernt"
+     ],
+     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr Englisch?",
+     "hint": "lernen · učit se",
+     "answer": "lernt",
+     "choices": [
+      "lerne",
+      "lernst",
+      "lernen"
+     ],
+     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan und Lena ___ Deutsch.",
+     "hint": "lernen · učit se",
+     "answer": "lernen",
+     "choices": [
+      "lerne",
+      "lernst",
+      "lernt"
+     ],
+     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
     }
    ]
   },
@@ -271,9 +475,21 @@
     [
      "er/sie",
      "singt"
+    ],
+    [
+     "wir",
+     "singen"
+    ],
+    [
+     "ihr",
+     "singt"
+    ],
+    [
+     "sie (oni)",
+     "singen"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -286,7 +502,7 @@
       "singt",
       "singen"
      ],
-     "explain": "ich singe · du singst · er/sie singt"
+     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
     },
     {
      "id": "du",
@@ -299,7 +515,7 @@
       "singt",
       "singen"
      ],
-     "explain": "ich singe · du singst · er/sie singt"
+     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
     },
     {
      "id": "er",
@@ -312,7 +528,46 @@
       "singst",
       "singen"
      ],
-     "explain": "ich singe · du singst · er/sie singt"
+     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ gern.",
+     "hint": "singen · zpívat",
+     "answer": "singen",
+     "choices": [
+      "singe",
+      "singst",
+      "singt"
+     ],
+     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr Karaoke?",
+     "hint": "singen · zpívat",
+     "answer": "singt",
+     "choices": [
+      "singe",
+      "singst",
+      "singen"
+     ],
+     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena und Eva ___ in der Band.",
+     "hint": "singen · zpívat",
+     "answer": "singen",
+     "choices": [
+      "singe",
+      "singst",
+      "singt"
+     ],
+     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
     }
    ]
   },
@@ -333,9 +588,21 @@
     [
      "er/sie",
      "geht"
+    ],
+    [
+     "wir",
+     "gehen"
+    ],
+    [
+     "ihr",
+     "geht"
+    ],
+    [
+     "sie (oni)",
+     "gehen"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -348,7 +615,7 @@
       "geht",
       "gehen"
      ],
-     "explain": "ich gehe · du gehst · er/sie geht"
+     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
     },
     {
      "id": "du",
@@ -361,7 +628,7 @@
       "geht",
       "gehen"
      ],
-     "explain": "ich gehe · du gehst · er/sie geht"
+     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
     },
     {
      "id": "er",
@@ -374,7 +641,46 @@
       "gehst",
       "gehen"
      ],
-     "explain": "ich gehe · du gehst · er/sie geht"
+     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ heute ins Kino.",
+     "hint": "gehen · jít",
+     "answer": "gehen",
+     "choices": [
+      "gehe",
+      "gehst",
+      "geht"
+     ],
+     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr auch?",
+     "hint": "gehen · jít",
+     "answer": "geht",
+     "choices": [
+      "gehe",
+      "gehst",
+      "gehen"
+     ],
+     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan und Tom ___ heute ins Theater.",
+     "hint": "gehen · jít",
+     "answer": "gehen",
+     "choices": [
+      "gehe",
+      "gehst",
+      "geht"
+     ],
+     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
     }
    ]
   },
@@ -395,9 +701,21 @@
     [
      "er/sie",
      "schreibt"
+    ],
+    [
+     "wir",
+     "schreiben"
+    ],
+    [
+     "ihr",
+     "schreibt"
+    ],
+    [
+     "sie (oni)",
+     "schreiben"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -410,7 +728,7 @@
       "schreibt",
       "schreiben"
      ],
-     "explain": "ich schreibe · du schreibst · er/sie schreibt"
+     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
     },
     {
      "id": "du",
@@ -423,7 +741,7 @@
       "schreibt",
       "schreiben"
      ],
-     "explain": "ich schreibe · du schreibst · er/sie schreibt"
+     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
     },
     {
      "id": "er",
@@ -436,7 +754,46 @@
       "schreibst",
       "schreiben"
      ],
-     "explain": "ich schreibe · du schreibst · er/sie schreibt"
+     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ eine E-Mail.",
+     "hint": "schreiben · psát",
+     "answer": "schreiben",
+     "choices": [
+      "schreibe",
+      "schreibst",
+      "schreibt"
+     ],
+     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ ihr?",
+     "hint": "schreiben · psát",
+     "answer": "schreibt",
+     "choices": [
+      "schreibe",
+      "schreibst",
+      "schreiben"
+     ],
+     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Mama und Papa ___ eine E-Mail.",
+     "hint": "schreiben · psát",
+     "answer": "schreiben",
+     "choices": [
+      "schreibe",
+      "schreibst",
+      "schreibt"
+     ],
+     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
     }
    ]
   },
@@ -457,9 +814,21 @@
     [
      "er/sie",
      "telefoniert"
+    ],
+    [
+     "wir",
+     "telefonieren"
+    ],
+    [
+     "ihr",
+     "telefoniert"
+    ],
+    [
+     "sie (oni)",
+     "telefonieren"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -472,7 +841,7 @@
       "telefoniert",
       "telefonieren"
      ],
-     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert"
+     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
     },
     {
      "id": "du",
@@ -485,12 +854,12 @@
       "telefoniert",
       "telefonieren"
      ],
-     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert"
+     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
     },
     {
      "id": "er",
      "label": "Doplň tvar slovesa",
-     "prompt": "Sie ___ mit Tante Eva.",
+     "prompt": "Lena ___ mit Tante Eva.",
      "hint": "telefonieren · telefonovat",
      "answer": "telefoniert",
      "choices": [
@@ -498,7 +867,46 @@
       "telefonierst",
       "telefonieren"
      ],
-     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert"
+     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ mit Oma.",
+     "hint": "telefonieren · telefonovat",
+     "answer": "telefonieren",
+     "choices": [
+      "telefoniere",
+      "telefonierst",
+      "telefoniert"
+     ],
+     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr mit Papa?",
+     "hint": "telefonieren · telefonovat",
+     "answer": "telefoniert",
+     "choices": [
+      "telefoniere",
+      "telefonierst",
+      "telefonieren"
+     ],
+     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena und Eva ___ viel.",
+     "hint": "telefonieren · telefonovat",
+     "answer": "telefonieren",
+     "choices": [
+      "telefoniere",
+      "telefonierst",
+      "telefoniert"
+     ],
+     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
     }
    ]
   },
@@ -519,9 +927,21 @@
     [
      "er/sie",
      "fotografiert"
+    ],
+    [
+     "wir",
+     "fotografieren"
+    ],
+    [
+     "ihr",
+     "fotografiert"
+    ],
+    [
+     "sie (oni)",
+     "fotografieren"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -534,7 +954,7 @@
       "fotografiert",
       "fotografieren"
      ],
-     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert"
+     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
     },
     {
      "id": "du",
@@ -547,7 +967,7 @@
       "fotografiert",
       "fotografieren"
      ],
-     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert"
+     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
     },
     {
      "id": "er",
@@ -560,7 +980,46 @@
       "fotografierst",
       "fotografieren"
      ],
-     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert"
+     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ gern.",
+     "hint": "fotografieren · fotografovat",
+     "answer": "fotografieren",
+     "choices": [
+      "fotografiere",
+      "fotografierst",
+      "fotografiert"
+     ],
+     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ ihr?",
+     "hint": "fotografieren · fotografovat",
+     "answer": "fotografiert",
+     "choices": [
+      "fotografiere",
+      "fotografierst",
+      "fotografieren"
+     ],
+     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan und Tom ___ viel.",
+     "hint": "fotografieren · fotografovat",
+     "answer": "fotografieren",
+     "choices": [
+      "fotografiere",
+      "fotografierst",
+      "fotografiert"
+     ],
+     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
     }
    ]
   },
@@ -581,9 +1040,21 @@
     [
      "er/sie",
      "joggt"
+    ],
+    [
+     "wir",
+     "joggen"
+    ],
+    [
+     "ihr",
+     "joggt"
+    ],
+    [
+     "sie (oni)",
+     "joggen"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -596,7 +1067,7 @@
       "joggt",
       "joggen"
      ],
-     "explain": "ich jogge · du joggst · er/sie joggt"
+     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
     },
     {
      "id": "du",
@@ -609,12 +1080,12 @@
       "joggt",
       "joggen"
      ],
-     "explain": "ich jogge · du joggst · er/sie joggt"
+     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
     },
     {
      "id": "er",
      "label": "Doplň tvar slovesa",
-     "prompt": "Sie ___ gern.",
+     "prompt": "Papa ___ gern.",
      "hint": "joggen · (kondičně) běhat",
      "answer": "joggt",
      "choices": [
@@ -622,7 +1093,46 @@
       "joggst",
       "joggen"
      ],
-     "explain": "ich jogge · du joggst · er/sie joggt"
+     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ heute.",
+     "hint": "joggen · (kondičně) běhat",
+     "answer": "joggen",
+     "choices": [
+      "jogge",
+      "joggst",
+      "joggt"
+     ],
+     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr auch?",
+     "hint": "joggen · (kondičně) běhat",
+     "answer": "joggt",
+     "choices": [
+      "jogge",
+      "joggst",
+      "joggen"
+     ],
+     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Mama und Papa ___ gern.",
+     "hint": "joggen · (kondičně) běhat",
+     "answer": "joggen",
+     "choices": [
+      "jogge",
+      "joggst",
+      "joggt"
+     ],
+     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
     }
    ]
   },
@@ -643,9 +1153,21 @@
     [
      "er/sie",
      "findet"
+    ],
+    [
+     "wir",
+     "finden"
+    ],
+    [
+     "ihr",
+     "findet"
+    ],
+    [
+     "sie (oni)",
+     "finden"
     ]
    ],
-   "note": "Kmen končí na -d, takže se před koncovku vkládá -e-: du findest, er findet.",
+   "note": "Kmen končí na -d, takže se před koncovku vkládá -e-: du findest, er findet, ihr findet.",
    "drills": [
     {
      "id": "ich",
@@ -658,7 +1180,7 @@
       "findet",
       "finden"
      ],
-     "explain": "ich finde · du findest · er/sie findet"
+     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
     },
     {
      "id": "du",
@@ -671,7 +1193,7 @@
       "findet",
       "finden"
      ],
-     "explain": "ich finde · du findest · er/sie findet"
+     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
     },
     {
      "id": "er",
@@ -684,7 +1206,46 @@
       "findest",
       "finden"
      ],
-     "explain": "ich finde · du findest · er/sie findet"
+     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ Rock cool.",
+     "hint": "finden · shledávat, myslet",
+     "answer": "finden",
+     "choices": [
+      "finde",
+      "findest",
+      "findet"
+     ],
+     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie ___ ihr Manga?",
+     "hint": "finden · shledávat, myslet",
+     "answer": "findet",
+     "choices": [
+      "finde",
+      "findest",
+      "finden"
+     ],
+     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan und Lena ___ Tennis langweilig.",
+     "hint": "finden · shledávat, myslet",
+     "answer": "finden",
+     "choices": [
+      "finde",
+      "findest",
+      "findet"
+     ],
+     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
     }
    ]
   },
@@ -705,6 +1266,18 @@
     [
      "er/sie",
      "tanzt"
+    ],
+    [
+     "wir",
+     "tanzen"
+    ],
+    [
+     "ihr",
+     "tanzt"
+    ],
+    [
+     "sie (oni)",
+     "tanzen"
     ]
    ],
    "note": "Kmen končí na -z, takže u du se přidává jen -t: du tanzt.",
@@ -719,7 +1292,7 @@
       "tanzt",
       "tanzen"
      ],
-     "explain": "ich tanze · du tanzt · er/sie tanzt"
+     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
     },
     {
      "id": "du",
@@ -731,7 +1304,7 @@
       "tanze",
       "tanzen"
      ],
-     "explain": "ich tanze · du tanzt · er/sie tanzt"
+     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
     },
     {
      "id": "er",
@@ -743,7 +1316,43 @@
       "tanze",
       "tanzen"
      ],
-     "explain": "ich tanze · du tanzt · er/sie tanzt"
+     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ gern.",
+     "hint": "tanzen · tancovat",
+     "answer": "tanzen",
+     "choices": [
+      "tanze",
+      "tanzt"
+     ],
+     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr auch?",
+     "hint": "tanzen · tancovat",
+     "answer": "tanzt",
+     "choices": [
+      "tanze",
+      "tanzen"
+     ],
+     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena und Eva ___ super.",
+     "hint": "tanzen · tancovat",
+     "answer": "tanzen",
+     "choices": [
+      "tanze",
+      "tanzt"
+     ],
+     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
     }
    ]
   }

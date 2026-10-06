@@ -23,8 +23,9 @@ const MODES = {
 
 // Psaní je na učení účinnější, ale na startu je to zeď. Výchozí je proto
 // výběr z možností a psaní se zapíná v nastavení na úvodní obrazovce.
-function inputKind(mode) {
-  if (isDrill(mode)) return 'choice';
+function inputKind(mode, it) {
+  // Skládání otázky ze slov má vlastní ovládání, ostatní gramatika je výběr.
+  if (isDrill(mode)) return it && drillOf(it).kind === 'order' ? 'order' : 'choice';
   if (mode === 'article') return 'article';
   if (mode === 'recognize') return 'choice';
   return state.settings.typing ? 'text' : 'choice';
@@ -116,6 +117,34 @@ function pluralLabel(c) {
   if (c.only === 'pl') return 'jen množné číslo';
   if (c.only === 'sg') return 'jen jednotné číslo';
   return c.plural ? `množné číslo: die ${c.plural}` : '';
+}
+
+/* ---------- skládání otázky ze slov ---------- */
+
+// Porovnává se pořadí slov, ne velká písmena ani otazník. Uzná se odpověď
+// i každá varianta z `accept` (Hörst du Musik gern? = Hörst du gern Musik?).
+const orderKey = s => String(s).toLowerCase().replace(/[?.!]/g, ' ').trim().split(/\s+/).join(' ');
+
+function orderVerdict(d, built) {
+  const given = orderKey(built.join(' '));
+  return [d.answer, ...(d.accept || [])].some(a => orderKey(a) === given) ? 'ok' : 'no';
+}
+
+// Kartičky zamíchané tak, aby nevyšly rovnou ve správném pořadí.
+function orderTiles(d) {
+  const tiles = [...d.tiles];
+  if (tiles.length < 2) return tiles;
+  for (let i = 0; i < 20; i++) {
+    shuffle(tiles);
+    if (orderVerdict(d, tiles) === 'no') break;
+  }
+  return tiles;
+}
+
+// Složená věta, jak se ukáže: velké první písmeno, otazník na konci.
+function orderSentence(built) {
+  const s = built.join(' ');
+  return s ? s.charAt(0).toUpperCase() + s.slice(1) + '?' : '';
 }
 
 /* ---------- přesun karet mezi balíčky ---------- */
@@ -493,7 +522,7 @@ function startSession(deckIds) {
 function renderCard() {
   const it = session.queue[session.pos];
   const c = it.card;
-  const kind = inputKind(it.mode);
+  const kind = inputKind(it.mode, it);
 
   $('progress-fill').style.width = (session.pos / session.queue.length * 100) + '%';
   $('bar-title').textContent = `${session.pos + 1} / ${session.queue.length}`;
@@ -502,19 +531,20 @@ function renderCard() {
     : MODES[it.mode].label[kind === 'text' ? 'text' : 'choice'];
   $('verdict').classList.add('hidden');
   $('hint').classList.remove('plural-line');
-  $('btn-check').classList.toggle('hidden', kind !== 'text');
+  $('btn-check').classList.toggle('hidden', kind !== 'text' && kind !== 'order');
+  $('btn-check').disabled = false;
   $('btn-override').classList.add('hidden');
   session.answered = false;
   session.picked = null;
 
-  for (const el of ['answer-text', 'answer-choice', 'answer-article']) $(el).classList.add('hidden');
+  for (const el of ['answer-text', 'answer-choice', 'answer-article', 'answer-order']) $(el).classList.add('hidden');
   for (const b of document.querySelectorAll('.art')) b.classList.remove('sel', 'right', 'wrong');
 
   if (isDrill(it.mode)) {
     const d = drillOf(it);
     $('prompt').textContent = d.prompt;
     $('hint').textContent = d.hint || '';
-    openChoice(it);
+    kind === 'order' ? openOrder(d) : openChoice(it);
   } else if (it.mode === 'recall') {
     $('prompt').textContent = c.cs;
     // Nápovědu ukazuj jen u psaní. U výběru by zúžila možnosti na jednu.
@@ -547,6 +577,34 @@ function renderCard() {
     $('prompt').textContent = c.de;
     $('hint').textContent = kind === 'text' ? 'napiš tvar pro množné číslo' : 'vyber tvar pro množné číslo';
     kind === 'text' ? openText('množné číslo') : openChoice(it);
+  }
+}
+
+// Ťuknutí na slovo ho přesune do věty, ťuknutí ve větě ho vrátí zpátky.
+// Zkontrolovat jde, až jsou použitá všechna slova.
+function openOrder(d) {
+  session.built = [];
+  session.pool = orderTiles(d).map((w, i) => ({ w, i }));
+  $('answer-order').classList.remove('hidden');
+  renderOrder();
+}
+
+function renderOrder() {
+  const tile = (t, where) => `<button class="tile" data-where="${where}" data-i="${t.i}">${esc(t.w)}</button>`;
+  $('order-built').innerHTML = session.built.length
+    ? session.built.map(t => tile(t, 'built')).join('')
+    : '<span class="muted">sem skládej otázku</span>';
+  $('order-pool').innerHTML = session.pool.map(t => tile(t, 'pool')).join('');
+  $('btn-check').disabled = session.pool.length > 0;
+  for (const b of document.querySelectorAll('#answer-order .tile')) {
+    b.onclick = () => {
+      if (session.answered) return;
+      const from = b.dataset.where === 'pool' ? session.pool : session.built;
+      const to = from === session.pool ? session.built : session.pool;
+      const k = from.findIndex(t => t.i === +b.dataset.i);
+      to.push(...from.splice(k, 1));
+      renderOrder();
+    };
   }
 }
 
@@ -695,8 +753,10 @@ function leaveSets() {
 function onCheck() {
   if (session.answered) return;
   const it = session.queue[session.pos];
-  const kind = inputKind(it.mode);
-  const given = kind === 'text' ? $('input').value : session.picked;
+  const kind = inputKind(it.mode, it);
+  const given = kind === 'text' ? $('input').value
+    : kind === 'order' ? orderSentence(session.built.map(t => t.w))
+    : session.picked;
 
   if (given == null || String(given).trim() === '') {
     if (kind === 'text') $('input').focus();
@@ -707,6 +767,7 @@ function onCheck() {
   // rozhoduje judge, který uzná i člen navíc, zápis bez přehlásky a překlep.
   const verdict = kind === 'choice'
     ? (strip(given) === strip(targetFor(it)) ? 'ok' : 'no')
+    : kind === 'order' ? orderVerdict(drillOf(it), session.built.map(t => t.w))
     : judge(given, acceptedFor(it));
 
   const correct = verdict === 'ok' || verdict === 'umlaut';

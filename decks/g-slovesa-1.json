@@ -23,9 +23,21 @@
     [
      "er/sie",
      "wohnt"
+    ],
+    [
+     "wir",
+     "wohnen"
+    ],
+    [
+     "ihr",
+     "wohnt"
+    ],
+    [
+     "sie (oni)",
+     "wohnen"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -38,7 +50,7 @@
       "wohnt",
       "wohnen"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt"
+     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     },
     {
      "id": "du",
@@ -51,7 +63,7 @@
       "wohnt",
       "wohnen"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt"
+     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     },
     {
      "id": "er",
@@ -64,7 +76,46 @@
       "wohnst",
       "wohnen"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt"
+     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ in Brünn.",
+     "hint": "wohnen · bydlet",
+     "answer": "wohnen",
+     "choices": [
+      "wohne",
+      "wohnst",
+      "wohnt"
+     ],
+     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wo ___ ihr?",
+     "hint": "wohnen · bydlet",
+     "answer": "wohnt",
+     "choices": [
+      "wohne",
+      "wohnst",
+      "wohnen"
+     ],
+     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan und Lena ___ in Wien.",
+     "hint": "wohnen · bydlet",
+     "answer": "wohnen",
+     "choices": [
+      "wohne",
+      "wohnst",
+      "wohnt"
+     ],
+     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     }
    ]
   },
@@ -85,9 +136,21 @@
     [
      "er/sie",
      "kommt"
+    ],
+    [
+     "wir",
+     "kommen"
+    ],
+    [
+     "ihr",
+     "kommt"
+    ],
+    [
+     "sie (oni)",
+     "kommen"
     ]
    ],
-   "note": "ich -e · du -st · er/sie -t",
+   "note": "ich -e · du -st · er/sie -t · wir -en · ihr -t · sie -en",
    "drills": [
     {
      "id": "ich",
@@ -100,7 +163,7 @@
       "kommt",
       "kommen"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt"
+     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
     },
     {
      "id": "du",
@@ -113,7 +176,7 @@
       "kommt",
       "kommen"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt"
+     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
     },
     {
      "id": "er",
@@ -126,7 +189,46 @@
       "kommst",
       "kommen"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt"
+     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ aus Tschechien.",
+     "hint": "kommen · pocházet",
+     "answer": "kommen",
+     "choices": [
+      "komme",
+      "kommst",
+      "kommt"
+     ],
+     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Woher ___ ihr?",
+     "hint": "kommen · pocházet",
+     "answer": "kommt",
+     "choices": [
+      "komme",
+      "kommst",
+      "kommen"
+     ],
+     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Max und Tim ___ aus der Schweiz.",
+     "hint": "kommen · pocházet",
+     "answer": "kommen",
+     "choices": [
+      "komme",
+      "kommst",
+      "kommt"
+     ],
+     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
     }
    ]
   },
@@ -147,6 +249,18 @@
     [
      "er/sie",
      "heißt"
+    ],
+    [
+     "wir",
+     "heißen"
+    ],
+    [
+     "ihr",
+     "heißt"
+    ],
+    [
+     "sie (oni)",
+     "heißen"
     ]
    ],
    "note": "Kmen končí na -ß, takže u du se přidává jen -t: du heißt.",
@@ -161,7 +275,7 @@
       "heißt",
       "heißen"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt"
+     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
     },
     {
      "id": "du",
@@ -173,7 +287,7 @@
       "heiße",
       "heißen"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt"
+     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
     },
     {
      "id": "er",
@@ -185,7 +299,43 @@
       "heiße",
       "heißen"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt"
+     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ Peter und Tom.",
+     "hint": "heißen · jmenovat se",
+     "answer": "heißen",
+     "choices": [
+      "heiße",
+      "heißt"
+     ],
+     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie ___ ihr?",
+     "hint": "heißen · jmenovat se",
+     "answer": "heißt",
+     "choices": [
+      "heiße",
+      "heißen"
+     ],
+     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Meine Freunde ___ Max und Tim.",
+     "hint": "heißen · jmenovat se",
+     "answer": "heißen",
+     "choices": [
+      "heiße",
+      "heißt"
+     ],
+     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
     }
    ]
   },
@@ -206,6 +356,18 @@
     [
      "er/sie",
      "ist"
+    ],
+    [
+     "wir",
+     "sind"
+    ],
+    [
+     "ihr",
+     "seid"
+    ],
+    [
+     "sie (oni)",
+     "sind"
     ]
    ],
    "note": "Nepravidelné — tvary se nedají odvodit, jen naučit.",
@@ -219,9 +381,10 @@
      "choices": [
       "bist",
       "ist",
-      "sein"
+      "sind",
+      "seid"
      ],
-     "explain": "ich bin · du bist · er/sie ist"
+     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
     },
     {
      "id": "du",
@@ -232,9 +395,10 @@
      "choices": [
       "bin",
       "ist",
-      "sein"
+      "sind",
+      "seid"
      ],
-     "explain": "ich bin · du bist · er/sie ist"
+     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
     },
     {
      "id": "er",
@@ -245,9 +409,52 @@
      "choices": [
       "bin",
       "bist",
-      "sein"
+      "sind",
+      "seid"
      ],
-     "explain": "ich bin · du bist · er/sie ist"
+     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ zwölf Jahre alt.",
+     "hint": "sein · být",
+     "answer": "sind",
+     "choices": [
+      "bin",
+      "bist",
+      "ist",
+      "seid"
+     ],
+     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wie alt ___ ihr?",
+     "hint": "sein · být",
+     "answer": "seid",
+     "choices": [
+      "bin",
+      "bist",
+      "ist",
+      "sind"
+     ],
+     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Das ___ Jan und Lena.",
+     "hint": "sein · být",
+     "answer": "sind",
+     "choices": [
+      "bin",
+      "bist",
+      "ist",
+      "seid"
+     ],
+     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
     }
    ]
   }
