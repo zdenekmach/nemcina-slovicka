@@ -30,7 +30,7 @@
    "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
   },
   {
-   "id": "pr-02",
+   "id": "pr-10",
    "pos": "sentence",
    "cs": "Pan Ludwig bydlí v Brazílii.",
    "de": "Herr Ludwig wohnt in Brasilien.",
@@ -74,7 +74,7 @@
    "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
   },
   {
-   "id": "pr-04",
+   "id": "pr-11",
    "pos": "sentence",
    "cs": "Lena bydlí v Ingelheimu.",
    "de": "Lena wohnt in Ingelheim.",
@@ -162,7 +162,7 @@
    "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
   },
   {
-   "id": "pr-08",
+   "id": "pr-12",
    "pos": "sentence",
    "cs": "Ta limonáda je pro Jana.",
    "de": "Die Limo ist für Jan.",
@@ -184,7 +184,7 @@
    "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
   },
   {
-   "id": "pr-09",
+   "id": "pr-13",
    "pos": "sentence",
    "cs": "Ten mobil je pro babičku.",
    "de": "Das Handy ist für Oma.",

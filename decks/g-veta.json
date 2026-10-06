@@ -38,7 +38,7 @@
      "answer": "Ich bin Jan.",
      "choices": [
       "Ich Jan bin.",
-      "Bin ich Jan."
+      "Jan ich bin."
      ],
      "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
     }
@@ -76,7 +76,7 @@
      "answer": "Anton wohnt in Frankfurt.",
      "choices": [
       "Anton in Frankfurt wohnt.",
-      "Wohnt Anton in Frankfurt."
+      "In Frankfurt Anton wohnt."
      ],
      "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
     }
@@ -384,7 +384,7 @@
      "answer": "Jan kommt aus Weimar.",
      "choices": [
       "Jan aus Weimar kommt.",
-      "Kommt Jan aus Weimar."
+      "Aus Weimar Jan kommt."
      ],
      "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
     }

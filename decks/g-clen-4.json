@@ -29,7 +29,7 @@
    ],
    "drills": [
     {
-     "id": "určitý",
+     "id": "určitý-2",
      "label": "Doplň člen (určitý)",
      "prompt": "Wir finden ___ Stundenplan gut.",
      "hint": "určitý člen · Ten rozvrh se nám líbí.",
@@ -157,7 +157,7 @@
    ],
    "drills": [
     {
-     "id": "určitý",
+     "id": "určitý-2",
      "label": "Doplň člen (určitý)",
      "prompt": "Magst du ___ Buch?",
      "hint": "určitý člen · Líbí se ti ta kniha?",
