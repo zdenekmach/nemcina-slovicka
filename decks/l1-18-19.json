@@ -20,7 +20,8 @@
    "page": 19,
    "cs": "věk",
    "de": "Alter",
-   "article": "das"
+   "article": "das",
+   "only": "sg"
   },
   {
    "id": "p19-02",

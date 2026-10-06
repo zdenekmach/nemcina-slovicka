@@ -209,3 +209,8 @@ button{font:inherit;border-radius:10px;cursor:pointer}
 .conj td{padding:4px 18px 4px 0}
 .conj td:first-child{color:var(--muted)}
 .conj td:last-child{color:var(--fg);font-weight:600}
+
+/* množné číslo pod slovem — součást slova, ne drobná poznámka */
+.plural-line{color:var(--fg);opacity:.82;font-size:18px;margin:2px 0 6px}
+.plural-line:empty{display:none}
+.hint.plural-line{min-height:0}

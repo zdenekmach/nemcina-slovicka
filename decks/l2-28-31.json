@@ -11,7 +11,8 @@
    "pos": "noun",
    "page": 28,
    "cs": "anglicky, angličtina",
-   "de": "Englisch"
+   "de": "Englisch",
+   "only": "sg"
   },
   {
    "id": "p28-02",
@@ -37,7 +38,8 @@
    "de": "Judo",
    "article": "das",
    "example_de": "Er macht Judo.",
-   "example_cs": "(On) dělá judo."
+   "example_cs": "(On) dělá judo.",
+   "only": "sg"
   },
   {
    "id": "p28-05",
@@ -88,7 +90,8 @@
    "de": "Tischtennis",
    "article": "das",
    "example_de": "Er spielt Tischtennis.",
-   "example_cs": "(On) hraje stolní tenis."
+   "example_cs": "(On) hraje stolní tenis.",
+   "only": "sg"
   },
   {
    "id": "p28-11",
@@ -121,7 +124,8 @@
    "de": "Karaoke",
    "article": "das",
    "example_de": "Er macht gern Karaoke.",
-   "example_cs": "Rád zpívá karaoke."
+   "example_cs": "Rád zpívá karaoke.",
+   "only": "sg"
   },
   {
    "id": "p30-01",
@@ -129,7 +133,8 @@
    "page": 30,
    "cs": "basketbal",
    "de": "Basketball",
-   "article": "der"
+   "article": "der",
+   "only": "sg"
   },
   {
    "id": "p30-02",
@@ -146,7 +151,8 @@
    "page": 30,
    "cs": "tenis",
    "de": "Tennis",
-   "article": "das"
+   "article": "das",
+   "only": "sg"
   },
   {
    "id": "p31-01",
@@ -232,7 +238,8 @@
    "page": 31,
    "cs": "sport",
    "de": "Sport",
-   "article": "der"
+   "article": "der",
+   "only": "sg"
   },
   {
    "id": "p31-11",

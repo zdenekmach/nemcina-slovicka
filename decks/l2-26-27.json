@@ -96,7 +96,8 @@
    "page": 26,
    "cs": "hudba, muzika",
    "de": "Musik",
-   "article": "die"
+   "article": "die",
+   "only": "sg"
   },
   {
    "id": "p26-13",
@@ -111,7 +112,8 @@
    "page": 26,
    "cs": "zkouška",
    "de": "Probe",
-   "article": "die"
+   "article": "die",
+   "plural": "Proben"
   },
   {
    "id": "p26-15",
@@ -119,7 +121,8 @@
    "page": 26,
    "cs": "rock (hudba)",
    "de": "Rock",
-   "article": "der"
+   "article": "der",
+   "only": "sg"
   },
   {
    "id": "p26-16",

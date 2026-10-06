@@ -271,7 +271,8 @@
    "de": "Wiedersehen",
    "article": "das",
    "example_de": "Auf Wiedersehen!",
-   "example_cs": "Na shledanou!"
+   "example_cs": "Na shledanou!",
+   "only": "sg"
   },
   {
    "id": "p14-25",

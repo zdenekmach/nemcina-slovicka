@@ -106,6 +106,18 @@ function drillFull(d) {
   return full.charAt(0).toUpperCase() + full.slice(1);
 }
 
+/* ---------- podstatné jméno: člen a množné číslo ---------- */
+
+// Plurál se ukazuje i se členem, protože v množném čísle je vždy „die".
+// Shodný tvar (der Computer → die Computer) se ukazuje taky — i to je
+// informace. Prázdno nastane jen u slov, která nejsou podstatná jména.
+function pluralLabel(c) {
+  if (c.pos !== 'noun') return '';
+  if (c.only === 'pl') return 'jen množné číslo';
+  if (c.only === 'sg') return 'jen jednotné číslo';
+  return c.plural ? `množné číslo: die ${c.plural}` : '';
+}
+
 /* ---------- přesun karet mezi balíčky ---------- */
 
 // Karta přesunutá do jiného balíčku nese `from` — id balíčku, kde byla dřív.
@@ -358,6 +370,11 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, ch =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
 
+// Člen obarvený podle rodu, u dvojího rodu oba (der/das).
+const articleHtml = c => c.article
+  ? c.article.split('/').map(a => `<span class="${esc(a.trim())}">${esc(a.trim())}</span>`).join('/') + ' '
+  : '';
+
 function show(view) {
   for (const v of document.querySelectorAll('.view')) v.classList.add('hidden');
   $('view-' + view).classList.remove('hidden');
@@ -484,6 +501,7 @@ function renderCard() {
     ? drillOf(it).label
     : MODES[it.mode].label[kind === 'text' ? 'text' : 'choice'];
   $('verdict').classList.add('hidden');
+  $('hint').classList.remove('plural-line');
   $('btn-check').classList.toggle('hidden', kind !== 'text');
   $('btn-override').classList.add('hidden');
   session.answered = false;
@@ -504,10 +522,12 @@ function renderCard() {
       : (c.pos === 'verb' ? 'sloveso' : (c.pos === 'phrase' ? 'celá věta' : ''));
     kind === 'text' ? openText('německy') : openChoice(it);
   } else if (it.mode === 'recognize') {
-    // Člen se v zadání neukazuje nikde. Ptáme se na něj zvlášť a o pár karet
-    // dřív by ho tahle otázka prozradila.
-    $('prompt').textContent = c.de;
-    $('hint').textContent = '';
+    // Člen a plurál jsou součást slova, učí se s ním. Skrývají se jen tehdy,
+    // když se na ně ptá samostatná otázka (QUIZ_MODES) — ta by jinak měla
+    // odpověď napsanou o pár karet dřív.
+    $('prompt').innerHTML = (QUIZ_MODES.includes('article') ? '' : articleHtml(c)) + esc(c.de);
+    $('hint').textContent = QUIZ_MODES.includes('plural') ? '' : pluralLabel(c);
+    $('hint').classList.toggle('plural-line', !!$('hint').textContent);
     openChoice(it);
   } else if (it.mode === 'article') {
     $('prompt').textContent = c.de;
@@ -627,14 +647,11 @@ function renderBrowse() {
   $('b-count').textContent = `${browse.pos + 1} / ${total}`;
 
   // V učícím režimu se člen ukazuje — o to tady jde.
-  const art = c.article
-    ? c.article.split('/').map(a => `<span class="${esc(a.trim())}">${esc(a.trim())}</span>`).join('/') + ' '
-    : '';
-  $('b-word').innerHTML = art + esc(c.de);
+  $('b-word').innerHTML = articleHtml(c) + esc(c.de);
+  $('b-plural').textContent = pluralLabel(c);
 
   const extra = [];
   if (c.note) extra.push(c.note);
-  if (c.plural && c.plural !== c.de) extra.push(`množné číslo: ${c.plural}`);
   if (c.form3) extra.push(`on: ${c.form3}`);
   if (c.en) extra.push(`anglicky: ${c.en}`);
   $('b-extra').textContent = extra.join(' · ');
@@ -711,16 +728,14 @@ function finish(it, given, verdict, correct) {
     verdict === 'near'   ? `Těsně vedle — napsal jsi „${given}"` :
                            'Vedle';
 
-  const art = c.article
-    ? c.article.split('/').map(a => `<span class="${esc(a)}">${esc(a)}</span>`).join('/') + ' '
-    : '';
+  const art = articleHtml(c);
   const d = isDrill(it.mode) ? drillOf(it) : null;
   $('verdict-correct').innerHTML =
     // Zadání je hned nad tím; u otázky bez mezery stačí ukázat odpověď.
     d ? esc(d.prompt.includes('___') ? drillFull(d) : d.answer)
     : it.mode === 'recognize'
       ? esc(c.cs)
-      : art + esc(c.de) + (c.plural && c.plural !== c.de ? ` <span class="plural">/ ${esc(c.plural)}</span>` : '')
+      : art + esc(c.de) + (c.plural ? ` <span class="plural">/ die ${esc(c.plural)}</span>` : '')
         + (c.form3 ? ` <span class="plural">· ${esc(c.form3)}</span>` : '');
 
   $('verdict-example').innerHTML = d
@@ -787,7 +802,8 @@ function endSession() {
           return `<div class="m"><b>${esc(drillFull(d))}</b>
                   <span>· vybral jsi „${esc(m.given)}"</span></div>`;
         }
-        return `<div class="m"><b>${esc(c.article ? c.article + ' ' : '')}${esc(c.de)}</b>
+        return `<div class="m"><b>${esc(c.article ? c.article + ' ' : '')}${esc(c.de)}</b>${
+                  c.plural ? ` <span>/ die ${esc(c.plural)}</span>` : ''}
                 — ${esc(c.cs)} <span>· napsal jsi „${esc(m.given)}"</span></div>`;
       }).join('')
     : '';
