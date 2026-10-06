@@ -34,7 +34,8 @@ function inputKind(mode, it) {
 /* ---------- stav ---------- */
 
 let state = load();
-let decks = [];          // [{id, name, lesson, cards:[...]}]
+let decks = [];          // [{id, name, area, group, cards:[...]}]
+let groups = [];         // [{id, area, name, topic}] — lekce a témata, v pořadí zobrazení
 let cardIndex = {};      // "deckId:cardId" -> karta
 let session = null;
 
@@ -102,6 +103,7 @@ const drillOf = it => it.card.drills.find(d => 'd:' + d.id === it.mode);
 // Správné řešení celé, jak ho ukázat po odpovědi. Věta s mezerou se doplní
 // (a na začátku věty dostane velké písmeno), jinak zadání → odpověď.
 function drillFull(d) {
+  if (d.full) return d.full;            // věta, kterou nejde složit prostým dosazením („–", „Sie (ona)")
   if (!d.prompt.includes('___')) return `${d.prompt} → ${d.answer}`;
   const full = d.prompt.replace('___', d.answer);
   return full.charAt(0).toUpperCase() + full.slice(1);
@@ -123,7 +125,8 @@ function pluralLabel(c) {
 
 // Porovnává se pořadí slov, ne velká písmena ani otazník. Uzná se odpověď
 // i každá varianta z `accept` (Hörst du Musik gern? = Hörst du gern Musik?).
-const orderKey = s => String(s).toLowerCase().replace(/[?.!]/g, ' ').trim().split(/\s+/).join(' ');
+// Čárka na kartičkách není („Nein, ich …" → nein · ich), tak se nesmí počítat ani tady.
+const orderKey = s => String(s).toLowerCase().replace(/[?!,]|\.(?!\d)/g, ' ').trim().split(/\s+/).join(' ');
 
 function orderVerdict(d, built) {
   const given = orderKey(built.join(' '));
@@ -141,10 +144,11 @@ function orderTiles(d) {
   return tiles;
 }
 
-// Složená věta, jak se ukáže: velké první písmeno, otazník na konci.
-function orderSentence(built) {
+// Složená věta, jak se ukáže: velké první písmeno, na konci otazník
+// nebo tečka podle toho, co se skládá (`end` v datech, výchozí „?").
+function orderSentence(built, end = '?') {
   const s = built.join(' ');
-  return s ? s.charAt(0).toUpperCase() + s.slice(1) + '?' : '';
+  return s ? s.charAt(0).toUpperCase() + s.slice(1) + end : '';
 }
 
 /* ---------- přesun karet mezi balíčky ---------- */
@@ -295,11 +299,13 @@ function judge(given, target) {
 
 async function loadDecks() {
   const idx = await fetch('decks/index.json').then(r => r.json());
+  groups = idx.groups || [];
   decks = await Promise.all(idx.decks.map(async d => {
     const deck = await fetch('decks/' + d.file).then(r => r.json());
     deck.id = deck.id || d.id;
     deck.area = deck.area || d.area || 'vocab';
     deck.lesson = deck.lesson || d.lesson;
+    deck.group = deck.group || d.group || null;
     return deck;
   }));
   cardIndex = {};
@@ -404,7 +410,10 @@ const articleHtml = c => c.article
   ? c.article.split('/').map(a => `<span class="${esc(a.trim())}">${esc(a.trim())}</span>`).join('/') + ' '
   : '';
 
+let currentView = 'home';
+
 function show(view) {
+  currentView = view;
   for (const v of document.querySelectorAll('.view')) v.classList.add('hidden');
   $('view-' + view).classList.remove('hidden');
   $('btn-home').classList.toggle('hidden', view === 'home');
@@ -417,11 +426,61 @@ function batchSize(deckIds) {
   return Math.min(SESSION_MAX, fresh.length + review.length);
 }
 
+/* ---------- přehled: oblast → skupina → balíček ---------- */
+
+const AREAS = [
+  { id: 'vocab',   title: 'Slovní zásoba', unit: 'lekce' },
+  { id: 'grammar', title: 'Gramatika',     unit: 'témata' },
+  { id: 'other',   title: 'Ostatní',       unit: 'balíčky' },
+];
+
+// Kde v přehledu jsem. area = null → úvod; group = null → seznam skupin
+// (nebo balíčků, když oblast skupiny nemá).
+let nav = { area: null, group: null };
+
+const areaOf = id => AREAS.find(a => a.id === id);
+const groupOf = id => groups.find(g => g.id === id);
+const decksIn = (areaId, groupId) =>
+  decks.filter(d => d.area === areaId && (!groupId || d.group === groupId));
+const groupsIn = areaId =>
+  groups.filter(g => g.area === areaId && decks.some(d => d.group === g.id));
+
+// Souhrn pro libovolnou skupinu balíčků: kolik toho čeká, kolik sad
+// prošel a kolik otázek sedí pevně (přihrádka 4 a výš).
+function scopeStatus(list) {
+  const ids = list.map(d => d.id);
+  const { fresh, review } = dueItems(ids);
+  let sets = 0, setsDone = 0, all = 0, known = 0;
+  for (const d of list) {
+    const l = deckLearned(d);
+    sets += l.total; setsDone += l.done;
+    for (const c of d.cards) for (const mode of modesFor(c)) {
+      all++;
+      if (itemState(key(d.id, c.id, mode)).box >= 4) known++;
+    }
+  }
+  return { ids, due: Math.min(SESSION_MAX, fresh.length + review.length),
+           sets, setsDone, all, known };
+}
+
+function statusLine(st) {
+  const parts = [];
+  if (st.setsDone) parts.push(`prošel ${st.setsDone}/${st.sets}`);
+  if (st.known) parts.push(`sedí ${Math.round(st.known / st.all * 100)} %`);
+  return parts.join(' · ');
+}
+
+const dueButton = (st, attr) => `<button class="due ${st.due ? '' : 'zero'}" ${attr}
+  ${st.due ? '' : 'disabled'} title="${st.due ? 'Nechat se vyzkoušet' : 'Na dnešek hotovo'}">${
+  st.due ? 'Zkoušet' : '✓'}</button>`;
+
 function renderHome() {
+  nav = { area: null, group: null };
   const { fresh, review } = dueItems(null);
   const waiting = fresh.length + review.length;
   const batch = Math.min(SESSION_MAX, waiting);
 
+  $('bar-title').textContent = 'Slovíčka';
   $('today-count').textContent = batch;
   // Kolik celkem zbývá schválně neukazujeme. Na začátku lekce je to číslo
   // přes tři sta a jediné, co udělá, je, že se do toho nikomu nechce.
@@ -434,51 +493,125 @@ function renderHome() {
 
   $('bar-streak').textContent = state.streak.days > 1 ? `🔥 ${state.streak.days} dní` : '';
 
-  $('deck-list').innerHTML = AREAS.map(area => {
-    const inArea = decks.filter(d => d.area === area.id);
-    if (!inArea.length) return '';
-    let html = `<h2>${esc(area.title)}</h2>`;
-    if (area.id !== 'vocab') return html + inArea.map(deckRow).join('');
-    // Slovní zásoba po lekcích, nejnovější nahoře — tu se zrovna učí.
-    const lessons = [...new Set(inArea.map(d => d.lesson || ''))].sort((a, b) => b.localeCompare(a, 'cs', { numeric: true }));
-    for (const l of lessons) {
-      if (lessons.length > 1 && l) html += `<div class="lesson-head">Lekce ${esc(l)}</div>`;
-      html += inArea.filter(d => (d.lesson || '') === l).map(deckRow).join('');
-    }
-    return html;
+  // Pokračovat tam, kde naposled skončil — zkratka přes dvě úrovně.
+  const last = decks.find(d => d.id === state.last);
+  $('continue').innerHTML = last
+    ? `<button class="continue" id="btn-continue">
+         <span class="muted">Pokračovat</span>
+         <span>${esc(pathOf(last))}</span><span class="chev">›</span></button>`
+    : '';
+  if (last) $('btn-continue').onclick = () => openDeckLevel(last.id);
+
+  $('area-list').innerHTML = AREAS.map(a => {
+    const list = decksIn(a.id);
+    if (!list.length) return '';
+    const st = scopeStatus(list);
+    const count = groupsIn(a.id).length || list.length;
+    return `<div class="deck nav-row" data-area="${a.id}">
+      <div class="deck-main">
+        <div class="deck-name">${esc(a.title)}</div>
+        <div class="deck-sub">${count} ${a.unit}${statusLine(st) ? ' · ' + statusLine(st) : ''}</div>
+      </div>
+      <div class="deck-actions">${dueButton(st, `data-scope="area:${a.id}"`)}<span class="chev">›</span></div>
+    </div>`;
   }).join('');
 
-  for (const b of $('deck-list').querySelectorAll('.due[data-deck]')) {
-    b.onclick = () => startSession([b.dataset.deck]);
-  }
-  for (const b of $('deck-list').querySelectorAll('.learnbtn[data-browse]')) {
-    b.onclick = () => startSets(b.dataset.browse);
-  }
-
+  bindRows($('area-list'));
   renderStats();
 }
 
-const AREAS = [
-  { id: 'vocab',   title: 'Slovní zásoba' },
-  { id: 'grammar', title: 'Gramatika' },
-  { id: 'other',   title: 'Ostatní' },
-];
+// „Lekce 2 › Strany 28–31" — kde balíček v přehledu leží.
+function pathOf(d) {
+  const g = groupOf(d.group);
+  return (g ? g.name : areaOf(d.area).title) + ' › ' + d.name;
+}
+
+function openArea(areaId) {
+  nav = { area: areaId, group: null };
+  renderList(); show('list');
+}
+
+function openGroup(groupId) {
+  nav = { area: groupOf(groupId).area, group: groupId };
+  renderList(); show('list');
+}
+
+// Rovnou na úroveň, kde balíček leží, a zvýraznit ho.
+function openDeckLevel(deckId) {
+  const d = decks.find(x => x.id === deckId);
+  if (!d) return;
+  nav = { area: d.area, group: d.group };
+  renderList(); show('list');
+}
+
+function renderList() {
+  const area = areaOf(nav.area);
+  const grp = nav.group ? groupOf(nav.group) : null;
+  const subGroups = grp ? [] : groupsIn(nav.area);
+  const scope = decksIn(nav.area, nav.group);
+  const st = scopeStatus(scope);
+
+  $('bar-title').textContent = grp ? grp.name : area.title;
+  $('list-head').innerHTML = `
+    <div class="list-title">${esc(grp ? grp.name : area.title)}</div>
+    <div class="muted">${esc(grp ? (grp.topic || '') : '')}${grp && grp.topic && statusLine(st) ? ' · ' : ''}${statusLine(st)}</div>
+    <button class="primary wide" data-scope="list" ${st.due ? '' : 'disabled'}>${
+      st.due ? `Zkoušet ${grp ? (area.id === 'vocab' ? 'celou lekci' : 'celé téma') : 'celou oblast'} · ${st.due}`
+             : 'Na dnešek hotovo'}</button>`;
+  $('list-head').querySelector('[data-scope="list"]').onclick = () => startSession(st.ids);
+
+  $('list-items').innerHTML = subGroups.length
+    ? subGroups.map(g => {
+        const gs = scopeStatus(decksIn(nav.area, g.id));
+        return `<div class="deck nav-row" data-group="${esc(g.id)}">
+          <div class="deck-main">
+            <div class="deck-name">${esc(g.name)}</div>
+            <div class="deck-sub">${esc(g.topic || '')}${statusLine(gs) ? ' · ' + statusLine(gs) : ''}</div>
+          </div>
+          <div class="deck-actions">${dueButton(gs, `data-scope="group:${esc(g.id)}"`)}<span class="chev">›</span></div>
+        </div>`;
+      }).join('')
+    : scope.map(deckRow).join('');
+  bindRows($('list-items'));
+}
+
+// Jeden posluchač na všechny řádky a tlačítka v seznamu.
+function bindRows(root) {
+  for (const b of root.querySelectorAll('.due[data-deck]')) b.onclick = e => { e.stopPropagation(); startSession([b.dataset.deck]); };
+  for (const b of root.querySelectorAll('.learnbtn[data-browse]')) b.onclick = e => { e.stopPropagation(); startSets(b.dataset.browse); };
+  for (const b of root.querySelectorAll('.due[data-scope]')) b.onclick = e => {
+    e.stopPropagation();
+    const [kind, id] = b.dataset.scope.split(':');
+    startSession(scopeStatus(kind === 'area' ? decksIn(id) : decksIn(groupOf(id).area, id)).ids);
+  };
+  for (const r of root.querySelectorAll('.nav-row[data-area]')) r.onclick = () => openArea(r.dataset.area);
+  for (const r of root.querySelectorAll('.nav-row[data-group]')) r.onclick = () => openGroup(r.dataset.group);
+}
+
+// O úroveň výš: skupina → oblast → úvod. Oblast bez skupin jde rovnou na úvod.
+function navUp() {
+  if (nav.group && groupsIn(nav.area).length) { nav.group = null; renderList(); show('list'); return; }
+  renderHome(); show('home');
+}
+
+// Zpátky do přehledu tam, odkud se šlo zkoušet nebo učit.
+function backToList() {
+  if (nav.area) { renderList(); show('list'); }
+  else { renderHome(); show('home'); }
+}
 
 function deckRow(d) {
-    const n = dueItems([d.id]);
-    const waiting = n.fresh.length + n.review.length;
-    const b = Math.min(SESSION_MAX, waiting);
+    const st = scopeStatus([d]);
     const learned = deckLearned(d);
-    return `<div class="deck">
+    return `<div class="deck${d.id === state.last ? ' last' : ''}">
       <div class="deck-main">
         <div class="deck-name">${esc(d.name)}</div>
         <div class="deck-sub">${esc(d.topic || (d.cards.length + ' karet'))}${
           learned.done ? ` · prošel ${learned.done}/${learned.total}` : ''}</div>
       </div>
       <div class="deck-actions">
-        <button class="learnbtn" data-browse="${esc(d.id)}" title="Projít si slovíčka">Projít</button>
-        <button class="due ${b ? '' : 'zero'}" data-deck="${esc(d.id)}" ${b ? '' : 'disabled'}
-                title="${b ? 'Nechat se vyzkoušet' : 'Na dnešek hotovo'}">${b ? 'Zkoušet' : '✓'}</button>
+        <button class="learnbtn" data-browse="${esc(d.id)}" title="Projít si">Projít</button>
+        ${dueButton(st, `data-deck="${esc(d.id)}"`)}
       </div>
     </div>`;
 }
@@ -511,9 +644,16 @@ function renderStats() {
 
 /* ---------- sezení ---------- */
 
+function remember(deckId) {
+  if (state.last === deckId) return;
+  state.last = deckId;
+  save();
+}
+
 function startSession(deckIds) {
   const queue = buildQueue(deckIds);
   if (!queue.length) return;
+  if (deckIds && deckIds.length === 1) remember(deckIds[0]);
   session = { queue, pos: 0, right: 0, mistakes: [], answered: false, picked: null };
   show('drill');
   renderCard();
@@ -531,6 +671,7 @@ function renderCard() {
     : MODES[it.mode].label[kind === 'text' ? 'text' : 'choice'];
   $('verdict').classList.add('hidden');
   $('hint').classList.remove('plural-line');
+  $('prompt').classList.remove('long');
   $('btn-check').classList.toggle('hidden', kind !== 'text' && kind !== 'order');
   $('btn-check').disabled = false;
   $('btn-override').classList.add('hidden');
@@ -543,6 +684,7 @@ function renderCard() {
   if (isDrill(it.mode)) {
     const d = drillOf(it);
     $('prompt').textContent = d.prompt;
+    $('prompt').classList.toggle('long', d.prompt.length > 24);
     $('hint').textContent = d.hint || '';
     kind === 'order' ? openOrder(d) : openChoice(it);
   } else if (it.mode === 'recall') {
@@ -584,6 +726,7 @@ function renderCard() {
 // Zkontrolovat jde, až jsou použitá všechna slova.
 function openOrder(d) {
   session.built = [];
+  session.orderWhat = d.end === '.' ? 'větu' : 'otázku';
   session.pool = orderTiles(d).map((w, i) => ({ w, i }));
   $('answer-order').classList.remove('hidden');
   renderOrder();
@@ -593,7 +736,7 @@ function renderOrder() {
   const tile = (t, where) => `<button class="tile" data-where="${where}" data-i="${t.i}">${esc(t.w)}</button>`;
   $('order-built').innerHTML = session.built.length
     ? session.built.map(t => tile(t, 'built')).join('')
-    : '<span class="muted">sem skládej otázku</span>';
+    : `<span class="muted">sem skládej ${session.orderWhat}</span>`;
   $('order-pool').innerHTML = session.pool.map(t => tile(t, 'pool')).join('');
   $('btn-check').disabled = session.pool.length > 0;
   for (const b of document.querySelectorAll('#answer-order .tile')) {
@@ -644,6 +787,7 @@ let sets = null;
 function startSets(deckId) {
   const deck = decks.find(d => d.id === deckId);
   if (!deck || !deck.cards.length) return;
+  remember(deckId);
   browse = null;
   sets = { deck };
   show('sets');
@@ -706,6 +850,7 @@ function renderBrowse() {
 
   // V učícím režimu se člen ukazuje — o to tady jde.
   $('b-word').innerHTML = articleHtml(c) + esc(c.de);
+  $('b-word').classList.toggle('long', c.de.length > 24);
   $('b-plural').textContent = pluralLabel(c);
 
   const extra = [];
@@ -741,11 +886,10 @@ function leaveBrowse() {
   startSets(deckId);
 }
 
+// Ze sad zpátky do přehledu na úroveň, odkud přišel — ne až na úvod.
 function leaveSets() {
   sets = null;
-  $('bar-title').textContent = 'Slovíčka';
-  renderHome();
-  show('home');
+  backToList();
 }
 
 /* ---------- vyhodnocení ---------- */
@@ -755,7 +899,7 @@ function onCheck() {
   const it = session.queue[session.pos];
   const kind = inputKind(it.mode, it);
   const given = kind === 'text' ? $('input').value
-    : kind === 'order' ? orderSentence(session.built.map(t => t.w))
+    : kind === 'order' ? orderSentence(session.built.map(t => t.w), drillOf(it).end)
     : session.picked;
 
   if (given == null || String(given).trim() === '') {
@@ -879,7 +1023,7 @@ $('btn-start').onclick   = () => startSession(null);
 $('btn-check').onclick   = onCheck;
 $('btn-next').onclick    = onNext;
 $('btn-override').onclick = onOverride;
-$('btn-again').onclick   = () => { $('bar-title').textContent = 'Slovíčka'; renderHome(); show('home'); };
+$('btn-again').onclick   = () => { session = null; backToList(); };
 $('b-prev').onclick      = () => browseMove(-1);
 $('b-next').onclick      = () => browseMove(1);
 
@@ -898,11 +1042,19 @@ $('browse-card').addEventListener('touchend', e => {
   swipeX = null;
   if (Math.abs(dx) > 60) browseMove(dx < 0 ? 1 : -1);
 }, { passive: true });
+// Tlačítko zpět jde vždy o úroveň výš:
+// karta → sady → seznam balíčků → seznam skupin → úvod.
 $('btn-home').onclick    = () => {
-  if (browse) { leaveBrowse(); return; }        // zpátky na sady
-  if (sets) { leaveSets(); return; }            // ze sad domů
-  if (session && session.pos < session.queue.length && !confirm('Opustit procvičování? Co jsi stihl, se uloží.')) return;
-  $('bar-title').textContent = 'Slovíčka';
+  if (browse) { leaveBrowse(); return; }
+  if (sets) { leaveSets(); return; }
+  if (currentView === 'drill' || currentView === 'done') {
+    if (currentView === 'drill' && session && session.pos < session.queue.length
+        && !confirm('Opustit procvičování? Co jsi stihl, se uloží.')) return;
+    session = null;
+    backToList();
+    return;
+  }
+  if (currentView === 'list') { navUp(); return; }
   renderHome(); show('home');
 };
 // Dokud se zkouší jen němčina → čeština, je psaní bezpředmětné — ta otázka

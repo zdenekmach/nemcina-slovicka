@@ -1,10 +1,11 @@
 {
  "id": "g-stavba",
- "name": "Stavba otázky",
  "area": "grammar",
- "unit": "Otázky",
+ "group": "g-slovosled",
+ "name": "Stavba otázky",
  "topic": "slovosled, tázací slovo, tvar slovesa",
  "source": "Otázky z lekcí 1 a 2",
+ "unit": "Otázky",
  "cards": [
   {
    "id": "st-01",
@@ -90,7 +91,7 @@
       "heiße",
       "heißen"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+     "explain": "ich heiße · du heißt · er/sie/man heißt · wir heißen · ihr heißt · sie (oni) heißen"
     }
    ]
   },
@@ -140,7 +141,7 @@
       "heiße",
       "heißen"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+     "explain": "ich heiße · du heißt · er/sie/man heißt · wir heißen · ihr heißt · sie (oni) heißen"
     }
    ]
   },
@@ -191,7 +192,7 @@
       "wohnt",
       "wohnen"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+     "explain": "ich wohne · du wohnst · er/sie/man wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     }
    ]
   },
@@ -242,7 +243,7 @@
       "wohnst",
       "wohnen"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+     "explain": "ich wohne · du wohnst · er/sie/man wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     }
    ]
   },
@@ -293,7 +294,7 @@
       "kommt",
       "kommen"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+     "explain": "ich komme · du kommst · er/sie/man kommt · wir kommen · ihr kommt · sie (oni) kommen"
     }
    ]
   },
@@ -344,7 +345,7 @@
       "kommst",
       "kommen"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+     "explain": "ich komme · du kommst · er/sie/man kommt · wir kommen · ihr kommt · sie (oni) kommen"
     }
    ]
   },
@@ -395,7 +396,7 @@
       "kommst",
       "kommen"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+     "explain": "ich komme · du kommst · er/sie/man kommt · wir kommen · ihr kommt · sie (oni) kommen"
     }
    ]
   },
@@ -448,7 +449,7 @@
       "sind",
       "seid"
      ],
-     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+     "explain": "ich bin · du bist · er/sie/man ist · wir sind · ihr seid · sie (oni) sind"
     }
    ]
   },
@@ -501,7 +502,7 @@
       "ist",
       "sind"
      ],
-     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+     "explain": "ich bin · du bist · er/sie/man ist · wir sind · ihr seid · sie (oni) sind"
     }
    ]
   },
@@ -553,7 +554,7 @@
       "macht",
       "machen"
      ],
-     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+     "explain": "ich mache · du machst · er/sie/man macht · wir machen · ihr macht · sie (oni) machen"
     }
    ]
   },
@@ -605,7 +606,7 @@
       "findet",
       "finden"
      ],
-     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+     "explain": "ich finde · du findest · er/sie/man findet · wir finden · ihr findet · sie (oni) finden"
     }
    ]
   },
@@ -643,7 +644,7 @@
       "spielt",
       "spielen"
      ],
-     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+     "explain": "ich spiele · du spielst · er/sie/man spielt · wir spielen · ihr spielt · sie (oni) spielen"
     }
    ]
   },
@@ -684,7 +685,7 @@
       "hört",
       "hören"
      ],
-     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+     "explain": "ich höre · du hörst · er/sie/man hört · wir hören · ihr hört · sie (oni) hören"
     }
    ]
   },
@@ -722,7 +723,7 @@
       "lernst",
       "lernen"
      ],
-     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+     "explain": "ich lerne · du lernst · er/sie/man lernt · wir lernen · ihr lernt · sie (oni) lernen"
     }
    ]
   }

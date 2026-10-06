@@ -1,0 +1,149 @@
+{
+ "id": "g-wer-wen",
+ "area": "grammar",
+ "group": "g-zajmena",
+ "name": "wer, wen",
+ "topic": "kdo, koho",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Věty",
+ "cards": [
+  {
+   "id": "ww-01",
+   "pos": "sentence",
+   "cs": "Kdo učí němčinu? — Herr Stein.",
+   "de": "Wer unterrichtet Deutsch?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "___ unterrichtet Deutsch?",
+     "hint": "Kdo učí němčinu? — Herr Stein.",
+     "answer": "Wer",
+     "choices": [
+      "Wen",
+      "Wo",
+      "Was"
+     ],
+     "full": "Wer unterrichtet Deutsch?",
+     "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+    }
+   ],
+   "note": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+  },
+  {
+   "id": "ww-02",
+   "pos": "sentence",
+   "cs": "Koho máte na zeměpis? — Frau Stadler.",
+   "de": "Wen habt ihr in Geografie?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "___ habt ihr in Geografie?",
+     "hint": "Koho máte na zeměpis? — Frau Stadler.",
+     "answer": "Wen",
+     "choices": [
+      "Wer",
+      "Wo",
+      "Was"
+     ],
+     "full": "Wen habt ihr in Geografie?",
+     "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+    }
+   ],
+   "note": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+  },
+  {
+   "id": "ww-03",
+   "pos": "sentence",
+   "cs": "Kdo je to? — Das ist Alicia.",
+   "de": "Wer ist das?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "___ ist das?",
+     "hint": "Kdo je to? — Das ist Alicia.",
+     "answer": "Wer",
+     "choices": [
+      "Wen",
+      "Wo",
+      "Was"
+     ],
+     "full": "Wer ist das?",
+     "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+    }
+   ],
+   "note": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+  },
+  {
+   "id": "ww-04",
+   "pos": "sentence",
+   "cs": "Koho máš rád? — Herrn Stein.",
+   "de": "Wen findest du nett?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "___ findest du nett?",
+     "hint": "Koho máš rád? — Herrn Stein.",
+     "answer": "Wen",
+     "choices": [
+      "Wer",
+      "Wo",
+      "Was"
+     ],
+     "full": "Wen findest du nett?",
+     "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+    }
+   ],
+   "note": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+  },
+  {
+   "id": "ww-05",
+   "pos": "sentence",
+   "cs": "Kdo hraje na kytaru? — Lena.",
+   "de": "Wer spielt Gitarre?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "___ spielt Gitarre?",
+     "hint": "Kdo hraje na kytaru? — Lena.",
+     "answer": "Wer",
+     "choices": [
+      "Wen",
+      "Wo",
+      "Was"
+     ],
+     "full": "Wer spielt Gitarre?",
+     "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+    }
+   ],
+   "note": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+  },
+  {
+   "id": "ww-06",
+   "pos": "sentence",
+   "cs": "Koho máš rád? — Frau Stadler.",
+   "de": "Wen magst du?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "___ magst du?",
+     "hint": "Koho máš rád? — Frau Stadler.",
+     "answer": "Wen",
+     "choices": [
+      "Wer",
+      "Wo",
+      "Was"
+     ],
+     "full": "Wen magst du?",
+     "explain": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+    }
+   ],
+   "note": "wer = kdo (podmět, 1. pád) · wen = koho (4. pád)."
+  }
+ ]
+}

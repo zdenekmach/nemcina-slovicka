@@ -1,0 +1,350 @@
+{
+ "id": "g-slovesa-3",
+ "area": "grammar",
+ "group": "g-slovesa",
+ "name": "Kmen na -d, -t, -n",
+ "topic": "unterrichten, reden, rechnen",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Slovesa",
+ "cards": [
+  {
+   "id": "gv3-01",
+   "pos": "verb",
+   "cs": "učit, vyučovat",
+   "de": "unterrichten",
+   "table": [
+    [
+     "ich",
+     "unterrichte"
+    ],
+    [
+     "du",
+     "unterrichtest"
+    ],
+    [
+     "er/sie/man",
+     "unterrichtet"
+    ],
+    [
+     "wir",
+     "unterrichten"
+    ],
+    [
+     "ihr",
+     "unterrichtet"
+    ],
+    [
+     "sie (oni)",
+     "unterrichten"
+    ]
+   ],
+   "note": "Kmen končí na -t, takže se před koncovku vkládá -e-: du unterrichtest, er unterrichtet.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ Mathe.",
+     "hint": "unterrichten · učit, vyučovat",
+     "answer": "unterrichte",
+     "choices": [
+      "unterrichtest",
+      "unterrichtet",
+      "unterrichten"
+     ],
+     "explain": "ich unterrichte · du unterrichtest · er/sie/man unterrichtet · wir unterrichten · ihr unterrichtet · sie (oni) unterrichten"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ du?",
+     "hint": "unterrichten · učit, vyučovat",
+     "answer": "unterrichtest",
+     "choices": [
+      "unterrichte",
+      "unterrichtet",
+      "unterrichten"
+     ],
+     "explain": "ich unterrichte · du unterrichtest · er/sie/man unterrichtet · wir unterrichten · ihr unterrichtet · sie (oni) unterrichten"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Herr Stein ___ Deutsch.",
+     "hint": "unterrichten · učit, vyučovat",
+     "answer": "unterrichtet",
+     "choices": [
+      "unterrichte",
+      "unterrichtest",
+      "unterrichten"
+     ],
+     "explain": "ich unterrichte · du unterrichtest · er/sie/man unterrichtet · wir unterrichten · ihr unterrichtet · sie (oni) unterrichten"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ Englisch.",
+     "hint": "unterrichten · učit, vyučovat",
+     "answer": "unterrichten",
+     "choices": [
+      "unterrichte",
+      "unterrichtest",
+      "unterrichtet"
+     ],
+     "explain": "ich unterrichte · du unterrichtest · er/sie/man unterrichtet · wir unterrichten · ihr unterrichtet · sie (oni) unterrichten"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ ihr?",
+     "hint": "unterrichten · učit, vyučovat",
+     "answer": "unterrichtet",
+     "choices": [
+      "unterrichte",
+      "unterrichtest",
+      "unterrichten"
+     ],
+     "explain": "ich unterrichte · du unterrichtest · er/sie/man unterrichtet · wir unterrichten · ihr unterrichtet · sie (oni) unterrichten"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Frau Stadler und Herr Stein ___ Deutsch.",
+     "hint": "unterrichten · učit, vyučovat",
+     "answer": "unterrichten",
+     "choices": [
+      "unterrichte",
+      "unterrichtest",
+      "unterrichtet"
+     ],
+     "explain": "ich unterrichte · du unterrichtest · er/sie/man unterrichtet · wir unterrichten · ihr unterrichtet · sie (oni) unterrichten"
+    }
+   ]
+  },
+  {
+   "id": "gv3-02",
+   "pos": "verb",
+   "cs": "mluvit, povídat",
+   "de": "reden",
+   "table": [
+    [
+     "ich",
+     "rede"
+    ],
+    [
+     "du",
+     "redest"
+    ],
+    [
+     "er/sie/man",
+     "redet"
+    ],
+    [
+     "wir",
+     "reden"
+    ],
+    [
+     "ihr",
+     "redet"
+    ],
+    [
+     "sie (oni)",
+     "reden"
+    ]
+   ],
+   "note": "Kmen končí na -d, takže se před koncovku vkládá -e-: du redest, er redet.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ viel.",
+     "hint": "reden · mluvit, povídat",
+     "answer": "rede",
+     "choices": [
+      "redest",
+      "redet",
+      "reden"
+     ],
+     "explain": "ich rede · du redest · er/sie/man redet · wir reden · ihr redet · sie (oni) reden"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du mit Oma?",
+     "hint": "reden · mluvit, povídat",
+     "answer": "redest",
+     "choices": [
+      "rede",
+      "redet",
+      "reden"
+     ],
+     "explain": "ich rede · du redest · er/sie/man redet · wir reden · ihr redet · sie (oni) reden"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan ___ viel.",
+     "hint": "reden · mluvit, povídat",
+     "answer": "redet",
+     "choices": [
+      "rede",
+      "redest",
+      "reden"
+     ],
+     "explain": "ich rede · du redest · er/sie/man redet · wir reden · ihr redet · sie (oni) reden"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ gern.",
+     "hint": "reden · mluvit, povídat",
+     "answer": "reden",
+     "choices": [
+      "rede",
+      "redest",
+      "redet"
+     ],
+     "explain": "ich rede · du redest · er/sie/man redet · wir reden · ihr redet · sie (oni) reden"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr viel?",
+     "hint": "reden · mluvit, povídat",
+     "answer": "redet",
+     "choices": [
+      "rede",
+      "redest",
+      "reden"
+     ],
+     "explain": "ich rede · du redest · er/sie/man redet · wir reden · ihr redet · sie (oni) reden"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena und Eva ___ viel.",
+     "hint": "reden · mluvit, povídat",
+     "answer": "reden",
+     "choices": [
+      "rede",
+      "redest",
+      "redet"
+     ],
+     "explain": "ich rede · du redest · er/sie/man redet · wir reden · ihr redet · sie (oni) reden"
+    }
+   ]
+  },
+  {
+   "id": "gv3-03",
+   "pos": "verb",
+   "cs": "počítat",
+   "de": "rechnen",
+   "table": [
+    [
+     "ich",
+     "rechne"
+    ],
+    [
+     "du",
+     "rechnest"
+    ],
+    [
+     "er/sie/man",
+     "rechnet"
+    ],
+    [
+     "wir",
+     "rechnen"
+    ],
+    [
+     "ihr",
+     "rechnet"
+    ],
+    [
+     "sie (oni)",
+     "rechnen"
+    ]
+   ],
+   "note": "Kmen končí na -chn, takže se před koncovku vkládá -e-: du rechnest, er rechnet.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ gern.",
+     "hint": "rechnen · počítat",
+     "answer": "rechne",
+     "choices": [
+      "rechnest",
+      "rechnet",
+      "rechnen"
+     ],
+     "explain": "ich rechne · du rechnest · er/sie/man rechnet · wir rechnen · ihr rechnet · sie (oni) rechnen"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du gern?",
+     "hint": "rechnen · počítat",
+     "answer": "rechnest",
+     "choices": [
+      "rechne",
+      "rechnet",
+      "rechnen"
+     ],
+     "explain": "ich rechne · du rechnest · er/sie/man rechnet · wir rechnen · ihr rechnet · sie (oni) rechnen"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Anton ___ super.",
+     "hint": "rechnen · počítat",
+     "answer": "rechnet",
+     "choices": [
+      "rechne",
+      "rechnest",
+      "rechnen"
+     ],
+     "explain": "ich rechne · du rechnest · er/sie/man rechnet · wir rechnen · ihr rechnet · sie (oni) rechnen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ in Mathe.",
+     "hint": "rechnen · počítat",
+     "answer": "rechnen",
+     "choices": [
+      "rechne",
+      "rechnest",
+      "rechnet"
+     ],
+     "explain": "ich rechne · du rechnest · er/sie/man rechnet · wir rechnen · ihr rechnet · sie (oni) rechnen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr gern?",
+     "hint": "rechnen · počítat",
+     "answer": "rechnet",
+     "choices": [
+      "rechne",
+      "rechnest",
+      "rechnen"
+     ],
+     "explain": "ich rechne · du rechnest · er/sie/man rechnet · wir rechnen · ihr rechnet · sie (oni) rechnen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Max und Tim ___ gern.",
+     "hint": "rechnen · počítat",
+     "answer": "rechnen",
+     "choices": [
+      "rechne",
+      "rechnest",
+      "rechnet"
+     ],
+     "explain": "ich rechne · du rechnest · er/sie/man rechnet · wir rechnen · ihr rechnet · sie (oni) rechnen"
+    }
+   ]
+  }
+ ]
+}

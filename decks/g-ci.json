@@ -1,0 +1,238 @@
+{
+ "id": "g-ci",
+ "area": "grammar",
+ "group": "g-zajmena",
+ "name": "Čí to je",
+ "topic": "mein, dein, Jans, Lenas",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Věty",
+ "cards": [
+  {
+   "id": "ci-01",
+   "pos": "sentence",
+   "cs": "Jaké je tvoje číslo na mobil?",
+   "de": "Wie ist deine Handynummer?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Wie ist ___ Handynummer?",
+     "hint": "Jaké je tvoje číslo na mobil?",
+     "answer": "deine",
+     "choices": [
+      "dein",
+      "mein",
+      "meine"
+     ],
+     "full": "Wie ist deine Handynummer?",
+     "explain": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+    }
+   ],
+   "note": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+  },
+  {
+   "id": "ci-02",
+   "pos": "sentence",
+   "cs": "Moje číslo na mobil je 030/28 47 912.",
+   "de": "Meine Handynummer ist 030/28 47 912.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "___ Handynummer ist 030/28 47 912.",
+     "hint": "Moje číslo na mobil je 030/28 47 912.",
+     "answer": "Meine",
+     "choices": [
+      "Mein",
+      "Dein",
+      "Deine"
+     ],
+     "full": "Meine Handynummer ist 030/28 47 912.",
+     "explain": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+    }
+   ],
+   "note": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+  },
+  {
+   "id": "ci-03",
+   "pos": "sentence",
+   "cs": "To je můj táta.",
+   "de": "Das ist mein Papa.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Das ist ___ Papa.",
+     "hint": "To je můj táta.",
+     "answer": "mein",
+     "choices": [
+      "meine",
+      "dein",
+      "deine"
+     ],
+     "full": "Das ist mein Papa.",
+     "explain": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+    }
+   ],
+   "note": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+  },
+  {
+   "id": "ci-04",
+   "pos": "sentence",
+   "cs": "To je moje máma.",
+   "de": "Das ist meine Mama.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Das ist ___ Mama.",
+     "hint": "To je moje máma.",
+     "answer": "meine",
+     "choices": [
+      "mein",
+      "dein",
+      "deine"
+     ],
+     "full": "Das ist meine Mama.",
+     "explain": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+    }
+   ],
+   "note": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+  },
+  {
+   "id": "ci-05",
+   "pos": "sentence",
+   "cs": "Jak je tvoje jméno?",
+   "de": "Wie ist dein Name?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Wie ist ___ Name?",
+     "hint": "Jak je tvoje jméno?",
+     "answer": "dein",
+     "choices": [
+      "deine",
+      "mein",
+      "meine"
+     ],
+     "full": "Wie ist dein Name?",
+     "explain": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+    }
+   ],
+   "note": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+  },
+  {
+   "id": "ci-06",
+   "pos": "sentence",
+   "cs": "Kde bydlí tvoje sestřenice?",
+   "de": "Wo wohnt deine Cousine?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Wo wohnt ___ Cousine?",
+     "hint": "Kde bydlí tvoje sestřenice?",
+     "answer": "deine",
+     "choices": [
+      "dein",
+      "mein",
+      "meine"
+     ],
+     "full": "Wo wohnt deine Cousine?",
+     "explain": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+    }
+   ],
+   "note": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+  },
+  {
+   "id": "ci-07",
+   "pos": "sentence",
+   "cs": "To je můj mobil.",
+   "de": "Das ist mein Handy.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Das ist ___ Handy.",
+     "hint": "To je můj mobil.",
+     "answer": "mein",
+     "choices": [
+      "meine",
+      "dein",
+      "deine"
+     ],
+     "full": "Das ist mein Handy.",
+     "explain": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+    }
+   ],
+   "note": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+  },
+  {
+   "id": "ci-08",
+   "pos": "sentence",
+   "cs": "To je Janova sestřenice.",
+   "de": "Das ist Jans Cousine.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Das ist ___ Cousine.",
+     "hint": "To je Janova sestřenice.",
+     "answer": "Jans",
+     "choices": [
+      "Jan",
+      "Jan's"
+     ],
+     "full": "Das ist Jans Cousine.",
+     "explain": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+    }
+   ],
+   "note": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+  },
+  {
+   "id": "ci-09",
+   "pos": "sentence",
+   "cs": "To je Lenina e-mailová adresa.",
+   "de": "Das ist Lenas E-Mail-Adresse.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Das ist ___ E-Mail-Adresse.",
+     "hint": "To je Lenina e-mailová adresa.",
+     "answer": "Lenas",
+     "choices": [
+      "Lena",
+      "Lena's"
+     ],
+     "full": "Das ist Lenas E-Mail-Adresse.",
+     "explain": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+    }
+   ],
+   "note": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+  },
+  {
+   "id": "ci-10",
+   "pos": "sentence",
+   "cs": "To je Janův online kamarád Erkan.",
+   "de": "Das ist Jans Online-Freund Erkan.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Das ist ___ Online-Freund Erkan.",
+     "hint": "To je Janův online kamarád Erkan.",
+     "answer": "Jans",
+     "choices": [
+      "Jan",
+      "Jan's"
+     ],
+     "full": "Das ist Jans Online-Freund Erkan.",
+     "explain": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+    }
+   ],
+   "note": "der/das → mein, dein · die → meine, deine. Jméno + s říká, čí to je: Jans Papa, Lenas E-Mail-Adresse — bez apostrofu."
+  }
+ ]
+}

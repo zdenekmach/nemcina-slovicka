@@ -1,0 +1,362 @@
+{
+ "id": "g-slovesa-4",
+ "area": "grammar",
+ "group": "g-slovesa",
+ "name": "Změna kmene",
+ "topic": "sprechen, essen, nehmen",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Slovesa",
+ "cards": [
+  {
+   "id": "gv4-01",
+   "pos": "verb",
+   "cs": "mluvit (jazykem)",
+   "de": "sprechen",
+   "table": [
+    [
+     "ich",
+     "spreche"
+    ],
+    [
+     "du",
+     "sprichst"
+    ],
+    [
+     "er/sie/man",
+     "spricht"
+    ],
+    [
+     "wir",
+     "sprechen"
+    ],
+    [
+     "ihr",
+     "sprecht"
+    ],
+    [
+     "sie (oni)",
+     "sprechen"
+    ]
+   ],
+   "note": "U du a er/sie/man se e mění na i: du sprichst, er spricht. Ostatní osoby pravidelně.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ Tschechisch.",
+     "hint": "sprechen · mluvit (jazykem)",
+     "answer": "spreche",
+     "choices": [
+      "sprichst",
+      "spricht",
+      "sprechen",
+      "sprecht"
+     ],
+     "explain": "ich spreche · du sprichst · er/sie/man spricht · wir sprechen · ihr sprecht · sie (oni) sprechen"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du Deutsch?",
+     "hint": "sprechen · mluvit (jazykem)",
+     "answer": "sprichst",
+     "choices": [
+      "spreche",
+      "spricht",
+      "sprechen",
+      "sprecht"
+     ],
+     "explain": "ich spreche · du sprichst · er/sie/man spricht · wir sprechen · ihr sprecht · sie (oni) sprechen"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena ___ Deutsch und Spanisch.",
+     "hint": "sprechen · mluvit (jazykem)",
+     "answer": "spricht",
+     "choices": [
+      "spreche",
+      "sprichst",
+      "sprechen",
+      "sprecht"
+     ],
+     "explain": "ich spreche · du sprichst · er/sie/man spricht · wir sprechen · ihr sprecht · sie (oni) sprechen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ Englisch.",
+     "hint": "sprechen · mluvit (jazykem)",
+     "answer": "sprechen",
+     "choices": [
+      "spreche",
+      "sprichst",
+      "spricht",
+      "sprecht"
+     ],
+     "explain": "ich spreche · du sprichst · er/sie/man spricht · wir sprechen · ihr sprecht · sie (oni) sprechen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr Deutsch?",
+     "hint": "sprechen · mluvit (jazykem)",
+     "answer": "sprecht",
+     "choices": [
+      "spreche",
+      "sprichst",
+      "spricht",
+      "sprechen"
+     ],
+     "explain": "ich spreche · du sprichst · er/sie/man spricht · wir sprechen · ihr sprecht · sie (oni) sprechen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Tobias und Max ___ Deutsch.",
+     "hint": "sprechen · mluvit (jazykem)",
+     "answer": "sprechen",
+     "choices": [
+      "spreche",
+      "sprichst",
+      "spricht",
+      "sprecht"
+     ],
+     "explain": "ich spreche · du sprichst · er/sie/man spricht · wir sprechen · ihr sprecht · sie (oni) sprechen"
+    }
+   ]
+  },
+  {
+   "id": "gv4-02",
+   "pos": "verb",
+   "cs": "jíst",
+   "de": "essen",
+   "table": [
+    [
+     "ich",
+     "esse"
+    ],
+    [
+     "du",
+     "isst"
+    ],
+    [
+     "er/sie/man",
+     "isst"
+    ],
+    [
+     "wir",
+     "essen"
+    ],
+    [
+     "ihr",
+     "esst"
+    ],
+    [
+     "sie (oni)",
+     "essen"
+    ]
+   ],
+   "note": "U du a er/sie/man se e mění na i a u du je jen -t: du isst, er isst.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ eine Banane.",
+     "hint": "essen · jíst",
+     "answer": "esse",
+     "choices": [
+      "isst",
+      "essen",
+      "esst"
+     ],
+     "explain": "ich esse · du isst · er/sie/man isst · wir essen · ihr esst · sie (oni) essen"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ du?",
+     "hint": "essen · jíst",
+     "answer": "isst",
+     "choices": [
+      "esse",
+      "essen",
+      "esst"
+     ],
+     "explain": "ich esse · du isst · er/sie/man isst · wir essen · ihr esst · sie (oni) essen"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Fabian ___ eine Banane.",
+     "hint": "essen · jíst",
+     "answer": "isst",
+     "choices": [
+      "esse",
+      "essen",
+      "esst"
+     ],
+     "explain": "ich esse · du isst · er/sie/man isst · wir essen · ihr esst · sie (oni) essen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ um 13.30 Uhr.",
+     "hint": "essen · jíst",
+     "answer": "essen",
+     "choices": [
+      "esse",
+      "isst",
+      "esst"
+     ],
+     "explain": "ich esse · du isst · er/sie/man isst · wir essen · ihr esst · sie (oni) essen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Was ___ ihr?",
+     "hint": "essen · jíst",
+     "answer": "esst",
+     "choices": [
+      "esse",
+      "isst",
+      "essen"
+     ],
+     "explain": "ich esse · du isst · er/sie/man isst · wir essen · ihr esst · sie (oni) essen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Mama und Papa ___ gern.",
+     "hint": "essen · jíst",
+     "answer": "essen",
+     "choices": [
+      "esse",
+      "isst",
+      "esst"
+     ],
+     "explain": "ich esse · du isst · er/sie/man isst · wir essen · ihr esst · sie (oni) essen"
+    }
+   ]
+  },
+  {
+   "id": "gv4-03",
+   "pos": "verb",
+   "cs": "vzít, brát",
+   "de": "nehmen",
+   "table": [
+    [
+     "ich",
+     "nehme"
+    ],
+    [
+     "du",
+     "nimmst"
+    ],
+    [
+     "er/sie/man",
+     "nimmt"
+    ],
+    [
+     "wir",
+     "nehmen"
+    ],
+    [
+     "ihr",
+     "nehmt"
+    ],
+    [
+     "sie (oni)",
+     "nehmen"
+    ]
+   ],
+   "note": "U du a er/sie/man se mění celý kmen: du nimmst, er nimmt.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ eine Limo.",
+     "hint": "nehmen · vzít, brát",
+     "answer": "nehme",
+     "choices": [
+      "nimmst",
+      "nimmt",
+      "nehmen",
+      "nehmt"
+     ],
+     "explain": "ich nehme · du nimmst · er/sie/man nimmt · wir nehmen · ihr nehmt · sie (oni) nehmen"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du eine Cola?",
+     "hint": "nehmen · vzít, brát",
+     "answer": "nimmst",
+     "choices": [
+      "nehme",
+      "nimmt",
+      "nehmen",
+      "nehmt"
+     ],
+     "explain": "ich nehme · du nimmst · er/sie/man nimmt · wir nehmen · ihr nehmt · sie (oni) nehmen"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan ___ einen Bleistift.",
+     "hint": "nehmen · vzít, brát",
+     "answer": "nimmt",
+     "choices": [
+      "nehme",
+      "nimmst",
+      "nehmen",
+      "nehmt"
+     ],
+     "explain": "ich nehme · du nimmst · er/sie/man nimmt · wir nehmen · ihr nehmt · sie (oni) nehmen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ zwei Limos.",
+     "hint": "nehmen · vzít, brát",
+     "answer": "nehmen",
+     "choices": [
+      "nehme",
+      "nimmst",
+      "nimmt",
+      "nehmt"
+     ],
+     "explain": "ich nehme · du nimmst · er/sie/man nimmt · wir nehmen · ihr nehmt · sie (oni) nehmen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr auch eine Limo?",
+     "hint": "nehmen · vzít, brát",
+     "answer": "nehmt",
+     "choices": [
+      "nehme",
+      "nimmst",
+      "nimmt",
+      "nehmen"
+     ],
+     "explain": "ich nehme · du nimmst · er/sie/man nimmt · wir nehmen · ihr nehmt · sie (oni) nehmen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena und Eva ___ eine Banane.",
+     "hint": "nehmen · vzít, brát",
+     "answer": "nehmen",
+     "choices": [
+      "nehme",
+      "nimmst",
+      "nimmt",
+      "nehmt"
+     ],
+     "explain": "ich nehme · du nimmst · er/sie/man nimmt · wir nehmen · ihr nehmt · sie (oni) nehmen"
+    }
+   ]
+  }
+ ]
+}

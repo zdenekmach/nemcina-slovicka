@@ -1,10 +1,11 @@
 {
  "id": "g-slovesa-1",
- "name": "Slovesa z tabulky",
  "area": "grammar",
- "unit": "Slovesa",
+ "group": "g-slovesa",
+ "name": "Slovesa z tabulky",
  "topic": "wohnen, kommen, heißen, sein",
  "source": "Lekce 1, strana 19, tabulka MEMO",
+ "unit": "Slovesa",
  "cards": [
   {
    "id": "gv1-01",
@@ -21,7 +22,7 @@
      "wohnst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "wohnt"
     ],
     [
@@ -50,7 +51,7 @@
       "wohnt",
       "wohnen"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+     "explain": "ich wohne · du wohnst · er/sie/man wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     },
     {
      "id": "du",
@@ -63,7 +64,7 @@
       "wohnt",
       "wohnen"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+     "explain": "ich wohne · du wohnst · er/sie/man wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     },
     {
      "id": "er",
@@ -76,7 +77,7 @@
       "wohnst",
       "wohnen"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+     "explain": "ich wohne · du wohnst · er/sie/man wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     },
     {
      "id": "wir",
@@ -89,7 +90,7 @@
       "wohnst",
       "wohnt"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+     "explain": "ich wohne · du wohnst · er/sie/man wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     },
     {
      "id": "ihr",
@@ -102,7 +103,7 @@
       "wohnst",
       "wohnen"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+     "explain": "ich wohne · du wohnst · er/sie/man wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     },
     {
      "id": "pl3",
@@ -115,7 +116,7 @@
       "wohnst",
       "wohnt"
      ],
-     "explain": "ich wohne · du wohnst · er/sie wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
+     "explain": "ich wohne · du wohnst · er/sie/man wohnt · wir wohnen · ihr wohnt · sie (oni) wohnen"
     }
    ]
   },
@@ -134,7 +135,7 @@
      "kommst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "kommt"
     ],
     [
@@ -163,7 +164,7 @@
       "kommt",
       "kommen"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+     "explain": "ich komme · du kommst · er/sie/man kommt · wir kommen · ihr kommt · sie (oni) kommen"
     },
     {
      "id": "du",
@@ -176,7 +177,7 @@
       "kommt",
       "kommen"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+     "explain": "ich komme · du kommst · er/sie/man kommt · wir kommen · ihr kommt · sie (oni) kommen"
     },
     {
      "id": "er",
@@ -189,7 +190,7 @@
       "kommst",
       "kommen"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+     "explain": "ich komme · du kommst · er/sie/man kommt · wir kommen · ihr kommt · sie (oni) kommen"
     },
     {
      "id": "wir",
@@ -202,7 +203,7 @@
       "kommst",
       "kommt"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+     "explain": "ich komme · du kommst · er/sie/man kommt · wir kommen · ihr kommt · sie (oni) kommen"
     },
     {
      "id": "ihr",
@@ -215,7 +216,7 @@
       "kommst",
       "kommen"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+     "explain": "ich komme · du kommst · er/sie/man kommt · wir kommen · ihr kommt · sie (oni) kommen"
     },
     {
      "id": "pl3",
@@ -228,7 +229,7 @@
       "kommst",
       "kommt"
      ],
-     "explain": "ich komme · du kommst · er/sie kommt · wir kommen · ihr kommt · sie (oni) kommen"
+     "explain": "ich komme · du kommst · er/sie/man kommt · wir kommen · ihr kommt · sie (oni) kommen"
     }
    ]
   },
@@ -247,7 +248,7 @@
      "heißt"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "heißt"
     ],
     [
@@ -275,7 +276,7 @@
       "heißt",
       "heißen"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+     "explain": "ich heiße · du heißt · er/sie/man heißt · wir heißen · ihr heißt · sie (oni) heißen"
     },
     {
      "id": "du",
@@ -287,7 +288,7 @@
       "heiße",
       "heißen"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+     "explain": "ich heiße · du heißt · er/sie/man heißt · wir heißen · ihr heißt · sie (oni) heißen"
     },
     {
      "id": "er",
@@ -299,7 +300,7 @@
       "heiße",
       "heißen"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+     "explain": "ich heiße · du heißt · er/sie/man heißt · wir heißen · ihr heißt · sie (oni) heißen"
     },
     {
      "id": "wir",
@@ -311,7 +312,7 @@
       "heiße",
       "heißt"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+     "explain": "ich heiße · du heißt · er/sie/man heißt · wir heißen · ihr heißt · sie (oni) heißen"
     },
     {
      "id": "ihr",
@@ -323,7 +324,7 @@
       "heiße",
       "heißen"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+     "explain": "ich heiße · du heißt · er/sie/man heißt · wir heißen · ihr heißt · sie (oni) heißen"
     },
     {
      "id": "pl3",
@@ -335,7 +336,7 @@
       "heiße",
       "heißt"
      ],
-     "explain": "ich heiße · du heißt · er/sie heißt · wir heißen · ihr heißt · sie (oni) heißen"
+     "explain": "ich heiße · du heißt · er/sie/man heißt · wir heißen · ihr heißt · sie (oni) heißen"
     }
    ]
   },
@@ -354,7 +355,7 @@
      "bist"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "ist"
     ],
     [
@@ -384,7 +385,7 @@
       "sind",
       "seid"
      ],
-     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+     "explain": "ich bin · du bist · er/sie/man ist · wir sind · ihr seid · sie (oni) sind"
     },
     {
      "id": "du",
@@ -398,7 +399,7 @@
       "sind",
       "seid"
      ],
-     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+     "explain": "ich bin · du bist · er/sie/man ist · wir sind · ihr seid · sie (oni) sind"
     },
     {
      "id": "er",
@@ -412,7 +413,7 @@
       "sind",
       "seid"
      ],
-     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+     "explain": "ich bin · du bist · er/sie/man ist · wir sind · ihr seid · sie (oni) sind"
     },
     {
      "id": "wir",
@@ -426,7 +427,7 @@
       "ist",
       "seid"
      ],
-     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+     "explain": "ich bin · du bist · er/sie/man ist · wir sind · ihr seid · sie (oni) sind"
     },
     {
      "id": "ihr",
@@ -440,7 +441,7 @@
       "ist",
       "sind"
      ],
-     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+     "explain": "ich bin · du bist · er/sie/man ist · wir sind · ihr seid · sie (oni) sind"
     },
     {
      "id": "pl3",
@@ -454,7 +455,7 @@
       "ist",
       "seid"
      ],
-     "explain": "ich bin · du bist · er/sie ist · wir sind · ihr seid · sie (oni) sind"
+     "explain": "ich bin · du bist · er/sie/man ist · wir sind · ihr seid · sie (oni) sind"
     }
    ]
   }

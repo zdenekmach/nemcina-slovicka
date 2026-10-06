@@ -35,8 +35,11 @@
       <button id="btn-start" class="primary wide">Začít opakovat</button>
     </div>
 
-    <!-- Tři oblasti (slovní zásoba, gramatika, ostatní) i s nadpisy kreslí app.js -->
-    <div id="deck-list"></div>
+    <div id="continue"></div>
+
+    <h2>Co procvičovat</h2>
+    <!-- oblasti kreslí app.js; pod nimi lekce / témata a teprve pak balíčky -->
+    <div id="area-list"></div>
 
     <h2>Jak na tom jsi</h2>
     <div id="stats" class="panel"></div>
@@ -56,6 +59,12 @@
     <div class="footer-actions">
       <button id="btn-reset" class="ghost small">Vymazat postup</button>
     </div>
+  </section>
+
+  <!-- PŘEHLED OBLASTI NEBO SKUPINY: lekce / témata, nebo balíčky -->
+  <section id="view-list" class="view hidden">
+    <div id="list-head" class="panel"></div>
+    <div id="list-items"></div>
   </section>
 
   <!-- PROCVIČOVÁNÍ -->

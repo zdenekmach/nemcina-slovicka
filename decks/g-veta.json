@@ -1,0 +1,394 @@
+{
+ "id": "g-veta",
+ "area": "grammar",
+ "group": "g-slovosled",
+ "name": "Věta oznamovací",
+ "topic": "sloveso na 2. místě",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Věty",
+ "cards": [
+  {
+   "id": "vo-01",
+   "pos": "sentence",
+   "cs": "Jsem Jan.",
+   "de": "Ich bin Jan.",
+   "note": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "Jsem Jan.",
+     "hint": "začni: Ich …",
+     "answer": "Ich bin Jan.",
+     "tiles": [
+      "ich",
+      "bin",
+      "Jan"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    },
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Jsem Jan.",
+     "hint": "",
+     "answer": "Ich bin Jan.",
+     "choices": [
+      "Ich Jan bin.",
+      "Bin ich Jan."
+     ],
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    }
+   ]
+  },
+  {
+   "id": "vo-02",
+   "pos": "sentence",
+   "cs": "Anton bydlí ve Frankfurtu.",
+   "de": "Anton wohnt in Frankfurt.",
+   "note": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "Anton bydlí ve Frankfurtu.",
+     "hint": "začni: Anton …",
+     "answer": "Anton wohnt in Frankfurt.",
+     "tiles": [
+      "Anton",
+      "wohnt",
+      "in",
+      "Frankfurt"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    },
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Anton bydlí ve Frankfurtu.",
+     "hint": "",
+     "answer": "Anton wohnt in Frankfurt.",
+     "choices": [
+      "Anton in Frankfurt wohnt.",
+      "Wohnt Anton in Frankfurt."
+     ],
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    }
+   ]
+  },
+  {
+   "id": "vo-03",
+   "pos": "sentence",
+   "cs": "Tobias a Max poslouchají techno.",
+   "de": "Tobias und Max hören Techno.",
+   "note": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "Tobias a Max poslouchají techno.",
+     "hint": "začni: Tobias …",
+     "answer": "Tobias und Max hören Techno.",
+     "tiles": [
+      "Tobias",
+      "und",
+      "Max",
+      "hören",
+      "Techno"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    },
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Tobias a Max poslouchají techno.",
+     "hint": "",
+     "answer": "Tobias und Max hören Techno.",
+     "choices": [
+      "Tobias und Max Techno hören.",
+      "Tobias und Max hört Techno."
+     ],
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    }
+   ]
+  },
+  {
+   "id": "vo-04",
+   "pos": "sentence",
+   "cs": "Zítra začíná škola.",
+   "de": "Morgen beginnt die Schule.",
+   "note": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "Zítra začíná škola.",
+     "hint": "začni: Morgen …",
+     "answer": "Morgen beginnt die Schule.",
+     "tiles": [
+      "morgen",
+      "beginnt",
+      "die",
+      "Schule"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    },
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Zítra začíná škola.",
+     "hint": "",
+     "answer": "Morgen beginnt die Schule.",
+     "choices": [
+      "Morgen die Schule beginnt.",
+      "Morgen die Schule beginnen."
+     ],
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    }
+   ]
+  },
+  {
+   "id": "vo-05",
+   "pos": "sentence",
+   "cs": "V pondělí má Jan matiku.",
+   "de": "Am Montag hat Jan Mathe.",
+   "note": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "V pondělí má Jan matiku.",
+     "hint": "začni: Am Montag …",
+     "answer": "Am Montag hat Jan Mathe.",
+     "tiles": [
+      "am",
+      "Montag",
+      "hat",
+      "Jan",
+      "Mathe"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    },
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "V pondělí má Jan matiku.",
+     "hint": "",
+     "answer": "Am Montag hat Jan Mathe.",
+     "choices": [
+      "Am Montag Jan hat Mathe.",
+      "Am Montag Jan Mathe hat."
+     ],
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    }
+   ]
+  },
+  {
+   "id": "vo-06",
+   "pos": "sentence",
+   "cs": "Nejdřív máme zeměpis.",
+   "de": "Zuerst haben wir Geografie.",
+   "note": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "Nejdřív máme zeměpis.",
+     "hint": "začni: Zuerst …",
+     "answer": "Zuerst haben wir Geografie.",
+     "tiles": [
+      "zuerst",
+      "haben",
+      "wir",
+      "Geografie"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    },
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Nejdřív máme zeměpis.",
+     "hint": "",
+     "answer": "Zuerst haben wir Geografie.",
+     "choices": [
+      "Zuerst wir haben Geografie.",
+      "Zuerst wir Geografie haben."
+     ],
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    }
+   ]
+  },
+  {
+   "id": "vo-07",
+   "pos": "sentence",
+   "cs": "Pak máme náboženství.",
+   "de": "Dann haben wir Religion.",
+   "note": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "Pak máme náboženství.",
+     "hint": "začni: Dann …",
+     "answer": "Dann haben wir Religion.",
+     "tiles": [
+      "dann",
+      "haben",
+      "wir",
+      "Religion"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    },
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Pak máme náboženství.",
+     "hint": "",
+     "answer": "Dann haben wir Religion.",
+     "choices": [
+      "Dann wir haben Religion.",
+      "Dann hat wir Religion."
+     ],
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    }
+   ]
+  },
+  {
+   "id": "vo-08",
+   "pos": "sentence",
+   "cs": "Ve 13.30 jíme.",
+   "de": "Um 13.30 Uhr essen wir.",
+   "note": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "Ve 13.30 jíme.",
+     "hint": "začni: Um …",
+     "answer": "Um 13.30 Uhr essen wir.",
+     "tiles": [
+      "um",
+      "13.30",
+      "Uhr",
+      "essen",
+      "wir"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    },
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Ve 13.30 jíme.",
+     "hint": "",
+     "answer": "Um 13.30 Uhr essen wir.",
+     "choices": [
+      "Um 13.30 Uhr wir essen.",
+      "Um 13.30 Uhr isst wir."
+     ],
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    }
+   ]
+  },
+  {
+   "id": "vo-09",
+   "pos": "sentence",
+   "cs": "V Německu se mluví německy.",
+   "de": "In Deutschland spricht man Deutsch.",
+   "note": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "V Německu se mluví německy.",
+     "hint": "začni: In Deutschland …",
+     "answer": "In Deutschland spricht man Deutsch.",
+     "tiles": [
+      "in",
+      "Deutschland",
+      "spricht",
+      "man",
+      "Deutsch"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    },
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "V Německu se mluví německy.",
+     "hint": "",
+     "answer": "In Deutschland spricht man Deutsch.",
+     "choices": [
+      "In Deutschland man spricht Deutsch.",
+      "In Deutschland sprechen man Deutsch."
+     ],
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    }
+   ]
+  },
+  {
+   "id": "vo-10",
+   "pos": "sentence",
+   "cs": "Jan pochází z Výmaru.",
+   "de": "Jan kommt aus Weimar.",
+   "note": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "Jan pochází z Výmaru.",
+     "hint": "začni: Jan …",
+     "answer": "Jan kommt aus Weimar.",
+     "tiles": [
+      "Jan",
+      "kommt",
+      "aus",
+      "Weimar"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    },
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Jan pochází z Výmaru.",
+     "hint": "",
+     "answer": "Jan kommt aus Weimar.",
+     "choices": [
+      "Jan aus Weimar kommt.",
+      "Kommt Jan aus Weimar."
+     ],
+     "explain": "Sloveso stojí na 2. místě. Co je na 1. místě, může být podmět i něco jiného (Morgen, Am Montag) — pak jde podmět až za sloveso."
+    }
+   ]
+  }
+ ]
+}

@@ -1,10 +1,55 @@
 {
+ "groups": [
+  {
+   "id": "lekce-2",
+   "area": "vocab",
+   "name": "Lekce 2",
+   "topic": "strany 26–33 · hudba, koníčky, volný čas"
+  },
+  {
+   "id": "lekce-1",
+   "area": "vocab",
+   "name": "Lekce 1",
+   "topic": "strany 13–23 · pozdravy, o sobě"
+  },
+  {
+   "id": "g-slovesa",
+   "area": "grammar",
+   "name": "Slovesa",
+   "topic": "časování v přítomném čase"
+  },
+  {
+   "id": "g-slovosled",
+   "area": "grammar",
+   "name": "Slovosled a otázky",
+   "topic": "sloveso na 2. místě, otázky"
+  },
+  {
+   "id": "g-clen",
+   "area": "grammar",
+   "name": "Člen",
+   "topic": "der, ein, kein · den, einen, keinen"
+  },
+  {
+   "id": "g-zajmena",
+   "area": "grammar",
+   "name": "Zájmena",
+   "topic": "er/sie, man, mein/dein, wer/wen"
+  },
+  {
+   "id": "g-mala-slova",
+   "area": "grammar",
+   "name": "Zápor, spojky, předložky",
+   "topic": "nicht, kein, und, aber, in, aus …"
+  }
+ ],
  "decks": [
   {
    "id": "l1-13-15",
    "name": "Strany 13–15",
    "topic": "koníčky a pozdravy",
    "area": "vocab",
+   "group": "lekce-1",
    "lesson": "1",
    "file": "l1-13-15.json"
   },
@@ -13,6 +58,7 @@
    "name": "Strany 16–17",
    "topic": "o sobě",
    "area": "vocab",
+   "group": "lekce-1",
    "lesson": "1",
    "file": "l1-16-17.json"
   },
@@ -21,6 +67,7 @@
    "name": "Strany 18–19",
    "topic": "odkud jsem",
    "area": "vocab",
+   "group": "lekce-1",
    "lesson": "1",
    "file": "l1-18-19.json"
   },
@@ -29,6 +76,7 @@
    "name": "Strany 20–23",
    "topic": "abeceda, kontakt",
    "area": "vocab",
+   "group": "lekce-1",
    "lesson": "1",
    "file": "l1-20-23.json"
   },
@@ -37,6 +85,7 @@
    "name": "Strany 26–27",
    "topic": "hudba a co se mi líbí",
    "area": "vocab",
+   "group": "lekce-2",
    "lesson": "2",
    "file": "l2-26-27.json"
   },
@@ -45,6 +94,7 @@
    "name": "Strany 28–31",
    "topic": "koníčky a sport",
    "area": "vocab",
+   "group": "lekce-2",
    "lesson": "2",
    "file": "l2-28-31.json"
   },
@@ -53,6 +103,7 @@
    "name": "Strany 32–33",
    "topic": "volný čas a média",
    "area": "vocab",
+   "group": "lekce-2",
    "lesson": "2",
    "file": "l2-32-33.json"
   },
@@ -61,20 +112,55 @@
    "name": "Slovesa z tabulky",
    "topic": "wohnen, kommen, heißen, sein",
    "area": "grammar",
+   "group": "g-slovesa",
    "file": "g-slovesa-1.json"
   },
   {
    "id": "g-slovesa-2",
-   "name": "Další slovesa",
-   "topic": "spielen, machen, hören … z lekce 2",
+   "name": "Pravidelná slovesa",
+   "topic": "spielen, machen, hören …",
    "area": "grammar",
+   "group": "g-slovesa",
    "file": "g-slovesa-2.json"
+  },
+  {
+   "id": "g-slovesa-3",
+   "name": "Kmen na -d, -t, -n",
+   "topic": "unterrichten, reden, rechnen",
+   "area": "grammar",
+   "group": "g-slovesa",
+   "file": "g-slovesa-3.json"
+  },
+  {
+   "id": "g-slovesa-4",
+   "name": "Změna kmene",
+   "topic": "sprechen, essen, nehmen",
+   "area": "grammar",
+   "group": "g-slovesa",
+   "file": "g-slovesa-4.json"
+  },
+  {
+   "id": "g-slovesa-5",
+   "name": "Nepravidelná",
+   "topic": "haben, mögen, möchten",
+   "area": "grammar",
+   "group": "g-slovesa",
+   "file": "g-slovesa-5.json"
+  },
+  {
+   "id": "g-veta",
+   "name": "Věta oznamovací",
+   "topic": "sloveso na 2. místě",
+   "area": "grammar",
+   "group": "g-slovosled",
+   "file": "g-veta.json"
   },
   {
    "id": "g-otazky",
    "name": "Otázky a odpovědi",
    "topic": "Wer? Wo? Woher? Wie alt?",
    "area": "grammar",
+   "group": "g-slovosled",
    "file": "g-otazky.json"
   },
   {
@@ -82,7 +168,88 @@
    "name": "Stavba otázky",
    "topic": "slovosled, tázací slovo, tvar slovesa",
    "area": "grammar",
+   "group": "g-slovosled",
    "file": "g-stavba.json"
+  },
+  {
+   "id": "g-wann",
+   "name": "Otázky s wann",
+   "topic": "am Montag, um 11 Uhr",
+   "area": "grammar",
+   "group": "g-slovosled",
+   "file": "g-wann.json"
+  },
+  {
+   "id": "g-clen-1",
+   "name": "1. pád",
+   "topic": "der, ein, kein",
+   "area": "grammar",
+   "group": "g-clen",
+   "file": "g-clen-1.json"
+  },
+  {
+   "id": "g-clen-4",
+   "name": "4. pád",
+   "topic": "den, einen, keinen",
+   "area": "grammar",
+   "group": "g-clen",
+   "file": "g-clen-4.json"
+  },
+  {
+   "id": "g-er-sie",
+   "name": "er, sie, sie",
+   "topic": "on, ona, oni",
+   "area": "grammar",
+   "group": "g-zajmena",
+   "file": "g-er-sie.json"
+  },
+  {
+   "id": "g-man",
+   "name": "man",
+   "topic": "mluví se, dělá se",
+   "area": "grammar",
+   "group": "g-zajmena",
+   "file": "g-man.json"
+  },
+  {
+   "id": "g-ci",
+   "name": "Čí to je",
+   "topic": "mein, dein, Jans, Lenas",
+   "area": "grammar",
+   "group": "g-zajmena",
+   "file": "g-ci.json"
+  },
+  {
+   "id": "g-wer-wen",
+   "name": "wer, wen",
+   "topic": "kdo, koho",
+   "area": "grammar",
+   "group": "g-zajmena",
+   "file": "g-wer-wen.json"
+  },
+  {
+   "id": "g-nicht",
+   "name": "Zápor",
+   "topic": "nicht, kein",
+   "area": "grammar",
+   "group": "g-mala-slova",
+   "file": "g-nicht.json"
+  },
+  {
+   "id": "g-spojky",
+   "name": "Spojky",
+   "topic": "und, aber, oder",
+   "area": "grammar",
+   "group": "g-mala-slova",
+   "file": "g-spojky.json"
+  },
+  {
+   "id": "g-predlozky",
+   "name": "Předložky",
+   "topic": "in, aus, für",
+   "area": "grammar",
+   "group": "g-mala-slova",
+   "file": "g-predlozky.json"
   },
   {
    "id": "cisla",

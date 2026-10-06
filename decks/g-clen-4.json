@@ -1,0 +1,267 @@
+{
+ "id": "g-clen-4",
+ "area": "grammar",
+ "group": "g-clen",
+ "name": "4. pád",
+ "topic": "den, einen, keinen",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Rody",
+ "cards": [
+  {
+   "id": "cl4-m",
+   "pos": "rule",
+   "cs": "der — mužský rod, 4. pád (koho, co)",
+   "de": "den · einen · keinen",
+   "note": "Lehrer, Schüler, Computer, Stundenplan, Bleistift, Kuli, Malkasten, Schuh",
+   "table": [
+    [
+     "určitý",
+     "den"
+    ],
+    [
+     "neurčitý",
+     "einen"
+    ],
+    [
+     "zápor",
+     "keinen"
+    ]
+   ],
+   "drills": [
+    {
+     "id": "určitý",
+     "label": "Doplň člen (určitý)",
+     "prompt": "Wir finden ___ Englischlehrer nett.",
+     "hint": "určitý člen · Toho učitele angličtiny máme rádi.",
+     "answer": "den",
+     "choices": [
+      "der",
+      "die",
+      "das"
+     ],
+     "full": "Wir finden den Englischlehrer nett.",
+     "explain": "4. pád (koho, co), der — mužský rod: den · einen · keinen"
+    },
+    {
+     "id": "neurčitý",
+     "label": "Doplň člen (neurčitý)",
+     "prompt": "Jan braucht ___ Bleistift.",
+     "hint": "neurčitý člen · Jan potřebuje tužku.",
+     "answer": "einen",
+     "choices": [
+      "ein",
+      "eine",
+      "– (bez členu)"
+     ],
+     "full": "Jan braucht einen Bleistift.",
+     "explain": "4. pád (koho, co), der — mužský rod: den · einen · keinen"
+    },
+    {
+     "id": "zápor",
+     "label": "Doplň člen (zápor)",
+     "prompt": "Alicia hat ___ Malkasten.",
+     "hint": "zápor člen · Alicia nemá vodovky.",
+     "answer": "keinen",
+     "choices": [
+      "kein",
+      "keine"
+     ],
+     "full": "Alicia hat keinen Malkasten.",
+     "explain": "4. pád (koho, co), der — mužský rod: den · einen · keinen"
+    }
+   ]
+  },
+  {
+   "id": "cl4-f",
+   "pos": "rule",
+   "cs": "die — ženský rod, 4. pád (koho, co)",
+   "de": "die · eine · keine",
+   "note": "Lehrerin, Schülerin, Aufgabe, Schere, Webseite, Pause, Banane",
+   "table": [
+    [
+     "určitý",
+     "die"
+    ],
+    [
+     "neurčitý",
+     "eine"
+    ],
+    [
+     "zápor",
+     "keine"
+    ]
+   ],
+   "drills": [
+    {
+     "id": "určitý",
+     "label": "Doplň člen (určitý)",
+     "prompt": "Wir mögen ___ Mathelehrerin.",
+     "hint": "určitý člen · Máme rádi tu učitelku matiky.",
+     "answer": "die",
+     "choices": [
+      "der",
+      "das",
+      "den"
+     ],
+     "full": "Wir mögen die Mathelehrerin.",
+     "explain": "4. pád (koho, co), die — ženský rod: die · eine · keine"
+    },
+    {
+     "id": "neurčitý",
+     "label": "Doplň člen (neurčitý)",
+     "prompt": "Fabian isst ___ Banane.",
+     "hint": "neurčitý člen · Fabian jí banán.",
+     "answer": "eine",
+     "choices": [
+      "ein",
+      "einen",
+      "– (bez členu)"
+     ],
+     "full": "Fabian isst eine Banane.",
+     "explain": "4. pád (koho, co), die — ženský rod: die · eine · keine"
+    },
+    {
+     "id": "zápor",
+     "label": "Doplň člen (zápor)",
+     "prompt": "Wir machen heute ___ Pause.",
+     "hint": "zápor člen · Dnes neděláme přestávku.",
+     "answer": "keine",
+     "choices": [
+      "kein",
+      "keinen"
+     ],
+     "full": "Wir machen heute keine Pause.",
+     "explain": "4. pád (koho, co), die — ženský rod: die · eine · keine"
+    }
+   ]
+  },
+  {
+   "id": "cl4-n",
+   "pos": "rule",
+   "cs": "das — střední rod, 4. pád (koho, co)",
+   "de": "das · ein · kein",
+   "note": "Buch, Fach, Heft, Experiment, Lineal, Mädchen, Handy",
+   "table": [
+    [
+     "určitý",
+     "das"
+    ],
+    [
+     "neurčitý",
+     "ein"
+    ],
+    [
+     "zápor",
+     "kein"
+    ]
+   ],
+   "drills": [
+    {
+     "id": "určitý",
+     "label": "Doplň člen (určitý)",
+     "prompt": "Magst du ___ Mädchen?",
+     "hint": "určitý člen · Máš rád tu dívku?",
+     "answer": "das",
+     "choices": [
+      "der",
+      "die",
+      "den"
+     ],
+     "full": "Magst du das Mädchen?",
+     "explain": "4. pád (koho, co), das — střední rod: das · ein · kein"
+    },
+    {
+     "id": "neurčitý",
+     "label": "Doplň člen (neurčitý)",
+     "prompt": "Anton sucht ___ Heft.",
+     "hint": "neurčitý člen · Anton hledá sešit.",
+     "answer": "ein",
+     "choices": [
+      "eine",
+      "einen",
+      "– (bez členu)"
+     ],
+     "full": "Anton sucht ein Heft.",
+     "explain": "4. pád (koho, co), das — střední rod: das · ein · kein"
+    },
+    {
+     "id": "zápor",
+     "label": "Doplň člen (zápor)",
+     "prompt": "Tabea hat ___ Lineal.",
+     "hint": "zápor člen · Tabea nemá pravítko.",
+     "answer": "kein",
+     "choices": [
+      "keine",
+      "keinen"
+     ],
+     "full": "Tabea hat kein Lineal.",
+     "explain": "4. pád (koho, co), das — střední rod: das · ein · kein"
+    }
+   ]
+  },
+  {
+   "id": "cl4-pl",
+   "pos": "rule",
+   "cs": "die — množné číslo, 4. pád (koho, co)",
+   "de": "die · – (bez členu) · keine",
+   "note": "Lehrer, Bücher, Hefte, Handys, Kulis, Aufgaben, Bananen",
+   "table": [
+    [
+     "určitý",
+     "die"
+    ],
+    [
+     "neurčitý",
+     "– (bez členu)"
+    ],
+    [
+     "zápor",
+     "keine"
+    ]
+   ],
+   "drills": [
+    {
+     "id": "určitý",
+     "label": "Doplň člen (určitý)",
+     "prompt": "Ich schreibe ___ Hausaufgaben.",
+     "hint": "určitý člen · Píšu ty domácí úkoly.",
+     "answer": "die",
+     "choices": [
+      "der",
+      "das",
+      "den"
+     ],
+     "full": "Ich schreibe die Hausaufgaben.",
+     "explain": "4. pád (koho, co), die — množné číslo: die · – (bez členu) · keine"
+    },
+    {
+     "id": "neurčitý",
+     "label": "Doplň člen (neurčitý)",
+     "prompt": "Alicia braucht ___ Schuhe.",
+     "hint": "neurčitý člen · Alicia potřebuje boty.",
+     "answer": "– (bez členu)",
+     "choices": [
+      "ein",
+      "eine",
+      "einen"
+     ],
+     "full": "Alicia braucht Schuhe.",
+     "explain": "4. pád (koho, co), die — množné číslo: die · – (bez členu) · keine"
+    },
+    {
+     "id": "zápor",
+     "label": "Doplň člen (zápor)",
+     "prompt": "Oma mag ___ Bananen.",
+     "hint": "zápor člen · Babička nemá ráda banány.",
+     "answer": "keine",
+     "choices": [
+      "kein",
+      "keinen"
+     ],
+     "full": "Oma mag keine Bananen.",
+     "explain": "4. pád (koho, co), die — množné číslo: die · – (bez členu) · keine"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,356 @@
+{
+ "id": "g-slovesa-5",
+ "area": "grammar",
+ "group": "g-slovesa",
+ "name": "Nepravidelná",
+ "topic": "haben, mögen, möchten",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Slovesa",
+ "cards": [
+  {
+   "id": "gv5-01",
+   "pos": "verb",
+   "cs": "mít",
+   "de": "haben",
+   "table": [
+    [
+     "ich",
+     "habe"
+    ],
+    [
+     "du",
+     "hast"
+    ],
+    [
+     "er/sie/man",
+     "hat"
+    ],
+    [
+     "wir",
+     "haben"
+    ],
+    [
+     "ihr",
+     "habt"
+    ],
+    [
+     "sie (oni)",
+     "haben"
+    ]
+   ],
+   "note": "Nepravidelné u du a er/sie/man: du hast, er hat.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ ein Handy.",
+     "hint": "haben · mít",
+     "answer": "habe",
+     "choices": [
+      "hast",
+      "hat",
+      "haben",
+      "habt"
+     ],
+     "explain": "ich habe · du hast · er/sie/man hat · wir haben · ihr habt · sie (oni) haben"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du ein Lineal?",
+     "hint": "haben · mít",
+     "answer": "hast",
+     "choices": [
+      "habe",
+      "hat",
+      "haben",
+      "habt"
+     ],
+     "explain": "ich habe · du hast · er/sie/man hat · wir haben · ihr habt · sie (oni) haben"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan ___ am Montag Mathe.",
+     "hint": "haben · mít",
+     "answer": "hat",
+     "choices": [
+      "habe",
+      "hast",
+      "haben",
+      "habt"
+     ],
+     "explain": "ich habe · du hast · er/sie/man hat · wir haben · ihr habt · sie (oni) haben"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ zuerst Geografie.",
+     "hint": "haben · mít",
+     "answer": "haben",
+     "choices": [
+      "habe",
+      "hast",
+      "hat",
+      "habt"
+     ],
+     "explain": "ich habe · du hast · er/sie/man hat · wir haben · ihr habt · sie (oni) haben"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr heute Englisch?",
+     "hint": "haben · mít",
+     "answer": "habt",
+     "choices": [
+      "habe",
+      "hast",
+      "hat",
+      "haben"
+     ],
+     "explain": "ich habe · du hast · er/sie/man hat · wir haben · ihr habt · sie (oni) haben"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Tobias und Max ___ einen Computer.",
+     "hint": "haben · mít",
+     "answer": "haben",
+     "choices": [
+      "habe",
+      "hast",
+      "hat",
+      "habt"
+     ],
+     "explain": "ich habe · du hast · er/sie/man hat · wir haben · ihr habt · sie (oni) haben"
+    }
+   ]
+  },
+  {
+   "id": "gv5-02",
+   "pos": "verb",
+   "cs": "mít rád",
+   "de": "mögen",
+   "table": [
+    [
+     "ich",
+     "mag"
+    ],
+    [
+     "du",
+     "magst"
+    ],
+    [
+     "er/sie/man",
+     "mag"
+    ],
+    [
+     "wir",
+     "mögen"
+    ],
+    [
+     "ihr",
+     "mögt"
+    ],
+    [
+     "sie (oni)",
+     "mögen"
+    ]
+   ],
+   "note": "Nepravidelné. ich a er/sie/man mají stejný tvar bez koncovky: ich mag, er mag.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ Techno.",
+     "hint": "mögen · mít rád",
+     "answer": "mag",
+     "choices": [
+      "magst",
+      "mögen",
+      "mögt"
+     ],
+     "explain": "ich mag · du magst · er/sie/man mag · wir mögen · ihr mögt · sie (oni) mögen"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du Cola?",
+     "hint": "mögen · mít rád",
+     "answer": "magst",
+     "choices": [
+      "mag",
+      "mögen",
+      "mögt"
+     ],
+     "explain": "ich mag · du magst · er/sie/man mag · wir mögen · ihr mögt · sie (oni) mögen"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Oma ___ keine Bananen.",
+     "hint": "mögen · mít rád",
+     "answer": "mag",
+     "choices": [
+      "magst",
+      "mögen",
+      "mögt"
+     ],
+     "explain": "ich mag · du magst · er/sie/man mag · wir mögen · ihr mögt · sie (oni) mögen"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ die Mathelehrerin.",
+     "hint": "mögen · mít rád",
+     "answer": "mögen",
+     "choices": [
+      "mag",
+      "magst",
+      "mögt"
+     ],
+     "explain": "ich mag · du magst · er/sie/man mag · wir mögen · ihr mögt · sie (oni) mögen"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr Manga?",
+     "hint": "mögen · mít rád",
+     "answer": "mögt",
+     "choices": [
+      "mag",
+      "magst",
+      "mögen"
+     ],
+     "explain": "ich mag · du magst · er/sie/man mag · wir mögen · ihr mögt · sie (oni) mögen"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Jan und Lena ___ Rock.",
+     "hint": "mögen · mít rád",
+     "answer": "mögen",
+     "choices": [
+      "mag",
+      "magst",
+      "mögt"
+     ],
+     "explain": "ich mag · du magst · er/sie/man mag · wir mögen · ihr mögt · sie (oni) mögen"
+    }
+   ]
+  },
+  {
+   "id": "gv5-03",
+   "pos": "verb",
+   "cs": "chtěl bych",
+   "de": "möchten",
+   "table": [
+    [
+     "ich",
+     "möchte"
+    ],
+    [
+     "du",
+     "möchtest"
+    ],
+    [
+     "er/sie/man",
+     "möchte"
+    ],
+    [
+     "wir",
+     "möchten"
+    ],
+    [
+     "ihr",
+     "möchtet"
+    ],
+    [
+     "sie (oni)",
+     "möchten"
+    ]
+   ],
+   "note": "Zdvořilé „chtěl bych\". ich a er/sie/man mají stejný tvar: ich möchte, er möchte.",
+   "drills": [
+    {
+     "id": "ich",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Ich ___ eine Limo.",
+     "hint": "möchten · chtěl bych",
+     "answer": "möchte",
+     "choices": [
+      "möchtest",
+      "möchten",
+      "möchtet"
+     ],
+     "explain": "ich möchte · du möchtest · er/sie/man möchte · wir möchten · ihr möchtet · sie (oni) möchten"
+    },
+    {
+     "id": "du",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ du eine Cola?",
+     "hint": "möchten · chtěl bych",
+     "answer": "möchtest",
+     "choices": [
+      "möchte",
+      "möchten",
+      "möchtet"
+     ],
+     "explain": "ich möchte · du möchtest · er/sie/man möchte · wir möchten · ihr möchtet · sie (oni) möchten"
+    },
+    {
+     "id": "er",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Lena ___ ein Handy.",
+     "hint": "möchten · chtěl bych",
+     "answer": "möchte",
+     "choices": [
+      "möchtest",
+      "möchten",
+      "möchtet"
+     ],
+     "explain": "ich möchte · du möchtest · er/sie/man möchte · wir möchten · ihr möchtet · sie (oni) möchten"
+    },
+    {
+     "id": "wir",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Wir ___ Tischtennis spielen.",
+     "hint": "möchten · chtěl bych",
+     "answer": "möchten",
+     "choices": [
+      "möchte",
+      "möchtest",
+      "möchtet"
+     ],
+     "explain": "ich möchte · du möchtest · er/sie/man möchte · wir möchten · ihr möchtet · sie (oni) möchten"
+    },
+    {
+     "id": "ihr",
+     "label": "Doplň tvar slovesa",
+     "prompt": "___ ihr auch eine Limo?",
+     "hint": "möchten · chtěl bych",
+     "answer": "möchtet",
+     "choices": [
+      "möchte",
+      "möchtest",
+      "möchten"
+     ],
+     "explain": "ich möchte · du möchtest · er/sie/man möchte · wir möchten · ihr möchtet · sie (oni) möchten"
+    },
+    {
+     "id": "pl3",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Max und Tim ___ Fußball spielen.",
+     "hint": "möchten · chtěl bych",
+     "answer": "möchten",
+     "choices": [
+      "möchte",
+      "möchtest",
+      "möchtet"
+     ],
+     "explain": "ich möchte · du möchtest · er/sie/man möchte · wir möchten · ihr möchtet · sie (oni) möchten"
+    }
+   ]
+  }
+ ]
+}

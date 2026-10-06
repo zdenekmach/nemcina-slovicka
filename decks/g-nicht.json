@@ -1,0 +1,206 @@
+{
+ "id": "g-nicht",
+ "area": "grammar",
+ "group": "g-mala-slova",
+ "name": "Zápor",
+ "topic": "nicht, kein",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Věty",
+ "cards": [
+  {
+   "id": "no-01",
+   "pos": "sentence",
+   "cs": "Ne, tenis nehraju rád.",
+   "de": "Nein, ich spiele nicht gern Tennis.",
+   "note": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "Ne, tenis nehraju rád.",
+     "hint": "začni: Nein …",
+     "answer": "Nein, ich spiele nicht gern Tennis.",
+     "tiles": [
+      "nein",
+      "ich",
+      "spiele",
+      "nicht",
+      "gern",
+      "Tennis"
+     ],
+     "accept": [
+      "Nein, ich spiele Tennis nicht gern."
+     ],
+     "end": ".",
+     "explain": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+    }
+   ]
+  },
+  {
+   "id": "no-02",
+   "pos": "sentence",
+   "cs": "Ne, netelefonuju rád.",
+   "de": "Nein, ich telefoniere nicht gern.",
+   "note": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož větu",
+     "prompt": "Ne, netelefonuju rád.",
+     "hint": "začni: Nein …",
+     "answer": "Nein, ich telefoniere nicht gern.",
+     "tiles": [
+      "nein",
+      "ich",
+      "telefoniere",
+      "nicht",
+      "gern"
+     ],
+     "accept": [],
+     "end": ".",
+     "explain": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+    }
+   ]
+  },
+  {
+   "id": "ng-01",
+   "pos": "sentence",
+   "cs": "Nehraju rád tenis.",
+   "de": "Ich spiele nicht gern Tennis.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Ich spiele ___ gern Tennis.",
+     "hint": "Nehraju rád tenis.",
+     "answer": "nicht",
+     "choices": [
+      "kein",
+      "keine",
+      "keinen"
+     ],
+     "full": "Ich spiele nicht gern Tennis.",
+     "explain": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+    }
+   ],
+   "note": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+  },
+  {
+   "id": "ng-02",
+   "pos": "sentence",
+   "cs": "Netelefonuju rád.",
+   "de": "Ich telefoniere nicht gern.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Ich telefoniere ___ gern.",
+     "hint": "Netelefonuju rád.",
+     "answer": "nicht",
+     "choices": [
+      "kein",
+      "keine",
+      "keinen"
+     ],
+     "full": "Ich telefoniere nicht gern.",
+     "explain": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+    }
+   ],
+   "note": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+  },
+  {
+   "id": "ng-03",
+   "pos": "sentence",
+   "cs": "Lena nebydlí v Berlíně.",
+   "de": "Lena wohnt nicht in Berlin.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Lena wohnt ___ in Berlin.",
+     "hint": "Lena nebydlí v Berlíně.",
+     "answer": "nicht",
+     "choices": [
+      "kein",
+      "keine",
+      "keinen"
+     ],
+     "full": "Lena wohnt nicht in Berlin.",
+     "explain": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+    }
+   ],
+   "note": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+  },
+  {
+   "id": "ng-04",
+   "pos": "sentence",
+   "cs": "To není bota.",
+   "de": "Das ist kein Schuh.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Das ist ___ Schuh.",
+     "hint": "To není bota.",
+     "answer": "kein",
+     "choices": [
+      "nicht",
+      "keine",
+      "keinen"
+     ],
+     "full": "Das ist kein Schuh.",
+     "explain": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+    }
+   ],
+   "note": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+  },
+  {
+   "id": "ng-05",
+   "pos": "sentence",
+   "cs": "To nejsou knihy.",
+   "de": "Das sind keine Bücher.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Das sind ___ Bücher.",
+     "hint": "To nejsou knihy.",
+     "answer": "keine",
+     "choices": [
+      "nicht",
+      "kein",
+      "keinen"
+     ],
+     "full": "Das sind keine Bücher.",
+     "explain": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+    }
+   ],
+   "note": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+  },
+  {
+   "id": "ng-06",
+   "pos": "sentence",
+   "cs": "Alicia nemá vodovky.",
+   "de": "Alicia hat keinen Malkasten.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Alicia hat ___ Malkasten.",
+     "hint": "Alicia nemá vodovky.",
+     "answer": "keinen",
+     "choices": [
+      "nicht",
+      "kein",
+      "keine"
+     ],
+     "full": "Alicia hat keinen Malkasten.",
+     "explain": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+    }
+   ],
+   "note": "nicht popírá sloveso nebo celou větu (nicht gern). kein/keine/keinen stojí místo ein/eine/einen před podstatným jménem."
+  }
+ ]
+}

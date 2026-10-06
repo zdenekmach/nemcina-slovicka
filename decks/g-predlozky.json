@@ -1,0 +1,209 @@
+{
+ "id": "g-predlozky",
+ "area": "grammar",
+ "group": "g-mala-slova",
+ "name": "Předložky",
+ "topic": "in, aus, für",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Věty",
+ "cards": [
+  {
+   "id": "pr-01",
+   "pos": "sentence",
+   "cs": "Erkan bydlí ve Výmaru.",
+   "de": "Erkan wohnt in Weimar.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Erkan wohnt ___ Weimar.",
+     "hint": "Erkan bydlí ve Výmaru.",
+     "answer": "in",
+     "choices": [
+      "aus",
+      "für"
+     ],
+     "full": "Erkan wohnt in Weimar.",
+     "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+    }
+   ],
+   "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+  },
+  {
+   "id": "pr-02",
+   "pos": "sentence",
+   "cs": "Pan Ludwig je v Brazílii.",
+   "de": "Herr Ludwig ist in Brasilien.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Herr Ludwig ist ___ Brasilien.",
+     "hint": "Pan Ludwig je v Brazílii.",
+     "answer": "in",
+     "choices": [
+      "aus",
+      "für"
+     ],
+     "full": "Herr Ludwig ist in Brasilien.",
+     "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+    }
+   ],
+   "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+  },
+  {
+   "id": "pr-03",
+   "pos": "sentence",
+   "cs": "Bydlí Lena ve Švýcarsku?",
+   "de": "Wohnt Lena in der Schweiz?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Wohnt Lena ___ der Schweiz?",
+     "hint": "Bydlí Lena ve Švýcarsku?",
+     "answer": "in",
+     "choices": [
+      "aus",
+      "für"
+     ],
+     "full": "Wohnt Lena in der Schweiz?",
+     "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+    }
+   ],
+   "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+  },
+  {
+   "id": "pr-04",
+   "pos": "sentence",
+   "cs": "Na matiku máme paní Stegemannovou.",
+   "de": "Wir haben Frau Stegemann in Mathe.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Wir haben Frau Stegemann ___ Mathe.",
+     "hint": "Na matiku máme paní Stegemannovou.",
+     "answer": "in",
+     "choices": [
+      "aus",
+      "für"
+     ],
+     "full": "Wir haben Frau Stegemann in Mathe.",
+     "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+    }
+   ],
+   "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+  },
+  {
+   "id": "pr-05",
+   "pos": "sentence",
+   "cs": "Jan pochází z Výmaru.",
+   "de": "Jan kommt aus Weimar.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Jan kommt ___ Weimar.",
+     "hint": "Jan pochází z Výmaru.",
+     "answer": "aus",
+     "choices": [
+      "in",
+      "für"
+     ],
+     "full": "Jan kommt aus Weimar.",
+     "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+    }
+   ],
+   "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+  },
+  {
+   "id": "pr-06",
+   "pos": "sentence",
+   "cs": "Kdo pochází z Rakouska?",
+   "de": "Wer kommt aus Österreich?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Wer kommt ___ Österreich?",
+     "hint": "Kdo pochází z Rakouska?",
+     "answer": "aus",
+     "choices": [
+      "in",
+      "für"
+     ],
+     "full": "Wer kommt aus Österreich?",
+     "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+    }
+   ],
+   "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+  },
+  {
+   "id": "pr-07",
+   "pos": "sentence",
+   "cs": "Pochází Erkan z Turecka?",
+   "de": "Kommt Erkan aus der Türkei?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Kommt Erkan ___ der Türkei?",
+     "hint": "Pochází Erkan z Turecka?",
+     "answer": "aus",
+     "choices": [
+      "in",
+      "für"
+     ],
+     "full": "Kommt Erkan aus der Türkei?",
+     "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+    }
+   ],
+   "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+  },
+  {
+   "id": "pr-08",
+   "pos": "sentence",
+   "cs": "Ty knihy jsou na angličtinu.",
+   "de": "Die Bücher sind für Englisch.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Die Bücher sind ___ Englisch.",
+     "hint": "Ty knihy jsou na angličtinu.",
+     "answer": "für",
+     "choices": [
+      "in",
+      "aus"
+     ],
+     "full": "Die Bücher sind für Englisch.",
+     "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+    }
+   ],
+   "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+  },
+  {
+   "id": "pr-09",
+   "pos": "sentence",
+   "cs": "Co se potřebuje na výtvarku?",
+   "de": "Was braucht man für Kunst?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Was braucht man ___ Kunst?",
+     "hint": "Co se potřebuje na výtvarku?",
+     "answer": "für",
+     "choices": [
+      "in",
+      "aus"
+     ],
+     "full": "Was braucht man für Kunst?",
+     "explain": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+    }
+   ],
+   "note": "in = v (kde) · aus = z (odkud) · für = pro, na (pro koho, na co)."
+  }
+ ]
+}

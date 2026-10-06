@@ -1,0 +1,267 @@
+{
+ "id": "g-clen-1",
+ "area": "grammar",
+ "group": "g-clen",
+ "name": "1. pád",
+ "topic": "der, ein, kein",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Rody",
+ "cards": [
+  {
+   "id": "cl1-m",
+   "pos": "rule",
+   "cs": "der — mužský rod, 1. pád (kdo, co)",
+   "de": "der · ein · kein",
+   "note": "Lehrer, Schüler, Computer, Stundenplan, Bleistift, Kuli, Malkasten, Schuh",
+   "table": [
+    [
+     "určitý",
+     "der"
+    ],
+    [
+     "neurčitý",
+     "ein"
+    ],
+    [
+     "zápor",
+     "kein"
+    ]
+   ],
+   "drills": [
+    {
+     "id": "určitý",
+     "label": "Doplň člen (určitý)",
+     "prompt": "___ Englischlehrer ist nett.",
+     "hint": "určitý člen · Ten učitel angličtiny je milý.",
+     "answer": "Der",
+     "choices": [
+      "Die",
+      "Das",
+      "Den"
+     ],
+     "full": "Der Englischlehrer ist nett.",
+     "explain": "1. pád (kdo, co), der — mužský rod: der · ein · kein"
+    },
+    {
+     "id": "neurčitý",
+     "label": "Doplň člen (neurčitý)",
+     "prompt": "___ Bleistift schreibt grau.",
+     "hint": "neurčitý člen · Tužka píše šedě.",
+     "answer": "Ein",
+     "choices": [
+      "Eine",
+      "Einen",
+      "– (bez členu)"
+     ],
+     "full": "Ein Bleistift schreibt grau.",
+     "explain": "1. pád (kdo, co), der — mužský rod: der · ein · kein"
+    },
+    {
+     "id": "zápor",
+     "label": "Doplň člen (zápor)",
+     "prompt": "Das ist ___ Schuh.",
+     "hint": "zápor člen · To není bota.",
+     "answer": "kein",
+     "choices": [
+      "keine",
+      "keinen"
+     ],
+     "full": "Das ist kein Schuh.",
+     "explain": "1. pád (kdo, co), der — mužský rod: der · ein · kein"
+    }
+   ]
+  },
+  {
+   "id": "cl1-f",
+   "pos": "rule",
+   "cs": "die — ženský rod, 1. pád (kdo, co)",
+   "de": "die · eine · keine",
+   "note": "Lehrerin, Schülerin, Aufgabe, Schere, Webseite, Pause, Banane",
+   "table": [
+    [
+     "určitý",
+     "die"
+    ],
+    [
+     "neurčitý",
+     "eine"
+    ],
+    [
+     "zápor",
+     "keine"
+    ]
+   ],
+   "drills": [
+    {
+     "id": "určitý",
+     "label": "Doplň člen (určitý)",
+     "prompt": "___ Sportlehrerin ist streng.",
+     "hint": "určitý člen · Ta učitelka tělocviku je přísná.",
+     "answer": "Die",
+     "choices": [
+      "Der",
+      "Das",
+      "Den"
+     ],
+     "full": "Die Sportlehrerin ist streng.",
+     "explain": "1. pád (kdo, co), die — ženský rod: die · eine · keine"
+    },
+    {
+     "id": "neurčitý",
+     "label": "Doplň člen (neurčitý)",
+     "prompt": "Das ist ___ Banane.",
+     "hint": "neurčitý člen · To je banán.",
+     "answer": "eine",
+     "choices": [
+      "ein",
+      "einen",
+      "– (bez členu)"
+     ],
+     "full": "Das ist eine Banane.",
+     "explain": "1. pád (kdo, co), die — ženský rod: die · eine · keine"
+    },
+    {
+     "id": "zápor",
+     "label": "Doplň člen (zápor)",
+     "prompt": "Oma Elke ist ___ Lehrerin.",
+     "hint": "zápor člen · Babička Elke není učitelka.",
+     "answer": "keine",
+     "choices": [
+      "kein",
+      "keinen"
+     ],
+     "full": "Oma Elke ist keine Lehrerin.",
+     "explain": "1. pád (kdo, co), die — ženský rod: die · eine · keine"
+    }
+   ]
+  },
+  {
+   "id": "cl1-n",
+   "pos": "rule",
+   "cs": "das — střední rod, 1. pád (kdo, co)",
+   "de": "das · ein · kein",
+   "note": "Buch, Fach, Heft, Experiment, Lineal, Mädchen, Handy",
+   "table": [
+    [
+     "určitý",
+     "das"
+    ],
+    [
+     "neurčitý",
+     "ein"
+    ],
+    [
+     "zápor",
+     "kein"
+    ]
+   ],
+   "drills": [
+    {
+     "id": "určitý",
+     "label": "Doplň člen (určitý)",
+     "prompt": "___ Buch ist interessant.",
+     "hint": "určitý člen · Ta kniha je zajímavá.",
+     "answer": "Das",
+     "choices": [
+      "Der",
+      "Die",
+      "Den"
+     ],
+     "full": "Das Buch ist interessant.",
+     "explain": "1. pád (kdo, co), das — střední rod: das · ein · kein"
+    },
+    {
+     "id": "neurčitý",
+     "label": "Doplň člen (neurčitý)",
+     "prompt": "Das ist ___ Lineal.",
+     "hint": "neurčitý člen · To je pravítko.",
+     "answer": "ein",
+     "choices": [
+      "eine",
+      "einen",
+      "– (bez členu)"
+     ],
+     "full": "Das ist ein Lineal.",
+     "explain": "1. pád (kdo, co), das — střední rod: das · ein · kein"
+    },
+    {
+     "id": "zápor",
+     "label": "Doplň člen (zápor)",
+     "prompt": "Hier ist ___ Mädchen.",
+     "hint": "zápor člen · Tady není žádná dívka.",
+     "answer": "kein",
+     "choices": [
+      "keine",
+      "keinen"
+     ],
+     "full": "Hier ist kein Mädchen.",
+     "explain": "1. pád (kdo, co), das — střední rod: das · ein · kein"
+    }
+   ]
+  },
+  {
+   "id": "cl1-pl",
+   "pos": "rule",
+   "cs": "die — množné číslo, 1. pád (kdo, co)",
+   "de": "die · – (bez členu) · keine",
+   "note": "Lehrer, Bücher, Hefte, Handys, Kulis, Aufgaben, Bananen",
+   "table": [
+    [
+     "určitý",
+     "die"
+    ],
+    [
+     "neurčitý",
+     "– (bez členu)"
+    ],
+    [
+     "zápor",
+     "keine"
+    ]
+   ],
+   "drills": [
+    {
+     "id": "určitý",
+     "label": "Doplň člen (určitý)",
+     "prompt": "___ Schülerinnen turnen.",
+     "hint": "určitý člen · Ty žákyně cvičí.",
+     "answer": "Die",
+     "choices": [
+      "Der",
+      "Das",
+      "Den"
+     ],
+     "full": "Die Schülerinnen turnen.",
+     "explain": "1. pád (kdo, co), die — množné číslo: die · – (bez členu) · keine"
+    },
+    {
+     "id": "neurčitý",
+     "label": "Doplň člen (neurčitý)",
+     "prompt": "___ Handys sind teuer.",
+     "hint": "neurčitý člen · Mobily jsou drahé.",
+     "answer": "– (bez členu)",
+     "choices": [
+      "Ein",
+      "Eine",
+      "Einen"
+     ],
+     "full": "Handys sind teuer.",
+     "explain": "1. pád (kdo, co), die — množné číslo: die · – (bez členu) · keine"
+    },
+    {
+     "id": "zápor",
+     "label": "Doplň člen (zápor)",
+     "prompt": "Das sind ___ Bücher.",
+     "hint": "zápor člen · To nejsou knihy.",
+     "answer": "keine",
+     "choices": [
+      "kein",
+      "keinen"
+     ],
+     "full": "Das sind keine Bücher.",
+     "explain": "1. pád (kdo, co), die — množné číslo: die · – (bez členu) · keine"
+    }
+   ]
+  }
+ ]
+}

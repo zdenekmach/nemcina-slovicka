@@ -1,10 +1,11 @@
 {
  "id": "g-otazky",
- "name": "Otázky a odpovědi",
  "area": "grammar",
- "unit": "Otázky",
+ "group": "g-slovosled",
+ "name": "Otázky a odpovědi",
  "topic": "Wer? Wo? Woher? Wie alt?",
  "source": "Lekce 1, strana 19, cvičení 18",
+ "unit": "Otázky",
  "cards": [
   {
    "id": "qa-01",

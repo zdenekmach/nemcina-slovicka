@@ -1,10 +1,11 @@
 {
  "id": "g-slovesa-2",
- "name": "Další slovesa",
  "area": "grammar",
- "unit": "Slovesa",
- "topic": "spielen, machen, hören … z lekce 2",
+ "group": "g-slovesa",
+ "name": "Pravidelná slovesa",
+ "topic": "spielen, machen, hören …",
  "source": "Pravidelná slovesa ze slovníčku lekce 2",
+ "unit": "Slovesa",
  "cards": [
   {
    "id": "gv2-01",
@@ -21,7 +22,7 @@
      "spielst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "spielt"
     ],
     [
@@ -50,7 +51,7 @@
       "spielt",
       "spielen"
      ],
-     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+     "explain": "ich spiele · du spielst · er/sie/man spielt · wir spielen · ihr spielt · sie (oni) spielen"
     },
     {
      "id": "du",
@@ -63,7 +64,7 @@
       "spielt",
       "spielen"
      ],
-     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+     "explain": "ich spiele · du spielst · er/sie/man spielt · wir spielen · ihr spielt · sie (oni) spielen"
     },
     {
      "id": "er",
@@ -76,7 +77,7 @@
       "spielst",
       "spielen"
      ],
-     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+     "explain": "ich spiele · du spielst · er/sie/man spielt · wir spielen · ihr spielt · sie (oni) spielen"
     },
     {
      "id": "wir",
@@ -89,7 +90,7 @@
       "spielst",
       "spielt"
      ],
-     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+     "explain": "ich spiele · du spielst · er/sie/man spielt · wir spielen · ihr spielt · sie (oni) spielen"
     },
     {
      "id": "ihr",
@@ -102,7 +103,7 @@
       "spielst",
       "spielen"
      ],
-     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+     "explain": "ich spiele · du spielst · er/sie/man spielt · wir spielen · ihr spielt · sie (oni) spielen"
     },
     {
      "id": "pl3",
@@ -115,7 +116,7 @@
       "spielst",
       "spielt"
      ],
-     "explain": "ich spiele · du spielst · er/sie spielt · wir spielen · ihr spielt · sie (oni) spielen"
+     "explain": "ich spiele · du spielst · er/sie/man spielt · wir spielen · ihr spielt · sie (oni) spielen"
     }
    ]
   },
@@ -134,7 +135,7 @@
      "machst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "macht"
     ],
     [
@@ -163,7 +164,7 @@
       "macht",
       "machen"
      ],
-     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+     "explain": "ich mache · du machst · er/sie/man macht · wir machen · ihr macht · sie (oni) machen"
     },
     {
      "id": "du",
@@ -176,7 +177,7 @@
       "macht",
       "machen"
      ],
-     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+     "explain": "ich mache · du machst · er/sie/man macht · wir machen · ihr macht · sie (oni) machen"
     },
     {
      "id": "er",
@@ -189,7 +190,7 @@
       "machst",
       "machen"
      ],
-     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+     "explain": "ich mache · du machst · er/sie/man macht · wir machen · ihr macht · sie (oni) machen"
     },
     {
      "id": "wir",
@@ -202,7 +203,7 @@
       "machst",
       "macht"
      ],
-     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+     "explain": "ich mache · du machst · er/sie/man macht · wir machen · ihr macht · sie (oni) machen"
     },
     {
      "id": "ihr",
@@ -215,7 +216,7 @@
       "machst",
       "machen"
      ],
-     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+     "explain": "ich mache · du machst · er/sie/man macht · wir machen · ihr macht · sie (oni) machen"
     },
     {
      "id": "pl3",
@@ -228,7 +229,7 @@
       "machst",
       "macht"
      ],
-     "explain": "ich mache · du machst · er/sie macht · wir machen · ihr macht · sie (oni) machen"
+     "explain": "ich mache · du machst · er/sie/man macht · wir machen · ihr macht · sie (oni) machen"
     }
    ]
   },
@@ -247,7 +248,7 @@
      "hörst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "hört"
     ],
     [
@@ -276,7 +277,7 @@
       "hört",
       "hören"
      ],
-     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+     "explain": "ich höre · du hörst · er/sie/man hört · wir hören · ihr hört · sie (oni) hören"
     },
     {
      "id": "du",
@@ -289,7 +290,7 @@
       "hört",
       "hören"
      ],
-     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+     "explain": "ich höre · du hörst · er/sie/man hört · wir hören · ihr hört · sie (oni) hören"
     },
     {
      "id": "er",
@@ -302,7 +303,7 @@
       "hörst",
       "hören"
      ],
-     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+     "explain": "ich höre · du hörst · er/sie/man hört · wir hören · ihr hört · sie (oni) hören"
     },
     {
      "id": "wir",
@@ -315,7 +316,7 @@
       "hörst",
       "hört"
      ],
-     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+     "explain": "ich höre · du hörst · er/sie/man hört · wir hören · ihr hört · sie (oni) hören"
     },
     {
      "id": "ihr",
@@ -328,7 +329,7 @@
       "hörst",
       "hören"
      ],
-     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+     "explain": "ich höre · du hörst · er/sie/man hört · wir hören · ihr hört · sie (oni) hören"
     },
     {
      "id": "pl3",
@@ -341,7 +342,7 @@
       "hörst",
       "hört"
      ],
-     "explain": "ich höre · du hörst · er/sie hört · wir hören · ihr hört · sie (oni) hören"
+     "explain": "ich höre · du hörst · er/sie/man hört · wir hören · ihr hört · sie (oni) hören"
     }
    ]
   },
@@ -360,7 +361,7 @@
      "lernst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "lernt"
     ],
     [
@@ -389,7 +390,7 @@
       "lernt",
       "lernen"
      ],
-     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+     "explain": "ich lerne · du lernst · er/sie/man lernt · wir lernen · ihr lernt · sie (oni) lernen"
     },
     {
      "id": "du",
@@ -402,7 +403,7 @@
       "lernt",
       "lernen"
      ],
-     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+     "explain": "ich lerne · du lernst · er/sie/man lernt · wir lernen · ihr lernt · sie (oni) lernen"
     },
     {
      "id": "er",
@@ -415,7 +416,7 @@
       "lernst",
       "lernen"
      ],
-     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+     "explain": "ich lerne · du lernst · er/sie/man lernt · wir lernen · ihr lernt · sie (oni) lernen"
     },
     {
      "id": "wir",
@@ -428,7 +429,7 @@
       "lernst",
       "lernt"
      ],
-     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+     "explain": "ich lerne · du lernst · er/sie/man lernt · wir lernen · ihr lernt · sie (oni) lernen"
     },
     {
      "id": "ihr",
@@ -441,7 +442,7 @@
       "lernst",
       "lernen"
      ],
-     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+     "explain": "ich lerne · du lernst · er/sie/man lernt · wir lernen · ihr lernt · sie (oni) lernen"
     },
     {
      "id": "pl3",
@@ -454,7 +455,7 @@
       "lernst",
       "lernt"
      ],
-     "explain": "ich lerne · du lernst · er/sie lernt · wir lernen · ihr lernt · sie (oni) lernen"
+     "explain": "ich lerne · du lernst · er/sie/man lernt · wir lernen · ihr lernt · sie (oni) lernen"
     }
    ]
   },
@@ -473,7 +474,7 @@
      "singst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "singt"
     ],
     [
@@ -502,7 +503,7 @@
       "singt",
       "singen"
      ],
-     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
+     "explain": "ich singe · du singst · er/sie/man singt · wir singen · ihr singt · sie (oni) singen"
     },
     {
      "id": "du",
@@ -515,7 +516,7 @@
       "singt",
       "singen"
      ],
-     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
+     "explain": "ich singe · du singst · er/sie/man singt · wir singen · ihr singt · sie (oni) singen"
     },
     {
      "id": "er",
@@ -528,7 +529,7 @@
       "singst",
       "singen"
      ],
-     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
+     "explain": "ich singe · du singst · er/sie/man singt · wir singen · ihr singt · sie (oni) singen"
     },
     {
      "id": "wir",
@@ -541,7 +542,7 @@
       "singst",
       "singt"
      ],
-     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
+     "explain": "ich singe · du singst · er/sie/man singt · wir singen · ihr singt · sie (oni) singen"
     },
     {
      "id": "ihr",
@@ -554,7 +555,7 @@
       "singst",
       "singen"
      ],
-     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
+     "explain": "ich singe · du singst · er/sie/man singt · wir singen · ihr singt · sie (oni) singen"
     },
     {
      "id": "pl3",
@@ -567,7 +568,7 @@
       "singst",
       "singt"
      ],
-     "explain": "ich singe · du singst · er/sie singt · wir singen · ihr singt · sie (oni) singen"
+     "explain": "ich singe · du singst · er/sie/man singt · wir singen · ihr singt · sie (oni) singen"
     }
    ]
   },
@@ -586,7 +587,7 @@
      "gehst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "geht"
     ],
     [
@@ -615,7 +616,7 @@
       "geht",
       "gehen"
      ],
-     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
+     "explain": "ich gehe · du gehst · er/sie/man geht · wir gehen · ihr geht · sie (oni) gehen"
     },
     {
      "id": "du",
@@ -628,7 +629,7 @@
       "geht",
       "gehen"
      ],
-     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
+     "explain": "ich gehe · du gehst · er/sie/man geht · wir gehen · ihr geht · sie (oni) gehen"
     },
     {
      "id": "er",
@@ -641,7 +642,7 @@
       "gehst",
       "gehen"
      ],
-     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
+     "explain": "ich gehe · du gehst · er/sie/man geht · wir gehen · ihr geht · sie (oni) gehen"
     },
     {
      "id": "wir",
@@ -654,7 +655,7 @@
       "gehst",
       "geht"
      ],
-     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
+     "explain": "ich gehe · du gehst · er/sie/man geht · wir gehen · ihr geht · sie (oni) gehen"
     },
     {
      "id": "ihr",
@@ -667,7 +668,7 @@
       "gehst",
       "gehen"
      ],
-     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
+     "explain": "ich gehe · du gehst · er/sie/man geht · wir gehen · ihr geht · sie (oni) gehen"
     },
     {
      "id": "pl3",
@@ -680,7 +681,7 @@
       "gehst",
       "geht"
      ],
-     "explain": "ich gehe · du gehst · er/sie geht · wir gehen · ihr geht · sie (oni) gehen"
+     "explain": "ich gehe · du gehst · er/sie/man geht · wir gehen · ihr geht · sie (oni) gehen"
     }
    ]
   },
@@ -699,7 +700,7 @@
      "schreibst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "schreibt"
     ],
     [
@@ -728,7 +729,7 @@
       "schreibt",
       "schreiben"
      ],
-     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
+     "explain": "ich schreibe · du schreibst · er/sie/man schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
     },
     {
      "id": "du",
@@ -741,7 +742,7 @@
       "schreibt",
       "schreiben"
      ],
-     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
+     "explain": "ich schreibe · du schreibst · er/sie/man schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
     },
     {
      "id": "er",
@@ -754,7 +755,7 @@
       "schreibst",
       "schreiben"
      ],
-     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
+     "explain": "ich schreibe · du schreibst · er/sie/man schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
     },
     {
      "id": "wir",
@@ -767,7 +768,7 @@
       "schreibst",
       "schreibt"
      ],
-     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
+     "explain": "ich schreibe · du schreibst · er/sie/man schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
     },
     {
      "id": "ihr",
@@ -780,7 +781,7 @@
       "schreibst",
       "schreiben"
      ],
-     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
+     "explain": "ich schreibe · du schreibst · er/sie/man schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
     },
     {
      "id": "pl3",
@@ -793,7 +794,7 @@
       "schreibst",
       "schreibt"
      ],
-     "explain": "ich schreibe · du schreibst · er/sie schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
+     "explain": "ich schreibe · du schreibst · er/sie/man schreibt · wir schreiben · ihr schreibt · sie (oni) schreiben"
     }
    ]
   },
@@ -812,7 +813,7 @@
      "telefonierst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "telefoniert"
     ],
     [
@@ -841,7 +842,7 @@
       "telefoniert",
       "telefonieren"
      ],
-     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
+     "explain": "ich telefoniere · du telefonierst · er/sie/man telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
     },
     {
      "id": "du",
@@ -854,7 +855,7 @@
       "telefoniert",
       "telefonieren"
      ],
-     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
+     "explain": "ich telefoniere · du telefonierst · er/sie/man telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
     },
     {
      "id": "er",
@@ -867,7 +868,7 @@
       "telefonierst",
       "telefonieren"
      ],
-     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
+     "explain": "ich telefoniere · du telefonierst · er/sie/man telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
     },
     {
      "id": "wir",
@@ -880,7 +881,7 @@
       "telefonierst",
       "telefoniert"
      ],
-     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
+     "explain": "ich telefoniere · du telefonierst · er/sie/man telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
     },
     {
      "id": "ihr",
@@ -893,7 +894,7 @@
       "telefonierst",
       "telefonieren"
      ],
-     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
+     "explain": "ich telefoniere · du telefonierst · er/sie/man telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
     },
     {
      "id": "pl3",
@@ -906,7 +907,7 @@
       "telefonierst",
       "telefoniert"
      ],
-     "explain": "ich telefoniere · du telefonierst · er/sie telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
+     "explain": "ich telefoniere · du telefonierst · er/sie/man telefoniert · wir telefonieren · ihr telefoniert · sie (oni) telefonieren"
     }
    ]
   },
@@ -925,7 +926,7 @@
      "fotografierst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "fotografiert"
     ],
     [
@@ -954,7 +955,7 @@
       "fotografiert",
       "fotografieren"
      ],
-     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
+     "explain": "ich fotografiere · du fotografierst · er/sie/man fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
     },
     {
      "id": "du",
@@ -967,7 +968,7 @@
       "fotografiert",
       "fotografieren"
      ],
-     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
+     "explain": "ich fotografiere · du fotografierst · er/sie/man fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
     },
     {
      "id": "er",
@@ -980,7 +981,7 @@
       "fotografierst",
       "fotografieren"
      ],
-     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
+     "explain": "ich fotografiere · du fotografierst · er/sie/man fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
     },
     {
      "id": "wir",
@@ -993,7 +994,7 @@
       "fotografierst",
       "fotografiert"
      ],
-     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
+     "explain": "ich fotografiere · du fotografierst · er/sie/man fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
     },
     {
      "id": "ihr",
@@ -1006,7 +1007,7 @@
       "fotografierst",
       "fotografieren"
      ],
-     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
+     "explain": "ich fotografiere · du fotografierst · er/sie/man fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
     },
     {
      "id": "pl3",
@@ -1019,7 +1020,7 @@
       "fotografierst",
       "fotografiert"
      ],
-     "explain": "ich fotografiere · du fotografierst · er/sie fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
+     "explain": "ich fotografiere · du fotografierst · er/sie/man fotografiert · wir fotografieren · ihr fotografiert · sie (oni) fotografieren"
     }
    ]
   },
@@ -1038,7 +1039,7 @@
      "joggst"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "joggt"
     ],
     [
@@ -1067,7 +1068,7 @@
       "joggt",
       "joggen"
      ],
-     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
+     "explain": "ich jogge · du joggst · er/sie/man joggt · wir joggen · ihr joggt · sie (oni) joggen"
     },
     {
      "id": "du",
@@ -1080,7 +1081,7 @@
       "joggt",
       "joggen"
      ],
-     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
+     "explain": "ich jogge · du joggst · er/sie/man joggt · wir joggen · ihr joggt · sie (oni) joggen"
     },
     {
      "id": "er",
@@ -1093,7 +1094,7 @@
       "joggst",
       "joggen"
      ],
-     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
+     "explain": "ich jogge · du joggst · er/sie/man joggt · wir joggen · ihr joggt · sie (oni) joggen"
     },
     {
      "id": "wir",
@@ -1106,7 +1107,7 @@
       "joggst",
       "joggt"
      ],
-     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
+     "explain": "ich jogge · du joggst · er/sie/man joggt · wir joggen · ihr joggt · sie (oni) joggen"
     },
     {
      "id": "ihr",
@@ -1119,7 +1120,7 @@
       "joggst",
       "joggen"
      ],
-     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
+     "explain": "ich jogge · du joggst · er/sie/man joggt · wir joggen · ihr joggt · sie (oni) joggen"
     },
     {
      "id": "pl3",
@@ -1132,7 +1133,7 @@
       "joggst",
       "joggt"
      ],
-     "explain": "ich jogge · du joggst · er/sie joggt · wir joggen · ihr joggt · sie (oni) joggen"
+     "explain": "ich jogge · du joggst · er/sie/man joggt · wir joggen · ihr joggt · sie (oni) joggen"
     }
    ]
   },
@@ -1151,7 +1152,7 @@
      "findest"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "findet"
     ],
     [
@@ -1180,7 +1181,7 @@
       "findet",
       "finden"
      ],
-     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+     "explain": "ich finde · du findest · er/sie/man findet · wir finden · ihr findet · sie (oni) finden"
     },
     {
      "id": "du",
@@ -1193,7 +1194,7 @@
       "findet",
       "finden"
      ],
-     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+     "explain": "ich finde · du findest · er/sie/man findet · wir finden · ihr findet · sie (oni) finden"
     },
     {
      "id": "er",
@@ -1206,7 +1207,7 @@
       "findest",
       "finden"
      ],
-     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+     "explain": "ich finde · du findest · er/sie/man findet · wir finden · ihr findet · sie (oni) finden"
     },
     {
      "id": "wir",
@@ -1219,7 +1220,7 @@
       "findest",
       "findet"
      ],
-     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+     "explain": "ich finde · du findest · er/sie/man findet · wir finden · ihr findet · sie (oni) finden"
     },
     {
      "id": "ihr",
@@ -1232,7 +1233,7 @@
       "findest",
       "finden"
      ],
-     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+     "explain": "ich finde · du findest · er/sie/man findet · wir finden · ihr findet · sie (oni) finden"
     },
     {
      "id": "pl3",
@@ -1245,7 +1246,7 @@
       "findest",
       "findet"
      ],
-     "explain": "ich finde · du findest · er/sie findet · wir finden · ihr findet · sie (oni) finden"
+     "explain": "ich finde · du findest · er/sie/man findet · wir finden · ihr findet · sie (oni) finden"
     }
    ]
   },
@@ -1264,7 +1265,7 @@
      "tanzt"
     ],
     [
-     "er/sie",
+     "er/sie/man",
      "tanzt"
     ],
     [
@@ -1292,7 +1293,7 @@
       "tanzt",
       "tanzen"
      ],
-     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
+     "explain": "ich tanze · du tanzt · er/sie/man tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
     },
     {
      "id": "du",
@@ -1304,7 +1305,7 @@
       "tanze",
       "tanzen"
      ],
-     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
+     "explain": "ich tanze · du tanzt · er/sie/man tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
     },
     {
      "id": "er",
@@ -1316,7 +1317,7 @@
       "tanze",
       "tanzen"
      ],
-     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
+     "explain": "ich tanze · du tanzt · er/sie/man tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
     },
     {
      "id": "wir",
@@ -1328,7 +1329,7 @@
       "tanze",
       "tanzt"
      ],
-     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
+     "explain": "ich tanze · du tanzt · er/sie/man tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
     },
     {
      "id": "ihr",
@@ -1340,7 +1341,7 @@
       "tanze",
       "tanzen"
      ],
-     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
+     "explain": "ich tanze · du tanzt · er/sie/man tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
     },
     {
      "id": "pl3",
@@ -1352,7 +1353,7 @@
       "tanze",
       "tanzt"
      ],
-     "explain": "ich tanze · du tanzt · er/sie tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
+     "explain": "ich tanze · du tanzt · er/sie/man tanzt · wir tanzen · ihr tanzt · sie (oni) tanzen"
     }
    ]
   }

@@ -1,0 +1,212 @@
+{
+ "id": "g-man",
+ "area": "grammar",
+ "group": "g-zajmena",
+ "name": "man",
+ "topic": "mluví se, dělá se",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Věty",
+ "cards": [
+  {
+   "id": "man-01",
+   "pos": "sentence",
+   "cs": "Na Slovensku se mluví slovensky.",
+   "de": "In der Slowakei spricht man Slowakisch.",
+   "note": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht.",
+   "drills": [
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Na Slovensku se mluví slovensky.",
+     "hint": "",
+     "answer": "In der Slowakei spricht man Slowakisch.",
+     "choices": [
+      "In der Slowakei sprechen man Slowakisch.",
+      "In der Slowakei man spricht Slowakisch."
+     ],
+     "explain": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+    }
+   ]
+  },
+  {
+   "id": "man-02",
+   "pos": "sentence",
+   "cs": "Kde se mluví portugalsky?",
+   "de": "Wo spricht man Portugiesisch?",
+   "note": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht.",
+   "drills": [
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Kde se mluví portugalsky?",
+     "hint": "",
+     "answer": "Wo spricht man Portugiesisch?",
+     "choices": [
+      "Wo man spricht Portugiesisch?",
+      "Wo sprecht man Portugiesisch?"
+     ],
+     "explain": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+    }
+   ]
+  },
+  {
+   "id": "man-03",
+   "pos": "sentence",
+   "cs": "Portugalsky se mluví v Portugalsku a Brazílii.",
+   "de": "Portugiesisch spricht man in Portugal und Brasilien.",
+   "note": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht.",
+   "drills": [
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Portugalsky se mluví v Portugalsku a Brazílii.",
+     "hint": "",
+     "answer": "Portugiesisch spricht man in Portugal und Brasilien.",
+     "choices": [
+      "Portugiesisch man spricht in Portugal und Brasilien.",
+      "Portugiesisch sprechen man in Portugal und Brasilien."
+     ],
+     "explain": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+    }
+   ]
+  },
+  {
+   "id": "man-04",
+   "pos": "sentence",
+   "cs": "Jakým jazykem se mluví v Česku?",
+   "de": "Wie spricht man in Tschechien?",
+   "note": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht.",
+   "drills": [
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "Jakým jazykem se mluví v Česku?",
+     "hint": "",
+     "answer": "Wie spricht man in Tschechien?",
+     "choices": [
+      "Wie man spricht in Tschechien?",
+      "Wie sprichst man in Tschechien?"
+     ],
+     "explain": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+    }
+   ]
+  },
+  {
+   "id": "man-05",
+   "pos": "sentence",
+   "cs": "V Česku se mluví česky.",
+   "de": "In Tschechien spricht man Tschechisch.",
+   "note": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht.",
+   "drills": [
+    {
+     "id": "pick",
+     "label": "Vyber správnou větu",
+     "prompt": "V Česku se mluví česky.",
+     "hint": "",
+     "answer": "In Tschechien spricht man Tschechisch.",
+     "choices": [
+      "In Tschechien man spricht Tschechisch.",
+      "In Tschechien sprechen man Tschechisch."
+     ],
+     "explain": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+    }
+   ]
+  },
+  {
+   "id": "mg-01",
+   "pos": "sentence",
+   "cs": "V Německu se mluví německy.",
+   "de": "In Deutschland spricht man Deutsch.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň tvar slovesa",
+     "prompt": "In Deutschland ___ man Deutsch.",
+     "hint": "V Německu se mluví německy.",
+     "answer": "spricht",
+     "choices": [
+      "spreche",
+      "sprichst",
+      "sprechen",
+      "sprecht"
+     ],
+     "full": "In Deutschland spricht man Deutsch.",
+     "explain": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+    }
+   ],
+   "note": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+  },
+  {
+   "id": "mg-02",
+   "pos": "sentence",
+   "cs": "Na Slovensku lidé mluví slovensky.",
+   "de": "In der Slowakei sprechen die Leute Slowakisch.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň tvar slovesa",
+     "prompt": "In der Slowakei ___ die Leute Slowakisch.",
+     "hint": "Na Slovensku lidé mluví slovensky.",
+     "answer": "sprechen",
+     "choices": [
+      "spreche",
+      "sprichst",
+      "spricht",
+      "sprecht"
+     ],
+     "full": "In der Slowakei sprechen die Leute Slowakisch.",
+     "explain": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+    }
+   ],
+   "note": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+  },
+  {
+   "id": "mg-03",
+   "pos": "sentence",
+   "cs": "Lidé ve Španělsku mluví španělsky.",
+   "de": "Die Leute sprechen in Spanien Spanisch.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Die Leute ___ in Spanien Spanisch.",
+     "hint": "Lidé ve Španělsku mluví španělsky.",
+     "answer": "sprechen",
+     "choices": [
+      "spreche",
+      "sprichst",
+      "spricht",
+      "sprecht"
+     ],
+     "full": "Die Leute sprechen in Spanien Spanisch.",
+     "explain": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+    }
+   ],
+   "note": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+  },
+  {
+   "id": "mg-04",
+   "pos": "sentence",
+   "cs": "V Česku se mluví česky.",
+   "de": "Man spricht in Tschechien Tschechisch.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň tvar slovesa",
+     "prompt": "Man ___ in Tschechien Tschechisch.",
+     "hint": "V Česku se mluví česky.",
+     "answer": "spricht",
+     "choices": [
+      "spreche",
+      "sprichst",
+      "sprechen",
+      "sprecht"
+     ],
+     "full": "Man spricht in Tschechien Tschechisch.",
+     "explain": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+    }
+   ],
+   "note": "man = „se\" (mluví se, dělá se). Sloveso má tvar jako u er/sie: man spricht."
+  }
+ ]
+}

@@ -1,0 +1,264 @@
+{
+ "id": "g-wann",
+ "area": "grammar",
+ "group": "g-slovosled",
+ "name": "Otázky s wann",
+ "topic": "am Montag, um 11 Uhr",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Otázky",
+ "cards": [
+  {
+   "id": "wa-01",
+   "pos": "qa",
+   "cs": "Kdy začíná škola?",
+   "de": "Wann beginnt die Schule?",
+   "example_de": "Am Montag.",
+   "example_cs": "V pondělí.",
+   "note": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kdy začíná škola?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wann beginnt die Schule?",
+     "tiles": [
+      "wann",
+      "beginnt",
+      "die",
+      "Schule"
+     ],
+     "accept": [],
+     "end": "?",
+     "explain": "Tázací slovo wann na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "prep",
+     "label": "Doplň do odpovědi",
+     "prompt": "___ Montag.",
+     "hint": "Wann beginnt die Schule? — V pondělí.",
+     "answer": "Am",
+     "choices": [
+      "Um",
+      "Von",
+      "In"
+     ],
+     "full": "Am Montag.",
+     "explain": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do."
+    }
+   ]
+  },
+  {
+   "id": "wa-02",
+   "pos": "qa",
+   "cs": "Kdy začíná velká přestávka?",
+   "de": "Wann beginnt die große Pause?",
+   "example_de": "Um 11.20 Uhr.",
+   "example_cs": "V 11.20.",
+   "note": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kdy začíná velká přestávka?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wann beginnt die große Pause?",
+     "tiles": [
+      "wann",
+      "beginnt",
+      "die",
+      "große",
+      "Pause"
+     ],
+     "accept": [],
+     "end": "?",
+     "explain": "Tázací slovo wann na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "prep",
+     "label": "Doplň do odpovědi",
+     "prompt": "___ 11.20 Uhr.",
+     "hint": "Wann beginnt die große Pause? — V 11.20.",
+     "answer": "Um",
+     "choices": [
+      "Am",
+      "Von",
+      "In"
+     ],
+     "full": "Um 11.20 Uhr.",
+     "explain": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do."
+    }
+   ]
+  },
+  {
+   "id": "wa-03",
+   "pos": "qa",
+   "cs": "Kdy je informatika?",
+   "de": "Wann ist Informatik?",
+   "example_de": "Am Montag um 14.50 Uhr.",
+   "example_cs": "V pondělí ve 14.50.",
+   "note": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kdy je informatika?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wann ist Informatik?",
+     "tiles": [
+      "wann",
+      "ist",
+      "Informatik"
+     ],
+     "accept": [],
+     "end": "?",
+     "explain": "Tázací slovo wann na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "prep",
+     "label": "Doplň do odpovědi",
+     "prompt": "___ Montag um 14.50 Uhr.",
+     "hint": "Wann ist Informatik? — V pondělí ve 14.50.",
+     "answer": "Am",
+     "choices": [
+      "Um",
+      "Von",
+      "In"
+     ],
+     "full": "Am Montag um 14.50 Uhr.",
+     "explain": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do."
+    }
+   ]
+  },
+  {
+   "id": "wa-04",
+   "pos": "qa",
+   "cs": "Kdy je malá přestávka?",
+   "de": "Wann ist die kleine Pause?",
+   "example_de": "Von 9.35 Uhr bis 9.45 Uhr.",
+   "example_cs": "Od 9.35 do 9.45.",
+   "note": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kdy je malá přestávka?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wann ist die kleine Pause?",
+     "tiles": [
+      "wann",
+      "ist",
+      "die",
+      "kleine",
+      "Pause"
+     ],
+     "accept": [],
+     "end": "?",
+     "explain": "Tázací slovo wann na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "prep",
+     "label": "Doplň do odpovědi",
+     "prompt": "___ 9.35 Uhr bis 9.45 Uhr.",
+     "hint": "Wann ist die kleine Pause? — Od 9.35 do 9.45.",
+     "answer": "Von",
+     "choices": [
+      "Am",
+      "Um",
+      "In"
+     ],
+     "full": "Von 9.35 Uhr bis 9.45 Uhr.",
+     "explain": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do."
+    }
+   ]
+  },
+  {
+   "id": "wa-05",
+   "pos": "qa",
+   "cs": "Kdy máte angličtinu?",
+   "de": "Wann habt ihr Englisch?",
+   "example_de": "Am Mittwoch und am Freitag.",
+   "example_cs": "Ve středu a v pátek.",
+   "note": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kdy máte angličtinu?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wann habt ihr Englisch?",
+     "tiles": [
+      "wann",
+      "habt",
+      "ihr",
+      "Englisch"
+     ],
+     "accept": [],
+     "end": "?",
+     "explain": "Tázací slovo wann na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "prep",
+     "label": "Doplň do odpovědi",
+     "prompt": "___ Mittwoch und am Freitag.",
+     "hint": "Wann habt ihr Englisch? — Ve středu a v pátek.",
+     "answer": "Am",
+     "choices": [
+      "Um",
+      "Von",
+      "In"
+     ],
+     "full": "Am Mittwoch und am Freitag.",
+     "explain": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do."
+    }
+   ]
+  },
+  {
+   "id": "wa-06",
+   "pos": "qa",
+   "cs": "Kdy hraješ fotbal?",
+   "de": "Wann spielst du Fußball?",
+   "example_de": "Um 16 Uhr.",
+   "example_cs": "V 16 hodin.",
+   "note": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do.",
+   "drills": [
+    {
+     "id": "order",
+     "kind": "order",
+     "label": "Slož otázku",
+     "prompt": "Kdy hraješ fotbal?",
+     "hint": "ťukni na slova ve správném pořadí",
+     "answer": "Wann spielst du Fußball?",
+     "tiles": [
+      "wann",
+      "spielst",
+      "du",
+      "Fußball"
+     ],
+     "accept": [],
+     "end": "?",
+     "explain": "Tázací slovo wann na začátku, sloveso hned za ním, pak podmět."
+    },
+    {
+     "id": "prep",
+     "label": "Doplň do odpovědi",
+     "prompt": "___ 16 Uhr.",
+     "hint": "Wann spielst du Fußball? — V 16 hodin.",
+     "answer": "Um",
+     "choices": [
+      "Am",
+      "Von",
+      "In"
+     ],
+     "full": "Um 16 Uhr.",
+     "explain": "am + den (am Montag), um + hodina (um 11.20 Uhr), von … bis = od … do."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "id": "g-er-sie",
+ "area": "grammar",
+ "group": "g-zajmena",
+ "name": "er, sie, sie",
+ "topic": "on, ona, oni",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Věty",
+ "cards": [
+  {
+   "id": "es-01",
+   "pos": "sentence",
+   "cs": "Er",
+   "de": "Jan kommt aus Weimar. Er wohnt aber in Frankfurt.",
+   "note": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Které zájmeno?",
+     "prompt": "Jan kommt aus Weimar. ___ wohnt aber in Frankfurt.",
+     "hint": "",
+     "answer": "Er",
+     "choices": [
+      "Sie (ona)",
+      "Sie (oni)"
+     ],
+     "full": "Jan kommt aus Weimar. Er wohnt aber in Frankfurt.",
+     "explain": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle."
+    }
+   ]
+  },
+  {
+   "id": "es-02",
+   "pos": "sentence",
+   "cs": "Er",
+   "de": "Anton wohnt in Frankfurt. Er rappt gern.",
+   "note": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Které zájmeno?",
+     "prompt": "Anton wohnt in Frankfurt. ___ rappt gern.",
+     "hint": "",
+     "answer": "Er",
+     "choices": [
+      "Sie (ona)",
+      "Sie (oni)"
+     ],
+     "full": "Anton wohnt in Frankfurt. Er rappt gern.",
+     "explain": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle."
+    }
+   ]
+  },
+  {
+   "id": "es-03",
+   "pos": "sentence",
+   "cs": "Sie (ona)",
+   "de": "Lena ist Jans Cousine. Sie wohnt in Ingelheim.",
+   "note": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Které zájmeno?",
+     "prompt": "Lena ist Jans Cousine. ___ wohnt in Ingelheim.",
+     "hint": "",
+     "answer": "Sie (ona)",
+     "choices": [
+      "Er",
+      "Sie (oni)"
+     ],
+     "full": "Lena ist Jans Cousine. Sie wohnt in Ingelheim.",
+     "explain": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle."
+    }
+   ]
+  },
+  {
+   "id": "es-04",
+   "pos": "sentence",
+   "cs": "Sie (ona)",
+   "de": "Alicia ist auch im Jugendklub. Sie macht gern Karaoke.",
+   "note": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Které zájmeno?",
+     "prompt": "Alicia ist auch im Jugendklub. ___ macht gern Karaoke.",
+     "hint": "",
+     "answer": "Sie (ona)",
+     "choices": [
+      "Er",
+      "Sie (oni)"
+     ],
+     "full": "Alicia ist auch im Jugendklub. Sie macht gern Karaoke.",
+     "explain": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle."
+    }
+   ]
+  },
+  {
+   "id": "es-05",
+   "pos": "sentence",
+   "cs": "Sie (oni)",
+   "de": "Tobias und Max hören Techno. Sie machen die Disco.",
+   "note": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Které zájmeno?",
+     "prompt": "Tobias und Max hören Techno. ___ machen die Disco.",
+     "hint": "",
+     "answer": "Sie (oni)",
+     "choices": [
+      "Er",
+      "Sie (ona)"
+     ],
+     "full": "Tobias und Max hören Techno. Sie machen die Disco.",
+     "explain": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle."
+    }
+   ]
+  },
+  {
+   "id": "es-06",
+   "pos": "sentence",
+   "cs": "Sie (oni)",
+   "de": "Tabea und Jakob sind im Jugendklub. Sie programmieren die Webseite.",
+   "note": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Které zájmeno?",
+     "prompt": "Tabea und Jakob sind im Jugendklub. ___ programmieren die Webseite.",
+     "hint": "",
+     "answer": "Sie (oni)",
+     "choices": [
+      "Er",
+      "Sie (ona)"
+     ],
+     "full": "Tabea und Jakob sind im Jugendklub. Sie programmieren die Webseite.",
+     "explain": "Jeden kluk → er. Jedna holka → sie (ona). Víc lidí → sie (oni) a sloveso v množném čísle."
+    }
+   ]
+  }
+ ]
+}

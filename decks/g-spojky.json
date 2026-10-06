@@ -1,0 +1,143 @@
+{
+ "id": "g-spojky",
+ "area": "grammar",
+ "group": "g-mala-slova",
+ "name": "Spojky",
+ "topic": "und, aber, oder",
+ "source": "Meine Grammatik a Grammatikübersicht (fotky 2026-10-06)",
+ "unit": "Věty",
+ "cards": [
+  {
+   "id": "sp-01",
+   "pos": "sentence",
+   "cs": "Hraješ na klavír? – Ne, rapuju. A ty?",
+   "de": "Spielst du Klavier? – Nein, ich rappe. Und du?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Spielst du Klavier? – Nein, ich rappe. ___ du?",
+     "hint": "Hraješ na klavír? – Ne, rapuju. A ty?",
+     "answer": "Und",
+     "choices": [
+      "Aber",
+      "Oder"
+     ],
+     "full": "Spielst du Klavier? – Nein, ich rappe. Und du?",
+     "explain": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+    }
+   ],
+   "note": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+  },
+  {
+   "id": "sp-02",
+   "pos": "sentence",
+   "cs": "Mluvím španělsky a německy.",
+   "de": "Ich spreche Spanisch und Deutsch.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Ich spreche Spanisch ___ Deutsch.",
+     "hint": "Mluvím španělsky a německy.",
+     "answer": "und",
+     "choices": [
+      "aber",
+      "oder"
+     ],
+     "full": "Ich spreche Spanisch und Deutsch.",
+     "explain": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+    }
+   ],
+   "note": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+  },
+  {
+   "id": "sp-03",
+   "pos": "sentence",
+   "cs": "Jan pochází z Výmaru. Ale bydlí ve Frankfurtu.",
+   "de": "Jan kommt aus Weimar. Aber er wohnt in Frankfurt.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Jan kommt aus Weimar. ___ er wohnt in Frankfurt.",
+     "hint": "Jan pochází z Výmaru. Ale bydlí ve Frankfurtu.",
+     "answer": "Aber",
+     "choices": [
+      "Und",
+      "Oder"
+     ],
+     "full": "Jan kommt aus Weimar. Aber er wohnt in Frankfurt.",
+     "explain": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+    }
+   ],
+   "note": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+  },
+  {
+   "id": "sp-04",
+   "pos": "sentence",
+   "cs": "Lena pochází z Rakouska. Ale bydlí v Německu.",
+   "de": "Lena kommt aus Österreich. Aber sie wohnt in Deutschland.",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Lena kommt aus Österreich. ___ sie wohnt in Deutschland.",
+     "hint": "Lena pochází z Rakouska. Ale bydlí v Německu.",
+     "answer": "Aber",
+     "choices": [
+      "Und",
+      "Oder"
+     ],
+     "full": "Lena kommt aus Österreich. Aber sie wohnt in Deutschland.",
+     "explain": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+    }
+   ],
+   "note": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+  },
+  {
+   "id": "sp-05",
+   "pos": "sentence",
+   "cs": "Máš rád kolu, nebo limonádu?",
+   "de": "Magst du Cola oder Limo?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Magst du Cola ___ Limo?",
+     "hint": "Máš rád kolu, nebo limonádu?",
+     "answer": "oder",
+     "choices": [
+      "und",
+      "aber"
+     ],
+     "full": "Magst du Cola oder Limo?",
+     "explain": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+    }
+   ],
+   "note": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+  },
+  {
+   "id": "sp-06",
+   "pos": "sentence",
+   "cs": "Poslouchají Tobias a Max techno, nebo hip-hop?",
+   "de": "Hören Tobias und Max Techno oder Hip-Hop?",
+   "drills": [
+    {
+     "id": "g",
+     "label": "Doplň do věty",
+     "prompt": "Hören Tobias und Max Techno ___ Hip-Hop?",
+     "hint": "Poslouchají Tobias a Max techno, nebo hip-hop?",
+     "answer": "oder",
+     "choices": [
+      "und",
+      "aber"
+     ],
+     "full": "Hören Tobias und Max Techno oder Hip-Hop?",
+     "explain": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+    }
+   ],
+   "note": "und = a · aber = ale · oder = nebo. Po spojce věta pokračuje normálně: Aber er wohnt in Frankfurt."
+  }
+ ]
+}
