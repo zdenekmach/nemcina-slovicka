@@ -1,0 +1,313 @@
+{
+ "id": "l4-51-52",
+ "name": "Strany 51–52",
+ "topic": "ve škole",
+ "area": "vocab",
+ "lesson": "4",
+ "group": "lekce-4",
+ "source": "Mein Wortschatz, lekce 4 — fotky slovníčku",
+ "cards": [
+  {
+   "id": "p51-01",
+   "pos": "verb",
+   "page": 51,
+   "cs": "pracovat",
+   "de": "arbeiten",
+   "form3": "er arbeitet"
+  },
+  {
+   "id": "p51-02",
+   "pos": "noun",
+   "page": 51,
+   "cs": "aula",
+   "de": "Aula",
+   "article": "die",
+   "plural": "Aulen/Aulas"
+  },
+  {
+   "id": "p51-03",
+   "pos": "noun",
+   "page": 51,
+   "cs": "knihovna",
+   "de": "Bibliothek",
+   "article": "die",
+   "plural": "Bibliotheken"
+  },
+  {
+   "id": "p51-04",
+   "pos": "noun",
+   "page": 51,
+   "cs": "kniha",
+   "de": "Buch",
+   "article": "das",
+   "plural": "Bücher"
+  },
+  {
+   "id": "p51-05",
+   "pos": "noun",
+   "page": 51,
+   "cs": "CD",
+   "de": "CD",
+   "article": "die",
+   "plural": "CDs"
+  },
+  {
+   "id": "p51-06",
+   "pos": "noun",
+   "page": 51,
+   "cs": "počítačová místnost",
+   "de": "Computerraum",
+   "article": "der",
+   "plural": "Computerräume"
+  },
+  {
+   "id": "p51-07",
+   "pos": "noun",
+   "page": 51,
+   "cs": "ředitelna",
+   "de": "Direktorat",
+   "article": "das",
+   "plural": "Direktorate"
+  },
+  {
+   "id": "p51-08",
+   "pos": "noun",
+   "page": 51,
+   "cs": "DVD",
+   "de": "DVD",
+   "article": "die",
+   "plural": "DVDs"
+  },
+  {
+   "id": "p51-09",
+   "pos": "noun",
+   "page": 51,
+   "cs": "společenská akce",
+   "de": "Event",
+   "article": "der/das",
+   "plural": "Events"
+  },
+  {
+   "id": "p51-10",
+   "pos": "verb",
+   "page": 51,
+   "cs": "experimentovat",
+   "de": "experimentieren",
+   "form3": "er experimentiert"
+  },
+  {
+   "id": "p51-11",
+   "pos": "noun",
+   "page": 51,
+   "cs": "házená",
+   "de": "Handball",
+   "article": "der",
+   "plural": "Handbälle"
+  },
+  {
+   "id": "p51-12",
+   "pos": "noun",
+   "page": 51,
+   "cs": "třídní schůzka",
+   "de": "Infoabend",
+   "article": "der",
+   "plural": "Infoabende"
+  },
+  {
+   "id": "p51-13",
+   "pos": "noun",
+   "page": 51,
+   "cs": "třída, učebna",
+   "de": "Klassenzimmer",
+   "article": "das",
+   "plural": "Klassenzimmer"
+  },
+  {
+   "id": "p51-14",
+   "pos": "noun",
+   "page": 51,
+   "cs": "laboratoř",
+   "de": "Labor",
+   "article": "das",
+   "plural": "Labors/Labore"
+  },
+  {
+   "id": "p51-15",
+   "pos": "noun",
+   "page": 51,
+   "cs": "místnost",
+   "de": "Raum",
+   "article": "der",
+   "plural": "Räume"
+  },
+  {
+   "id": "p51-16",
+   "pos": "verb",
+   "page": 51,
+   "cs": "počítat",
+   "de": "rechnen",
+   "form3": "er rechnet"
+  },
+  {
+   "id": "p51-17",
+   "pos": "verb",
+   "page": 51,
+   "cs": "odpočívat",
+   "de": "relaxen",
+   "form3": "er relaxt"
+  },
+  {
+   "id": "p51-18",
+   "pos": "noun",
+   "page": 51,
+   "cs": "školní dvůr",
+   "de": "Schulhof",
+   "article": "der",
+   "plural": "Schulhöfe"
+  },
+  {
+   "id": "p51-19",
+   "pos": "noun",
+   "page": 51,
+   "cs": "ředitel školy",
+   "de": "Schulleiter",
+   "article": "der",
+   "plural": "Schulleiter"
+  },
+  {
+   "id": "p51-20",
+   "pos": "noun",
+   "page": 51,
+   "cs": "sekretariát",
+   "de": "Sekretariat",
+   "article": "das",
+   "plural": "Sekretariate"
+  },
+  {
+   "id": "p51-21",
+   "pos": "noun",
+   "page": 51,
+   "cs": "sekretářka",
+   "de": "Sekretärin",
+   "article": "die",
+   "plural": "Sekretärinnen"
+  },
+  {
+   "id": "p51-22",
+   "pos": "verb",
+   "page": 51,
+   "cs": "cvičit (sport)",
+   "de": "turnen",
+   "form3": "er turnt"
+  },
+  {
+   "id": "p51-23",
+   "pos": "noun",
+   "page": 51,
+   "cs": "tělocvična",
+   "de": "Turnhalle",
+   "article": "die",
+   "plural": "Turnhallen"
+  },
+  {
+   "id": "p51-24",
+   "pos": "verb",
+   "page": 51,
+   "cs": "cvičit, procvičovat",
+   "de": "üben",
+   "form3": "er übt"
+  },
+  {
+   "id": "p51-25",
+   "pos": "verb",
+   "page": 51,
+   "cs": "vyučovat",
+   "de": "unterrichten",
+   "form3": "er unterrichtet"
+  },
+  {
+   "id": "p51-26",
+   "pos": "noun",
+   "page": 51,
+   "cs": "centrála",
+   "de": "Zentrale",
+   "article": "die",
+   "plural": "Zentralen"
+  },
+  {
+   "id": "p52-01",
+   "pos": "adv",
+   "page": 52,
+   "cs": "pak, potom",
+   "de": "dann"
+  },
+  {
+   "id": "p52-02",
+   "pos": "noun",
+   "page": 52,
+   "cs": "zeměpis",
+   "de": "Geografie",
+   "article": "die",
+   "only": "sg"
+  },
+  {
+   "id": "p52-03",
+   "pos": "noun",
+   "page": 52,
+   "cs": "dějepis",
+   "de": "Geschichte",
+   "article": "die",
+   "only": "sg"
+  },
+  {
+   "id": "p52-04",
+   "pos": "noun",
+   "page": 52,
+   "cs": "umělecká výchova",
+   "de": "Kunst",
+   "article": "die",
+   "only": "sg"
+  },
+  {
+   "id": "p52-05",
+   "pos": "noun",
+   "page": 52,
+   "cs": "matematika",
+   "de": "Mathe",
+   "article": "die",
+   "only": "sg"
+  },
+  {
+   "id": "p52-06",
+   "pos": "noun",
+   "page": 52,
+   "cs": "náboženství",
+   "de": "Religion",
+   "article": "die",
+   "only": "sg"
+  },
+  {
+   "id": "p52-07",
+   "pos": "adj",
+   "page": 52,
+   "cs": "hezký",
+   "de": "schön"
+  },
+  {
+   "id": "p52-08",
+   "pos": "noun",
+   "page": 52,
+   "cs": "volitelný předmět",
+   "de": "Wahlfach",
+   "article": "das",
+   "plural": "Wahlfächer"
+  },
+  {
+   "id": "p52-09",
+   "pos": "noun",
+   "page": 52,
+   "cs": "hospodářství a politika",
+   "de": "WiPo"
+  }
+ ]
+}

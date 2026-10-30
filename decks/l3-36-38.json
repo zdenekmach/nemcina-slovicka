@@ -1,0 +1,258 @@
+{
+ "id": "l3-36-38",
+ "name": "Strany 36–38",
+ "topic": "klub mládeže",
+ "area": "vocab",
+ "lesson": "3",
+ "group": "lekce-3",
+ "source": "Mein Wortschatz, lekce 3 — fotky slovníčku",
+ "cards": [
+  {
+   "id": "p36-01",
+   "pos": "noun",
+   "page": 36,
+   "cs": "casting",
+   "de": "Casting",
+   "article": "das",
+   "plural": "Castings",
+   "example_de": "Sie machen ein Casting.",
+   "example_cs": "Dělají casting."
+  },
+  {
+   "id": "p36-02",
+   "pos": "noun",
+   "page": 36,
+   "cs": "DJ",
+   "de": "DJ",
+   "article": "der",
+   "plural": "DJs"
+  },
+  {
+   "id": "p36-03",
+   "pos": "verb",
+   "page": 36,
+   "cs": "natáčet",
+   "de": "filmen",
+   "form3": "er filmt"
+  },
+  {
+   "id": "p36-04",
+   "pos": "pron",
+   "page": 36,
+   "cs": "vy",
+   "de": "ihr"
+  },
+  {
+   "id": "p36-05",
+   "pos": "noun",
+   "page": 36,
+   "cs": "branka",
+   "de": "Tor",
+   "article": "das",
+   "plural": "Tore",
+   "example_de": "Er macht ein Tor.",
+   "example_cs": "Dává branku."
+  },
+  {
+   "id": "p36-06",
+   "pos": "noun",
+   "page": 36,
+   "cs": "volejbal",
+   "de": "Volleyball",
+   "article": "der",
+   "only": "sg"
+  },
+  {
+   "id": "p36-07",
+   "pos": "pron",
+   "page": 36,
+   "cs": "my",
+   "de": "wir"
+  },
+  {
+   "id": "p37-01",
+   "pos": "verb",
+   "page": 37,
+   "cs": "zkoušet",
+   "de": "proben",
+   "form3": "er probt"
+  },
+  {
+   "id": "p37-02",
+   "pos": "verb",
+   "page": 37,
+   "cs": "programovat",
+   "de": "programmieren",
+   "form3": "er programmiert"
+  },
+  {
+   "id": "p38-01",
+   "pos": "noun",
+   "page": 38,
+   "cs": "přihláška",
+   "de": "Anmeldung",
+   "article": "die",
+   "plural": "Anmeldungen"
+  },
+  {
+   "id": "p38-02",
+   "pos": "noun",
+   "page": 38,
+   "cs": "kavárna",
+   "de": "Café",
+   "article": "das",
+   "plural": "Cafés"
+  },
+  {
+   "id": "p38-03",
+   "pos": "noun",
+   "page": 38,
+   "cs": "disko",
+   "de": "Disco",
+   "article": "die",
+   "plural": "Discos"
+  },
+  {
+   "id": "p38-04",
+   "pos": "phrase",
+   "page": 38,
+   "cs": "je, existuje",
+   "de": "es gibt"
+  },
+  {
+   "id": "p38-05",
+   "pos": "noun",
+   "page": 38,
+   "cs": "fórum",
+   "de": "Forum",
+   "article": "das",
+   "plural": "Foren"
+  },
+  {
+   "id": "p38-06",
+   "pos": "noun",
+   "page": 38,
+   "cs": "fotka",
+   "de": "Foto",
+   "article": "das",
+   "plural": "Fotos"
+  },
+  {
+   "id": "p38-07",
+   "pos": "noun",
+   "page": 38,
+   "cs": "mládež",
+   "de": "Jugendlichen",
+   "article": "die",
+   "only": "pl"
+  },
+  {
+   "id": "p38-08",
+   "pos": "noun",
+   "page": 38,
+   "cs": "chlapec",
+   "de": "Junge",
+   "article": "der",
+   "plural": "Jungs"
+  },
+  {
+   "id": "p38-09",
+   "pos": "noun",
+   "page": 38,
+   "cs": "komentář",
+   "de": "Kommentar",
+   "article": "der",
+   "plural": "Kommentare"
+  },
+  {
+   "id": "p38-10",
+   "pos": "verb",
+   "page": 38,
+   "cs": "smát se",
+   "de": "lachen",
+   "form3": "er lacht"
+  },
+  {
+   "id": "p38-11",
+   "pos": "noun",
+   "page": 38,
+   "cs": "lidé",
+   "de": "Leute",
+   "article": "die",
+   "only": "pl"
+  },
+  {
+   "id": "p38-12",
+   "pos": "noun",
+   "page": 38,
+   "cs": "dívka",
+   "de": "Mädchen",
+   "article": "das",
+   "plural": "Mädchen"
+  },
+  {
+   "id": "p38-13",
+   "pos": "adj",
+   "page": 38,
+   "cs": "nový",
+   "de": "neu"
+  },
+  {
+   "id": "p38-14",
+   "pos": "verb",
+   "page": 38,
+   "cs": "organizovat",
+   "de": "organisieren",
+   "form3": "er organisiert"
+  },
+  {
+   "id": "p38-15",
+   "pos": "noun",
+   "page": 38,
+   "cs": "program",
+   "de": "Programm",
+   "article": "das",
+   "plural": "Programme"
+  },
+  {
+   "id": "p38-16",
+   "pos": "verb",
+   "page": 38,
+   "cs": "rapovat",
+   "de": "rappen",
+   "form3": "er rappt"
+  },
+  {
+   "id": "p38-17",
+   "pos": "noun",
+   "page": 38,
+   "cs": "start, začátek",
+   "de": "Start",
+   "article": "der",
+   "plural": "Starts"
+  },
+  {
+   "id": "p38-18",
+   "pos": "noun",
+   "page": 38,
+   "cs": "video",
+   "de": "Video",
+   "article": "das",
+   "plural": "Videos"
+  },
+  {
+   "id": "p38-19",
+   "pos": "phrase",
+   "page": 38,
+   "cs": "Vítejte!",
+   "de": "Willkommen!"
+  },
+  {
+   "id": "p38-20",
+   "pos": "adv",
+   "page": 38,
+   "cs": "skutečně",
+   "de": "wirklich"
+  }
+ ]
+}

@@ -1,0 +1,247 @@
+{
+ "id": "l3-39-43",
+ "name": "Strany 39–43",
+ "topic": "kontakt a jazyky",
+ "area": "vocab",
+ "lesson": "3",
+ "group": "lekce-3",
+ "source": "Mein Wortschatz, lekce 3 — fotky slovníčku",
+ "cards": [
+  {
+   "id": "p39-01",
+   "pos": "noun",
+   "page": 39,
+   "cs": "čínsky, čínština",
+   "de": "Chinesisch"
+  },
+  {
+   "id": "p39-02",
+   "pos": "noun",
+   "page": 39,
+   "cs": "číslo mobilního telefonu",
+   "de": "Handynummer",
+   "article": "die",
+   "plural": "Handynummern"
+  },
+  {
+   "id": "p39-03",
+   "pos": "noun",
+   "page": 39,
+   "cs": "domovní číslo",
+   "de": "Hausnummer",
+   "article": "die",
+   "plural": "Hausnummern"
+  },
+  {
+   "id": "p39-04",
+   "pos": "noun",
+   "page": 39,
+   "cs": "karta",
+   "de": "Karte",
+   "article": "die",
+   "plural": "Karten"
+  },
+  {
+   "id": "p39-05",
+   "pos": "noun",
+   "page": 39,
+   "cs": "poštovní směrovací číslo (PSČ)",
+   "de": "Postleitzahl (PLZ)",
+   "article": "die",
+   "plural": "Postleitzahlen"
+  },
+  {
+   "id": "p39-06",
+   "pos": "noun",
+   "page": 39,
+   "cs": "ulice",
+   "de": "Straße",
+   "article": "die",
+   "plural": "Straßen"
+  },
+  {
+   "id": "p39-07",
+   "pos": "noun",
+   "page": 39,
+   "cs": "telefonní číslo",
+   "de": "Telefonnummer",
+   "article": "die",
+   "plural": "Telefonnummern"
+  },
+  {
+   "id": "p41-01",
+   "pos": "adv",
+   "page": 41,
+   "cs": "trochu, málo",
+   "de": "bisschen",
+   "example_de": "ein bisschen",
+   "example_cs": "trochu"
+  },
+  {
+   "id": "p41-02",
+   "pos": "noun",
+   "page": 41,
+   "cs": "německy, němčina",
+   "de": "Deutsch"
+  },
+  {
+   "id": "p41-03",
+   "pos": "noun",
+   "page": 41,
+   "cs": "francouzsky, francouzština",
+   "de": "Französisch"
+  },
+  {
+   "id": "p41-04",
+   "pos": "noun",
+   "page": 41,
+   "cs": "italsky, italština",
+   "de": "Italienisch"
+  },
+  {
+   "id": "p41-05",
+   "pos": "pron",
+   "page": 41,
+   "cs": "všeobecný podmět („se“)",
+   "de": "man",
+   "example_de": "In Deutschland spricht man Deutsch.",
+   "example_cs": "V Německu se mluví německy."
+  },
+  {
+   "id": "p41-06",
+   "pos": "noun",
+   "page": 41,
+   "cs": "portugalsky, portugalština",
+   "de": "Portugiesisch"
+  },
+  {
+   "id": "p41-07",
+   "pos": "noun",
+   "page": 41,
+   "cs": "slovensky, slovenština",
+   "de": "Slowakisch"
+  },
+  {
+   "id": "p41-08",
+   "pos": "noun",
+   "page": 41,
+   "cs": "španělsky, španělština",
+   "de": "Spanisch"
+  },
+  {
+   "id": "p41-09",
+   "pos": "noun",
+   "page": 41,
+   "cs": "jazyk",
+   "de": "Sprache",
+   "article": "die",
+   "plural": "Sprachen"
+  },
+  {
+   "id": "p41-10",
+   "pos": "verb",
+   "page": 41,
+   "cs": "mluvit",
+   "de": "sprechen",
+   "form3": "er spricht",
+   "example_de": "Was sprichst du?",
+   "example_cs": "Jakými jazyky mluvíš?"
+  },
+  {
+   "id": "p41-11",
+   "pos": "noun",
+   "page": 41,
+   "cs": "česky, čeština",
+   "de": "Tschechisch"
+  },
+  {
+   "id": "p41-12",
+   "pos": "noun",
+   "page": 41,
+   "cs": "turecky, turečtina",
+   "de": "Türkisch"
+  },
+  {
+   "id": "p41-13",
+   "pos": "pron",
+   "page": 41,
+   "cs": "která, které",
+   "de": "welche",
+   "example_de": "Welche Sprachen sprichst du?",
+   "example_cs": "Kterými jazyky mluvíš?"
+  },
+  {
+   "id": "p42-01",
+   "pos": "pron",
+   "page": 42,
+   "cs": "žádný, žádná, žádné",
+   "de": "kein, keine, kein",
+   "example_de": "Kein Wort.",
+   "example_cs": "Ani slovo."
+  },
+  {
+   "id": "p42-02",
+   "pos": "adv",
+   "page": 42,
+   "cs": "jen, jenom",
+   "de": "nur"
+  },
+  {
+   "id": "p42-03",
+   "pos": "adv",
+   "page": 42,
+   "cs": "málo",
+   "de": "wenig",
+   "example_de": "Ich spreche nur ein wenig Deutsch.",
+   "example_cs": "Německy mluvím jen trochu."
+  },
+  {
+   "id": "p43-01",
+   "pos": "noun",
+   "page": 43,
+   "cs": "arabsky, arabština",
+   "de": "Arabisch"
+  },
+  {
+   "id": "p43-02",
+   "pos": "noun",
+   "page": 43,
+   "cs": "centrum mládeže",
+   "de": "Jugendzentrum",
+   "article": "das",
+   "plural": "Jugendzentren"
+  },
+  {
+   "id": "p43-03",
+   "pos": "noun",
+   "page": 43,
+   "cs": "mateřský jazyk",
+   "de": "Muttersprache",
+   "article": "die",
+   "plural": "Muttersprachen"
+  },
+  {
+   "id": "p43-04",
+   "pos": "noun",
+   "page": 43,
+   "cs": "pizza",
+   "de": "Pizza",
+   "article": "die",
+   "plural": "Pizzas/Pizzen"
+  },
+  {
+   "id": "p43-05",
+   "pos": "noun",
+   "page": 43,
+   "cs": "polsky, polština",
+   "de": "Polnisch"
+  },
+  {
+   "id": "p43-06",
+   "pos": "noun",
+   "page": 43,
+   "cs": "rusky, ruština",
+   "de": "Russisch"
+  }
+ ]
+}

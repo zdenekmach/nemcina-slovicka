@@ -1,9 +1,9 @@
 {
  "id": "cisla",
- "name": "Čísla 0–20",
+ "name": "Čísla 0–2000",
  "area": "other",
- "topic": "null … zwanzig",
- "source": "Lekce 1, strany 17–18",
+ "topic": "null … zweitausend",
+ "source": "Lekce 1, strany 17–18, a lekce 3, strana 40",
  "cards": [
   {
    "id": "p17-01",
@@ -172,6 +172,90 @@
    "cs": "20",
    "de": "zwanzig",
    "from": "l1-18-19"
+  },
+  {
+   "id": "p40-01",
+   "pos": "number",
+   "page": 40,
+   "cs": "21",
+   "de": "einundzwanzig"
+  },
+  {
+   "id": "p40-02",
+   "pos": "number",
+   "page": 40,
+   "cs": "30",
+   "de": "dreißig"
+  },
+  {
+   "id": "p40-03",
+   "pos": "number",
+   "page": 40,
+   "cs": "40",
+   "de": "vierzig"
+  },
+  {
+   "id": "p40-04",
+   "pos": "number",
+   "page": 40,
+   "cs": "50",
+   "de": "fünfzig"
+  },
+  {
+   "id": "p40-05",
+   "pos": "number",
+   "page": 40,
+   "cs": "60",
+   "de": "sechzig"
+  },
+  {
+   "id": "p40-06",
+   "pos": "number",
+   "page": 40,
+   "cs": "70",
+   "de": "siebzig"
+  },
+  {
+   "id": "p40-07",
+   "pos": "number",
+   "page": 40,
+   "cs": "80",
+   "de": "achtzig"
+  },
+  {
+   "id": "p40-08",
+   "pos": "number",
+   "page": 40,
+   "cs": "90",
+   "de": "neunzig"
+  },
+  {
+   "id": "p40-09",
+   "pos": "number",
+   "page": 40,
+   "cs": "100",
+   "de": "(ein)hundert"
+  },
+  {
+   "id": "p40-10",
+   "pos": "number",
+   "page": 40,
+   "cs": "200",
+   "de": "zweihundert"
+  },
+  {
+   "id": "p40-11",
+   "pos": "number",
+   "page": 40,
+   "cs": "1000",
+   "de": "(ein)tausend"
+  },
+  {
+   "id": "p40-12",
+   "pos": "number",
+   "page": 40,
+   "cs": "2000",
+   "de": "zweitausend"
   }
  ]
 }

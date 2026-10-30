@@ -1,6 +1,18 @@
 {
  "groups": [
   {
+   "id": "lekce-4",
+   "area": "vocab",
+   "name": "Lekce 4",
+   "topic": "strany 48–52 · škola"
+  },
+  {
+   "id": "lekce-3",
+   "area": "vocab",
+   "name": "Lekce 3",
+   "topic": "strany 36–43 · klub mládeže, jazyky"
+  },
+  {
    "id": "lekce-2",
    "area": "vocab",
    "name": "Lekce 2",
@@ -106,6 +118,42 @@
    "group": "lekce-2",
    "lesson": "2",
    "file": "l2-32-33.json"
+  },
+  {
+   "id": "l3-36-38",
+   "name": "Strany 36–38",
+   "topic": "klub mládeže",
+   "area": "vocab",
+   "group": "lekce-3",
+   "lesson": "3",
+   "file": "l3-36-38.json"
+  },
+  {
+   "id": "l3-39-43",
+   "name": "Strany 39–43",
+   "topic": "kontakt a jazyky",
+   "area": "vocab",
+   "group": "lekce-3",
+   "lesson": "3",
+   "file": "l3-39-43.json"
+  },
+  {
+   "id": "l4-48-50",
+   "name": "Strany 48–50",
+   "topic": "rozvrh a předměty",
+   "area": "vocab",
+   "group": "lekce-4",
+   "lesson": "4",
+   "file": "l4-48-50.json"
+  },
+  {
+   "id": "l4-51-52",
+   "name": "Strany 51–52",
+   "topic": "ve škole",
+   "area": "vocab",
+   "group": "lekce-4",
+   "lesson": "4",
+   "file": "l4-51-52.json"
   },
   {
    "id": "g-slovesa-1",
@@ -253,8 +301,8 @@
   },
   {
    "id": "cisla",
-   "name": "Čísla 0–20",
-   "topic": "null … zwanzig",
+   "name": "Čísla 0–2000",
+   "topic": "null … zweitausend",
    "area": "other",
    "file": "cisla.json"
   },

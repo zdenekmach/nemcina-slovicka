@@ -1,0 +1,249 @@
+{
+ "id": "l4-48-50",
+ "name": "Strany 48–50",
+ "topic": "rozvrh a předměty",
+ "area": "vocab",
+ "lesson": "4",
+ "group": "lekce-4",
+ "source": "Mein Wortschatz, lekce 4 — fotky slovníčku",
+ "cards": [
+  {
+   "id": "p48-01",
+   "pos": "noun",
+   "page": 48,
+   "cs": "polední přestávka",
+   "de": "Mittagspause",
+   "article": "die",
+   "plural": "Mittagspausen"
+  },
+  {
+   "id": "p48-02",
+   "pos": "noun",
+   "page": 48,
+   "cs": "přestávka",
+   "de": "Pause",
+   "article": "die",
+   "plural": "Pausen",
+   "example_de": "kleine Pause / große Pause",
+   "example_cs": "malá přestávka / velká přestávka"
+  },
+  {
+   "id": "p48-03",
+   "pos": "noun",
+   "page": 48,
+   "cs": "hodina (přesný čas)",
+   "de": "Uhr",
+   "article": "die",
+   "plural": "Uhren"
+  },
+  {
+   "id": "p50-01",
+   "pos": "noun",
+   "page": 50,
+   "cs": "maturita",
+   "de": "Abitur",
+   "article": "das",
+   "plural": "Abiture"
+  },
+  {
+   "id": "p50-02",
+   "pos": "pron",
+   "page": 50,
+   "cs": "všichni",
+   "de": "alle"
+  },
+  {
+   "id": "p50-03",
+   "pos": "verb",
+   "page": 50,
+   "cs": "navštívit",
+   "de": "besuchen",
+   "form3": "er besucht"
+  },
+  {
+   "id": "p50-04",
+   "pos": "noun",
+   "page": 50,
+   "cs": "biologie",
+   "de": "Biologie",
+   "article": "die",
+   "only": "sg"
+  },
+  {
+   "id": "p50-05",
+   "pos": "noun",
+   "page": 50,
+   "cs": "chemie",
+   "de": "Chemie",
+   "article": "die",
+   "only": "sg"
+  },
+  {
+   "id": "p50-06",
+   "pos": "noun",
+   "page": 50,
+   "cs": "předmět",
+   "de": "Fach",
+   "article": "das",
+   "plural": "Fächer"
+  },
+  {
+   "id": "p50-07",
+   "pos": "adj",
+   "page": 50,
+   "cs": "volný",
+   "de": "frei"
+  },
+  {
+   "id": "p50-08",
+   "pos": "noun",
+   "page": 50,
+   "cs": "cizí jazyk",
+   "de": "Fremdsprache",
+   "article": "die",
+   "plural": "Fremdsprachen"
+  },
+  {
+   "id": "p50-09",
+   "pos": "verb",
+   "page": 50,
+   "cs": "mít",
+   "de": "haben",
+   "form3": "er hat"
+  },
+  {
+   "id": "p50-10",
+   "pos": "noun",
+   "page": 50,
+   "cs": "informace",
+   "de": "Info",
+   "article": "die",
+   "plural": "Infos"
+  },
+  {
+   "id": "p50-11",
+   "pos": "noun",
+   "page": 50,
+   "cs": "informatika",
+   "de": "Informatik",
+   "article": "die",
+   "only": "sg"
+  },
+  {
+   "id": "p50-12",
+   "pos": "noun",
+   "page": 50,
+   "cs": "třída",
+   "de": "Klasse",
+   "article": "die",
+   "plural": "Klassen"
+  },
+  {
+   "id": "p50-13",
+   "pos": "adj",
+   "page": 50,
+   "cs": "maximální",
+   "de": "maximal"
+  },
+  {
+   "id": "p50-14",
+   "pos": "adv",
+   "page": 50,
+   "cs": "více",
+   "de": "mehr"
+  },
+  {
+   "id": "p50-15",
+   "pos": "adv",
+   "page": 50,
+   "cs": "zítra",
+   "de": "morgen"
+  },
+  {
+   "id": "p50-16",
+   "pos": "prep",
+   "page": 50,
+   "cs": "po",
+   "de": "nach",
+   "example_de": "nach Klasse 13",
+   "example_cs": "po 13. třídě"
+  },
+  {
+   "id": "p50-17",
+   "pos": "noun",
+   "page": 50,
+   "cs": "fyzika",
+   "de": "Physik",
+   "article": "die",
+   "only": "sg"
+  },
+  {
+   "id": "p50-18",
+   "pos": "noun",
+   "page": 50,
+   "cs": "škola",
+   "de": "Schule",
+   "article": "die",
+   "plural": "Schulen"
+  },
+  {
+   "id": "p50-19",
+   "pos": "noun",
+   "page": 50,
+   "cs": "těžiště",
+   "de": "Schwerpunkt",
+   "article": "der",
+   "plural": "Schwerpunkte"
+  },
+  {
+   "id": "p50-20",
+   "pos": "noun",
+   "page": 50,
+   "cs": "rozvrh hodin",
+   "de": "Stundenplan",
+   "article": "der",
+   "plural": "Stundenpläne"
+  },
+  {
+   "id": "p50-21",
+   "pos": "phrase",
+   "page": 50,
+   "cs": "o nás",
+   "de": "über uns"
+  },
+  {
+   "id": "p50-22",
+   "pos": "prep",
+   "page": 50,
+   "cs": "v(e) (s časovým údajem)",
+   "de": "um",
+   "example_de": "um 8 Uhr",
+   "example_cs": "v 8 hodin"
+  },
+  {
+   "id": "p50-23",
+   "pos": "noun",
+   "page": 50,
+   "cs": "vyučování",
+   "de": "Unterricht",
+   "article": "der",
+   "only": "sg"
+  },
+  {
+   "id": "p50-24",
+   "pos": "prep",
+   "page": 50,
+   "cs": "od",
+   "de": "von",
+   "example_de": "von … bis",
+   "example_cs": "od … do"
+  },
+  {
+   "id": "p50-25",
+   "pos": "adj",
+   "page": 50,
+   "cs": "důležitý",
+   "de": "wichtig"
+  }
+ ]
+}
